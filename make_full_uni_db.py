@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('all_go_knowledge_full_paired.db')
+conn = sqlite3.connect('full_uniprot_2_string.04_2015_paired.db')
 c = conn.cursor()
 
 c.execute('pragma main.page_size=4096;')
@@ -12,14 +12,14 @@ conn.commit()
 
 interactions = []
 
-with open('../id_mapping/all_go_knowledge_full.tsv') as f:
-	f.readline()
-	for line in f:
-		interaction = line.split('\t')
-		interaction1 = interaction[1]
-		interaction2 = interaction[2]
-		
-		interactions.append( (interaction1, interaction2) )	
+with open('../id_mapping/full_uniprot_2_string.04_2015.tsv') as f:
+        f.readline()
+        for line in f:
+                interaction = line.split('\t')
+                interaction1 = interaction[1].split('|')[1].split('_')[0]
+                interaction2 = interaction[2]
+
+                interactions.append( (interaction1, interaction2) )
 
 c.executemany('INSERT INTO protein_actions VALUES (?, ?)', interactions)
 

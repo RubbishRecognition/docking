@@ -5,6 +5,7 @@ import pandas as pd
 from Bio import SeqIO
 from multiprocessing import Pool
 from Bio import SeqIO
+import ConfigParser
 
 #pdbtosp location
 pdbtosp = '../id_mapping/pdbtosp.txt'
@@ -28,20 +29,38 @@ full_uniprot = ''
 
 all_knowledge = ''
 
-config = open ('./config', 'r')
+#config = open ('./config', 'r')
 #for x in config.readlines():
-x = config.readlines()
+#x = config.readlines()
 
-pdbtosp = x[0].split('|')[1].split('\n')[0]
-biogrid = x[1].split('|')[1].split('\n')[0]
-uniprot = x[2].split('|')[1].split('\n')[0]
-string  = x[3].split('|')[1].split('\n')[0]
-uniprot20 = x[4].split('|')[1].split('\n')[0]
-pdb100 = x[5].split('|')[1].split('\n')[0]
-full_uniprot = x[6].split('|')[1].split('\n')[0]
-all_knowledge = x[7].split('|')[1].split('\n')[0]
+def ConfigSectionMap(section):
+    dict1 = {}
+    options = Config.options(section)
+    for option in options:
+    try:
+        dict1[option] = Config.get(section, option)
+        if dict1[option] == -1:
+        DebugPrint("skip: %s" % option)
+    except:
+        print("exception on %s!" % option)
+        dict1[option] = None
+    return dict1
 
-#print uniprot20
+Config = ConfigParser.ConfigParser()
+Config.read("./config")
+
+pdbtosp = ConfigSectionMap("PATHS")['pdbtosp']#x[0].split('|')[1].split('\n')[0]
+biogrid = ConfigSectionMap("PATHS")['biogrid']#x[1].split('|')[1].split('\n')[0]
+uniprot = ConfigSectionMap("PATHS")['uniprot']#x[2].split('|')[1].split('\n')[0]
+string  = ConfigSectionMap("PATHS")['string']#x[3].split('|')[1].split('\n')[0]
+uniprot20 = ConfigSectionMap("PATHS")['uniprot20']#x[4].split('|')[1].split('\n')[0]
+pdb100 = ConfigSectionMap("PATHS")['pdb100']#x[5].split('|')[1].split('\n')[0]
+full_uniprot = ConfigSectionMap("PATHS")['full_uniprot']#x[6].split('|')[1].split('\n')[0]
+all_knowledge = ConfigSectionMap("PATHS")['all_knowledge']#x[7].split('|')[1].split('\n')[0]
+
+score = int(ConfigSectionMap("hhblits options")['score'])
+cpu = int(ConfigSectionMap("hhblits options")['cpu'])
+#print score + 1
 #k = input()
 
 def run_biogrid_finder (gene):
@@ -73,7 +92,7 @@ def run_hhblits (sequence, ident_file, align_file):
     
     ## Find similar proteins
 
-    query_string = 'hhblits -i ' + sequence + ' -d ' + uniprot20 + ' -d ' + pdb100 + ' -oa3m ' + ident_file + ' -cpu 5 -qid 70 -id 0 -v 0' + ' -o ' + align_file 
+    query_string = 'hhblits -i ' + sequence + ' -d ' + uniprot20 + ' -d ' + pdb100 + ' -oa3m ' + ident_file + ' -cpu ' + str(cpu) '-qid ' + str(score) + '-id 0 -v 0' + ' -o ' + align_file 
     #print query_string
     os.system (query_string)    
 
@@ -276,10 +295,10 @@ def find_biogrid_interactions (ids_A, ids_B):
 
 def find_string_interactions (ids_A, ids_B):
 
-    ## Find string interactions using run_string_finder in 16 threads
+    ## Find string interactions using run_string_finder in 'cpu' threads
 
     interactions = set()
-    pool = Pool(16)
+    pool = Pool(cpu)
 
     pool.map(run_string_finder_sql, list(ids_A))
 

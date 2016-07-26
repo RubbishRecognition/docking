@@ -1,0 +1,13 @@
+[PATHS]
+pdbtosp: ../id_mapping/pdbtosp.txt
+biogrid: ../interaction_data/BIOGRID-ALL-3.4.136.mitab.txt
+uniprot: ../interaction_data/uniprot_sprot_varsplic.fasta
+string: ../interaction_data/protein.actions.v10.txt
+uniprot20: ../seq_data/uniprot20_2016_02
+pdb100: ../seq_data/pdb100
+full_uniprot: ../id_mapping/full_uniprot_2_string.04_2015.tsv
+all_knowledge: ../id_mapping/all_go_knowledge_full.tsv
+
+[hhblits options]
+score: 70
+cpu: 5
