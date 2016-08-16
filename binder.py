@@ -92,7 +92,7 @@ def run_hhblits (sequence, ident_file, align_file):
     
     ## Find similar proteins
 
-    query_string = 'hhblits -i ' + sequence + ' -d ' + uniprot20 + ' -d ' + pdb100 + ' -oa3m ' + ident_file + ' -cpu ' + str(cpu) '-qid ' + str(score) + '-id 0 -v 0' + ' -o ' + align_file 
+    query_string = 'hhblits -i ' + sequence + ' -d ' + uniprot20 + ' -d ' + pdb100 + ' -oa3m ' + ident_file + ' -cpu ' + str(cpu) + '-qid ' + str(score) + '-id 0 -v 0' + ' -o ' + align_file 
     #print query_string
     os.system (query_string)    
 
