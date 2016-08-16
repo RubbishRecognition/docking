@@ -761,15 +761,15 @@ def main ():
     ## Input sequences as a command line args
     
     parser = argparse.ArgumentParser (description='Finding protein interactions')
-    parser.add_argument ('protein_A', metavar='prot_A', type=str, nargs='?', help='file with sequence A')
-    parser.add_argument ('protein_B', metavar='prot_B', type=str, nargs='?', help='file with sequence B')
-    parser.add_argument ('fout_biogrid', metavar='pdb_out', type=str, nargs='?', help='output file for pdb interactions')
-    parser.add_argument ('fout_string', metavar='uniprot_out', type=str, nargs='?', help='output file for uniprot interactions')
-    parser.add_argument ('fout_complex', metavar='complex_out', type=str, nargs='?', help='output file for complexes')
-    parser.add_argument ('fout_align_prot_A', metavar='align_out', type=str, nargs='?', help='output file for multiple sequence alignment for sequence A')
-    parser.add_argument ('fout_hhr_prot_A', metavar='hhr_out', type=str, nargs='?', help='output file for hhalign result for sequence A')
-    parser.add_argument ('fout_align_prot_B', metavar='align_out', type=str, nargs='?', help='output file for multiple sequence alignment for sequence B')
-    parser.add_argument ('fout_hhr_prot_B', metavar='hhr_out', type=str, nargs='?', help='output file for hhalign result for sequence B')
+    parser.add_argument ('protein_A', metavar='prot_A', help='file with sequence A')
+    parser.add_argument ('protein_B', metavar='prot_B', help='file with sequence B')
+    parser.add_argument ('fout_biogrid', metavar='pdb_out', help='output file for pdb interactions')
+    parser.add_argument ('fout_string', metavar='uniprot_out', help='output file for uniprot interactions')
+    parser.add_argument ('fout_complex', metavar='complex_out', help='output file for complexes')
+    parser.add_argument ('fout_align_prot_A', metavar='align_out', help='output file for multiple sequence alignment for sequence A')
+    parser.add_argument ('fout_hhr_prot_A', metavar='hhr_out', help='output file for hhalign result for sequence A')
+    parser.add_argument ('fout_align_prot_B', metavar='align_out', help='output file for multiple sequence alignment for sequence B')
+    parser.add_argument ('fout_hhr_prot_B', metavar='hhr_out', help='output file for hhalign result for sequence B')
     
 
     args = parser.parse_args ()
