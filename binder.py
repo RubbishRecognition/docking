@@ -37,13 +37,13 @@ def ConfigSectionMap(section):
     dict1 = {}
     options = Config.options(section)
     for option in options:
-    try:
-        dict1[option] = Config.get(section, option)
-        if dict1[option] == -1:
-        DebugPrint("skip: %s" % option)
-    except:
-        print("exception on %s!" % option)
-        dict1[option] = None
+        try:
+            dict1[option] = Config.get(section, option)
+            if dict1[option] == -1:
+                DebugPrint("skip: %s" % option)
+        except:
+            print("exception on %s!" % option)
+            dict1[option] = None
     return dict1
 
 Config = ConfigParser.ConfigParser()
@@ -344,7 +344,7 @@ def find_pdb_id_sql (interactions, in_format):
             
             os.system ('python get_all_uni_db.py ' + str(prot1))
             tmp = open('../tmp/all_out.txt', 'r')
-                   for i in tmp.readlines():
+            for i in tmp.readlines():
                 pat1.update([i.split('\n')[0]])
 
             ## Map second protein
