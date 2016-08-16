@@ -209,13 +209,13 @@ def get_string_ids_sql (infile):
     for x in uniprot_ids:
         os.system ('python get_full_uni_db.py ' + str(x))
         tmp = open('../tmp/full_out.txt', 'r')
-        for i in tmp.readlines():
+        for i in tmp:
             string_ids.update([i.split('\n')[0]])
 
     for x in uniprot_ids:
         os.system ('python get_all_uni_db.py ' + str(x))
         tmp = open('../tmp/all_out.txt', 'r')
-        for i in tmp.readlines():
+        for i in tmp:
             string_ids.update([i.split('\n')[0]])
 
     return string_ids
@@ -339,24 +339,24 @@ def find_pdb_id_sql (interactions, in_format):
 
             os.system ('python get_full_uni_db.py ' + str(prot1))
             tmp = open('../tmp/full_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat1.update([i.split('\n')[0]])
             
             os.system ('python get_all_uni_db.py ' + str(prot1))
             tmp = open('../tmp/all_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat1.update([i.split('\n')[0]])
 
             ## Map second protein
 
             os.system ('python get_full_uni_db.py ' + str(prot2))
             tmp = open('../tmp/full_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat2.update([i.split('\n')[0]])
             
             os.system ('python get_all_uni_db.py ' + str(prot2))
             tmp = open('../tmp/all_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat2.update([i.split('\n')[0]])
 
             for p1 in pat1:
@@ -591,24 +591,24 @@ def find_uniprot_id_sql (interactions, in_format):
 
             os.system ('python get_full_uni_db.py ' + str(prot1))
             tmp = open('../tmp/full_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat1.update([i.split('\n')[0]])
 
             os.system ('python get_all_uni_db.py ' + str(prot1))
             tmp = open('../tmp/all_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat1.update([i.split('\n')[0]])
 
             ## Map second protein
 
             os.system ('python get_full_uni_db.py ' + str(prot2))
             tmp = open('../tmp/full_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat2.update([i.split('\n')[0]])
 
             os.system ('python get_all_uni_db.py ' + str(prot2))
             tmp = open('../tmp/all_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat2.update([i.split('\n')[0]])
 
             for p1 in pat1:
