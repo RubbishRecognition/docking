@@ -165,7 +165,7 @@ def uniprot_to_pdb (uniprot_ids):
 
 def get_biogrid_chain_ids (infile):
 
-        ## The same as get_biogrid_ids but with another db for mapping
+        ## The same as get_biogrid_chain_ids but with another db for mapping
 
         ## Get original ID's from file
         flag = 1
@@ -206,7 +206,7 @@ def get_biogrid_chain_ids (infile):
 
 
 
-def get_biogrid_ids (infile):
+def get_biogrid_chain_ids (infile):
     
     ## Get original ID's from file
     flag = 1
@@ -246,7 +246,7 @@ def get_string_ids_sql (infile):
 
     ## Get uniprot notation
 
-    uniprot_ids = get_biogrid_ids (infile)
+    uniprot_ids = get_biogrid_chain_ids (infile)
 
     string_ids = set()
     
@@ -270,7 +270,7 @@ def get_string_ids (infile):
 
     ## Get uniprot notation
         
-    uniprot_ids = get_biogrid_ids (infile)
+    uniprot_ids = get_biogrid_chain_ids (infile)
     
     ## Read string databases
 
@@ -854,17 +854,17 @@ def main ():
 
     ## ID mapping
     #print '../tmp/' + args.protein_A.split('/')[2].split('.')[0] + '_identies.txt'
-    #biogrid_ids_A = get_biogrid_ids ('../tmp/' + args.protein_A.split('/')[2].split('.')[0] + '_identies.txt')
+    #biogrid_ids_A = get_biogrid_chain_ids ('../tmp/' + args.protein_A.split('/')[2].split('.')[0] + '_identies.txt')
     #string_ids_A = get_string_ids ('../tmp/' + args.protein_A.split('/')[2].split('.')[0] + '_identies.txt')
     #print 'OTHER'
     #print '../tmp/' + args.protein_B.split('/')[2].split('.')[0] + '_identies.txt'
-    #biogrid_ids_B = get_biogrid_ids ('../tmp/' + args.protein_B.split('/')[2].split('.')[0] + '_identies.txt')
+    #biogrid_ids_B = get_biogrid_chain_ids ('../tmp/' + args.protein_B.split('/')[2].split('.')[0] + '_identies.txt')
     #string_ids_B = get_string_ids ('../tmp/' + args.protein_B.split('/')[2].split('.')[0] + '_identies.txt')
     #print full_uniprot
-    biogrid_ids_A = get_biogrid_ids (args.fout_align_prot_A)
+    biogrid_ids_A = get_biogrid_chain_ids (args.fout_align_prot_A)
     string_ids_A = get_string_ids_sql (args.fout_align_prot_A)
 
-    biogrid_ids_B = get_biogrid_ids (args.fout_align_prot_B)
+    biogrid_ids_B = get_biogrid_chain_ids (args.fout_align_prot_B)
     string_ids_B = get_string_ids_sql (args.fout_align_prot_B)
 
     print "FINDING INTERACTIONS"
