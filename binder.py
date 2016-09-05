@@ -162,6 +162,50 @@ def uniprot_to_pdb (uniprot_ids):
     return pdb_ids
 
 
+
+def get_biogrid_chain_ids (infile):
+
+        ## The same as get_biogrid_ids but with another db for mapping
+
+        ## Get original ID's from file
+        flag = 1
+        pdb_ids = []
+        uniprot_ids = []
+        handle = open(infile, 'r')
+
+        for record in SeqIO.parse(handle, "fasta"):
+                buf = record.id
+                #print(len(buf))
+
+                if (flag):
+                        pdb_ids.append (buf.split(':')[0])
+                        flag = 0
+                else:
+                        if (len(buf) == 6):
+                                pdb_ids.append(buf.split('_')[0].upper())
+                        else:
+                                uniprot_ids.append(buf.split('|')[2])
+
+        ## TO DO: 1) pdb to uni_id, 2) uni_id to biogrid_gene (to check: with _HUMAN or without)        
+        buf_ids = []
+        for x in pdb_ids:
+                os.system ('python get_chain_uni_db.py ' + str(x))
+                tmp = open('../tmp/chain_uni_out.txt', 'r')
+                for i in tmp.readlines():
+                        buf_ids.update([i.split('\n')[0]])
+
+        for x in buf_ids:
+                os.system ('python get_uni_id.py ' + str(x))
+                tmp = open('../tmp/uni_id_out.txt', 'r')
+                for i in tmp.readlines():
+                        uniprot_ids.update([i.split('\n')[0]])
+
+        uniprot_ids = list(set(list(uniprot_ids) + list(pdb_to_uniprot (pdb_ids))))
+
+        return uniprot_ids
+
+
+
 def get_biogrid_ids (infile):
     
     ## Get original ID's from file
