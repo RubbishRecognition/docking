@@ -37,13 +37,13 @@ def ConfigSectionMap(section):
     dict1 = {}
     options = Config.options(section)
     for option in options:
-    try:
-        dict1[option] = Config.get(section, option)
-        if dict1[option] == -1:
-        DebugPrint("skip: %s" % option)
-    except:
-        print("exception on %s!" % option)
-        dict1[option] = None
+        try:
+            dict1[option] = Config.get(section, option)
+            if dict1[option] == -1:
+                DebugPrint("skip: %s" % option)
+        except:
+            print("exception on %s!" % option)
+            dict1[option] = None
     return dict1
 
 Config = ConfigParser.ConfigParser()
@@ -92,7 +92,7 @@ def run_hhblits (sequence, ident_file, align_file):
     
     ## Find similar proteins
 
-    query_string = 'hhblits -i ' + sequence + ' -d ' + uniprot20 + ' -d ' + pdb100 + ' -oa3m ' + ident_file + ' -cpu ' + str(cpu) '-qid ' + str(score) + '-id 0 -v 0' + ' -o ' + align_file 
+    query_string = 'hhblits -i ' + sequence + ' -d ' + uniprot20 + ' -d ' + pdb100 + ' -oa3m ' + ident_file + ' -cpu ' + str(cpu) + '-qid ' + str(score) + '-id 0 -v 0' + ' -o ' + align_file 
     #print query_string
     os.system (query_string)    
 
@@ -209,13 +209,13 @@ def get_string_ids_sql (infile):
     for x in uniprot_ids:
         os.system ('python get_full_uni_db.py ' + str(x))
         tmp = open('../tmp/full_out.txt', 'r')
-        for i in tmp.readlines():
+        for i in tmp:
             string_ids.update([i.split('\n')[0]])
 
     for x in uniprot_ids:
         os.system ('python get_all_uni_db.py ' + str(x))
         tmp = open('../tmp/all_out.txt', 'r')
-        for i in tmp.readlines():
+        for i in tmp:
             string_ids.update([i.split('\n')[0]])
 
     return string_ids
@@ -339,24 +339,24 @@ def find_pdb_id_sql (interactions, in_format):
 
             os.system ('python get_full_uni_db.py ' + str(prot1))
             tmp = open('../tmp/full_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat1.update([i.split('\n')[0]])
             
             os.system ('python get_all_uni_db.py ' + str(prot1))
             tmp = open('../tmp/all_out.txt', 'r')
-                   for i in tmp.readlines():
+            for i in tmp:
                 pat1.update([i.split('\n')[0]])
 
             ## Map second protein
 
             os.system ('python get_full_uni_db.py ' + str(prot2))
             tmp = open('../tmp/full_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat2.update([i.split('\n')[0]])
             
             os.system ('python get_all_uni_db.py ' + str(prot2))
             tmp = open('../tmp/all_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat2.update([i.split('\n')[0]])
 
             for p1 in pat1:
@@ -591,24 +591,24 @@ def find_uniprot_id_sql (interactions, in_format):
 
             os.system ('python get_full_uni_db.py ' + str(prot1))
             tmp = open('../tmp/full_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat1.update([i.split('\n')[0]])
 
             os.system ('python get_all_uni_db.py ' + str(prot1))
             tmp = open('../tmp/all_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat1.update([i.split('\n')[0]])
 
             ## Map second protein
 
             os.system ('python get_full_uni_db.py ' + str(prot2))
             tmp = open('../tmp/full_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat2.update([i.split('\n')[0]])
 
             os.system ('python get_all_uni_db.py ' + str(prot2))
             tmp = open('../tmp/all_out.txt', 'r')
-            for i in tmp.readlines():
+            for i in tmp:
                 pat2.update([i.split('\n')[0]])
 
             for p1 in pat1:
@@ -761,15 +761,15 @@ def main ():
     ## Input sequences as a command line args
     
     parser = argparse.ArgumentParser (description='Finding protein interactions')
-    parser.add_argument ('protein_A', metavar='prot_A', type=str, nargs='?', help='file with sequence A')
-    parser.add_argument ('protein_B', metavar='prot_B', type=str, nargs='?', help='file with sequence B')
-    parser.add_argument ('fout_biogrid', metavar='pdb_out', type=str, nargs='?', help='output file for pdb interactions')
-    parser.add_argument ('fout_string', metavar='uniprot_out', type=str, nargs='?', help='output file for uniprot interactions')
-    parser.add_argument ('fout_complex', metavar='complex_out', type=str, nargs='?', help='output file for complexes')
-    parser.add_argument ('fout_align_prot_A', metavar='align_out', type=str, nargs='?', help='output file for multiple sequence alignment for sequence A')
-    parser.add_argument ('fout_hhr_prot_A', metavar='hhr_out', type=str, nargs='?', help='output file for hhalign result for sequence A')
-    parser.add_argument ('fout_align_prot_B', metavar='align_out', type=str, nargs='?', help='output file for multiple sequence alignment for sequence B')
-    parser.add_argument ('fout_hhr_prot_B', metavar='hhr_out', type=str, nargs='?', help='output file for hhalign result for sequence B')
+    parser.add_argument ('protein_A', metavar='prot_A', help='file with sequence A')
+    parser.add_argument ('protein_B', metavar='prot_B', help='file with sequence B')
+    parser.add_argument ('fout_biogrid', metavar='pdb_out', help='output file for pdb interactions')
+    parser.add_argument ('fout_string', metavar='uniprot_out', help='output file for uniprot interactions')
+    parser.add_argument ('fout_complex', metavar='complex_out', help='output file for complexes')
+    parser.add_argument ('fout_align_prot_A', metavar='align_out', help='output file for multiple sequence alignment for sequence A')
+    parser.add_argument ('fout_hhr_prot_A', metavar='hhr_out', help='output file for hhalign result for sequence A')
+    parser.add_argument ('fout_align_prot_B', metavar='align_out', help='output file for multiple sequence alignment for sequence B')
+    parser.add_argument ('fout_hhr_prot_B', metavar='hhr_out', help='output file for hhalign result for sequence B')
     
 
     args = parser.parse_args ()
