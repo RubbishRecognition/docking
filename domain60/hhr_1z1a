@@ -1,0 +1,2374 @@
+Query         1Z1A:A|PDBID|CHAIN|SEQUENCE
+Match_columns 654
+No_of_seqs    9 out of 29
+Neff          1.39313
+Searched_HMMs 682
+Date          Thu Sep 22 16:59:19 2016
+Command       hhblits -i ../fasta_data/1z1a.fasta.txt -d ../seq_data/uniprot20_2016_02 -d ../seq_data/pdb100 -oa3m ../tmp/domain60/msa_1z1a -cpu 3 -qid 60 -id 100 -v 0 -o ../tmp/domain60/hhr_1z1a 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 tr|F7VJN8|F7VJN8_SACKU Transcr 100.0  6E-208  3E-213 1524.0   0.0  451    1-453     1-451 (470)
+  2 tr|G0WHB8|G0WHB8_NAUDC Unchara 100.0 2.4E-91 1.7E-96  731.3   0.0  605    1-650     1-613 (616)
+  3 1z1a_A mol:protein length:142  100.0 1.2E-74 5.1E-80  517.7   0.0  140  448-587     3-142 (142)
+  4 1z1a_B mol:protein length:142  100.0 1.2E-74 5.1E-80  517.7   0.0  140  448-587     3-142 (142)
+  5 1zhi_B mol:protein length:138  100.0 5.1E-72 2.2E-77  499.2   0.0  135  453-587     4-138 (138)
+  6 tr|W0VTT6|W0VTT6_ZYGBA Unchara  99.9 1.1E-32   7E-38  286.1   0.0  457  149-647     2-462 (475)
+  7 tr|G0VAX2|G0VAX2_NAUCC Unchara  98.8 3.2E-11 1.4E-16  122.9   0.0  307  149-490     2-323 (329)
+  8 tr|G0WAQ7|G0WAQ7_NAUDC Unchara  98.3 4.8E-09 2.1E-14  105.4   0.0  111  150-270     2-112 (254)
+  9 tr|A0A0L8RIM1|A0A0L8RIM1_SACEU  97.2 8.3E-06 4.1E-11   82.3   0.0  145    4-155     5-151 (201)
+ 10 tr|G0WAQ6|G0WAQ6_NAUDC Unchara  96.2 0.00056 2.4E-09   68.9   0.0  171  472-649     2-177 (185)
+ 11 tr|H2AYL2|H2AYL2_KAZAF Unchara  95.5  0.0034 1.5E-08   66.0   0.0  118    4-127     5-124 (261)
+ 12 tr|G0W962|G0W962_NAUDC Unchara  94.4   0.014 9.3E-08   70.8   0.0  116    1-116     1-127 (1103)
+ 13 tr|H0GXK5|H0GXK5_SACCK Unchara  89.4    0.47 2.1E-06   47.5   0.0  108    1-125     1-112 (125)
+ 14 tr|A0A068N8N8|A0A068N8N8_BACCE  88.1    0.69   3E-06   41.3   0.0   35  268-303     7-41  (53)
+ 15 tr|G8ZUI4|G8ZUI4_TORDC Unchara  87.9    0.75 3.2E-06   52.8   0.0  145  151-313     4-148 (466)
+ 16 tr|G0WHE0|G0WHE0_NAUDC Unchara  87.8    0.51 3.3E-06   60.0   0.0  117  465-588     3-131 (1467)
+ 17 tr|G0W962|G0W962_NAUDC Unchara  86.9    0.64 4.1E-06   58.0   0.0  120  464-587     2-130 (1103)
+ 18 tr|E7KVS7|E7KVS7_YEASL Unchara  84.5     1.6   7E-06   51.5   0.0  129    6-136    59-191 (618)
+ 19 tr|J7RUF2|J7RUF2_KAZNA Unchara  83.2     1.6 8.7E-06   53.1   0.0  124  459-590    13-142 (719)
+ 20 tr|B5VTY1|B5VTY1_YEAS6 YER190W  81.5     2.7 1.2E-05   51.5   0.0  129    6-136    59-191 (960)
+ 21 tr|J7S5G0|J7S5G0_KAZNA Unchara  80.3     3.1 1.4E-05   52.3   0.0  114    3-129     4-125 (1498)
+ 22 tr|C8ZHF5|C8ZHF5_YEAS8 EC1118_  78.3     4.1 1.8E-05   51.4   0.0  129    6-136    59-191 (1445)
+ 23 tr|N6WMU5|N6WMU5_9EURY Unchara  76.7     4.9 2.1E-05   41.5   0.0   71   74-154     8-78  (135)
+ 24 tr|G0WHE0|G0WHE0_NAUDC Unchara  72.8     4.9 3.2E-05   52.3   0.0  110    1-114     1-119 (1467)
+ 25 tr|A0A0E9WQ08|A0A0E9WQ08_ANGAN  66.7      12 5.3E-05   31.6   0.0   24  196-219     6-29  (32)
+ 26 tr|A0A0L6V0A0|A0A0L6V0A0_9BASI  63.6      15 6.7E-05   38.2   0.0   27  102-128    46-72  (132)
+ 27 tr|A0A0C1RS42|A0A0C1RS42_9DELT  62.2      17 7.5E-05   35.0   0.0   35  357-391    36-70  (71)
+ 28 tr|A0A0L6VD24|A0A0L6VD24_9BASI  61.1      19 8.1E-05   39.0   0.0   27  102-128    46-72  (174)
+ 29 tr|R6NEL6|R6NEL6_9FIRM Xylulok  59.8      20 8.8E-05   33.6   0.0   46  394-439    12-57  (59)
+ 30 tr|A0A0Q3WK55|A0A0Q3WK55_BRECH  57.6      23  0.0001   35.0   0.0   54  371-424     5-58  (84)
+ 31 tr|M5VMM5|M5VMM5_PRUPE Unchara  56.8      25 0.00011   39.2   0.0   62  355-421   131-192 (224)
+ 32 1zbx_B mol:protein length:140   56.4      25 0.00011   37.1   0.0  134  456-589     1-134 (140)
+ 33 tr|A0A0E9TB13|A0A0E9TB13_ANGAN  56.3      25 0.00011   31.8   0.0   24  566-589     7-30  (46)
+ 34 tr|A0A0L0W0H2|A0A0L0W0H2_9BASI  55.1      28 0.00012   36.1   0.0   49  192-240    15-64  (116)
+ 35 tr|E2NNT6|E2NNT6_9FIRM Unchara  50.9      36 0.00016   35.1   0.0   25   87-111    15-42  (110)
+ 36 tr|C5K6G4|C5K6G4_PERM5 G1/S-sp  50.7      35 0.00016   38.9   0.0   36  538-577   148-183 (255)
+ 37 tr|B8NNV0|B8NNV0_ASPFN Sugar t  48.6      41 0.00018   36.0   0.0   25   10-34    100-124 (146)
+ 38 tr|B8BC12|B8BC12_ORYSI Putativ  47.4      44 0.00019   39.1   0.0   30  106-135   150-179 (341)
+ 39 tr|A0A0A6UUX5|A0A0A6UUX5_ACTUT  46.1      44 0.00021   31.9   0.0   35  498-532    22-56  (61)
+ 40 tr|A0A0Q5T5T9|A0A0Q5T5T9_9BACT  45.7      49 0.00021   40.9   0.0   42    6-49    398-439 (643)
+ 41 tr|A0A0M1XD02|A0A0M1XD02_ENTFC  44.6      50 0.00023   33.0   0.0   44  413-456     5-48  (81)
+ 42 tr|A4CFN4|A4CFN4_9GAMM Unchara  43.5      56 0.00024   34.5   0.0   44  305-348    80-123 (127)
+ 43 tr|A0A090CZX9|A0A090CZX9_9CHLA  42.6      59 0.00025   39.5   0.0   54  231-288   276-329 (499)
+ 44 tr|Q0UBL8|Q0UBL8_PHANO Putativ  42.6      59 0.00025   35.6   0.0   48  481-528   116-165 (170)
+ 45 tr|G0V602|G0V602_NAUCC Unchara  41.5      63 0.00027   42.5   0.0  117  461-581  1346-1469(1481)
+ 46 tr|S0IQ28|S0IQ28_9FIRM Unchara  41.2      64 0.00028   34.7   0.0   44  533-576    30-73  (145)
+ 47 tr|G6A4D3|G6A4D3_STRIT Unchara  41.1      64 0.00028   33.5   0.0   26  450-475    65-90  (109)
+ 48 tr|A8A8Q6|A8A8Q6_IGNH4 Unchara  39.3      71 0.00031   31.7   0.0   32  413-444    31-62  (76)
+ 49 tr|H9JDS0|H9JDS0_BOMMO Unchara  38.2      76 0.00033   36.1   0.0   48  318-365   186-233 (234)
+ 50 tr|F2M111|F2M111_LACAL Unchara  37.5      80 0.00035   31.6   0.0   34   52-85     34-67  (79)
+ 51 tr|L8JV09|L8JV09_9BACT Unchara  37.0      82 0.00036   31.1   0.0   29   80-108    19-47  (72)
+ 52 tr|K2AD98|K2AD98_9BACT Unchara  36.8      83 0.00036   33.5   0.0   42  563-604    42-86  (128)
+ 53 tr|A0A0D3C2S3|A0A0D3C2S3_BRAOL  35.1      70  0.0004   37.1   0.0   88  540-629    97-184 (267)
+ 54 tr|H3FCV6|H3FCV6_PRIPA Unchara  32.3      91 0.00048   34.2   0.0   57  315-371    21-77  (154)
+ 55 tr|X0RRU1|X0RRU1_9GAMM Unchara  30.2 1.3E+02 0.00054   32.5   0.0   37  438-477    46-82  (134)
+ 56 tr|W6JB70|W6JB70_9ENTR Unchara  28.6 1.2E+02 0.00061   33.9   0.0   54  458-511   104-157 (180)
+ 57 3jbq_B mol:protein length:330   28.2 1.4E+02 0.00062   35.4   0.0   20  425-444   174-193 (330)
+ 58 3jwq_A mol:protein length:330   28.2 1.4E+02 0.00062   35.4   0.0   20  425-444   174-193 (330)
+ 59 3jab_O mol:protein length:330   28.2 1.4E+02 0.00062   35.4   0.0   20  425-444   174-193 (330)
+ 60 3jwq_B mol:protein length:330   28.2 1.4E+02 0.00062   35.4   0.0   20  425-444   174-193 (330)
+ 61 3jab_C mol:protein length:330   28.2 1.4E+02 0.00062   35.4   0.0   20  425-444   174-193 (330)
+ 62 3jwr_A mol:protein length:330   28.2 1.4E+02 0.00062   35.4   0.0   20  425-444   174-193 (330)
+ 63 3jbq_F mol:protein length:330   28.2 1.4E+02 0.00062   35.4   0.0   20  425-444   174-193 (330)
+ 64 3jwq_C mol:protein length:330   28.2 1.4E+02 0.00062   35.4   0.0   20  425-444   174-193 (330)
+ 65 3jwr_B mol:protein length:330   28.2 1.4E+02 0.00062   35.4   0.0   20  425-444   174-193 (330)
+ 66 3jwq_D mol:protein length:330   28.2 1.4E+02 0.00062   35.4   0.0   20  425-444   174-193 (330)
+ 67 tr|W2E808|W2E808_9BACL Spore g  28.1 1.4E+02 0.00063   30.0   0.0   45  280-324     5-49  (79)
+ 68 tr|C4J9K3|C4J9K3_MAIZE Unchara  28.1 1.1E+02 0.00063   35.8   0.0   26  107-132    78-103 (274)
+ 69 tr|A0A090SBP0|A0A090SBP0_9VIBR  27.9 1.5E+02 0.00064   27.1   0.0   31  256-286    10-40  (40)
+ 70 3mmk_A mol:protein length:169   27.7 1.5E+02 0.00064   33.0   0.0   16   79-94    106-121 (169)
+ 71 3mmk_B mol:protein length:169   27.7 1.5E+02 0.00064   33.0   0.0   16   79-94    106-121 (169)
+ 72 3sie_A mol:protein length:347   27.6 1.5E+02 0.00065   35.5   0.0   74  425-528   191-264 (347)
+ 73 4g2y_A mol:protein length:347   27.6 1.5E+02 0.00065   35.5   0.0   74  425-528   191-264 (347)
+ 74 3sie_B mol:protein length:347   27.6 1.5E+02 0.00065   35.5   0.0   74  425-528   191-264 (347)
+ 75 3shz_A mol:protein length:347   27.6 1.5E+02 0.00065   35.5   0.0   74  425-528   191-264 (347)
+ 76 4i9z_A mol:protein length:347   27.6 1.5E+02 0.00065   35.5   0.0   74  425-528   191-264 (347)
+ 77 4oex_A mol:protein length:347   27.6 1.5E+02 0.00065   35.5   0.0   74  425-528   191-264 (347)
+ 78 4oew_A mol:protein length:347   27.6 1.5E+02 0.00065   35.5   0.0   74  425-528   191-264 (347)
+ 79 4g2w_A mol:protein length:347   27.6 1.5E+02 0.00065   35.5   0.0   74  425-528   191-264 (347)
+ 80 4ia0_A mol:protein length:347   27.6 1.5E+02 0.00065   35.5   0.0   74  425-528   191-264 (347)
+ 81 3shy_A mol:protein length:347   27.6 1.5E+02 0.00065   35.5   0.0   74  425-528   191-264 (347)
+ 82 1udu_B mol:protein length:324   27.5 1.5E+02 0.00065   35.2   0.0   74  425-528   168-241 (324)
+ 83 1udt_A mol:protein length:324   27.5 1.5E+02 0.00065   35.2   0.0   74  425-528   168-241 (324)
+ 84 1udu_A mol:protein length:324   27.5 1.5E+02 0.00065   35.2   0.0   74  425-528   168-241 (324)
+ 85 1uho_A mol:protein length:324   27.5 1.5E+02 0.00065   35.2   0.0   74  425-528   168-241 (324)
+ 86 tr|A0A0F8ZIY4|A0A0F8ZIY4_9ZZZZ  27.4 1.5E+02 0.00066   30.1   0.0   29  485-513    37-65  (82)
+ 87 1tbf_A mol:protein length:347   27.2 1.5E+02 0.00066   35.4   0.0   74  425-528   193-266 (347)
+ 88 1t9s_B mol:protein length:347   27.2 1.5E+02 0.00066   35.4   0.0   74  425-528   193-266 (347)
+ 89 1t9s_A mol:protein length:347   27.2 1.5E+02 0.00066   35.4   0.0   74  425-528   193-266 (347)
+ 90 3b2r_B mol:protein length:330   27.2 1.5E+02 0.00066   35.2   0.0   74  425-528   174-247 (330)
+ 91 3b2r_A mol:protein length:330   27.2 1.5E+02 0.00066   35.2   0.0   74  425-528   174-247 (330)
+ 92 1rkp_A mol:protein length:326   27.2 1.5E+02 0.00066   35.2   0.0   73  425-527   170-242 (326)
+ 93 tr|A0A0E9ZNM3|A0A0E9ZNM3_9PSED  27.1 1.5E+02 0.00067   32.7   0.0   26   10-35     72-97  (161)
+ 94 4md6_A mol:protein length:326   27.1 1.5E+02 0.00067   35.2   0.0   74  425-528   170-243 (326)
+ 95 2h42_C mol:protein length:326   27.1 1.5E+02 0.00067   35.2   0.0   74  425-528   170-243 (326)
+ 96 2h42_A mol:protein length:326   27.1 1.5E+02 0.00067   35.2   0.0   74  425-528   170-243 (326)
+ 97 2h42_B mol:protein length:326   27.1 1.5E+02 0.00067   35.2   0.0   74  425-528   170-243 (326)
+ 98 2h40_A mol:protein length:326   27.1 1.5E+02 0.00067   35.2   0.0   74  425-528   170-243 (326)
+ 99 2h44_A mol:protein length:326   27.1 1.5E+02 0.00067   35.2   0.0   74  425-528   170-243 (326)
+100 3hc8_A mol:protein length:324   26.9 1.6E+02 0.00068   35.1   0.0   20  425-444   170-189 (324)
+101 3hdz_A mol:protein length:324   26.9 1.6E+02 0.00068   35.1   0.0   20  425-444   170-189 (324)
+102 tr|A0A072UAQ2|A0A072UAQ2_MEDTR  26.8 1.6E+02 0.00068   31.5   0.0   63  302-369    26-88  (121)
+103 1t9r_A mol:protein length:366   26.6 1.6E+02 0.00069   35.5   0.0   74  425-528   195-268 (366)
+104 3tgg_A mol:protein length:326   26.5 1.6E+02  0.0007   35.0   0.0   20  425-444   172-191 (326)
+105 2chm_A mol:protein length:326   26.5 1.6E+02  0.0007   35.0   0.0   20  425-444   172-191 (326)
+106 3tge_A mol:protein length:326   26.5 1.6E+02  0.0007   35.0   0.0   20  425-444   172-191 (326)
+107 1xp0_A mol:protein length:364   26.4 1.6E+02  0.0007   35.4   0.0   74  425-528   193-266 (364)
+108 1xoz_A mol:protein length:364   26.4 1.6E+02  0.0007   35.4   0.0   74  425-528   193-266 (364)
+109 tr|A0A084Y6B5|A0A084Y6B5_9PROT  26.4 1.6E+02  0.0007   35.9   0.0   49  470-518   291-341 (421)
+110 3ifl_H mol:protein length:222   26.0 1.7E+02 0.00072   33.6   0.0   98  197-315    57-156 (222)
+111 3ifn_H mol:protein length:222   26.0 1.7E+02 0.00072   33.6   0.0   98  197-315    57-156 (222)
+112 tr|G6EXB3|G6EXB3_9PROT Unchara  25.5 1.7E+02 0.00075   33.9   0.0   43   80-122    57-100 (245)
+113 tr|H0GXK5|H0GXK5_SACCK Unchara  25.3 1.7E+02 0.00076   31.4   0.0   44  466-516     4-47  (125)
+114 tr|W0N3M4|W0N3M4_PSESX Unchara  25.3 1.8E+02 0.00076   31.3   0.0   29    2-30     21-49  (122)
+115 tr|B2A6L6|B2A6L6_NATTJ Unchara  24.6 1.8E+02  0.0008   32.6   0.0   81  392-479    59-140 (180)
+116 tr|B7ATN1|B7ATN1_9FIRM Putativ  23.4   2E+02 0.00087   30.4   0.0   86  260-347    17-105 (108)
+117 tr|A0A0M0JUL0|A0A0M0JUL0_9EUKA  23.1 2.1E+02 0.00089   36.3   0.0   29  523-551   239-267 (631)
+118 tr|A0A0L8QPN9|A0A0L8QPN9_9ACTN  22.9 2.1E+02  0.0009   33.0   0.0   41  352-394    25-67  (222)
+119 tr|U9U9D7|U9U9D7_RHIID Unchara  22.4 2.2E+02 0.00094   27.7   0.0   29  262-290    26-54  (58)
+120 tr|A0A0R0LGB5|A0A0R0LGB5_SOYBN  22.2 2.2E+02 0.00095   31.4   0.0   34  443-476    16-49  (148)
+121 tr|T1FPM7|T1FPM7_HELRO Unchara  22.2 2.2E+02 0.00095   33.6   0.0   37  558-594    72-108 (279)
+122 tr|A0A086K5J1|A0A086K5J1_TOXGO  22.1 2.2E+02 0.00096   34.9   0.0   38  213-250   231-268 (425)
+123 tr|A0A0G2T6F6|A0A0G2T6F6_9BILA  21.7 2.3E+02 0.00099   33.2   0.0   22  101-124   162-183 (255)
+124 2z04_B mol:protein length:365   21.7 2.3E+02 0.00099   34.4   0.0   31   67-97    223-253 (365)
+125 2z04_A mol:protein length:365   21.7 2.3E+02 0.00099   34.4   0.0   31   67-97    223-253 (365)
+126 tr|A0A0R1LYU5|A0A0R1LYU5_9LACO  21.7 2.3E+02 0.00099   30.6   0.0   67  276-342     7-73  (123)
+127 tr|S4PRM3|S4PRM3_9NEOP Uroporp  21.4 2.3E+02   0.001   30.0   0.0   38  107-144    52-89  (107)
+128 tr|K2LGD2|K2LGD2_BIFBI Respons  21.1 1.8E+02   0.001   29.8   0.0   49  282-330    27-75  (91)
+129 tr|V9GED3|V9GED3_9BACL Regulat  20.8 1.7E+02  0.0011   29.2   0.0   52  279-330    13-64  (81)
+130 tr|E1FGP6|E1FGP6_LOALO Unchara  20.7 2.5E+02  0.0011   31.1   0.0   62  531-594    56-120 (149)
+131 tr|M8CJ84|M8CJ84_AEGTA Unchara  20.4 2.5E+02  0.0011   38.0   0.0   47    6-52    433-479 (1566)
+132 tr|A0A084P711|A0A084P711_STACH  20.2 2.6E+02  0.0011   34.7   0.0  102  166-269   177-288 (453)
+
+No 1
+>tr|F7VJN8|F7VJN8_SACKU Transcriptional silencer Sir1 OS=Saccharomyces kudriavzevii PE=4 SV=1
+Probab=100.00  E-value=6.3e-208  Score=1523.97  Aligned_cols=451  Identities=64%  Similarity=1.054  Sum_probs=440.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C    1 MLQINSRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLKKDSNSVLVGVKSMELFKHIKLVLR   80 (654)
+Q Consensus         1 mleinsr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnlvdwt~lkkds~svlvgv~s~elfkhiklvlr   80 (654)
+                      ||.||||.|||||||||..|||||||-.||+||+||||.||.||-.||+.|||.|||||.|+||||-|.||||||++|||
+T Consensus         1 mleinsrfavidgwlvdvlkrkpinfwcpeirlllpndndyekllrqnlldwtqlkkdstsilvgvysaelfkhirlvlr   80 (470)
+T tr|F7VJN8|F7VJ    1 MLEINSRFAVIDGWLVDVLKRKPINFWCPEIRLLLPNDNDYEKLLRQNLLDWTQLKKDSTSILVGVYSAELFKHIRLVLR   80 (470)
+Confidence            89999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C   81 EFFLLEDGRIILKRIRSKLRYKVVKKLTCKCCRLYLPKWGTVYIHPMLKDKEKPLAGVCEFSLDVNPDREYPLIEINVSH  160 (654)
+Q Consensus        81 efflledgrivlkrir~kl~ykvvk~~a~kccrl~lpkwgt~yi~pml~d~~~~~~~~~~fsl~v~p~~eyplidi~~~~  160 (654)
+                      |||++|||||+|||+|.||.|||||...-||||++||||||+||.|.|.|..---.||-.|.|||.|.-|||||.|....
+T Consensus        81 efflledgrivlkrmrnklhykvvktfarkccrlflpkwgtiyiypllqdnqvcsdgvrqfaldvepnleyplididfny  160 (470)
+T tr|F7VJN8|F7VJ   81 EFFLLEDGRIVLKRMRNKLHYKVVKTFARKCCRLFLPKWGTIYIYPLLQDNQVCSDGVRQFALDVEPNLEYPLIDIDFNY  160 (470)
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  161 QYIIIEGFLLYLNERRLYRWNDNNLRSQVGLTKWAHLRKTYNPVSLDILYSLNSNFYFVKDDLLFQLLGKRVFVKFCKVM  240 (654)
+Q Consensus       161 qy~iiegfllylnerr~~kwndn~lr~~igl~~wa~lrk~ynp~sldily~l~sn~yfvkdd~~fqllgkrvfvkfc~vm  240 (654)
+                      ||.||||||+||||||--.||||.+|..+||..||.|.|.|||.|+||.|.|.||+||||||-.|||+|+|||||||.||
+T Consensus       161 qytiiegfllylnerrpckwndndlrnriglkawaslkklynpmsldivynldsnyyfvkddrffqllgrrvfvkfcevm  240 (470)
+T tr|F7VJN8|F7VJ  161 QYTIIEGFLLYLNERRPCKWNDNDLRNRIGLKAWASLKKLYNPMSLDIVYNLDSNYYFVKDDRFFQLLGRRVFVKFCEVM  240 (470)
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  241 ENGKCGKAPLWYRVKRTTTAKATHIAYAISNSTAPDSFKSKNNDYRFIVREKPIVENTISNLDYSDIKKQQFTEAEVVKR  320 (654)
+Q Consensus       241 ~n~~~g~~p~~y~~~rtttakathiay~l~dtt~~~s~~~k~n~yrfivre~pive~~~s~l~~sdlkkq~fte~~vvk~  320 (654)
+                      .|...|..|-+|- .||||||||||||.+...|.... .-..|-|||||||.||||..-|.|+.|++|||-|||..|+|.
+T Consensus       241 knktngngpsfyc-artttakathiayvltdttlnhh-tvrknvyrfivrerpivesitstlnpselkkqlftevnvikn  318 (470)
+T tr|F7VJN8|F7VJ  241 KNKTNGNGPSFYC-ARTTTAKATHIAYVLTDTTLNHH-TVRKNVYRFIVRERPIVESITSTLNPSELKKQLFTEVNVIKN  318 (470)
+Confidence            9999999999885 68999999999999988776543 345678999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  321 KISADISQIENVHTQFNSQKEKNNIRVNKVSSEVLDQISKFPVSRVTLLLMSAGQDKNYIELVEELARRLEKICIEKTTQ  400 (654)
+Q Consensus       321 ~~sa~isqlen~~~q~~~q~~~~nir~~~vs~evldqi~kfp~skvtl~liaagedk~yielveela~rlekicie~ttq  400 (654)
+                      ..|.-|||+||--.|+-.|....|||...||.||||||.|||.|.|||-|..||.|..|||++.|||.||||||.|...|
+T Consensus       319 afstyisqlenqliqyvgqaggsnirtdevsgevldqipkfpaskvtlsliaagedrryiellqelanrlekicveeasq  398 (470)
+T tr|F7VJN8|F7VJ  319 AFSTYISQLENQLIQYVGQAGGSNIRTDEVSGEVLDQIPKFPASKVTLSLIAAGEDRRYIELLQELANRLEKICVEEASQ  398 (470)
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  401 SLEEIRDTFQANPEMQASFDKEYYQSIEEYKITLELIKEDLLITLIKQMENMW  453 (654)
+Q Consensus       401 sl~~ir~tf~~npem~arfd~ey~qsi~eyk~tl~likedlll~lvkQmeN~w  453 (654)
+                      ||..||.||..||||.|.||.||-|||.|||-|+.+||||||..|.||+.|-.
+T Consensus       399 slgsiratfdpnpemrarfdeeyrqsiaeykrtlklikedlllvlvkqlgnkm  451 (470)
+T tr|F7VJN8|F7VJ  399 SLGSIRATFDPNPEMRARFDEEYRQSIAEYKRTLKLIKEDLLLVLVKQLGNKM  451 (470)
+Confidence            99999999999999999999999999999999999999999999999998743
+
+
+No 2
+>tr|G0WHB8|G0WHB8_NAUDC Uncharacterized protein OS=Naumovozyma dairenensis (strain ATCC 10597 / BCRC 20456 / CBS 421 / NBRC 0211 / NRRL Y-12639) GN=NDA
+Probab=100.00  E-value=2.4e-91  Score=731.34  Aligned_cols=605  Identities=80%  Similarity=1.180  Sum_probs=583.0  Template_Neff=3.800
+
+Q 1Z1A:A|PDBID|C    1 MLQINSRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLKKDSNSVLVGVKSMELFKHIKLVLR   80 (654)
+Q Consensus         1 mleinsr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnlvdwt~lkkds~svlvgv~s~elfkhiklvlr   80 (654)
+                      |+.||+|.++|||||||.++++|||+.+  .++++| |+||++|+|++|+||+.++ |++++|+|++|+|||+||+..++
+T Consensus         1 M~~iNsr~~iIDGWLVD~~~~~~INP~~--~~~~~~-~~~y~~L~~~~L~nW~~l~-d~~s~Lyc~dS~eLF~~I~~~~~   76 (616)
+T tr|G0WHB8|G0WH    1 MYQINSRYAIIDGWLVDTVKRKPINPRS--IRLLLP-DDDYKKLSQQNLVDWTDLK-DSNSVLYCEDSMELFKHIKLVLY   76 (616)
+Confidence            8899999999999999999999999999  999999 9999999999999999998 99999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C   81 EFFLLEDGRIILKRIRSKLRYKVVKKLTCKCCRLYLPKWGTVYIHPMLKDKEKPLAGVCEFSLDVNPDREYPLIEINVSH  160 (654)
+Q Consensus        81 efflledgrivlkrir~kl~ykvvk~~a~kccrl~lpkwgt~yi~pml~d~~~~~~~~~~fsl~v~p~~eyplidi~~~~  160 (654)
+                      +|+.++||+|.++++++ ++++||++++|+|||++||+|||||||||.--+..|  ..| |++++.|+++||+|.+ +++
+T Consensus        77 ~F~~l~dG~I~~k~~~~-~~~~Vv~~fs~~ChkLtl~~~~tvYIh~h~~~~n~~--~~c-~~~~~~~~~~YplI~~-~~~  151 (616)
+T tr|G0WHB8|G0WH   77 EFFLLEDGRIILKRIRS-LRYKVVKKFTCKCHRLTLPKWGTVYIHPHPYIKNDK--RKC-FSLDVNPSREYPLITI-VSE  151 (616)
+Confidence            99999999999999999 999999999999999999999999999999333332  234 9999999999999999 999
+
+
+Q 1Z1A:A|PDBID|C  161 QYIIIEGFLLYLNERRLYRWNDNNLRSQVGLTKWAHLRKTYNPVSLDILYSLNSNFYFVKDDLLFQLLGKRVFVKFCKVM  240 (654)
+Q Consensus       161 qy~iiegfllylnerr~~kwndn~lr~~igl~~wa~lrk~ynp~sldily~l~sn~yfvkdd~~fqllgkrvfvkfc~vm  240 (654)
+                      |||+|||||++|++|+++.|++|++|+++|++.|++||+.|||.|||+|+++|||||||||+.||+++|++|||+|||+|
+T Consensus       152 q~i~IEGFLI~L~~~~lc~~~s~~~r~~ls~~~W~~Lrk~yna~sld~l~~~~SNY~fvkd~~lF~ll~~~vyVkF~k~~  231 (616)
+T tr|G0WHB8|G0WH  152 QYIIIEGFLIYLNERRLCSWNSNNLRSQLSLTKWAHLRKVYNASSLDKLYSLNSNYYFVKDDLLFQLLGKRVYVKFCKVM  231 (616)
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  241 ENGKCGKAPLWYRVKRTTTAKATHIAYAISNSTAPDSFKSKNNDYRFIVREKPIVENTISNLDYSDIKKQQFTEAEVVKR  320 (654)
+Q Consensus       241 ~n~~~g~~p~~y~~~rtttakathiay~l~dtt~~~s~~~k~n~yrfivre~pive~~~s~l~~sdlkkq~fte~~vvk~  320 (654)
+                      .       |.||.. ||++++||||||.++..        ++++++|||||+||+++    ..++++++|.|||..+|+|
+T Consensus       232 ~-------~~y~C~-~~~~e~AThia~~v~~~--------~~~~~kfIV~e~pI~~~----~~~~~lk~q~~~E~~~vd~  291 (616)
+T tr|G0WHB8|G0WH  232 N-------PFYVCQ-RTTTEKATHIAYVVSNS--------GNNDYKFIVREKPIVEN----PDYSDLKKQQFTELEIVDR  291 (616)
+Confidence            8       556665 99999999999997765        88999999999999998    7899999999999999999
+
+
+Q 1Z1A:A|PDBID|C  321 KISADISQIENVHTQFNSQKEKNN---IRVNKVSSEVLDQISKFPVSRVTLLLMSAGQDKNYIELVEELARRLEKICIEK  397 (654)
+Q Consensus       321 ~~sa~isqlen~~~q~~~q~~~~n---ir~~~vs~evldqi~kfp~skvtl~liaagedk~yielveela~rlekicie~  397 (654)
+                      +++++|.++|+...+.+  .++++   .+|..+++++++..--+|++.+++.|+.+|.|++|++++.+++++|+++|+++
+T Consensus       292 ~~sn~i~~LE~~~~~~~--~~~~~~~~~~i~~I~~~~l~~~~~~~i~d~~~~~~~~~ed~~~~~~~~~l~k~L~n~cl~~  369 (616)
+T tr|G0WHB8|G0WH  292 KFSNDISQLENQFTQFN--VEKNNIVPYRVRYVSSEVLDTFYSFPISDVTLLLISAGEDKNYIELVEELAKRLEKICLEK  369 (616)
+Confidence            99999999999998888  55544   99999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  398 TTQSLEEIRDTFQANPEMQASFDKEYYQSIEEY----KITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFL-V  472 (654)
+Q Consensus       398 ttqsl~~ir~tf~~npem~arfd~ey~qsi~ey----k~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprfl-v  472 (654)
+                      +.|+++.++++|..+|++++-|+ +||+++|++    +++.++|+|+++..|+||+.+     .+++..++|+||||+ +
+T Consensus       370 ~~q~lq~~~~~f~~~~el~~~~~-~~~~~~e~~~~~~~~~~kli~E~~l~~Likq~~~-----~~~~~~~~~iSpRfl~I  443 (616)
+T tr|G0WHB8|G0WH  370 TLQSLEWIRDTFKNNPELQARFD-EYYQSIEECLERARITLKLIKEDLLPTLIKQMEN-----NKFSTEEEYVSPRFLLI  443 (616)
+Confidence            99999999999999999999999 999999999    999999999999999999998     789999999999999 9
+
+
+Q 1Z1A:A|PDBID|C  473 ADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKAKTLFKFCKQIKKKFLRGADFKLHTL  552 (654)
+Q Consensus       473 adgflidlaeekpi~pkdprlltllkdhqr~~i~qmnlv~w~dfkkyqdpipl~aktlfk~ckqikkkflr~adfklhtl  552 (654)
+                      +||||||+||++++||+||+++++|+++||.++.|||+..||+|+.+|+|||+.|++||++|++.+++|+++++|++|++
+T Consensus       444 ~D~FLIDlaE~k~VnPkd~~~~~ll~~~e~~i~~~~~l~DW~~f~~~~~Pipvfs~~LF~~v~~~~~~f~~D~~~~~h~~  523 (616)
+T tr|G0WHB8|G0WH  444 ADRFLIDLAEEKPINPKDPRLLTLLKDHERDIIDQMNLFDWNDFKFYQDPIPVFSKTLFKLVKQIKKKFTRDADFKLHTL  523 (616)
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  553 PTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDDSIIPEFEATSSYATKQSKCGRKMSLQMEPDLLFQEAIRRMRHLTA  632 (654)
+Q Consensus       553 ptean~~~~~~rmtv~~~cvpi~ldd~tvqylyddsiipe~~ats~~at~qskc~~~~slq~~p~llfqeairrmr~lt~  632 (654)
+                      |      -...+|+|.+.|+||.+++.+|+|||+++.+|+  .++..+..+++|+.+++.+++|+..||++|++|++++.
+T Consensus       524 p------~~~~~~~v~r~ci~l~l~~~gv~YLY~~~~~~~--~~~l~~~~~~~~~~~~~~~~~~~~~~~~~i~em~~l~s  595 (616)
+T tr|G0WHB8|G0WH  524 P------LEDERMTVRRRCIPIDLKDQGVRYLYEGKEIDE--LPSSYDLKQSKCGRKMSLQMEPSELFQEAIREMRHLTS  595 (616)
+Confidence            9      267899999999999999999999999999999  88889999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  633 YDVLRRNYIAAFEELYMG  650 (654)
+Q Consensus       633 y~~lr~nyiaafeel~~g  650 (654)
+                      |..+|++|+++|+.|+++
+T Consensus       596 ~~e~r~~~~~~F~~l~~~  613 (616)
+T tr|G0WHB8|G0WH  596 YSELRRNYIAAFEELYMG  613 (616)
+Confidence            999999999999999887
+
+
+No 3
+>1z1a_A mol:protein length:142 Regulatory protein SIR1
+Probab=100.00  E-value=1.2e-74  Score=517.73  Aligned_cols=140  Identities=99%  Similarity=1.494  Sum_probs=139.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  448 QMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKA  527 (654)
+Q Consensus       448 QmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~i~qmnlv~w~dfkkyqdpipl~a  527 (654)
+                      .|||||||||||||||||||||||||||||||||||||||||||||+|+|||||||||||||+|||||||||||||||||
+T Consensus         3 hmenmwaaekkfsteeeyvsprflvadgflidlaeekpinpkdprlltllkdhqramidqmnlvkwndfkkyqdpiplka   82 (142)
+T 1z1a_A            3 HMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKA   82 (142)
+Confidence            69999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  528 KTLFKFCKQIKKKFLRGADFKLHTLPTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDD  587 (654)
+Q Consensus       528 ktlfk~ckqikkkflr~adfklhtlptean~~~~~~rmtv~~~cvpi~ldd~tvqylydd  587 (654)
+                      |||||||||||||||||||||||||||||||||||||||||.|||||+||||||||||||
+T Consensus        83 ktlfkfckqikkkflrgadfklhtlpteanlkyepermtvlascvpillddqtvqylydd  142 (142)
+T 1z1a_A           83 KTLFKFCKQIKKKFLRGADFKLHTLPTEANLKYEPERMTVLASCVPILLDDQTVQYLYDD  142 (142)
+Confidence            999999999999999999999999999999999999999999999999999999999997
+
+
+No 4
+>1z1a_B mol:protein length:142 Regulatory protein SIR1
+Probab=100.00  E-value=1.2e-74  Score=517.73  Aligned_cols=140  Identities=99%  Similarity=1.494  Sum_probs=139.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  448 QMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKA  527 (654)
+Q Consensus       448 QmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~i~qmnlv~w~dfkkyqdpipl~a  527 (654)
+                      .|||||||||||||||||||||||||||||||||||||||||||||+|+|||||||||||||+|||||||||||||||||
+T Consensus         3 hmenmwaaekkfsteeeyvsprflvadgflidlaeekpinpkdprlltllkdhqramidqmnlvkwndfkkyqdpiplka   82 (142)
+T 1z1a_B            3 HMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKA   82 (142)
+Confidence            69999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  528 KTLFKFCKQIKKKFLRGADFKLHTLPTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDD  587 (654)
+Q Consensus       528 ktlfk~ckqikkkflr~adfklhtlptean~~~~~~rmtv~~~cvpi~ldd~tvqylydd  587 (654)
+                      |||||||||||||||||||||||||||||||||||||||||.|||||+||||||||||||
+T Consensus        83 ktlfkfckqikkkflrgadfklhtlpteanlkyepermtvlascvpillddqtvqylydd  142 (142)
+T 1z1a_B           83 KTLFKFCKQIKKKFLRGADFKLHTLPTEANLKYEPERMTVLASCVPILLDDQTVQYLYDD  142 (142)
+Confidence            999999999999999999999999999999999999999999999999999999999997
+
+
+No 5
+>1zhi_B mol:protein length:138 Regulatory protein SIR1
+Probab=100.00  E-value=5.1e-72  Score=499.23  Aligned_cols=135  Identities=98%  Similarity=1.466  Sum_probs=133.6  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  453 WAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKAKTLFK  532 (654)
+Q Consensus       453 w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~i~qmnlv~w~dfkkyqdpipl~aktlfk  532 (654)
+                      .|.||||||||||||||||||||||||||||+|||||||||+|+|||||||||||||+||||||||||||||||||||||
+T Consensus         4 masekkfsteeeyvsprflvadgflidlaeekpinpkdprlltllkdhqramidqmnlvkwndfkkyqdpiplkaktlfk   83 (138)
+T 1zhi_B            4 MASEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKAKTLFK   83 (138)
+Confidence            47899999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  533 FCKQIKKKFLRGADFKLHTLPTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDD  587 (654)
+Q Consensus       533 ~ckqikkkflr~adfklhtlptean~~~~~~rmtv~~~cvpi~ldd~tvqylydd  587 (654)
+                      ||||||||||||||||||||||||||||||||||||.|||||+||||||||||||
+T Consensus        84 fckqikkkflrgadfklhtlpteanlkyepermtvlascvpillddqtvqylydd  138 (138)
+T 1zhi_B           84 FCKQIKKKFLRGADFKLHTLPTEANLKYEPERMTVLASCVPILLDDQTVQYLYDD  138 (138)
+Confidence            9999999999999999999999999999999999999999999999999999997
+
+
+No 6
+>tr|W0VTT6|W0VTT6_ZYGBA Uncharacterized protein OS=Zygosaccharomyces bailii ISA1307 GN=ZBAI_05171 PE=4 SV=1
+Probab=99.95  E-value=1.1e-32  Score=286.10  Aligned_cols=457  Identities=25%  Similarity=0.434  Sum_probs=336.8  Template_Neff=3.236
+
+Q 1Z1A:A|PDBID|C  149 REYPLIEINVSHQYIIIEGFLLYLNERRLYRWNDNNLRSQVGL---TKWAHLRKTYNPVSLDILYSLNSNFYFVKDDLLF  225 (654)
+Q Consensus       149 ~eyplidi~~~~qy~iiegfllylnerr~~kwndn~lr~~igl---~~wa~lrk~ynp~sldily~l~sn~yfvkdd~~f  225 (654)
+                      +|||+|.+- +.|+++|+|||.-||.+-- .-||-.++..-|+   .-|--||++|||.||--|+-.+|||||+++-.||
+T Consensus         2 ~eYPviTvp-~gqFtvIdGFlikl~~~~~-~~~~lss~~ak~lLT~~gWyiLrnsy~p~sL~kl~~i~SNf~~t~~~~l~   79 (475)
+T tr|W0VTT6|W0VT    2 KEYPVITVP-KGQFTVIDGFLIKLGKREK-DPNDLSSRDAKNLLTPGGWYILRNSYNPNSLTKLRLMRSNYYLTNHIALF   79 (475)
+Confidence            589999874 7899999999999987621 1255555554443   5799999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  226 QLLGKRVFVKFCKVMENGKCGKAPLWYRVKRTTTAKATHIAYAISNSTAPDSFKSKNNDYRFIVREKPIVENTISNLDYS  305 (654)
+Q Consensus       226 qllgkrvfvkfc~vm~n~~~g~~p~~y~~~rtttakathiay~l~dtt~~~s~~~k~n~yrfivre~pive~~~s~l~~s  305 (654)
+                      +++--.+.|+||+-  +|       .|-..|++.++|||.|.+|--..       ++..-.|||-++|+...-   --++
+T Consensus        80 ~l~~~~~yV~f~~k--~~-------~y~C~r~~~~~~tH~A~~i~~~~-------~~~~~KyiV~~~P~~~t~---~~~~  140 (475)
+T tr|W0VTT6|W0VT   80 HLMKPKTYVIFIRK--QG-------KYYCRRVDRQHATHKALSIKCGR-------KEQRIKYIVFDKPLQKTD---NSTS  140 (475)
+Confidence            99999999999984  33       26677899999999998885432       455667999999975321   1234
+
+
+Q 1Z1A:A|PDBID|C  306 DIKKQQFTEAEVVKRKISADISQIENVHTQFNSQKEKNNIRVNKVSSEVLDQISKFPVSRVTLLLMSAGQDKNYIELVEE  385 (654)
+Q Consensus       306 dlkkq~fte~~vvk~~~sa~isqlen~~~q~~~q~~~~nir~~~vs~evldqi~kfp~skvtl~liaagedk~yielvee  385 (654)
+                      ++-.||..+.+.+....+..++.++-+.-.   .-.-+  -|--|+.+.++.|...|+.|.-+-..--..+..-.+-+++
+T Consensus       141 ~~~~qQ~~d~~~i~~~~~~~~~~~~~~~le---~~~L~--dv~fv~e~~l~k~k~~pItr~k~~~~~~ke~~~r~~~l~~  215 (475)
+T tr|W0VTT6|W0VT  141 ELYQQQLNDLHRIEQTLIKNAPPFSIVDLE---GFILP--DVMFVPEDQLLKIKSYPITRAKIEQIEIKEESKRLKTLEE  215 (475)
+Confidence            556788877776665554444433222100   00111  2445778888889889999988876666566666778899
+
+
+Q 1Z1A:A|PDBID|C  386 LARRLEKICIEKTTQSLEEIRDTFQANPEMQASFDKEYYQSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEY  465 (654)
+Q Consensus       386 la~rlekicie~ttqsl~~ir~tf~~npem~arfd~ey~qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeey  465 (654)
+                      |.++|-.||.|+.---|+..++.|.+. +||.-|++---|-    .-.|..|.+-.+-.||+|    |-+|..-   -.-
+T Consensus       216 L~~~l~~~~le~~~wrL~~~ke~~~~~-~~~~~~e~ck~q~----~~nl~~i~~~~~p~LI~q----w~ke~~~---~~~  283 (475)
+T tr|W0VTT6|W0VT  216 LKESLLNICLESSFWRLKKLKEYCDSD-GMQNIFEKCKDQI----QENLKDISKYVFPQLIKQ----WFKEFQR---IQK  283 (475)
+Confidence            999999999999999999999888765 4455555433332    223556666777778876    5554322   455
+
+
+Q 1Z1A:A|PDBID|C  466 VSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKAKTLFKFCKQIKKKFLRGA  545 (654)
+Q Consensus       466 vsprflvadgflidlaeekpi~pkdprlltllkdhqr~~i~qmnlv~w~dfkkyqdpipl~aktlfk~ckqikkkflr~a  545 (654)
+                      .|.|++|.|||++|+.+.+-+||.....+.-+.+..+..+..-|++.||-+|-+..|+|..+++||.....-.+.|.+..
+T Consensus       284 Isery~vv~~fvVd~~~r~lvnp~~~~~~~~~t~~ek~~~~~~~llDWn~lkl~k~pypv~~~~LFd~v~~~~~~~~~D~  363 (475)
+T tr|W0VTT6|W0VT  284 ISERYVVVDKFVVDLQERKLVDPESDEWLRNLTDEEKEQLESYNLLDWNVLKLSKEPYPVDNPELFDLVNAEEEDFYEDK  363 (475)
+Confidence            78999999999999999999999999888888999999999999999999999999999999999999999999999887
+
+
+Q 1Z1A:A|PDBID|C  546 DFKLHTLPTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDDSI-IPEFEATSSYATKQSKCGRKMSLQMEPDLLFQEAI  624 (654)
+Q Consensus       546 dfklhtlptean~~~~~~rmtv~~~cvpi~ldd~tvqylyddsi-ipe~~ats~~at~qskc~~~~slq~~p~llfqeai  624 (654)
+                      .-.+++.+.++  .+.+.+-++-|-|+++-+.|--..|+|..-- -++++... -...-+--|-+-+-... |.-+--..
+T Consensus       364 ~g~i~v~~~~~--~~~~~~~~~~~r~I~l~f~~fG~k~lye~~~~~~~~~~~~-~~~~~~~~~~~~~~~~~-~~~y~~~~  439 (475)
+T tr|W0VTT6|W0VT  364 SGNIHVKRDMG--DSKDKIKQVKCRCISLNFKDFGWKHLYESVEEALAREPVP-ISLLESIQGFKDPKTVG-DEEYFYLL  439 (475)
+Confidence            77777776544  4667888999999999999999999996421 12222111 00111111111111000 11122345
+
+
+Q 1Z1A:A|PDBID|C  625 RRMRHLTAYDVLRRNYIAAFEEL  647 (654)
+Q Consensus       625 rrmr~lt~y~~lr~nyiaafeel  647 (654)
+                      +.|+.+..|+-+|.-|+..|+++
+T Consensus       440 k~l~~~vsy~~qr~~y~ktF~~~  462 (475)
+T tr|W0VTT6|W0VT  440 KDLDRFVSYNQQRTLYVKTFEQF  462 (475)
+Confidence            67888899999999999999875
+
+
+No 7
+>tr|G0VAX2|G0VAX2_NAUCC Uncharacterized protein (Fragment) OS=Naumovozyma castellii (strain ATCC 76901 / CBS 4309 / NBRC 1992 / NRRL Y-12630) GN=NCAS0B00100 PE=4 SV=1
+Probab=98.75  E-value=3.2e-11  Score=122.95  Aligned_cols=307  Identities=29%  Similarity=0.521  Sum_probs=197.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  149 REYPLIEINVSHQYIIIEGFLLYLNERRLYRWNDNNLRSQVGLTKWAHLRKTYNPVSLDILYSLNSNFYFVKDDLLFQLL  228 (654)
+Q Consensus       149 ~eyplidi~~~~qy~iiegfllylnerr~~kwndn~lr~~igl~~wa~lrk~ynp~sldily~l~sn~yfvkdd~~fqll  228 (654)
+                      ||||...| .|.|+.+|.|||.-|..|..-.........-..-..|--|...|||+||.+|.-..||+.|....+|.-.+
+T Consensus         2 reypilti-psgqftvidgflisldnrtandissesakelltpgswyilknsynpisltvlqlmssnymftnhplllfvl   80 (329)
+T tr|G0VAX2|G0VA    2 REYPILTI-PSGQFTVIDGFLISLDNRTANDISSESAKELLTPGSWYILKNSYNPISLTVLQLMSSNYMFTNHPLLLFVL   80 (329)
+Confidence            79999887 48899999999999988765333333333333445799999999999999999999999999999998889
+
+
+Q 1Z1A:A|PDBID|C  229 GKRVFVKFCKVMENGKCGKAPLWYRVKRTTTAKATHIAYAISNSTAPDSFKSKNNDYRFIVREKPIVENTISNLDYSDIK  308 (654)
+Q Consensus       229 gkrvfvkfc~vm~n~~~g~~p~~y~~~rtttakathiay~l~dtt~~~s~~~k~n~yrfivre~pive~~~s~l~~sdlk  308 (654)
+                      .-.|+|+|.+--..         |..-.|..|..||-|+|+.-..      .....-.|||-..|. .||+.  .+|.|-
+T Consensus        81 rptvyvrfvrknnk---------yhcvktnkahgthkafaldcer------tdepktkfivfthpl-qntvn--sfskiy  142 (329)
+T tr|G0VAX2|G0VA   81 RPTVYVRFVRKNNK---------YHCVKTNKAHGTHKAFALDCER------TDEPKTKFIVFTHPL-QNTVN--SFSKIY  142 (329)
+Confidence            99999999764333         4444577889999999985432      222345689988886 45554  467888
+
+
+Q 1Z1A:A|PDBID|C  309 KQQFTEAEVVKRKISADISQIENVHTQFNSQKEKNNIR------VNKVSSEVLDQISKFPVSRVTLLLMSAGQDKNYIEL  382 (654)
+Q Consensus       309 kq~fte~~vvk~~~sa~isqlen~~~q~~~q~~~~nir------~~~vs~evldqi~kfp~skvtl~liaagedk~yiel  382 (654)
+                      .||..|.-    +|-   ...|.+|..--|.-.-.|..      +--+..|+.-.| |.|+.|.-+--+-......-...
+T Consensus       143 tqqmnekl----ril---qtfesihdtkvsnltlknlkgfdlpdimfipeeimlni-klpitrakieqlkikeesskmkq  214 (329)
+T tr|G0VAX2|G0VA  143 TQQMNEKL----RIL---QTFESIHDTKVSNLTLKNLKGFDLPDIMFIPEEIMLNI-KLPITRAKIEQLKIKEESSKMKQ  214 (329)
+Confidence            88887743    221   22334443211111111111      111223332222 55666654433333333333445
+
+
+Q 1Z1A:A|PDBID|C  383 VEELARRLEKICIEKTTQSLEEIRDTFQANPEMQAS--------FDKEYYQSIEEYKITLELIKEDLLITLIKQMENMWA  454 (654)
+Q Consensus       383 veela~rlekicie~ttqsl~~ir~tf~~npem~ar--------fd~ey~qsi~eyk~tl~likedlll~lvkQmeN~w~  454 (654)
+                      +|.|...|-.|..||..-.|....+.+.|..-|...        |.|--.|-..    .+.+|..-..-.||||    |-
+T Consensus       215 iekleeslynislekniwrlnkmkeyleadkmmnggrtlgfevmfnkckiqlvk----nlkliskyvyprlikq----wf  286 (329)
+T tr|G0VAX2|G0VA  215 IEKLEESLYNISLEKNIWRLNKMKEYLEADKMMNGGRTLGFEVMFNKCKIQLVK----NLKLISKYVYPRLIKQ----WF  286 (329)
+Confidence            667777788888888888888888888877666543        3332222222    2445555555667776    43
+
+
+Q 1Z1A:A|PDBID|C  455 AEKK-FSTEEEYVSPRFLVADGFLIDLAEEKPINPKD  490 (654)
+Q Consensus       455 ~~k~-fs~eeeyvsprflvadgflidlaeekpi~pkd  490 (654)
+                      .|.. ..----..|.|+-|.|.+.+|-.|.|-|+|.-
+T Consensus       287 kesqeltclvvaiserytvvdkyvvdtqerklidpev  323 (329)
+T tr|G0VAX2|G0VA  287 KESQELTCLVVAISERYTVVDKYVVDTQERKLIDPEV  323 (329)
+Confidence            3321 11122346889999999999999999987753
+
+
+No 8
+>tr|G0WAQ7|G0WAQ7_NAUDC Uncharacterized protein OS=Naumovozyma dairenensis (strain ATCC 10597 / BCRC 20456 / CBS 421 / NBRC 0211 / NRRL Y-12639) GN=NDAI0E00110 PE=4 SV=1
+Probab=98.28  E-value=4.8e-09  Score=105.40  Aligned_cols=111  Identities=33%  Similarity=0.643  Sum_probs=86.6  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  150 EYPLIEINVSHQYIIIEGFLLYLNERRLYRWNDNNLRSQVGLTKWAHLRKTYNPVSLDILYSLNSNFYFVKDDLLFQLLG  229 (654)
+Q Consensus       150 eyplidi~~~~qy~iiegfllylnerr~~kwndn~lr~~igl~~wa~lrk~ynp~sldily~l~sn~yfvkdd~~fqllg  229 (654)
+                      .||+|.+- ..|+.||.|||.-||..-.-......-.....-..|--|..||||.||.-||-+.||+.|.....|.-++.
+T Consensus         2 qypiitvp-kgqftiidgflinlnskvvtdlssddskttltpggwyllkntynpmsltklyfidsnymftnksvllwilk   80 (254)
+T tr|G0WAQ7|G0WA    2 QYPIITVP-KGQFTIIDGFLINLNSKVVTDLSSDDSKTTLTPGGWYLLKNTYNPMSLTKLYFIDSNYMFTNKSVLLWILK   80 (254)
+Confidence            47777653 46899999999999988776655555444555567999999999999999999999999999999988999
+
+
+Q 1Z1A:A|PDBID|C  230 KRVFVKFCKVMENGKCGKAPLWYRVKRTTTAKATHIAYAIS  270 (654)
+Q Consensus       230 krvfvkfc~vm~n~~~g~~p~~y~~~rtttakathiay~l~  270 (654)
+                      --++||||..-..--|.         .-|...|||-|..|.
+T Consensus        81 pyiyvkfcernskyyce---------pctrhqathkaisip  112 (254)
+T tr|G0WAQ7|G0WA   81 PYIYVKFCERNSKYYCE---------PCTRHQATHKAISIP  112 (254)
+Confidence            99999999754433332         345567888766553
+
+
+No 9
+>tr|A0A0L8RIM1|A0A0L8RIM1_SACEU Uncharacterized protein OS=Saccharomyces eubayanus GN=DI49_1726 PE=4 SV=1
+Probab=97.18  E-value=8.3e-06  Score=82.26  Aligned_cols=145  Identities=22%  Similarity=0.375  Sum_probs=103.0  Template_Neff=1.751
+
+Q 1Z1A:A|PDBID|C    4 INSRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLKKDSNSVLVGVKSMELFKHIKLVLREFF   83 (654)
+Q Consensus         4 insr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnlvdwt~lkkds~svlvgv~s~elfkhiklvlreff   83 (654)
+                      |...++|||||+||+-+.+-.....-- |  --...-..||.|--|+.|..|-...+ .+-.+.|-+||+|||+---||.
+T Consensus         5 ~~~~~~~~dgwivd~~~~~~~~~~~~~-~--~~~~~~~tkln~~~l~n~~~l~~~k~-~~~~~~~~~lf~~~k~e~~~f~   80 (201)
+T tr|A0A0L8RIM1|    5 IENNMVIIDGWIVDTSKHFVVKMYNCC-Q--QKSSYHFTKLNQHPLQNWKSLYNPKC-QIFNISNDMLFQHIKCEKHRFY   80 (201)
+Confidence            456789999999999886543221110 0  01223467899999999999976555 4678999999999999999999
+
+
+Q 1Z1A:A|PDBID|C   84 LLEDGRIILKRIRSKLRY--KVVKKLTCKCCRLYLPKWGTVYIHPMLKDKEKPLAGVCEFSLDVNPDREYPLIE  155 (654)
+Q Consensus        84 lledgrivlkrir~kl~y--kvvk~~a~kccrl~lpkwgt~yi~pml~d~~~~~~~~~~fsl~v~p~~eyplid  155 (654)
+                      -++|...-+..-|.+-|-  ++-...-|+|-|+-+.....+|..|.-.   -.-+|.-+--+|+.-...-.+||
+T Consensus        81 ~~~d~s~~~~~~~~~~~~k~~~~~t~~~~ch~~~~g~r~~iyl~~~~~---~~~~~~~~~m~~~~~~~d~~~~~  151 (201)
+T tr|A0A0L8RIM1|   81 KMRDHSTQFRNSSFKERNKKIYSQTYFCNCHCICIGNRNYIYLQNKPS---SNNATPNEMMTDVPIKNDNSIFE  151 (201)
+Confidence            999998887665555443  3556678999999999999999887532   22345555556665554444444
+
+
+No 10
+>tr|G0WAQ6|G0WAQ6_NAUDC Uncharacterized protein OS=Naumovozyma dairenensis (strain ATCC 10597 / BCRC 20456 / CBS 421 / NBRC 0211 / NRRL Y-12639) GN=NDAI0E00100 PE=4 SV=1
+Probab=96.19  E-value=0.00056  Score=68.88  Aligned_cols=171  Identities=26%  Similarity=0.430  Sum_probs=129.3  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  472 VADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKAKTLFKFCKQIKKKFLRGADFKLHT  551 (654)
+Q Consensus       472 vadgflidlaeekpi~pkdprlltllkdhqr~~i~qmnlv~w~dfkkyqdpipl~aktlfk~ckqikkkflr~adfklht  551 (654)
+                      |...||+|+.|.|-|||.....+.-|.|...+.|....|..||-+|--.+|....+-.||.....-...|..+.+-.|..
+T Consensus         2 vtgrflvdiiekkiinpneqhylrnltdeekeyieecdlldwnilkltkhpyavdspqlfdvlnannedfyedkngdlwi   81 (185)
+T tr|G0WAQ6|G0WA    2 VTGRFLVDIIEKKIINPNEQHYLRNLTDEEKEYIEECDLLDWNILKLTKHPYAVDSPQLFDVLNANNEDFYEDKNGDLWI   81 (185)
+Confidence            55678999999999999999999999999999999999999999999999999999999999999999999988888887
+
+
+Q 1Z1A:A|PDBID|C  552 LPT-EANLKYEPERMTVLCSCVPILLDDQTVQYLYDD---SIIPEF-EATSSYATKQSKCGRKMSLQMEPDLLFQEAIRR  626 (654)
+Q Consensus       552 lpt-ean~~~~~~rmtv~~~cvpi~ldd~tvqylydd---siipe~-~ats~~at~qskc~~~~slq~~p~llfqeairr  626 (654)
+                      .|+ |-....+|.    -+-.||.....-.-...|..   --.||. -|+.+-...-..++....+|.+  ..| ..++-
+T Consensus        82 vppteykgeltpr----kyrsiplhfksfgwrhiyeplkkvplpenpfandslesllggyheskdlqde--eyf-aflkd  154 (185)
+T tr|G0WAQ6|G0WA   82 VPPTEYKGELTPR----KYRSIPLHFKSFGWRHIYEPLKKVPLPENPFANDSLESLLGGYHESKDLQDE--EYF-AFLKD  154 (185)
+Confidence            765 433334443    35567877666555555543   235554 3344444444445544445433  333 34567
+
+
+Q 1Z1A:A|PDBID|C  627 MRHLTAYDVLRRNYIAAFEELYM  649 (654)
+Q Consensus       627 mr~lt~y~~lr~nyiaafeel~~  649 (654)
+                      +..|.+|+.-|.-||..|.+|..
+T Consensus       155 latlvsydqqrsyyiksfnelks  177 (185)
+T tr|G0WAQ6|G0WA  155 LATLVSYDQQRSYYIKSFNELKS  177 (185)
+Confidence            78899999999999999998853
+
+
+No 11
+>tr|H2AYL2|H2AYL2_KAZAF Uncharacterized protein OS=Kazachstania africana (strain ATCC 22294 / BCRC 22015 / CBS 2517 / CECT 1963 / NBRC 1671 / NRRL Y-8276) GN=KAFR0H03790 PE=4 SV=1
+Probab=95.51  E-value=0.0034  Score=66.04  Aligned_cols=118  Identities=36%  Similarity=0.543  Sum_probs=88.4  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C    4 INSRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLKKDSNSVLVGVKSMELFKHIKLVLREFF   83 (654)
+Q Consensus         4 insr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnlvdwt~lkkds~svlvgv~s~elfkhiklvlreff   83 (654)
+                      |..|..||.||+||.+.|--+ -.|.-+.=|.|.  ..|-|-+|-|+|+.... -|.||.-.-.|.||-.-|..-+-||-
+T Consensus         5 iserycviegwivdqvdriiv-pkskivknlvpk--klellnrqflidfknvd-lsqsviyeytsqelhdlidkefyefs   80 (261)
+T tr|H2AYL2|H2AY    5 ISERYCVIEGWIVDQVDRIIV-PKSKIVKNLVPK--KLELLNRQFLIDFKNVD-LSQSVIYEYTSQELHDLIDKEFYEFS   80 (261)
+Confidence            567999999999999877432 223334444453  34556788899987653 47889999999999999998899999
+
+
+Q 1Z1A:A|PDBID|C   84 LLEDGRIILK--RIRSKLRYKVVKKLTCKCCRLYLPKWGTVYIHPM  127 (654)
+Q Consensus        84 lledgrivlk--rir~kl~ykvvk~~a~kccrl~lpkwgt~yi~pm  127 (654)
+                      .|-||||+-|  ||-.+-.-|+-++|+.+|-|.-+  .|.-|+|-+
+T Consensus        81 elldgriinkdgriyqrsktkikrtftkrchrvsi--hgrqyvyll  124 (261)
+T tr|H2AYL2|H2AY   81 ELLDGRIINKDGRIYQRSKTKIKRTFTKRCHRVSI--HGRQYVYLL  124 (261)
+Confidence            9999999987  45455556777899999999765  466666644
+
+
+No 12
+>tr|G0W962|G0W962_NAUDC Uncharacterized protein (Fragment) OS=Naumovozyma dairenensis (strain ATCC 10597 / BCRC 20456 / CBS 421 / NBRC 0211 / NRRL Y-12
+Probab=94.37  E-value=0.014  Score=70.80  Aligned_cols=116  Identities=28%  Similarity=0.340  Sum_probs=89.0  Template_Neff=3.294
+
+Q 1Z1A:A|PDBID|C    1 MLQINSRLAVIDGWLVDTVKRK----PINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLK-KDSNSVLVGVKSMELFKHI   75 (654)
+Q Consensus         1 mleinsr~avidgwlvd~vkrk----pinf~~peirlllpnd~dy~kl~~qnlvdwt~lk-kds~svlvgv~s~elfkhi   75 (654)
+                      |.+|.-|++||||+||-.-+.+    ---.+++-..=..++-.+-+||..+|++|...+. ..+++=||-+.|..||.++
+T Consensus         1 ~~~is~~~~vi~gflv~~~~~~~~~~~K~i~~~~~~s~~~~~~e~~kl~~~n~~~l~e~~~~~~~~dLIp~~s~~LF~~~   80 (1103)
+T tr|G0W962|G0W9    1 MIEISDNFVVIDGFLVKKNKDGQGVETKIIRHFTPSSKKMKKSEREKLEKLNLIDLDEYLTAYPKSDLIPCPSKLLFDYV   80 (1103)
+Confidence            7899999999999999877654    3334555566667788889999999999999887 5678889999999999999
+
+
+Q 1Z1A:A|PDBID|C   76 KLVLREFFLLEDGRIILK-RIRSK-----LRYKVVKKLTCKCCRLYL  116 (654)
+Q Consensus        76 klvlrefflledgrivlk-rir~k-----l~ykvvk~~a~kccrl~l  116 (654)
+                      .-.-|+|+.-|||=++.+ |-.+.     ..|.|+.-....|-+-||
+T Consensus        81 ~T~~~~fy~~e~G~~iv~~Rt~~~~r~~s~~~~Vip~~~~~k~~KyL  127 (1103)
+T tr|G0W962|G0W9   81 TTETRSFYETEDGFQIVNARTPSRFRRRSQEYTVIPVMPKHKPTKYL  127 (1103)
+Confidence            999999999999977543 22222     236676555444444444
+
+
+No 13
+>tr|H0GXK5|H0GXK5_SACCK Uncharacterized protein OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) GN=VIN7_8382 PE=4 SV=1
+Probab=89.39  E-value=0.47  Score=47.49  Aligned_cols=108  Identities=32%  Similarity=0.666  Sum_probs=56.6  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C    1 MLQINSRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLKKDSNSVLVGVKSMELFKHIKLVLR   80 (654)
+Q Consensus         1 mleinsr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnlvdwt~lkkds~svlvgv~s~elfkhiklvlr   80 (654)
+                      |-.||.||.+|||||+|--|..-+|-..  +  =-|..    -+....|+||...-...-.|... ....||.-+.  -.
+T Consensus         1 mhrindrfsiidgwlidpkkkalvnpke--v--dapqn----fiykhhlidwdevydeefniyce-ddetlfevve--td   69 (125)
+T tr|H0GXK5|H0GX    1 MHRINDRFSIIDGWLIDPKKKALVNPKE--V--DAPQN----FIYKHHLIDWDEVYDEEFNIYCE-DDETLFEVVE--TD   69 (125)
+Confidence            6789999999999999987776555221  1  11222    23356789998765433222211 1111222111  11
+
+
+Q 1Z1A:A|PDBID|C   81 EF-FLLE--DGRIILKRIRSKLRYKVVKKLTC-KCCRLYLPKWGTVYIH  125 (654)
+Q Consensus        81 ef-flle--dgrivlkrir~kl~ykvvk~~a~-kccrl~lpkwgt~yi~  125 (654)
+                      |+ |..+  -|- +||--|-.|     -.|+| +|-.|-...-.|.||+
+T Consensus        70 eywfqidpitga-ilkvsrvdl-----gdftclrchklsvgskktlyih  112 (125)
+T tr|H0GXK5|H0GX   70 EYWFQIDPITGA-ILKVSRVDL-----GDFTCLRCHKLSVGSKKTLYIH  112 (125)
+Confidence            22 2211  132 344333332     35777 4556666677788886
+
+
+No 14
+>tr|A0A068N8N8|A0A068N8N8_BACCE Group-specific protein OS=Bacillus cereus GN=BcrFT9_02271 PE=4 SV=1
+Probab=88.14  E-value=0.69  Score=41.29  Aligned_cols=35  Identities=46%  Similarity=0.654  Sum_probs=27.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  268 AISNSTAPDSFKSKNNDYRFIVREKPIVENTISNLD  303 (654)
+Q Consensus       268 ~l~dtt~~~s~~~k~n~yrfivre~pive~~~s~l~  303 (654)
+                      -|+|+..-- .+++...|.|||||.|||-.|+|-+.
+T Consensus         7 dlsdsrliv-vkvkekeyqfivrehpivggiislle   41 (53)
+T tr|A0A068N8N8|    7 DLSDSRLIV-VKVKEKEYQFIVREHPIVGGIISLLE   41 (53)
+Confidence            345555444 47888999999999999999998764
+
+
+No 15
+>tr|G8ZUI4|G8ZUI4_TORDC Uncharacterized protein OS=Torulaspora delbrueckii (strain ATCC 10662 / CBS 1146 / NBRC 0425 / NCYC 2629 / NRRL Y-866) GN=TDEL0E00350 PE=4 SV=1
+Probab=87.89  E-value=0.75  Score=52.77  Aligned_cols=145  Identities=26%  Similarity=0.398  Sum_probs=94.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  151 YPLIEINVSHQYIIIEGFLLYLNERRLYRWNDNNLRSQVGLTKWAHLRKTYNPVSLDILYSLNSNFYFVKDDLLFQLLGK  230 (654)
+Q Consensus       151 yplidi~~~~qy~iiegfllylnerr~~kwndn~lr~~igl~~wa~lrk~ynp~sldily~l~sn~yfvkdd~~fqllgk  230 (654)
+                      ||+|- ....|.++|.||..-|.-...-.-|...-.+.-.-.+...|...+.--||.-+....|||.......+|.....
+T Consensus         4 ypviy-gpkgqltvidgfvvklttqknderngsetqdpdttqkiralqsafqceslrrlqhvssnfvvtnnsmlfevvte   82 (466)
+T tr|G8ZUI4|G8ZU    4 YPVIY-GPKGQLTVIDGFVVKLTTQKNDERNGSETQDPDTTQKIRALQSAFQCESLRRLQHVSSNFVVTNNSMLFEVVTE   82 (466)
+Confidence            66663 45678999999998875433222222222222223345566777777888888899999999999999998888
+
+
+Q 1Z1A:A|PDBID|C  231 RVFVKFCKVMENGKCGKAPLWYRVKRTTTAKATHIAYAISNSTAPDSFKSKNNDYRFIVREKPIVENTISNLDYSDIKKQ  310 (654)
+Q Consensus       231 rvfvkfc~vm~n~~~g~~p~~y~~~rtttakathiay~l~dtt~~~s~~~k~n~yrfivre~pive~~~s~l~~sdlkkq  310 (654)
+                      +-++-|..       .+ --|||- .....||||+|.++.-|......+++     ++|-.+|..  |- .+..|-|-+|
+T Consensus        83 keyimfvn-------sk-grfycr-kihhskathvaiairmtrkrgqrtsk-----yvvygkpln--ih-sietsvllkq  145 (466)
+T tr|G8ZUI4|G8ZU   83 KEYIMFVN-------SK-GRFYCR-KIHHSKATHVAIAIRMTRKRGQRTSK-----YVVYGKPLN--IH-SIETSVLLKQ  145 (466)
+Confidence            77776642       12 248995 67789999999999877655544443     456667753  22 2333445555
+
+
+Q 1Z1A:A|PDBID|C  311 QFT  313 (654)
+Q Consensus       311 ~ft  313 (654)
+                      +-.
+T Consensus       146 qek  148 (466)
+T tr|G8ZUI4|G8ZU  146 QEK  148 (466)
+Confidence            433
+
+
+No 16
+>tr|G0WHE0|G0WHE0_NAUDC Uncharacterized protein OS=Naumovozyma dairenensis (strain ATCC 10597 / BCRC 20456 / CBS 421 / NBRC 0211 / NRRL Y-12639) GN=NDA
+Probab=87.84  E-value=0.51  Score=60.03  Aligned_cols=117  Identities=27%  Similarity=0.444  Sum_probs=81.7  Template_Neff=3.248
+
+Q 1Z1A:A|PDBID|C  465 YVSPRFLVADGFLIDLAE--EK----PINPKDPRLLTLL--KDHQRAMIDQMNLVKWNDFK---KYQDPIPLKAKTLFKF  533 (654)
+Q Consensus       465 yvsprflvadgflidlae--ek----pi~pkdprlltll--kdhqr~~i~qmnlv~w~dfk---kyqdpipl~aktlfk~  533 (654)
+                      -+|-|+.|-|||+|-.-.  -+    .|..+-..-.- +  ++  +..|.+..|+.-+.|-   .-.+=||-..+.||+.
+T Consensus         3 ~iSdr~~~iDgf~v~~~~~~~~~~~~~i~~~~~~~~~-~~~~~--~~~~~k~kl~nl~~~~~~~~~s~liP~~s~~LF~~   79 (1467)
+T tr|G0WHE0|G0WH    3 KISDRCAVIDGFLVLTEKSGHNVIRKTIKQNFSSTWY-LSFRK--RTCIEKLKLVNLDELFDIYCNSDLIPCYSPELFEY   79 (1467)
+Confidence            478999999999984321  11    11211111110 2  33  5556666666555443   4567899999999999
+
+
+Q 1Z1A:A|PDBID|C  534 CKQIKKKFLRGAD-FKLHTLPTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDDS  588 (654)
+Q Consensus       534 ckqikkkflr~ad-fklhtlptean~~~~~~rmtv~~~cvpi~ldd~tvqylydds  588 (654)
+                      |-.+.+.|...+| |++.+-|+    .-+..|++.-+..|||.+-.+..+|||+..
+T Consensus        80 ~~T~~~~~y~t~~g~~~~~~~t----~k~~~~~a~~~~vI~~r~~~~~~KYLyy~~  131 (1467)
+T tr|G0WHE0|G0WH   80 CTTISRRFYWTNDGFKIVNSRT----SKEDMRRAQSYTVIPIRPKGSQKKYLYYKP  131 (1467)
+Confidence            9999999988775 66666553    345678888899999999999999999753
+
+
+No 17
+>tr|G0W962|G0W962_NAUDC Uncharacterized protein (Fragment) OS=Naumovozyma dairenensis (strain ATCC 10597 / BCRC 20456 / CBS 421 / NBRC 0211 / NRRL Y-12
+Probab=86.93  E-value=0.64  Score=58.03  Aligned_cols=120  Identities=23%  Similarity=0.410  Sum_probs=83.0  Template_Neff=3.294
+
+Q 1Z1A:A|PDBID|C  464 EYVSPRFLVADGFLIDLAEEK------PINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFK---KYQDPIPLKAKTLFKFC  534 (654)
+Q Consensus       464 eyvsprflvadgflidlaeek------pi~pkdprlltllkdhqr~~i~qmnlv~w~dfk---kyqdpipl~aktlfk~c  534 (654)
+                      +++|-++.|-||||+---+.+      -|.--.|.=. .+...-|+-+..||++..+...   -+.|=||.+.+.||.-|
+T Consensus         2 ~~is~~~~vi~gflv~~~~~~~~~~~K~i~~~~~~s~-~~~~~e~~kl~~~n~~~l~e~~~~~~~~dLIp~~s~~LF~~~   80 (1103)
+T tr|G0W962|G0W9    2 IEISDNFVVIDGFLVKKNKDGQGVETKIIRHFTPSSK-KMKKSEREKLEKLNLIDLDEYLTAYPKSDLIPCPSKLLFDYV   80 (1103)
+Confidence            468999999999999765542      2221122212 2344567778889988665554   45588999999999999
+
+
+Q 1Z1A:A|PDBID|C  535 KQIKKKFLRGADFKLHTLPTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDD  587 (654)
+Q Consensus       535 kqikkkflr~adfklhtlptean~~~~~~rmtv~~~cvpi~ldd~tvqylydd  587 (654)
+                      ..-.+.|.+..| -++..-  +..+-...+.+.-+-.||+.+-+.+.+|||--
+T Consensus        81 ~T~~~~fy~~e~-G~~iv~--~Rt~~~~r~~s~~~~Vip~~~~~k~~KyLy~~  130 (1103)
+T tr|G0W962|G0W9   81 TTETRSFYETED-GFQIVN--ARTPSRFRRRSQEYTVIPVMPKHKPTKYLYYV  130 (1103)
+Confidence            999999998877 444221  11222334445556679999999999999943
+
+
+No 18
+>tr|E7KVS7|E7KVS7_YEASL Uncharacterized protein OS=Saccharomyces cerevisiae (strain Lalvin QA23) GN=QA23_5129 PE=4 SV=1
+Probab=84.45  E-value=1.6  Score=51.50  Aligned_cols=129  Identities=24%  Similarity=0.406  Sum_probs=90.6  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C    6 SRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLK-KDSNSVLVGVKSMELFKHIKLVLREFFL   84 (654)
+Q Consensus         6 sr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnlvdwt~lk-kds~svlvgv~s~elfkhiklvlreffl   84 (654)
+                      .|..|.+||+||.-..|-+.-.....|=|-  .-.-+.++.|.|-||...- ....||+|.+....||..+...|-||..
+T Consensus        59 krytvmggwivdhkakklvkpsprslrgla--sltrkhiltqplndwhdffeattesvivptsdgklfealssalyefce  136 (618)
+T tr|E7KVS7|E7KV   59 KRYTVMGGWIVDHKAKKLVKPSPRSLRGLA--SLTRKHILTQPLNDWHDFFEATTESVIVPTSDGKLFEALSSALYEFCE  136 (618)
+Confidence            478899999999765554432222222221  1223567889999998764 4567999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C   85 LEDGRIILKRIRSKLRY--KVVKKLTCKCCRLYLPKWGTVYIHPM-LKDKEKPLA  136 (654)
+Q Consensus        85 ledgrivlkrir~kl~y--kvvk~~a~kccrl~lpkwgt~yi~pm-l~d~~~~~~  136 (654)
+                      +.||.+-|----+--.|  .+-.+|..+|-..-|.--.|-|+.-. ..|++..++
+T Consensus       137 mrdgsvhlmvptnvqkyqqqikhtfkarchkinlggrktkylrlvgspdnqsesd  191 (618)
+T tr|E7KVS7|E7KV  137 MRDGSVHLMVPTNVQKYQQQIKHTFKARCHKINLGGRKTKYLRLVGSPDNQSESD  191 (618)
+Confidence            99999887655444444  45567888999888887777777533 234444433
+
+
+No 19
+>tr|J7RUF2|J7RUF2_KAZNA Uncharacterized protein (Fragment) OS=Kazachstania naganishii (strain ATCC MYA-139 / BCRC 22969 / CBS 8797 / CCRC 22969 / KCTC 
+Probab=83.21  E-value=1.6  Score=53.11  Aligned_cols=124  Identities=22%  Similarity=0.366  Sum_probs=88.4  Template_Neff=2.267
+
+Q 1Z1A:A|PDBID|C  459 FSTEEEYVSPRFLVADGFLIDLAEEKP---INPKDPRLLTLLKDHQRAMIDQMNLVKWNDFK---KYQDPIPLKAKTLFK  532 (654)
+Q Consensus       459 fs~eeeyvsprflvadgflidlaeekp---i~pkdprlltllkdhqr~~i~qmnlv~w~dfk---kyqdpipl~aktlfk  532 (654)
+                      |.-++-|..-|-||.||||+=+-+...   +--+.|+=. +|.+..|.-+.|..+|.-+.+.   +-.+-||..+..||.
+T Consensus        13 ~~i~~~~~~~~~~~~d~~l~~~~~~~~~~~~~~~~~~~~-~~~~~e~~~l~~~~~vn~d~~~~~~~~s~~ip~~ss~lf~   91 (719)
+T tr|J7RUF2|J7RU   13 IPISKYYQDIRPLLGDGFLRCTDQRQRHRKSVYQNFQRV-FLRKSERKALCQFKLVNDDELYNRHTSSRFIPCNSSKLFE   91 (719)
+Confidence            444445555677899999996655431   112234433 3444445556788777766543   456789999999999
+
+
+Q 1Z1A:A|PDBID|C  533 FCKQIKKKFLRGADFKLHTLPTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDDSII  590 (654)
+Q Consensus       533 ~ckqikkkflr~adfklhtlptean~~~~~~rmtv~~~cvpi~ldd~tvqylyddsii  590 (654)
+                      +|.-++..|..-+.|.+.+--       +.++|.-.+..||++--++..+|||-..+-
+T Consensus        92 ~~~t~~~~~~~~~~~~~~~~r-------~~~~~a~~~~vi~~~~~~k~~kyly~~~~~  142 (719)
+T tr|J7RUF2|J7RU   92 FCETNSRYYMEYAHFIQFNTR-------EQKPMARKFTVIPFRPQNKMTKYLYNAPIR  142 (719)
+Confidence            999999999888888765422       667787788889999999999999976543
+
+
+No 20
+>tr|B5VTY1|B5VTY1_YEAS6 YER190Wp-like protein (Fragment) OS=Saccharomyces cerevisiae (strain AWRI1631) GN=AWRI1631_10970010 PE=4 SV=1
+Probab=81.46  E-value=2.7  Score=51.48  Aligned_cols=129  Identities=24%  Similarity=0.406  Sum_probs=90.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C    6 SRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLK-KDSNSVLVGVKSMELFKHIKLVLREFFL   84 (654)
+Q Consensus         6 sr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnlvdwt~lk-kds~svlvgv~s~elfkhiklvlreffl   84 (654)
+                      .|..|.+||+||.-..|-+.-.....|=|-  .-.-+.++.|.|-||...- ....||+|.+....||..+...|-||..
+T Consensus        59 krytvmggwivdhkakklvkpsprslrgla--sltrkhiltqplndwhdffeattesvivptsdgklfealssalyefce  136 (960)
+T tr|B5VTY1|B5VT   59 KRYTVMGGWIVDHKAKKLVKPSPRSLRGLA--SLTRKHILTQPLNDWHDFFEATTESVIVPTSDGKLFEALSSALYEFCE  136 (960)
+Confidence            478899999999765554432222222221  1223567889999998764 4567999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C   85 LEDGRIILKRIRSKLRY--KVVKKLTCKCCRLYLPKWGTVYIHPM-LKDKEKPLA  136 (654)
+Q Consensus        85 ledgrivlkrir~kl~y--kvvk~~a~kccrl~lpkwgt~yi~pm-l~d~~~~~~  136 (654)
+                      +.||.+-|----+--.|  .+-.+|..+|-..-|.--.|-|+.-. ..|++..++
+T Consensus       137 mrdgsvhlmvptnvqkyqqqikhtfkarchkinlggrktkylrlvgspdnqsesd  191 (960)
+T tr|B5VTY1|B5VT  137 MRDGSVHLMVPTNVQKYQQQIKHTFKARCHKINLGGRKTKYLRLVGSPDNQSESD  191 (960)
+Confidence            99999887655444444  45567888999888877777776533 234444433
+
+
+No 21
+>tr|J7S5G0|J7S5G0_KAZNA Uncharacterized protein OS=Kazachstania naganishii (strain ATCC MYA-139 / BCRC 22969 / CBS 8797 / CCRC 22969 / KCTC 17520 / NBRC 10181 / NCYC 3082) GN=KNAG0C00100 PE=4 SV=1
+Probab=80.31  E-value=3.1  Score=52.32  Aligned_cols=114  Identities=33%  Similarity=0.545  Sum_probs=83.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C    3 QINSRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLKKDSNSVLVGVKSMELFKHIKLVLREF   82 (654)
+Q Consensus         3 einsr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnlvdwt~lkkds~svlvgv~s~elfkhiklvlref   82 (654)
+                      +|...++|||.|+|..-.||-+.-....-.|   ....|.||..-..+|.|+...    ..-.|.|.|||.||.+--.||
+T Consensus         4 qitddivvidrwivsipdrkvvssfaakrql---sqanyrklvaiepvdltrftt----tfhtvdspelfqhidlhphef   76 (1498)
+T tr|J7S5G0|J7S5    4 QITDDIVVIDRWIVSIPDRKVVSSFAAKRQL---SQANYRKLVAIEPVDLTRFTT----TFHTVDSPELFQHIDLHPHEF   76 (1498)
+Confidence            5777889999999999888887655444333   345799999999999998753    345678999999999999999
+
+
+Q 1Z1A:A|PDBID|C   83 FLLEDGRIILKRIRSKLRYKVVKKLTCKCCRLYL--------PKWGTVYIHPMLK  129 (654)
+Q Consensus        83 flledgrivlkrir~kl~ykvvk~~a~kccrl~l--------pkwgt~yi~pml~  129 (654)
+                      -.|-+|.-|-   |+...|+-..+-.   |.+|-        .--..+|+.|.-|
+T Consensus        77 avlpngdavp---rssvayrradksk---cnlftrmshrvstggrrvvylvpaeq  125 (1498)
+T tr|J7S5G0|J7S5   77 AVLPNGDAVP---RSSVAYRRADKSK---CNLFTRMSHRVSTGGRRVVYLVPAEQ  125 (1498)
+Confidence            9999998763   5666666544322   33332        2233577777654
+
+
+No 22
+>tr|C8ZHF5|C8ZHF5_YEAS8 EC1118_1O4_6656p OS=Saccharomyces cerevisiae (strain Lalvin EC1118 / Prise de mousse) GN=EC1118_1O4_6656g PE=4 SV=1
+Probab=78.27  E-value=4.1  Score=51.36  Aligned_cols=129  Identities=24%  Similarity=0.406  Sum_probs=90.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C    6 SRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLK-KDSNSVLVGVKSMELFKHIKLVLREFFL   84 (654)
+Q Consensus         6 sr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnlvdwt~lk-kds~svlvgv~s~elfkhiklvlreffl   84 (654)
+                      .|..|.+||+||.-..|-+.-.....|=|-  .-.-+.++.|.|-||...- ....||+|.+....||..+...|-||..
+T Consensus        59 krytvmggwivdhkakklvkpsprslrgla--sltrkhiltqplndwhdffeattesvivptsdgklfealssalyefce  136 (1445)
+T tr|C8ZHF5|C8ZH   59 KRYTVMGGWIVDHKAKKLVKPSPRSLRGLA--SLTRKHILTQPLNDWHDFFEATTESVIVPTSDGKLFEALSSALYEFCE  136 (1445)
+Confidence            478899999999765554432222222221  1233567889999998764 4567999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C   85 LEDGRIILKRIRSKLRY--KVVKKLTCKCCRLYLPKWGTVYIHPM-LKDKEKPLA  136 (654)
+Q Consensus        85 ledgrivlkrir~kl~y--kvvk~~a~kccrl~lpkwgt~yi~pm-l~d~~~~~~  136 (654)
+                      +.||.+-|----+--.|  .+-.+|..+|-..-|.--.|-|+.-. ..|++..++
+T Consensus       137 mrdgsvhlmvptnvqkyqqqikhtfkarchkinlggrktkylrlvgspdnqsesd  191 (1445)
+T tr|C8ZHF5|C8ZH  137 MRDGSVHLMVPTNVQKYQQQIKHTFKARCHKINLGGRKTKYLRLVGSPDNQSESD  191 (1445)
+Confidence            99999887655444444  45567888999888887777776533 234444433
+
+
+No 23
+>tr|N6WMU5|N6WMU5_9EURY Uncharacterized protein OS=Thermoplasmatales archaeon SCGC AB-539-C06 GN=MBGDC06_00715 PE=4 SV=1
+Probab=76.68  E-value=4.9  Score=41.50  Aligned_cols=71  Identities=31%  Similarity=0.457  Sum_probs=45.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   74 HIKLVLREFFLLEDGRIILKRIRSKLRYKVVKKLTCKCCRLYLPKWGTVYIHPMLKDKEKPLAGVCEFSLDVNPDREYPL  153 (654)
+Q Consensus        74 hiklvlrefflledgrivlkrir~kl~ykvvk~~a~kccrl~lpkwgt~yi~pml~d~~~~~~~~~~fsl~v~p~~eypl  153 (654)
+                      .|-..||.=+-+.+|.-       .|.||.||.|+.-||| |||+--.-+++-....-+  .-+++.|-|-..-+..--|
+T Consensus         8 tiiqtlrnpwwlqngqt-------alsyklvkdftefccr-ylprsvrkfvfyvtdtfs--ilgsrlfflicqlnltayl   77 (135)
+T tr|N6WMU5|N6WM    8 TIIQTLRNPWWLQNGQT-------ALSYKLVKDFTEFCCR-YLPRSVRKFVFYVTDTFS--ILGSRLFFLICQLNLTAYL   77 (135)
+Confidence            35566777778888864       5789999999999998 899866555443331112  2266666655544443333
+
+
+Q 1Z1A:A|PDBID|C  154 I  154 (654)
+Q Consensus       154 i  154 (654)
+                      |
+T Consensus        78 i   78 (135)
+T tr|N6WMU5|N6WM   78 I   78 (135)
+Confidence            3
+
+
+No 24
+>tr|G0WHE0|G0WHE0_NAUDC Uncharacterized protein OS=Naumovozyma dairenensis (strain ATCC 10597 / BCRC 20456 / CBS 421 / NBRC 0211 / NRRL Y-12639) GN=NDA
+Probab=72.77  E-value=4.9  Score=52.29  Aligned_cols=110  Identities=32%  Similarity=0.343  Sum_probs=77.2  Template_Neff=3.248
+
+Q 1Z1A:A|PDBID|C    1 MLQINSRLAVIDGWLVDTVKRK--------PINFRSPEVRLLLPNDDDYKKLSQQNLVDWTRLKK-DSNSVLVGVKSMEL   71 (654)
+Q Consensus         1 mleinsr~avidgwlvd~vkrk--------pinf~~peirlllpnd~dy~kl~~qnlvdwt~lkk-ds~svlvgv~s~el   71 (654)
+                      |..|.-|++||||++|-+-|..        -++|.+-  + .+.|-+ -+++.++.|+|-+.+-. .++|=|+-..|.+|
+T Consensus         1 ~i~iSdr~~~iDgf~v~~~~~~~~~~~~~i~~~~~~~--~-~~~~~~-~~~~~k~kl~nl~~~~~~~~~s~liP~~s~~L   76 (1467)
+T tr|G0WHE0|G0WH    1 MIKISDRCAVIDGFLVLTEKSGHNVIRKTIKQNFSST--W-YLSFRK-RTCIEKLKLVNLDELFDIYCNSDLIPCYSPEL   76 (1467)
+Confidence            6678899999999998654421        1233321  1 122222 78889999999998865 47889999999999
+
+
+Q 1Z1A:A|PDBID|C   72 FKHIKLVLREFFLLEDGRIILKRIRSKLRYKVVKKLTCKCCRL  114 (654)
+Q Consensus        72 fkhiklvlrefflledgrivlkrir~kl~ykvvk~~a~kccrl  114 (654)
+                      |+...-.=|+|.-.+||--+.++--+|-.-.-.++++--|-|+
+T Consensus        77 F~~~~T~~~~~y~t~~g~~~~~~~t~k~~~~~a~~~~vI~~r~  119 (1467)
+T tr|G0WHE0|G0WH   77 FEYCTTISRRFYWTNDGFKIVNSRTSKEDMRRAQSYTVIPIRP  119 (1467)
+Confidence            9999999999999999987776644444223334444444444
+
+
+No 25
+>tr|A0A0E9WQ08|A0A0E9WQ08_ANGAN Uncharacterized protein OS=Anguilla anguilla PE=4 SV=1
+Probab=66.73  E-value=12  Score=31.61  Aligned_cols=24  Identities=46%  Similarity=0.844  Sum_probs=21.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  196 HLRKTYNPVSLDILYSLNSNFYFV  219 (654)
+Q Consensus       196 ~lrk~ynp~sldily~l~sn~yfv  219 (654)
+                      -||-.|||.|.-|+.-|...|||.
+T Consensus         6 llrvaynpfsvlilfflptsyyff   29 (32)
+T tr|A0A0E9WQ08|    6 LLRVAYNPFSVLILFFLPTSYYFF   29 (32)
+Confidence            477889999999999999888874
+
+
+No 26
+>tr|A0A0L6V0A0|A0A0L6V0A0_9BASI Uncharacterized protein (Fragment) OS=Puccinia sorghi GN=VP01_3207g3 PE=4 SV=1
+Probab=63.64  E-value=15  Score=38.22  Aligned_cols=27  Identities=48%  Similarity=0.891  Sum_probs=23.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  102 KVVKKLTCKCCRLYLPKWGTVYIHPML  128 (654)
+Q Consensus       102 kvvk~~a~kccrl~lpkwgt~yi~pml  128 (654)
+                      ||-.+-.||||-+|||.-.|-||.-+-
+T Consensus        46 kvpnkamckccllflpsvrtkyirdle   72 (132)
+T tr|A0A0L6V0A0|   46 KVPNKAMCKCCLLFLPSVRTKYIRDLE   72 (132)
+Confidence            556678999999999999999997654
+
+
+No 27
+>tr|A0A0C1RS42|A0A0C1RS42_9DELT Uncharacterized protein (Fragment) OS=Smithella sp. SC_K08D17 GN=DS62_12480 PE=4 SV=1
+Probab=62.18  E-value=17  Score=34.97  Aligned_cols=35  Identities=31%  Similarity=0.637  Sum_probs=32.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  357 QISKFPVSRVTLLLMSAGQDKNYIELVEELARRLE  391 (654)
+Q Consensus       357 qi~kfp~skvtl~liaagedk~yielveela~rle  391 (654)
+                      .||||..|.|.-..|..|-.+.|-||++.+..|+.
+T Consensus        36 tipkfsisqvashwieeglerdypelvqkirermk   70 (71)
+T tr|A0A0C1RS42|   36 TIPKFSISQVASHWIEEGLERDYPELVQKIRERMK   70 (71)
+Confidence            79999999999999999999999999999887764
+
+
+No 28
+>tr|A0A0L6VD24|A0A0L6VD24_9BASI Uncharacterized protein (Fragment) OS=Puccinia sorghi GN=VP01_2017g5 PE=4 SV=1
+Probab=61.07  E-value=19  Score=38.95  Aligned_cols=27  Identities=48%  Similarity=0.891  Sum_probs=23.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  102 KVVKKLTCKCCRLYLPKWGTVYIHPML  128 (654)
+Q Consensus       102 kvvk~~a~kccrl~lpkwgt~yi~pml  128 (654)
+                      ||-.+-.||||-+|||.-.|-||.-+-
+T Consensus        46 kvpnkamckccllflpsvrtkyirdle   72 (174)
+T tr|A0A0L6VD24|   46 KVPNKAMCKCCLLFLPSVRTKYIRDLE   72 (174)
+Confidence            556678999999999999999997654
+
+
+No 29
+>tr|R6NEL6|R6NEL6_9FIRM Xylulokinase OS=Lachnospiraceae bacterium CAG:364 GN=BN627_00330 PE=4 SV=1
+Probab=59.75  E-value=20  Score=33.63  Aligned_cols=46  Identities=28%  Similarity=0.552  Sum_probs=36.8  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  394 CIEKTTQSLEEIRDTFQANPEMQASFDKEYYQSIEEYKITLELIKE  439 (654)
+Q Consensus       394 cie~ttqsl~~ir~tf~~npem~arfd~ey~qsi~eyk~tl~like  439 (654)
+                      .+|++...+-+|-+|..+.||+.|.+.+.|++-..-|-..-.|.||
+T Consensus        12 sveeaaekiveiidtiepepelaakyeekyrkfakiyptvkdlfke   57 (59)
+T tr|R6NEL6|R6NE   12 SVEEAAEKIVEIIDTIEPEPELAAKYEEKYRKFAKIYPTVKDLFKE   57 (59)
+Confidence            4566666777899999999999999999999887777665555554
+
+
+No 30
+>tr|A0A0Q3WK55|A0A0Q3WK55_BRECH Uncharacterized protein OS=Brevibacillus choshinensis GN=AN963_19115 PE=4 SV=1
+Probab=57.64  E-value=23  Score=35.00  Aligned_cols=54  Identities=22%  Similarity=0.445  Sum_probs=43.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  371 MSAGQDKNYIELVEELARRLEKICIEKTTQSLEEIRDTFQANPEMQASFDKEYY  424 (654)
+Q Consensus       371 iaagedk~yielveela~rlekicie~ttqsl~~ir~tf~~npem~arfd~ey~  424 (654)
+                      ++....++|.|.++.||..+.|+-.|++-...+-|.+...+...|.-..-..|+
+T Consensus         5 lssknnkkyverleklaeqmrkvgleealgdaqviknsmspggnmlftvvrryr   58 (84)
+T tr|A0A0Q3WK55|    5 LSSKNNKKYVERLEKLAEQMRKVGLEEALGDAQVIKNSMSPGGNMLFTVVRRYR   58 (84)
+Confidence            456678999999999999999999999988888888888877766544334443
+
+
+No 31
+>tr|M5VMM5|M5VMM5_PRUPE Uncharacterized protein (Fragment) OS=Prunus persica GN=PRUPE_ppb021802mg PE=4 SV=1
+Probab=56.76  E-value=25  Score=39.19  Aligned_cols=62  Identities=35%  Similarity=0.516  Sum_probs=52.3  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  355 LDQISKFPVSRVTLLLMSAGQDKNYIELVEELARRLEKICIEKTTQSLEEIRDTFQANPEMQASFDK  421 (654)
+Q Consensus       355 ldqi~kfp~skvtl~liaagedk~yielveela~rlekicie~ttqsl~~ir~tf~~npem~arfd~  421 (654)
+                      |..|-..|+|.|.++-+....|.+|--++.-|     ++..|+++..|..-.+.|.+-|-++|||..
+T Consensus       131 lssilsipvsgvvisplednkdtnyellvnyl-----rvseekatkqlhqyndefaslpwlqarfsd  192 (224)
+T tr|M5VMM5|M5VM  131 LSSILSIPVSGVVISPLEDNKDTNYELLVNYL-----RVSEEKATKQLHQYNDEFASLPWLQARFSD  192 (224)
+Confidence            33677799999999999999999996555443     467799999999999999999999999964
+
+
+No 32
+>1zbx_B mol:protein length:140 Regulatory protein SIR1
+Probab=56.39  E-value=25  Score=37.13  Aligned_cols=134  Identities=99%  Similarity=1.510  Sum_probs=133.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  456 EKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKAKTLFKFCK  535 (654)
+Q Consensus       456 ~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~i~qmnlv~w~dfkkyqdpipl~aktlfk~ck  535 (654)
+                      ||||||||||||||||||||||||||||+|||||||||+|+|||||||||||||+|||||||||||||||||||||||||
+T Consensus         1 ekkfsteeeyvsprflvadgflidlaeekpinpkdprlltllkdhqramidqmnlvkwndfkkyqdpiplkaktlfkfck   80 (140)
+T 1zbx_B            1 EKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKYQDPIPLKAKTLFKFCK   80 (140)
+Confidence            68999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1Z1A:A|PDBID|C  536 QIKKKFLRGADFKLHTLPTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDDSI  589 (654)
+Q Consensus       536 qikkkflr~adfklhtlptean~~~~~~rmtv~~~cvpi~ldd~tvqylyddsi  589 (654)
+                      |||||||||||||||||||||||||||||||||||||||+|||||||||||||.
+T Consensus        81 qikkkflrgadfklhtlpteanlkyepermtvlcscvpillddqtvqylyddsl  134 (140)
+T 1zbx_B           81 QIKKKFLRGADFKLHTLPTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDDSL  134 (140)
+Confidence            999999999999999999999999999999999999999999999999999986
+
+
+No 33
+>tr|A0A0E9TB13|A0A0E9TB13_ANGAN Uncharacterized protein OS=Anguilla anguilla PE=4 SV=1
+Probab=56.31  E-value=25  Score=31.83  Aligned_cols=24  Identities=42%  Similarity=0.632  Sum_probs=20.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  566 TVLCSCVPILLDDQTVQYLYDDSI  589 (654)
+Q Consensus       566 tv~~~cvpi~ldd~tvqylyddsi  589 (654)
+                      |+..|||-..--.|||++|||.|-
+T Consensus         7 tirfscilcfpypqtvkflydssc   30 (46)
+T tr|A0A0E9TB13|    7 TIRFSCILCFPYPQTVKFLYDSSC   30 (46)
+Confidence            677888888888999999999763
+
+
+No 34
+>tr|A0A0L0W0H2|A0A0L0W0H2_9BASI Uncharacterized protein OS=Puccinia striiformis f. sp. tritici PST-78 GN=PSTG_02066 PE=4 SV=1
+Probab=55.06  E-value=28  Score=36.06  Aligned_cols=49  Identities=35%  Similarity=0.611  Sum_probs=43.3  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  192 TKWAHLRKTYNPVSLDILYSLNS-NFYFVKDDLLFQLLGKRVFVKFCKVM  240 (654)
+Q Consensus       192 ~~wa~lrk~ynp~sldily~l~s-n~yfvkdd~~fqllgkrvfvkfc~vm  240 (654)
+                      .+|...-|+..|.-|.|+.+..| |-|||....-...+|-|-.-|||...
+T Consensus        15 dawqtylktlkplflqivnnvtshnryfvqkknaigqlglrpiqkfctai   64 (116)
+T tr|A0A0L0W0H2|   15 DAWQTYLKTLKPLFLQIVNNVTSHNRYFVQKKNAIGQLGLRPIQKFCTAI   64 (116)
+Confidence            57999999999999999999876 78999888778889999999999754
+
+
+No 35
+>tr|E2NNT6|E2NNT6_9FIRM Uncharacterized protein OS=Catenibacterium mitsuokai DSM 15897 GN=CATMIT_00233 PE=4 SV=1
+Probab=50.90  E-value=36  Score=35.12  Aligned_cols=25  Identities=64%  Similarity=0.933  Sum_probs=22.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   87 DGRIILKRIRSKLRYK---VVKKLTCKC  111 (654)
+Q Consensus        87 dgrivlkrir~kl~yk---vvk~~a~kc  111 (654)
+                      .||-+|--||+||.|.   |+|++|||-
+T Consensus        15 rgrailgfirsklnynkisvlkklackn   42 (110)
+T tr|E2NNT6|E2NN   15 RGRAILGFIRSKLNYNKISVLKKLACKN   42 (110)
+Confidence            5899999999999995   789999985
+
+
+No 36
+>tr|C5K6G4|C5K6G4_PERM5 G1/S-specific cyclin PCL5, putative OS=Perkinsus marinus (strain ATCC 50983 / TXsc) GN=Pmar_PMAR006776 PE=4 SV=1
+Probab=50.65  E-value=35  Score=38.91  Aligned_cols=36  Identities=44%  Similarity=0.706  Sum_probs=31.4  Template_Neff=1.263
+
+Q 1Z1A:A|PDBID|C  538 KKKFLRGADFKLHTLPTEANLKYEPERMTVLCSCVPILLD  577 (654)
+Q Consensus       538 kkkflr~adfklhtlptean~~~~~~rmtv~~~cvpi~ld  577 (654)
+                      ...|||-.++.|||+|.|    ||.-||+|..+.-|+.|.
+T Consensus       148 ea~flrlinwnlht~p~e----ye~yrmsvwss~~~~~la  183 (255)
+T tr|C5K6G4|C5K6  148 EADFLRLINWNLHTSPQE----YESYRMSVWSSVEPTMLA  183 (255)
+Confidence            457899999999999977    899999999998888763
+
+
+No 37
+>tr|B8NNV0|B8NNV0_ASPFN Sugar transporter, putative OS=Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / NRRL 3357 / JCM 12722 / SRRC 167) GN=AFLA_125560 PE=4 SV=1
+Probab=48.60  E-value=41  Score=35.97  Aligned_cols=25  Identities=40%  Similarity=0.732  Sum_probs=21.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   10 VIDGWLVDTVKRKPINFRSPEVRLL   34 (654)
+Q Consensus        10 vidgwlvd~vkrkpinf~~peirll   34 (654)
+                      ||.-||+|++.|+.+..|||-+-.+
+T Consensus       100 viswwlidrvgrrqvtlwspfvlmv  124 (146)
+T tr|B8NNV0|B8NN  100 VISWWLIDRVGRRQVTLWSPFVLMV  124 (146)
+Confidence            6788999999999999999987543
+
+
+No 38
+>tr|B8BC12|B8BC12_ORYSI Putative uncharacterized protein OS=Oryza sativa subsp. indica GN=OsI_29692 PE=4 SV=1
+Probab=47.44  E-value=44  Score=39.10  Aligned_cols=30  Identities=37%  Similarity=0.604  Sum_probs=24.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  106 KLTCKCCRLYLPKWGTVYIHPMLKDKEKPL  135 (654)
+Q Consensus       106 ~~a~kccrl~lpkwgt~yi~pml~d~~~~~  135 (654)
+                      ..-|||||.|.-|.||+--.|+-....+++
+T Consensus       150 rhfckccrrywtkggtlrnvpvgggtrkks  179 (341)
+T tr|B8BC12|B8BC  150 RHFCKCCRRYWTKGGTLRNVPVGGGTRKKS  179 (341)
+Confidence            346999999999999999999876554443
+
+
+No 39
+>tr|A0A0A6UUX5|A0A0A6UUX5_ACTUT Uncharacterized protein OS=Actinoplanes utahensis GN=MB27_06860 PE=4 SV=1
+Probab=46.11  E-value=44  Score=31.94  Aligned_cols=35  Identities=34%  Similarity=0.542  Sum_probs=29.8  Template_Neff=1.409
+
+Q 1Z1A:A|PDBID|C  498 KDHQRAMIDQMNLVKWNDFKKYQDPIPLKAKTLFK  532 (654)
+Q Consensus       498 kdhqr~~i~qmnlv~w~dfkkyqdpipl~aktlfk  532 (654)
+                      .|-.|+|--.||||.||....-.+||.-.-|+|+.
+T Consensus        22 ~dg~rq~svamnlvrwn~~~~~~hpid~a~~~lyr   56 (61)
+T tr|A0A0A6UUX5|   22 GDGRRQMSVAMNLVRWNRPDSQCHPIDDAPSSLYR   56 (61)
+Confidence            35668888899999999999999999887777764
+
+
+No 40
+>tr|A0A0Q5T5T9|A0A0Q5T5T9_9BACT Uncharacterized protein OS=Dyadobacter sp. Leaf189 GN=ASG33_18460 PE=4 SV=1
+Probab=45.68  E-value=49  Score=40.91  Aligned_cols=42  Identities=40%  Similarity=0.566  Sum_probs=34.7  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C    6 SRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNL   49 (654)
+Q Consensus         6 sr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnl   49 (654)
+                      ..+|-|+|||||.+|.  .-||||-.|-+-.-..||+--+-.+|
+T Consensus       398 ttlagiggwlvdlvkn--tvfwspitrkiheveadyepelvsgl  439 (643)
+T tr|A0A0Q5T5T9|  398 TTLAGIGGWLVDLVKN--TVFWSPITRKIHEVEADYEPELVSGL  439 (643)
+Confidence            3578899999999986  46999999999988999987665554
+
+
+No 41
+>tr|A0A0M1XD02|A0A0M1XD02_ENTFC Uncharacterized protein OS=Enterococcus faecium E417 GN=HMPREF1359_00708 PE=4 SV=1
+Probab=44.64  E-value=50  Score=32.98  Aligned_cols=44  Identities=30%  Similarity=0.417  Sum_probs=36.6  Template_Neff=1.283
+
+Q 1Z1A:A|PDBID|C  413 PEMQASFDKEYYQSIEEYKITLELIKEDLLITLIKQMENMWAAE  456 (654)
+Q Consensus       413 pem~arfd~ey~qsi~eyk~tl~likedlll~lvkQmeN~w~~~  456 (654)
+                      .||...|--||+|.+|....++++||=||+..=.-..+||-.+.
+T Consensus         5 ke~~ekfpyey~qnlekle~aiq~~k~dl~de~ll~ykn~tper   48 (81)
+T tr|A0A0M1XD02|    5 KEMMEKFPYEYFQNLEKLEQAIQAIKFDLTDEKLLEYKNMTPER   48 (81)
+Confidence            46778899999999999999999999999977665667765543
+
+
+No 42
+>tr|A4CFN4|A4CFN4_9GAMM Uncharacterized protein OS=Pseudoalteromonas tunicata D2 GN=PTD2_04721 PE=4 SV=1
+Probab=43.54  E-value=56  Score=34.55  Aligned_cols=44  Identities=36%  Similarity=0.302  Sum_probs=36.4  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  305 SDIKKQQFTEAEVVKRKISADISQIENVHTQFNSQKEKNNIRVN  348 (654)
+Q Consensus       305 sdlkkq~fte~~vvk~~~sa~isqlen~~~q~~~q~~~~nir~~  348 (654)
+                      .-|++|+-......|.+.|-.-||+.||+.||++..++.|--+.
+T Consensus        80 dwlkeqqterlsslkdkcsleksqinnqllqcnsatekhnkaik  123 (127)
+T tr|A4CFN4|A4CF   80 DWLKEQQKERLSSLKDKCSLEKSQINNQLLQCNSVTEKHNKAIK  123 (127)
+Confidence            34677887778889999999999999999999998887665443
+
+
+No 43
+>tr|A0A090CZX9|A0A090CZX9_9CHLA Uncharacterized protein OS=Criblamydia sequanensis GN=CSEC_1775 PE=4 SV=1
+Probab=42.62  E-value=59  Score=39.53  Aligned_cols=54  Identities=28%  Similarity=0.437  Sum_probs=43.3  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  231 RVFVKFCKVMENGKCGKAPLWYRVKRTTTAKATHIAYAISNSTAPDSFKSKNNDYRFI  288 (654)
+Q Consensus       231 rvfvkfc~vm~n~~~g~~p~~y~~~rtttakathiay~l~dtt~~~s~~~k~n~yrfi  288 (654)
+                      -.+|.||+.|-|..+|    +|..+.|..--...|.+-+.+|-.++||-.++...|-|
+T Consensus       276 iayvtfcesmvnspng----yystkqtaslvpkpilfqientyknnsplarkkwirki  329 (499)
+T tr|A0A090CZX9|  276 IAYVTFCESMVNSPNG----YYSTKQTASLVPKPILFQIENTYKNNSPLARKKWIRKI  329 (499)
+Confidence            3579999999999887    67777777666778899999999999988777665544
+
+
+No 44
+>tr|Q0UBL8|Q0UBL8_PHANO Putative uncharacterized protein OS=Phaeosphaeria nodorum (strain SN15 / ATCC MYA-4574 / FGSC 10173) GN=SNOG_10846 PE=4 SV=2
+Probab=42.61  E-value=59  Score=35.60  Aligned_cols=48  Identities=35%  Similarity=0.578  Sum_probs=39.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  481 AEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDFKKY--QDPIPLKAK  528 (654)
+Q Consensus       481 aeekpi~pkdprlltllkdhqr~~i~qmnlv~w~dfkky--qdpipl~ak  528 (654)
+                      |...|.||.|.|-+||=.-..-++|-.|.|..-+||..+  -||||-.+.
+T Consensus       116 aqaqpadpddereltldelrrvqlifdmglqgiddfsnftiidpipargp  165 (170)
+T tr|Q0UBL8|Q0UB  116 AQAQPADPDDERELTLDELRRVQLIFDMGLQGIDDFSNFTIIDPIPARGP  165 (170)
+Confidence            567899999999998855555568889999999999876  489987654
+
+
+No 45
+>tr|G0V602|G0V602_NAUCC Uncharacterized protein OS=Naumovozyma castellii (strain ATCC 76901 / CBS 4309 / NBRC 1992 / NRRL Y-12630) GN=NCAS0A03340 PE=4 SV=1
+Probab=41.55  E-value=63  Score=42.49  Aligned_cols=117  Identities=29%  Similarity=0.465  Sum_probs=82.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  461 TEEEYVSPRFLVADGFLIDLA----EEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWND--FKKYQDPIPLKAKTLFKFC  534 (654)
+Q Consensus       461 ~eeeyvsprflvadgflidla----eekpi~pkdprlltllkdhqr~~i~qmnlv~w~d--fkkyqdpipl~aktlfk~c  534 (654)
+                      +.--.+|.||.|..||++|-.    ...-|.|||--|. --.+...+++..--|..-+.  |..-.|-.|..|..||--|
+T Consensus      1346 tdiimisdrffvvngfivdtscrvtgkdiirpkdfvle-rcsefekallnkqylfdvdsfqfedtadifpidapalffqc 1424 (1481)
+T tr|G0V602|G0V6 1346 TDIIMISDRFFVVNGFIVDTSCRVTGKDIIRPKDFVLE-RCSEFEKALLNKQYLFDVDSFQFEDTADIFPIDAPALFFQC 1424 (1481)
+Confidence            445578999999999999964    3456788886543 33445555554444444443  4566788899999999999
+
+
+Q 1Z1A:A|PDBID|C  535 KQIKKKFLRGADFKLHTLPTEANLKYEPERMTVL-CSCVPILLDDQTV  581 (654)
+Q Consensus       535 kqikkkflr~adfklhtlptean~~~~~~rmtv~-~~cvpi~ldd~tv  581 (654)
+                      ...-.+|+-..---||.-|.+   +|.|.|-..- .-.||+-|.|-|-
+T Consensus      1425 ttsverfiytecgflhwnphg---kykpkrgelethrvipvslgditk 1469 (1481)
+T tr|G0V602|G0V6 1425 TTSVERFIYTECGFLHWNPHG---KYKPKRGELETHRVIPVSLGDITK 1469 (1481)
+Confidence            998888887665568887765   7777765443 2457888888764
+
+
+No 46
+>tr|S0IQ28|S0IQ28_9FIRM Uncharacterized protein (Fragment) OS=Eubacterium sp. 14-2 GN=C805_03572 PE=4 SV=1
+Probab=41.16  E-value=64  Score=34.71  Aligned_cols=44  Identities=32%  Similarity=0.543  Sum_probs=35.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  533 FCKQIKKKFLRGADFKLHTLPTEANLKYEPERMTVLCSCVPILL  576 (654)
+Q Consensus       533 ~ckqikkkflr~adfklhtlptean~~~~~~rmtv~~~cvpi~l  576 (654)
+                      +...|-|+|-|.|.|.||.|.|...--....+.-+..+.-|++|
+T Consensus        30 massipknfqrhasfdlhvlstppafilsqdqtliissfrpvll   73 (145)
+T tr|S0IQ28|S0IQ   30 MASSIPKNFQRHASFDLHVLSTPPAFILSQDQTLIISSFRPVLL   73 (145)
+Confidence            45678899999999999999988766666666666777777765
+
+
+No 47
+>tr|G6A4D3|G6A4D3_STRIT Uncharacterized protein OS=Streptococcus intermedius F0395 GN=HMPREF9682_00656 PE=4 SV=1
+Probab=41.12  E-value=64  Score=33.51  Aligned_cols=26  Identities=54%  Similarity=0.707  Sum_probs=21.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  450 ENMWAAEKKFSTEEEYVSPRFLVADG  475 (654)
+Q Consensus       450 eN~w~~~k~fs~eeeyvsprflvadg  475 (654)
+                      +|+-.++..||.|-.||||.||-|..
+T Consensus        65 enktqaeetfsseiayvspqflkake   90 (109)
+T tr|G6A4D3|G6A4   65 ENKTQAEETFSSEIAYVSPQFLKAKE   90 (109)
+Confidence            56666666999999999999998753
+
+
+No 48
+>tr|A8A8Q6|A8A8Q6_IGNH4 Uncharacterized protein OS=Ignicoccus hospitalis (strain KIN4/I / DSM 18386 / JCM 14125) GN=Igni_0124 PE=4 SV=1
+Probab=39.35  E-value=71  Score=31.66  Aligned_cols=32  Identities=38%  Similarity=0.490  Sum_probs=25.8  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  413 PEMQASFDKEYYQSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       413 pem~arfd~ey~qsi~eyk~tl~likedlll~  444 (654)
+                      .|..--.--||..|||-||..|++|-.|.|.+
+T Consensus        31 eeakiilpieykesievykealkmigadvlev   62 (76)
+T tr|A8A8Q6|A8A8   31 EEAKIILPIEYKESIEVYKEALKMIGADVLEV   62 (76)
+Confidence            34444556799999999999999999998863
+
+
+No 49
+>tr|H9JDS0|H9JDS0_BOMMO Uncharacterized protein OS=Bombyx mori GN=LOC101740789 PE=4 SV=1
+Probab=38.24  E-value=76  Score=36.08  Aligned_cols=48  Identities=29%  Similarity=0.360  Sum_probs=41.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  318 VKRKISADISQIENVHTQFNSQKEKNNIRVNKVSSEVLDQISKFPVSR  365 (654)
+Q Consensus       318 vk~~~sa~isqlen~~~q~~~q~~~~nir~~~vs~evldqi~kfp~sk  365 (654)
+                      |.+-+..-+-.+||||..-..-++...+|+-.-..|-||-|+|+|.|.
+T Consensus       186 vhrcladvlvnienqldrpkkfegetevrtvqpdqeeldliskypgsd  233 (234)
+T tr|H9JDS0|H9JD  186 VHRCLADVLVNIENQLDRPKKFEGETEVRTVQPDQEELDLISKYPGSD  233 (234)
+Confidence            445666777889999998888888889999999999999999999874
+
+
+No 50
+>tr|F2M111|F2M111_LACAL Uncharacterized protein OS=Lactobacillus amylovorus (strain GRL 1118) GN=LAB52_00855 PE=4 SV=1
+Probab=37.53  E-value=80  Score=31.55  Aligned_cols=34  Identities=35%  Similarity=0.599  Sum_probs=28.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   52 WTRLKKDSNSVLVGVKSMELFKHIKLVLREFFLL   85 (654)
+Q Consensus        52 wt~lkkds~svlvgv~s~elfkhiklvlreffll   85 (654)
+                      .|||||..+|||||......-..|+....|+-.+
+T Consensus        34 ltqlkkqeksvlvgiddikisddirafaseyqil   67 (79)
+T tr|F2M111|F2M1   34 LTQLKKQEKSVLVGIDDIKISDDIRAFASEYQIL   67 (79)
+Confidence            5899999999999999888888888777776443
+
+
+No 51
+>tr|L8JV09|L8JV09_9BACT Uncharacterized protein OS=Fulvivirga imtechensis AK7 GN=C900_00797 PE=4 SV=1
+Probab=36.95  E-value=82  Score=31.06  Aligned_cols=29  Identities=41%  Similarity=0.702  Sum_probs=26.6  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   80 REFFLLEDGRIILKRIRSKLRYKVVKKLT  108 (654)
+Q Consensus        80 refflledgrivlkrir~kl~ykvvk~~a  108 (654)
+                      .|.|--+||+-..||+|+.--||-+|++.
+T Consensus        19 seifnnddgkamvkrlrnssiyksikklk   47 (72)
+T tr|L8JV09|L8JV   19 SEIFNNDDGKAMVKRLRNSSIYKSIKKLK   47 (72)
+Confidence            57888999999999999999999999873
+
+
+No 52
+>tr|K2AD98|K2AD98_9BACT Uncharacterized protein OS=uncultured bacterium (gcode 4) GN=ACD_65C00155G0002 PE=4 SV=1
+Probab=36.84  E-value=83  Score=33.48  Aligned_cols=42  Identities=31%  Similarity=0.645  Sum_probs=32.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  563 ERMTVLCSCVP---ILLDDQTVQYLYDDSIIPEFEATSSYATKQS  604 (654)
+Q Consensus       563 ~rmtv~~~cvp---i~ldd~tvqylyddsiipe~~ats~~at~qs  604 (654)
+                      ..|++..+|||   |.--...|-||++..+-|.+-.+|++-...|
+T Consensus        42 hpmsiyipcvpwsfivwcqgrvmylfnkdvyprylsnssyvpvas   86 (128)
+T tr|K2AD98|K2AD   42 HPMSIYIPCVPWSFIVWCQGRVMYLFNKDVYPRYLSNSSYVPVAS   86 (128)
+Confidence            45899999999   5566778999999999998865766654443
+
+
+No 53
+>tr|A0A0D3C2S3|A0A0D3C2S3_BRAOL Uncharacterized protein OS=Brassica oleracea var. oleracea PE=4 SV=1
+Probab=35.06  E-value=70  Score=37.06  Aligned_cols=88  Identities=19%  Similarity=0.385  Sum_probs=53.2  Template_Neff=2.599
+
+Q 1Z1A:A|PDBID|C  540 KFLRGADFKLHTLPTEANLKYEPERMTVLCSCVPILLDDQTVQYLYDDSIIPEFEATSSYATKQSKCGRKMSLQMEPDLL  619 (654)
+Q Consensus       540 kflr~adfklhtlptean~~~~~~rmtv~~~cvpi~ldd~tvqylyddsiipe~~ats~~at~qskc~~~~slq~~p~ll  619 (654)
+                      +++.+|-|-|.  |++..-.-...-=.+++.||||...+++..--|.=.+-+++..-|..-++.+--.++-|.+.---..
+T Consensus        97 r~~~~s~FClq--PpGDsytRrstFDsilAGCiPVFFhp~sAy~QY~WHLP~~~~~ySVfIp~~dV~~~~~sIe~vL~~I  174 (267)
+T tr|A0A0D3C2S3|   97 RPFLSARFCLQ--PPGDSYTRRSTFDSILAGCIPVFFHPDSAYLQYTWHLPKDYDTYSVFIPKEDVVGRNVSIEEVLRRI  174 (267)
+Confidence            35556777664  5553332233334689999999999998765565555556654555555555555555554443344
+
+
+Q 1Z1A:A|PDBID|C  620 FQEAIRRMRH  629 (654)
+Q Consensus       620 fqeairrmr~  629 (654)
+                      =.|-+.|||.
+T Consensus       175 P~e~V~~Mre  184 (267)
+T tr|A0A0D3C2S3|  175 PEEKVARMRE  184 (267)
+Confidence            4566777764
+
+
+No 54
+>tr|H3FCV6|H3FCV6_PRIPA Uncharacterized protein OS=Pristionchus pacificus GN=WBGene00109615 PE=4 SV=1
+Probab=32.30  E-value=91  Score=34.16  Aligned_cols=57  Identities=21%  Similarity=0.341  Sum_probs=41.1  Template_Neff=2.100
+
+Q 1Z1A:A|PDBID|C  315 AEVVKRKISADISQIENVHTQFNSQKEKNNIRVNKVSSEVLDQISKFPVSRVTLLLM  371 (654)
+Q Consensus       315 ~~vvk~~~sa~isqlen~~~q~~~q~~~~nir~~~vs~evldqi~kfp~skvtl~li  371 (654)
+                      .+++++...--..+|.+.|....+--++-+..+.-||+||-|.-.+||-|.+-|..+
+T Consensus        21 i~~i~nE~a~L~~tin~AL~nvDGALs~V~~q~K~i~~~VsDtAk~~Pr~~tyLiIi   77 (154)
+T tr|H3FCV6|H3FC   21 IEIIKNETAPLHETINDALLNVDGALSNVRLQTKVISSEVSDTAKNFPRSSTYLIII   77 (154)
+Confidence            455565555555666666666655556566677789999999999999999877654
+
+
+No 55
+>tr|X0RRU1|X0RRU1_9GAMM Uncharacterized protein OS=Psychrobacter sp. JCM 18900 GN=JCM18900_12626 PE=4 SV=1
+Probab=30.21  E-value=1.3e+02  Score=32.53  Aligned_cols=37  Identities=35%  Similarity=0.482  Sum_probs=25.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  438 KEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFL  477 (654)
+Q Consensus       438 kedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgfl  477 (654)
+                      ..|+|..|+|||.|.|.-.|+-.-.|-.+.-|   -|||-
+T Consensus        46 dtdflvglvkqmqnqmrwskepalrewminnr---ldgft   82 (134)
+T tr|X0RRU1|X0RR   46 DTDFLVGLVKQMQNQMRWSKEPALREWMINNR---LDGFT   82 (134)
+Confidence            46899999999999998554444434444444   37884
+
+
+No 56
+>tr|W6JB70|W6JB70_9ENTR Uncharacterized protein OS=Kosakonia sacchari SP1 GN=C813_01480 PE=4 SV=1
+Probab=28.59  E-value=1.2e+02  Score=33.93  Aligned_cols=54  Identities=22%  Similarity=0.309  Sum_probs=45.2  Template_Neff=1.666
+
+Q 1Z1A:A|PDBID|C  458 KFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLV  511 (654)
+Q Consensus       458 ~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~i~qmnlv  511 (654)
+                      +.-+..|..|=.--|.|.+-|-+++.+.++|.||.-+.-||..||+-|+.-|--
+T Consensus       104 ~ic~s~~l~~wd~sv~day~~~~~~~~~~~~~~~~~l~~~k~~qr~w~~~rn~c  157 (180)
+T tr|W6JB70|W6JB  104 TICSSDDLSSWDRSVNDAYTMQEQQQQEIDPADKAALAGMKASQRDWIKKRNQC  157 (180)
+Confidence            444446666667778999999999999999999999999999999998766643
+
+
+No 57
+>3jbq_B mol:protein length:330 phosphodiesterase 5/6 chimera catalytic domai
+Probab=28.19  E-value=1.4e+02  Score=35.43  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       174 lsieeykttlkiikqailat  193 (330)
+T 3jbq_B          174 LSIEEYKTTLKIIKQAILAT  193 (330)
+Confidence            48999999999999877643
+
+
+No 58
+>3jwq_A mol:protein length:330 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=28.19  E-value=1.4e+02  Score=35.43  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       174 lsieeykttlkiikqailat  193 (330)
+T 3jwq_A          174 LSIEEYKTTLKIIKQAILAT  193 (330)
+Confidence            48999999999999877643
+
+
+No 59
+>3jab_O mol:protein length:330 phosphodiesterase 5/6 chimera catalytic domai
+Probab=28.19  E-value=1.4e+02  Score=35.43  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       174 lsieeykttlkiikqailat  193 (330)
+T 3jab_O          174 LSIEEYKTTLKIIKQAILAT  193 (330)
+Confidence            48999999999999877643
+
+
+No 60
+>3jwq_B mol:protein length:330 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=28.19  E-value=1.4e+02  Score=35.43  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       174 lsieeykttlkiikqailat  193 (330)
+T 3jwq_B          174 LSIEEYKTTLKIIKQAILAT  193 (330)
+Confidence            48999999999999877643
+
+
+No 61
+>3jab_C mol:protein length:330 phosphodiesterase 5/6 chimera catalytic domai
+Probab=28.19  E-value=1.4e+02  Score=35.43  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       174 lsieeykttlkiikqailat  193 (330)
+T 3jab_C          174 LSIEEYKTTLKIIKQAILAT  193 (330)
+Confidence            48999999999999877643
+
+
+No 62
+>3jwr_A mol:protein length:330 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=28.19  E-value=1.4e+02  Score=35.43  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       174 lsieeykttlkiikqailat  193 (330)
+T 3jwr_A          174 LSIEEYKTTLKIIKQAILAT  193 (330)
+Confidence            48999999999999877643
+
+
+No 63
+>3jbq_F mol:protein length:330 phosphodiesterase 5/6 chimera catalytic domai
+Probab=28.19  E-value=1.4e+02  Score=35.43  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       174 lsieeykttlkiikqailat  193 (330)
+T 3jbq_F          174 LSIEEYKTTLKIIKQAILAT  193 (330)
+Confidence            48999999999999877643
+
+
+No 64
+>3jwq_C mol:protein length:330 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=28.19  E-value=1.4e+02  Score=35.43  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       174 lsieeykttlkiikqailat  193 (330)
+T 3jwq_C          174 LSIEEYKTTLKIIKQAILAT  193 (330)
+Confidence            48999999999999877643
+
+
+No 65
+>3jwr_B mol:protein length:330 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=28.19  E-value=1.4e+02  Score=35.43  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       174 lsieeykttlkiikqailat  193 (330)
+T 3jwr_B          174 LSIEEYKTTLKIIKQAILAT  193 (330)
+Confidence            48999999999999877643
+
+
+No 66
+>3jwq_D mol:protein length:330 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=28.19  E-value=1.4e+02  Score=35.43  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       174 lsieeykttlkiikqailat  193 (330)
+T 3jwq_D          174 LSIEEYKTTLKIIKQAILAT  193 (330)
+Confidence            48999999999999877643
+
+
+No 67
+>tr|W2E808|W2E808_9BACL Spore germination protein GerE OS=Paenibacillus larvae subsp. larvae DSM 25719 GN=gerE PE=4 SV=1
+Probab=28.09  E-value=1.4e+02  Score=30.02  Aligned_cols=45  Identities=24%  Similarity=0.405  Sum_probs=39.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  280 SKNNDYRFIVREKPIVENTISNLDYSDIKKQQFTEAEVVKRKISA  324 (654)
+Q Consensus       280 ~k~n~yrfivre~pive~~~s~l~~sdlkkq~fte~~vvk~~~sa  324 (654)
+                      +.+|.+-..-||+.+.|-.+..-+..|++.|+|..-..|++.||.
+T Consensus         5 dhknkflltnrerevfellvqdkttkdiaqqlfisektvrnhisn   49 (79)
+T tr|W2E808|W2E8    5 DHKNKFLLTNREREVFELLVQDKTTKDIAQQLFISEKTVRNHISN   49 (79)
+Confidence            346777777899999999999999999999999999999988874
+
+
+No 68
+>tr|C4J9K3|C4J9K3_MAIZE Uncharacterized protein OS=Zea mays GN=Zm.34711 PE=2 SV=1
+Probab=28.07  E-value=1.1e+02  Score=35.83  Aligned_cols=26  Identities=35%  Similarity=0.510  Sum_probs=21.6  Template_Neff=2.622
+
+Q 1Z1A:A|PDBID|C  107 LTCKCCRLYLPKWGTVYIHPMLKDKE  132 (654)
+Q Consensus       107 ~a~kccrl~lpkwgt~yi~pml~d~~  132 (654)
+                      .-|||||.|.-|-||+--.|.-....
+T Consensus        78 HfCK~CRRYWTKGGtLRnVPVGGgtR  103 (274)
+T tr|C4J9K3|C4J9   78 HFCKSCRRYWTKGGTLRNVPVGGGTR  103 (274)
+Confidence            45999999999999999999874433
+
+
+No 69
+>tr|A0A090SBP0|A0A090SBP0_9VIBR Uncharacterized protein OS=Vibrio variabilis GN=JCM19239_3966 PE=4 SV=1
+Probab=27.85  E-value=1.5e+02  Score=27.06  Aligned_cols=31  Identities=32%  Similarity=0.456  Sum_probs=24.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  256 RTTTAKATHIAYAISNSTAPDSFKSKNNDYR  286 (654)
+Q Consensus       256 rtttakathiay~l~dtt~~~s~~~k~n~yr  286 (654)
+                      -||||.-.|-..+++++...-..-+++..||
+T Consensus        10 vtttaekahttvvisntrptlgylvrkdayr   40 (40)
+T tr|A0A090SBP0|   10 VTTTAEKAHTTVVISNTRPTLGYLVRKDAYR   40 (40)
+Confidence            5889999999999999876665566666665
+
+
+No 70
+>3mmk_A mol:protein length:169 Fusion of LIM/homeobox protein Lhx4, linker,
+Probab=27.74  E-value=1.5e+02  Score=32.97  Aligned_cols=16  Identities=50%  Similarity=0.945  Sum_probs=13.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   79 LREFFLLEDGRIILKR   94 (654)
+Q Consensus        79 lrefflledgrivlkr   94 (654)
+                      -.||+|+||||+|-|.
+T Consensus       106 gdefylmedgrlvcke  121 (169)
+T 3mmk_A          106 GDEFYLMEDGRLVCKE  121 (169)
+Confidence            3699999999998764
+
+
+No 71
+>3mmk_B mol:protein length:169 Fusion of LIM/homeobox protein Lhx4, linker,
+Probab=27.74  E-value=1.5e+02  Score=32.97  Aligned_cols=16  Identities=50%  Similarity=0.945  Sum_probs=13.5  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   79 LREFFLLEDGRIILKR   94 (654)
+Q Consensus        79 lrefflledgrivlkr   94 (654)
+                      -.||+|+||||+|-|.
+T Consensus       106 gdefylmedgrlvcke  121 (169)
+T 3mmk_B          106 GDEFYLMEDGRLVCKE  121 (169)
+Confidence            3699999999998764
+
+
+No 72
+>3sie_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.65  E-value=1.5e+02  Score=35.49  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       191 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  241 (347)
+T 3sie_A          191 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  241 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       242 flamlm-tacdlsaitkpwpiqqr  264 (347)
+T 3sie_A          242 FLAMLM-TACDLSAITKPWPIQQR  264 (347)
+Confidence            555533 33566777777777643
+
+
+No 73
+>4g2y_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.65  E-value=1.5e+02  Score=35.49  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       191 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  241 (347)
+T 4g2y_A          191 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  241 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       242 flamlm-tacdlsaitkpwpiqqr  264 (347)
+T 4g2y_A          242 FLAMLM-TACDLSAITKPWPIQQR  264 (347)
+Confidence            555533 33566777777777643
+
+
+No 74
+>3sie_B mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.65  E-value=1.5e+02  Score=35.49  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       191 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  241 (347)
+T 3sie_B          191 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  241 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       242 flamlm-tacdlsaitkpwpiqqr  264 (347)
+T 3sie_B          242 FLAMLM-TACDLSAITKPWPIQQR  264 (347)
+Confidence            555533 33566777777777643
+
+
+No 75
+>3shz_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.65  E-value=1.5e+02  Score=35.49  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       191 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  241 (347)
+T 3shz_A          191 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  241 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       242 flamlm-tacdlsaitkpwpiqqr  264 (347)
+T 3shz_A          242 FLAMLM-TACDLSAITKPWPIQQR  264 (347)
+Confidence            555533 33566777777777643
+
+
+No 76
+>4i9z_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.65  E-value=1.5e+02  Score=35.49  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       191 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  241 (347)
+T 4i9z_A          191 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  241 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       242 flamlm-tacdlsaitkpwpiqqr  264 (347)
+T 4i9z_A          242 FLAMLM-TACDLSAITKPWPIQQR  264 (347)
+Confidence            555533 33566777777777643
+
+
+No 77
+>4oex_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.65  E-value=1.5e+02  Score=35.49  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       191 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  241 (347)
+T 4oex_A          191 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  241 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       242 flamlm-tacdlsaitkpwpiqqr  264 (347)
+T 4oex_A          242 FLAMLM-TACDLSAITKPWPIQQR  264 (347)
+Confidence            555533 33566777777777643
+
+
+No 78
+>4oew_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.65  E-value=1.5e+02  Score=35.49  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       191 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  241 (347)
+T 4oew_A          191 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  241 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       242 flamlm-tacdlsaitkpwpiqqr  264 (347)
+T 4oew_A          242 FLAMLM-TACDLSAITKPWPIQQR  264 (347)
+Confidence            555533 33566777777777643
+
+
+No 79
+>4g2w_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.65  E-value=1.5e+02  Score=35.49  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       191 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  241 (347)
+T 4g2w_A          191 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  241 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       242 flamlm-tacdlsaitkpwpiqqr  264 (347)
+T 4g2w_A          242 FLAMLM-TACDLSAITKPWPIQQR  264 (347)
+Confidence            555533 33566777777777643
+
+
+No 80
+>4ia0_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.65  E-value=1.5e+02  Score=35.49  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       191 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  241 (347)
+T 4ia0_A          191 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  241 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       242 flamlm-tacdlsaitkpwpiqqr  264 (347)
+T 4ia0_A          242 FLAMLM-TACDLSAITKPWPIQQR  264 (347)
+Confidence            555533 33566777777777643
+
+
+No 81
+>3shy_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.65  E-value=1.5e+02  Score=35.49  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       191 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  241 (347)
+T 3shy_A          191 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  241 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       242 flamlm-tacdlsaitkpwpiqqr  264 (347)
+T 3shy_A          242 FLAMLM-TACDLSAITKPWPIQQR  264 (347)
+Confidence            555533 33566777777777643
+
+
+No 82
+>1udu_B mol:protein length:324 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.47  E-value=1.5e+02  Score=35.22  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       168 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  218 (324)
+T 1udu_B          168 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  218 (324)
+Confidence            4899999999999987764311                111111     133344555555565665        56665
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       219 flamlm-tacdlsaitkpwpiqqr  241 (324)
+T 1udu_B          219 FLAMLM-TACDLSAITKPWPIQQR  241 (324)
+Confidence            555533 33566777777777643
+
+
+No 83
+>1udt_A mol:protein length:324 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.47  E-value=1.5e+02  Score=35.22  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       168 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  218 (324)
+T 1udt_A          168 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  218 (324)
+Confidence            4899999999999987764311                111111     133344555555565665        56665
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       219 flamlm-tacdlsaitkpwpiqqr  241 (324)
+T 1udt_A          219 FLAMLM-TACDLSAITKPWPIQQR  241 (324)
+Confidence            555533 33566777777777643
+
+
+No 84
+>1udu_A mol:protein length:324 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.47  E-value=1.5e+02  Score=35.22  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       168 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  218 (324)
+T 1udu_A          168 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  218 (324)
+Confidence            4899999999999987764311                111111     133344555555565665        56665
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       219 flamlm-tacdlsaitkpwpiqqr  241 (324)
+T 1udu_A          219 FLAMLM-TACDLSAITKPWPIQQR  241 (324)
+Confidence            555533 33566777777777643
+
+
+No 85
+>1uho_A mol:protein length:324 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.47  E-value=1.5e+02  Score=35.22  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       168 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  218 (324)
+T 1uho_A          168 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  218 (324)
+Confidence            4899999999999987764311                111111     133344555555565665        56665
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       219 flamlm-tacdlsaitkpwpiqqr  241 (324)
+T 1uho_A          219 FLAMLM-TACDLSAITKPWPIQQR  241 (324)
+Confidence            555533 33566777777777643
+
+
+No 86
+>tr|A0A0F8ZIY4|A0A0F8ZIY4_9ZZZZ Uncharacterized protein (Fragment) OS=marine sediment metagenome GN=LCGC14_2689520 PE=4 SV=1
+Probab=27.42  E-value=1.5e+02  Score=30.06  Aligned_cols=29  Identities=31%  Similarity=0.699  Sum_probs=26.4  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  485 PINPKDPRLLTLLKDHQRAMIDQMNLVKW  513 (654)
+Q Consensus       485 pi~pkdprlltllkdhqr~~i~qmnlv~w  513 (654)
+                      |..|..|.|-.-+||+|.++|..+.-..|
+T Consensus        37 pappgtpqltdgmkdyqkeiieklkelaw   65 (82)
+T tr|A0A0F8ZIY4|   37 PAPPGTPQLTDGMKDYQKEIIEKLKELAW   65 (82)
+Confidence            56788899999999999999999988888
+
+
+No 87
+>1tbf_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.23  E-value=1.5e+02  Score=35.40  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       193 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  243 (347)
+T 1tbf_A          193 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  243 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       244 flamlm-tacdlsaitkpwpiqqr  266 (347)
+T 1tbf_A          244 FLAMLM-TACDLSAITKPWPIQQR  266 (347)
+Confidence            555533 33566777777777643
+
+
+No 88
+>1t9s_B mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.23  E-value=1.5e+02  Score=35.40  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       193 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  243 (347)
+T 1t9s_B          193 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  243 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       244 flamlm-tacdlsaitkpwpiqqr  266 (347)
+T 1t9s_B          244 FLAMLM-TACDLSAITKPWPIQQR  266 (347)
+Confidence            555533 33566777777777643
+
+
+No 89
+>1t9s_A mol:protein length:347 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.23  E-value=1.5e+02  Score=35.40  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       193 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  243 (347)
+T 1t9s_A          193 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  243 (347)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       244 flamlm-tacdlsaitkpwpiqqr  266 (347)
+T 1t9s_A          244 FLAMLM-TACDLSAITKPWPIQQR  266 (347)
+Confidence            555533 33566777777777643
+
+
+No 90
+>3b2r_B mol:protein length:330 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.21  E-value=1.5e+02  Score=35.23  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       174 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  224 (330)
+T 3b2r_B          174 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  224 (330)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       225 flamlm-tacdlsaitkpwpiqqr  247 (330)
+T 3b2r_B          225 FLAMLM-TACDLSAITKPWPIQQR  247 (330)
+Confidence            555533 33566777777777643
+
+
+No 91
+>3b2r_A mol:protein length:330 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.21  E-value=1.5e+02  Score=35.23  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       174 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  224 (330)
+T 3b2r_A          174 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  224 (330)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       225 flamlm-tacdlsaitkpwpiqqr  247 (330)
+T 3b2r_A          225 FLAMLM-TACDLSAITKPWPIQQR  247 (330)
+Confidence            555533 33566777777777643
+
+
+No 92
+>1rkp_A mol:protein length:326 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.21  E-value=1.5e+02  Score=35.19  Aligned_cols=73  Identities=33%  Similarity=0.544  Sum_probs=43.3  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       170 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  220 (326)
+T 1rkp_A          170 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  220 (326)
+Confidence            4899999999999987764311                011111     133344555555555565        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKA  527 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~a  527 (654)
+                      .-.|-. .--|+.....|-|.+-
+T Consensus       221 flamlm-tacdlsaitkpwpiqq  242 (326)
+T 1rkp_A          221 FLAMLM-TACDLSAITKPWPIQQ  242 (326)
+Confidence            555533 3356677777777764
+
+
+No 93
+>tr|A0A0E9ZNM3|A0A0E9ZNM3_9PSED Uncharacterized protein OS=Pseudomonas sp. 10-1B GN=TZ03_11535 PE=4 SV=1
+Probab=27.11  E-value=1.5e+02  Score=32.67  Aligned_cols=26  Identities=35%  Similarity=0.735  Sum_probs=23.3  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   10 VIDGWLVDTVKRKPINFRSPEVRLLL   35 (654)
+Q Consensus        10 vidgwlvd~vkrkpinf~~peirlll   35 (654)
+                      .|+|||.|.+.||.+-|-.|.|-++-
+T Consensus        72 figgwltdhlgrkrvffvgptifvia   97 (161)
+T tr|A0A0E9ZNM3|   72 FIGGWLTDHLGRKRVFFVGPTIFVIA   97 (161)
+Confidence            58999999999999999999987664
+
+
+No 94
+>4md6_A mol:protein length:326 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.07  E-value=1.5e+02  Score=35.16  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       170 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  220 (326)
+T 4md6_A          170 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  220 (326)
+Confidence            4899999999999987764311                111111     133344555555565665        56665
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       221 flamlm-tacdlsaitkpwpiqqr  243 (326)
+T 4md6_A          221 FLAMLM-TACDLSAITKPWPIQQR  243 (326)
+Confidence            555533 33566777777777643
+
+
+No 95
+>2h42_C mol:protein length:326 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.07  E-value=1.5e+02  Score=35.16  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       170 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  220 (326)
+T 2h42_C          170 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  220 (326)
+Confidence            4899999999999987764311                111111     133344555555565665        56665
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       221 flamlm-tacdlsaitkpwpiqqr  243 (326)
+T 2h42_C          221 FLAMLM-TACDLSAITKPWPIQQR  243 (326)
+Confidence            555533 33566777777777643
+
+
+No 96
+>2h42_A mol:protein length:326 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.07  E-value=1.5e+02  Score=35.16  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       170 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  220 (326)
+T 2h42_A          170 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  220 (326)
+Confidence            4899999999999987764311                111111     133344555555565665        56665
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       221 flamlm-tacdlsaitkpwpiqqr  243 (326)
+T 2h42_A          221 FLAMLM-TACDLSAITKPWPIQQR  243 (326)
+Confidence            555533 33566777777777643
+
+
+No 97
+>2h42_B mol:protein length:326 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.07  E-value=1.5e+02  Score=35.16  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       170 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  220 (326)
+T 2h42_B          170 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  220 (326)
+Confidence            4899999999999987764311                111111     133344555555565665        56665
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       221 flamlm-tacdlsaitkpwpiqqr  243 (326)
+T 2h42_B          221 FLAMLM-TACDLSAITKPWPIQQR  243 (326)
+Confidence            555533 33566777777777643
+
+
+No 98
+>2h40_A mol:protein length:326 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.07  E-value=1.5e+02  Score=35.16  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       170 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  220 (326)
+T 2h40_A          170 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  220 (326)
+Confidence            4899999999999987764311                111111     133344555555565665        56665
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       221 flamlm-tacdlsaitkpwpiqqr  243 (326)
+T 2h40_A          221 FLAMLM-TACDLSAITKPWPIQQR  243 (326)
+Confidence            555533 33566777777777643
+
+
+No 99
+>2h44_A mol:protein length:326 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=27.07  E-value=1.5e+02  Score=35.16  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=44.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       170 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  220 (326)
+T 2h44_A          170 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  220 (326)
+Confidence            4899999999999987764311                111111     133344555555565665        56665
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       221 flamlm-tacdlsaitkpwpiqqr  243 (326)
+T 2h44_A          221 FLAMLM-TACDLSAITKPWPIQQR  243 (326)
+Confidence            555533 33566777777777643
+
+
+No 100
+>3hc8_A mol:protein length:324 cGMP-specific 3',5'-cyclic phosphodiesterase,
+Probab=26.86  E-value=1.6e+02  Score=35.10  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       170 lsieeykttlkiikqailat  189 (324)
+T 3hc8_A          170 LSIEEYKTTLKIIKQAILAT  189 (324)
+Confidence            48999999999999877643
+
+
+No 101
+>3hdz_A mol:protein length:324 cGMP-specific 3',5'-cyclic phosphodiesterase,
+Probab=26.86  E-value=1.6e+02  Score=35.10  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       170 lsieeykttlkiikqailat  189 (324)
+T 3hdz_A          170 LSIEEYKTTLKIIKQAILAT  189 (324)
+Confidence            48999999999999877643
+
+
+No 102
+>tr|A0A072UAQ2|A0A072UAQ2_MEDTR Uncharacterized protein OS=Medicago truncatula GN=MTR_7g061700 PE=4 SV=1
+Probab=26.79  E-value=1.6e+02  Score=31.51  Aligned_cols=63  Identities=30%  Similarity=0.404  Sum_probs=50.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  302 LDYSDIKKQQFTEAEVVKRKISADISQIENVHTQFNSQKEKNNIRVNKVSSEVLDQISKFPVSRVTLL  369 (654)
+Q Consensus       302 l~~sdlkkq~fte~~vvk~~~sa~isqlen~~~q~~~q~~~~nir~~~vs~evldqi~kfp~skvtl~  369 (654)
+                      +..|.||.--+.||....+.+.     |.|..-|..+-+...||--+.||-.|||..-.||+|..-|+
+T Consensus        26 lqssnlksfsynevraatrnfc-----lnndfwqivnykqekniynspvswtvldevvtfpasplfls   88 (121)
+T tr|A0A072UAQ2|   26 LQSSNLKSFSYNEVRAATRNFC-----LNNDFWQIVNYKQEKNIYNSPVSWTVLDEVVTFPASPLFLS   88 (121)
+Confidence            3456777777888877766654     66777888888888899999999999999999999987654
+
+
+No 103
+>1t9r_A mol:protein length:366 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=26.63  E-value=1.6e+02  Score=35.46  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       195 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  245 (366)
+T 1t9r_A          195 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  245 (366)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       246 flamlm-tacdlsaitkpwpiqqr  268 (366)
+T 1t9r_A          246 FLAMLM-TACDLSAITKPWPIQQR  268 (366)
+Confidence            555533 33566777777777643
+
+
+No 104
+>3tgg_A mol:protein length:326 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=26.49  E-value=1.6e+02  Score=35.04  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       172 lsieeykttlkiikqailat  191 (326)
+T 3tgg_A          172 LSIEEYKTTLKIIKQAILAT  191 (326)
+Confidence            48999999999999877643
+
+
+No 105
+>2chm_A mol:protein length:326 CGMP-SPECIFIC 3', 5'-CYCLIC PHOSPHODIESTERASE
+Probab=26.49  E-value=1.6e+02  Score=35.04  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       172 lsieeykttlkiikqailat  191 (326)
+T 2chm_A          172 LSIEEYKTTLKIIKQAILAT  191 (326)
+Confidence            48999999999999877643
+
+
+No 106
+>3tge_A mol:protein length:326 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=26.49  E-value=1.6e+02  Score=35.04  Aligned_cols=20  Identities=60%  Similarity=0.830  Sum_probs=17.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLIT  444 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~  444 (654)
+                      -||||||.||+.||..+|.+
+T Consensus       172 lsieeykttlkiikqailat  191 (326)
+T 3tge_A          172 LSIEEYKTTLKIIKQAILAT  191 (326)
+Confidence            48999999999999877643
+
+
+No 107
+>1xp0_A mol:protein length:364 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=26.42  E-value=1.6e+02  Score=35.39  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.8  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       193 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  243 (364)
+T 1xp0_A          193 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  243 (364)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       244 flamlm-tacdlsaitkpwpiqqr  266 (364)
+T 1xp0_A          244 FLAMLM-TACDLSAITKPWPIQQR  266 (364)
+Confidence            555533 33566777777777643
+
+
+No 108
+>1xoz_A mol:protein length:364 cGMP-specific 3',5'-cyclic phosphodiesterase
+Probab=26.42  E-value=1.6e+02  Score=35.39  Aligned_cols=74  Identities=32%  Similarity=0.548  Sum_probs=43.8  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  425 QSIEEYKITLELIKEDLLITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAM  504 (654)
+Q Consensus       425 qsi~eyk~tl~likedlll~lvkQmeN~w~~~k~fs~eeeyvsprflvadgflidlaeekpi~pkdprlltllkdhqr~~  504 (654)
+                      -||||||.||+.||..+|.+=.                .-|+..     .|-...|......|-.||        ||.++
+T Consensus       193 lsieeykttlkiikqailatdl----------------alyikr-----rgeffelirknqfnledp--------hqkel  243 (364)
+T 1xoz_A          193 LSIEEYKTTLKIIKQAILATDL----------------ALYIKR-----RGEFFELIRKNQFNLEDP--------HQKEL  243 (364)
+Confidence            4899999999999988765311                111111     133344555555565665        56655
+
+
+Q 1Z1A:A|PDBID|C  505 IDQMNLVKWNDFKKYQDPIPLKAK  528 (654)
+Q Consensus       505 i~qmnlv~w~dfkkyqdpipl~ak  528 (654)
+                      .-.|-. .--|+.....|-|.+-+
+T Consensus       244 flamlm-tacdlsaitkpwpiqqr  266 (364)
+T 1xoz_A          244 FLAMLM-TACDLSAITKPWPIQQR  266 (364)
+Confidence            555533 33566777777777643
+
+
+No 109
+>tr|A0A084Y6B5|A0A084Y6B5_9PROT Uncharacterized protein OS=Candidatus Accumulibacter sp. BA-91 GN=AW09_004662 PE=4 SV=1
+Probab=26.38  E-value=1.6e+02  Score=35.85  Aligned_cols=49  Identities=31%  Similarity=0.512  Sum_probs=40.3  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  470 FLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNL--VKWNDFKK  518 (654)
+Q Consensus       470 flvadgflidlaeekpi~pkdprlltllkdhqr~~i~qmnl--v~w~dfkk  518 (654)
+                      -|.|.|||.||..|...|.-..-....|..|-..+|||+..  |.-..|..
+T Consensus       291 rlsaqgflfdlsaealldgikacvqavlrghverlidqigvdfvaasqfen  341 (421)
+T tr|A0A084Y6B5|  291 RLSAQGFLFDLSAEALLDGIKACVQAVLRGHVERLIDQIGVDFVAASQFEN  341 (421)
+Confidence            36789999999999999988888899999999999999863  44444544
+
+
+No 110
+>3ifl_H mol:protein length:222 12A11 FAB antibody heavy chain
+Probab=26.01  E-value=1.7e+02  Score=33.62  Aligned_cols=98  Identities=30%  Similarity=0.315  Sum_probs=58.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  197 LRKTYNPVSLDILYSLNSNFYFVKDDLLFQLLGKRVFVKFCKVMENGKCGKAPLWYRVKRTTTAKATHIAYAISNSTAPD  276 (654)
+Q Consensus       197 lrk~ynp~sldily~l~sn~yfvkdd~~fqllgkrvfvkfc~vm~n~~~g~~p~~y~~~rtttakathiay~l~dtt~~~  276 (654)
+                      =-|.|||       +|+|..-.-||..-     ..||.|...|-.    ....-+||+.|||||.  ..||-=..+|..-
+T Consensus        57 ddkyynp-------slksrltiskdtsr-----nqvflkitsvdt----adtatyycarrtttad--yfaywgqgttltv  118 (222)
+T 3ifl_H           57 DDKYYNP-------SLKSRLTISKDTSR-----NQVFLKITSVDT----ADTATYYCARRTTTAD--YFAYWGQGTTLTV  118 (222)
+Confidence            3578998       46777777777643     457888766543    3446799999999975  4667555554433
+
+
+Q 1Z1A:A|PDBID|C  277 S--FKSKNNDYRFIVREKPIVENTISNLDYSDIKKQQFTEA  315 (654)
+Q Consensus       277 s--~~~k~n~yrfivre~pive~~~s~l~~sdlkkq~fte~  315 (654)
+                      |  .+...++|-.--..   ...+.|-.+..-|-|-.|.|-
+T Consensus       119 ssakttppsvyplapgs---aaqtnsmvtlgclvkgyfpep  156 (222)
+T 3ifl_H          119 SSAKTTPPSVYPLAPGS---AAQTNSMVTLGCLVKGYFPEP  156 (222)
+Confidence            2  22333455432111   123344555666677777764
+
+
+No 111
+>3ifn_H mol:protein length:222 12A11 FAB antibody heavy chain
+Probab=26.01  E-value=1.7e+02  Score=33.62  Aligned_cols=98  Identities=30%  Similarity=0.315  Sum_probs=58.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  197 LRKTYNPVSLDILYSLNSNFYFVKDDLLFQLLGKRVFVKFCKVMENGKCGKAPLWYRVKRTTTAKATHIAYAISNSTAPD  276 (654)
+Q Consensus       197 lrk~ynp~sldily~l~sn~yfvkdd~~fqllgkrvfvkfc~vm~n~~~g~~p~~y~~~rtttakathiay~l~dtt~~~  276 (654)
+                      =-|.|||       +|+|..-.-||..-     ..||.|...|-.    ....-+||+.|||||.  ..||-=..+|..-
+T Consensus        57 ddkyynp-------slksrltiskdtsr-----nqvflkitsvdt----adtatyycarrtttad--yfaywgqgttltv  118 (222)
+T 3ifn_H           57 DDKYYNP-------SLKSRLTISKDTSR-----NQVFLKITSVDT----ADTATYYCARRTTTAD--YFAYWGQGTTLTV  118 (222)
+Confidence            3578998       46777777777643     457888766543    3446799999999975  4667555554433
+
+
+Q 1Z1A:A|PDBID|C  277 S--FKSKNNDYRFIVREKPIVENTISNLDYSDIKKQQFTEA  315 (654)
+Q Consensus       277 s--~~~k~n~yrfivre~pive~~~s~l~~sdlkkq~fte~  315 (654)
+                      |  .+...++|-.--..   ...+.|-.+..-|-|-.|.|-
+T Consensus       119 ssakttppsvyplapgs---aaqtnsmvtlgclvkgyfpep  156 (222)
+T 3ifn_H          119 SSAKTTPPSVYPLAPGS---AAQTNSMVTLGCLVKGYFPEP  156 (222)
+Confidence            2  22333455432111   123344555666677777764
+
+
+No 112
+>tr|G6EXB3|G6EXB3_9PROT Uncharacterized protein OS=Commensalibacter intestini A911 GN=CIN_00090 PE=4 SV=1
+Probab=25.49  E-value=1.7e+02  Score=33.86  Aligned_cols=43  Identities=26%  Similarity=0.584  Sum_probs=36.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   80 REFFLLEDGRIILKRIRSKLRYKVVKKLTC-KCCRLYLPKWGTV  122 (654)
+Q Consensus        80 refflledgrivlkrir~kl~ykvvk~~a~-kccrl~lpkwgt~  122 (654)
+                      -|-.+-..|.+.+..|.+||||..+|.... .||-.|.-|+..+
+T Consensus        57 ceavlssagevlissianklhyetiksigdtsccyaffikfpri  100 (245)
+T tr|G6EXB3|G6EX   57 CEAVLSSAGEVLISSIANKLHYETIKSIGDTSCCYAFFIKFPRI  100 (245)
+Confidence            466778899999999999999999999874 6898888777654
+
+
+No 113
+>tr|H0GXK5|H0GXK5_SACCK Uncharacterized protein OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) GN=VIN7_8382 PE=4 SV=1
+Probab=25.33  E-value=1.7e+02  Score=31.36  Aligned_cols=44  Identities=32%  Similarity=0.715  Sum_probs=33.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  466 VSPRFLVADGFLIDLAEEKPINPKDPRLLTLLKDHQRAMIDQMNLVKWNDF  516 (654)
+Q Consensus       466 vsprflvadgflidlaeekpi~pkdprlltllkdhqr~~i~qmnlv~w~df  516 (654)
+                      +..||-+.||+|||-.....+|||.-       |.-...|-.-.|+.|+..
+T Consensus         4 indrfsiidgwlidpkkkalvnpkev-------dapqnfiykhhlidwdev   47 (125)
+T tr|H0GXK5|H0GX    4 INDRFSIIDGWLIDPKKKALVNPKEV-------DAPQNFIYKHHLIDWDEV   47 (125)
+Confidence            45689999999999998889999863       223345555678888864
+
+
+No 114
+>tr|W0N3M4|W0N3M4_PSESX Uncharacterized protein OS=Pseudomonas syringae CC1557 GN=N018_21755 PE=4 SV=1
+Probab=25.28  E-value=1.8e+02  Score=31.25  Aligned_cols=29  Identities=34%  Similarity=0.448  Sum_probs=23.8  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C    2 LQINSRLAVIDGWLVDTVKRKPINFRSPE   30 (654)
+Q Consensus         2 leinsr~avidgwlvd~vkrkpinf~~pe   30 (654)
+                      -+||+.|||-+||||.+-...--.|.|..
+T Consensus        21 aqinaafavaggflvqrrgqsvqqfgsrn   49 (122)
+T tr|W0N3M4|W0N3   21 AQINAAFAVAGGFLVQRRGQSVQQFGSRN   49 (122)
+Confidence            47999999999999998777766776643
+
+
+No 115
+>tr|B2A6L6|B2A6L6_NATTJ Uncharacterized protein OS=Natranaerobius thermophilus (strain ATCC BAA-1301 / DSM 18059 / JW/NM-WN-LF) GN=Nther_1980 PE=4 SV=1
+Probab=24.63  E-value=1.8e+02  Score=32.59  Aligned_cols=81  Identities=33%  Similarity=0.361  Sum_probs=57.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  392 KICIEKTTQSLEEIRDTFQANPEMQASFDKEYYQSIEEYKITLELIKEDLLITL-IKQMENMWAAEKKFSTEEEYVSPRF  470 (654)
+Q Consensus       392 kicie~ttqsl~~ir~tf~~npem~arfd~ey~qsi~eyk~tl~likedlll~l-vkQmeN~w~~~k~fs~eeeyvsprf  470 (654)
+                      .|.-|-...|+.+||.-       ..-....-|.|-|||...-+.|||.||... +|.-+|.|..-|+..---...|.-|
+T Consensus        59 eihkelkeksiheirry-------knmlnqgtytskeeydaikeaikealltsfsikkgenemnkikkikilytisssif  131 (180)
+T tr|B2A6L6|B2A6   59 EIHKELKEKSIHEIRRY-------KNMLNQGTYTSKEEYDAIKEAIKEALLTSFSIKKGENEMNKIKKIKILYTISSSIF  131 (180)
+Confidence            34445555677777753       223445668899999999999999998765 6888999987777655445567778
+
+
+Q 1Z1A:A|PDBID|C  471 LVADGFLID  479 (654)
+Q Consensus       471 lvadgflid  479 (654)
+                      -|..|..--
+T Consensus       132 avstgvfgt  140 (180)
+T tr|B2A6L6|B2A6  132 AVSTGVFGT  140 (180)
+Confidence            888886533
+
+
+No 116
+>tr|B7ATN1|B7ATN1_9FIRM Putative uncharacterized protein OS=[Bacteroides] pectinophilus ATCC 43243 GN=BACPEC_01503 PE=4 SV=1
+Probab=23.44  E-value=2e+02  Score=30.42  Aligned_cols=86  Identities=26%  Similarity=0.272  Sum_probs=63.4  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  260 AKATHIAYAISNSTAPD---SFKSKNNDYRFIVREKPIVENTISNLDYSDIKKQQFTEAEVVKRKISADISQIENVHTQF  336 (654)
+Q Consensus       260 akathiay~l~dtt~~~---s~~~k~n~yrfivre~pive~~~s~l~~sdlkkq~fte~~vvk~~~sa~isqlen~~~q~  336 (654)
+                      |..|.||..|.+.|..-   ..++...+  +|-.|..-||+|+-.-+..|-.-....|...||+.-|..||.-..|-+|.
+T Consensus        17 aaitaiavflknetvtmpkqemtvqadv--yiqeesshvedivvsenttdanikvlietdavkndasqqisarqtqetqh   94 (108)
+T tr|B7ATN1|B7AT   17 AAITAIAVFLKNETVTMPKQEMTVQADV--YIQEESSHVEDIVVSENTTDANIKVLIETDAVKNDASQQISARQTQETQH   94 (108)
+Confidence            34556777777665433   12333444  47778889999987777777777788999999999999999888888888
+
+
+Q 1Z1A:A|PDBID|C  337 NSQKEKNNIRV  347 (654)
+Q Consensus       337 ~~q~~~~nir~  347 (654)
+                      ...++-||--|
+T Consensus        95 tkragcnnscv  105 (108)
+T tr|B7ATN1|B7AT   95 TKRAGCNNSCV  105 (108)
+Confidence            88887776443
+
+
+No 117
+>tr|A0A0M0JUL0|A0A0M0JUL0_9EUKA Uncharacterized protein (Fragment) OS=Chrysochromulina sp. CCMP291 GN=Ctob_004313 PE=4 SV=1
+Probab=23.06  E-value=2.1e+02  Score=36.34  Aligned_cols=29  Identities=41%  Similarity=0.831  Sum_probs=26.6  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  523 IPLKAKTLFKFCKQIKKKFLRGADFKLHT  551 (654)
+Q Consensus       523 ipl~aktlfk~ckqikkkflr~adfklht  551 (654)
+                      -|.+|..+||+.|..|+..|.|-||.|..
+T Consensus       239 ppvkaeaifklskelkrdmlkgydftlsa  267 (631)
+T tr|A0A0M0JUL0|  239 PPVKAEAIFKLSKELKRDMLKGYDFTLSA  267 (631)
+Confidence            38899999999999999999999998864
+
+
+No 118
+>tr|A0A0L8QPN9|A0A0L8QPN9_9ACTN Uncharacterized protein (Fragment) OS=Streptomyces varsoviensis GN=ADK38_15865 PE=4 SV=1
+Probab=22.90  E-value=2.1e+02  Score=32.97  Aligned_cols=41  Identities=49%  Similarity=0.538  Sum_probs=28.8  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  352 SEVLDQIS--KFPVSRVTLLLMSAGQDKNYIELVEELARRLEKIC  394 (654)
+Q Consensus       352 ~evldqi~--kfp~skvtl~liaagedk~yielveela~rlekic  394 (654)
+                      ..-||.|+  |-|-|+|  +||++-....--.+.||||+||.|-.
+T Consensus        25 ragldtisgrkaprsrv--lliagrpgsgrsalaeelarrlakdy   67 (222)
+T tr|A0A0L8QPN9|   25 RAGLDTISGRKAPRSRV--LLIAGRPGSGRSALAEELARRLAKDY   67 (222)
+Confidence            34467666  4566665  56776666666789999999998743
+
+
+No 119
+>tr|U9U9D7|U9U9D7_RHIID Uncharacterized protein OS=Rhizophagus irregularis (strain DAOM 181602 / DAOM 197198 / MUCL 43194) GN=GLOINDRAFT_27379 PE=4 SV=1
+Probab=22.43  E-value=2.2e+02  Score=27.73  Aligned_cols=29  Identities=38%  Similarity=0.486  Sum_probs=25.3  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  262 ATHIAYAISNSTAPDSFKSKNNDYRFIVR  290 (654)
+Q Consensus       262 athiay~l~dtt~~~s~~~k~n~yrfivr  290 (654)
+                      |..+||..+|+|.-.|.++..+.||-|-.
+T Consensus        26 ardvayicsdstsvssstsnsstyrhirh   54 (58)
+T tr|U9U9D7|U9U9   26 ARDVAYICSDSTSVSSSTSNSSTYRHIRH   54 (58)
+Confidence            56799999999999999999999998743
+
+
+No 120
+>tr|A0A0R0LGB5|A0A0R0LGB5_SOYBN Uncharacterized protein OS=Glycine max GN=GLYMA_01G146900 PE=4 SV=1
+Probab=22.18  E-value=2.2e+02  Score=31.36  Aligned_cols=34  Identities=41%  Similarity=0.542  Sum_probs=28.8  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  443 ITLIKQMENMWAAEKKFSTEEEYVSPRFLVADGF  476 (654)
+Q Consensus       443 l~lvkQmeN~w~~~k~fs~eeeyvsprflvadgf  476 (654)
+                      ++-||||.-.|...|-.+.||.|.||.|.--.|.
+T Consensus        16 ittikqmdftmtkskwvtqeeayasphftsnagh   49 (148)
+T tr|A0A0R0LGB5|   16 ITTIKQMDFTMTKSKWVTQEEAYASPHFTSNAGH   49 (148)
+Confidence            4678999999998888888999999999876653
+
+
+No 121
+>tr|T1FPM7|T1FPM7_HELRO Uncharacterized protein OS=Helobdella robusta PE=4 SV=1
+Probab=22.17  E-value=2.2e+02  Score=33.59  Aligned_cols=37  Identities=32%  Similarity=0.582  Sum_probs=33.2  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  558 LKYEPERMTVLCSCVPILLDDQTVQYLYDDSIIPEFE  594 (654)
+Q Consensus       558 ~~~~~~rmtv~~~cvpi~ldd~tvqylyddsiipe~~  594 (654)
+                      ..|--.||..-..|||+-.....||+.-||.-|||+.
+T Consensus        72 hqyiykrmnlnltcipvgypsprvqwikddktipesn  108 (279)
+T tr|T1FPM7|T1FP   72 HQYIYKRMNLNLTCIPVGYPSPRVQWIKDDKTIPESN  108 (279)
+Confidence            3456689999999999999999999999999999984
+
+
+No 122
+>tr|A0A086K5J1|A0A086K5J1_TOXGO Ankyrin repeat-containing protein (Fragment) OS=Toxoplasma gondii p89 GN=TGP89_261230B PE=4 SV=1
+Probab=22.10  E-value=2.2e+02  Score=34.93  Aligned_cols=38  Identities=37%  Similarity=0.530  Sum_probs=34.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  213 NSNFYFVKDDLLFQLLGKRVFVKFCKVMENGKCGKAPL  250 (654)
+Q Consensus       213 ~sn~yfvkdd~~fqllgkrvfvkfc~vm~n~~~g~~p~  250 (654)
+                      +|.|-.|...+.-|-..|||+-||....+|.++|+.|-
+T Consensus       231 nsaygivnerlmtqgadkrvlrkflrlyknaregkrpr  268 (425)
+T tr|A0A086K5J1|  231 NSAYGIVNERLMTQGADKRVLRKFLRLYKNAREGKRPR  268 (425)
+Confidence            56677788888889999999999999999999999984
+
+
+No 123
+>tr|A0A0G2T6F6|A0A0G2T6F6_9BILA Cytochrome c oxidase subunit 3 OS=Oxyuris equi GN=COX3 PE=4 SV=1
+Probab=21.70  E-value=2.3e+02  Score=33.18  Aligned_cols=22  Identities=50%  Similarity=1.244  Sum_probs=18.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  101 YKVVKKLTCKCCRLYLPKWGTVYI  124 (654)
+Q Consensus       101 ykvvk~~a~kccrl~lpkwgt~yi  124 (654)
+                      --|||-+.|+||-+|  -||.++.
+T Consensus       162 llvvkvfccrcclly--ywgcvff  183 (255)
+T tr|A0A0G2T6F6|  162 LLVVKVFCCRCCLLY--YWGCVFF  183 (255)
+Confidence            348899999999988  4898764
+
+
+No 124
+>2z04_B mol:protein length:365 Phosphoribosylaminoimidazole carboxylase ATPa
+Probab=21.67  E-value=2.3e+02  Score=34.35  Aligned_cols=31  Identities=35%  Similarity=0.719  Sum_probs=21.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   67 KSMELFKHIKLVLREFFLLEDGRIILKRIRS   97 (654)
+Q Consensus        67 ~s~elfkhiklvlrefflledgrivlkrir~   97 (654)
+                      .-|||..-+-..--|||+|.|||+.+.....
+T Consensus       223 rlmelldivgvftveffllkdgrvlinefap  253 (365)
+T 2z04_B          223 RLMELLDIVGVFTVEFFLLKDGRVLINEFAP  253 (365)
+Confidence            3466665555556799999999998764433
+
+
+No 125
+>2z04_A mol:protein length:365 Phosphoribosylaminoimidazole carboxylase ATPa
+Probab=21.67  E-value=2.3e+02  Score=34.35  Aligned_cols=31  Identities=35%  Similarity=0.719  Sum_probs=21.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C   67 KSMELFKHIKLVLREFFLLEDGRIILKRIRS   97 (654)
+Q Consensus        67 ~s~elfkhiklvlrefflledgrivlkrir~   97 (654)
+                      .-|||..-+-..--|||+|.|||+.+.....
+T Consensus       223 rlmelldivgvftveffllkdgrvlinefap  253 (365)
+T 2z04_A          223 RLMELLDIVGVFTVEFFLLKDGRVLINEFAP  253 (365)
+Confidence            3466665555556799999999998764433
+
+
+No 126
+>tr|A0A0R1LYU5|A0A0R1LYU5_9LACO Transposase OS=Lactobacillus hordei DSM 19519 GN=FC92_GL000227 PE=4 SV=1
+Probab=21.67  E-value=2.3e+02  Score=30.56  Aligned_cols=67  Identities=22%  Similarity=0.251  Sum_probs=53.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  276 DSFKSKNNDYRFIVREKPIVENTISNLDYSDIKKQQFTEAEVVKRKISADISQIENVHTQFNSQKEK  342 (654)
+Q Consensus       276 ~s~~~k~n~yrfivre~pive~~~s~l~~sdlkkq~fte~~vvk~~~sa~isqlen~~~q~~~q~~~  342 (654)
+                      -|+.-++|.+||---.+...-+....++....+-|+-.|....-..+...|.+|||.+...+..-++
+T Consensus         7 ysfvwrkntvrfdklnrsaiisllkelneakfkcqlpvetdltlemldeiilrlennlkdlnkkiek   73 (123)
+T tr|A0A0R1LYU5|    7 YSFVWRKNTVRFDKLNRSAIISLLKELNEAKFKCQLPVETDLTLEMLDEIILRLENNLKDLNKKIEK   73 (123)
+Confidence            3567788888887666665556667788888899999998888888899999999999887655443
+
+
+No 127
+>tr|S4PRM3|S4PRM3_9NEOP Uroporphyrinogen-III synthase (Fragment) OS=Pararge aegeria PE=4 SV=1
+Probab=21.41  E-value=2.3e+02  Score=29.97  Aligned_cols=38  Identities=24%  Similarity=0.478  Sum_probs=33.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  107 LTCKCCRLYLPKWGTVYIHPMLKDKEKPLAGVCEFSLD  144 (654)
+Q Consensus       107 ~a~kccrl~lpkwgt~yi~pml~d~~~~~~~~~~fsl~  144 (654)
+                      -..-||-.|...-|.-|||--+|.-..++..++.|++.
+T Consensus        52 tvnpcclvffspsgceyiyrqlqtfnnkltnvphfaig   89 (107)
+T tr|S4PRM3|S4PR   52 TVNPCCLVFFSPSGCEYIYRQLQTFNNKLTNVPHFAIG   89 (107)
+Confidence            34679999999999999999999888888888888865
+
+
+No 128
+>tr|K2LGD2|K2LGD2_BIFBI Response regulator of two-component system (Fragment) OS=Bifidobacterium bifidum IPLA 20015 GN=B217_00005 PE=4 SV=1
+Probab=21.10  E-value=1.8e+02  Score=29.80  Aligned_cols=49  Identities=20%  Similarity=0.232  Sum_probs=43.2  Template_Neff=2.756
+
+Q 1Z1A:A|PDBID|C  282 NNDYRFIVREKPIVENTISNLDYSDIKKQQFTEAEVVKRKISADISQIE  330 (654)
+Q Consensus       282 ~n~yrfivre~pive~~~s~l~~sdlkkq~fte~~vvk~~~sa~isqle  330 (654)
+                      ...-..--||+.|..-+--.++-.||...+..+---+|+.||+.++.|.
+T Consensus        27 ~~~~~Lt~RERdv~al~~~gL~N~eIA~rL~lse~T~kthis~~l~KL~   75 (91)
+T tr|K2LGD2|K2LG   27 GVLQLLTPRERDVLALVGEGLTNREIARRLYLSEGTVKTHISAMLSKLG   75 (91)
+Confidence            3344566799999999999999999999999999999999999999886
+
+
+No 129
+>tr|V9GED3|V9GED3_9BACL Regulatory protein, LuxR OS=Paenibacillus sp. JCM 10914 GN=JCM10914_3238 PE=4 SV=1
+Probab=20.83  E-value=1.7e+02  Score=29.20  Aligned_cols=52  Identities=19%  Similarity=0.349  Sum_probs=43.8  Template_Neff=3.000
+
+Q 1Z1A:A|PDBID|C  279 KSKNNDYRFIVREKPIVENTISNLDYSDIKKQQFTEAEVVKRKISADISQIE  330 (654)
+Q Consensus       279 ~~k~n~yrfivre~pive~~~s~l~~sdlkkq~fte~~vvk~~~sa~isqle  330 (654)
+                      .+..+....-=||..|-+-+...-+-.||++|+|..-.-||+.+|.-...|+
+T Consensus        13 ~~~~~~~lLTnRE~eVl~Li~~gksnkeIA~~LfiS~~TVk~hisni~~KL~   64 (81)
+T tr|V9GED3|V9GE   13 SDHKSKFLLTNREREVFELLVQGKTNKEIAKQLFISEKTVRNHISNIMQKLN   64 (81)
+Confidence            3445566777899999999999999999999999999999999987776665
+
+
+No 130
+>tr|E1FGP6|E1FGP6_LOALO Uncharacterized protein OS=Loa loa GN=LOAG_00069 PE=4 SV=1
+Probab=20.70  E-value=2.5e+02  Score=31.06  Aligned_cols=62  Identities=29%  Similarity=0.464  Sum_probs=47.0  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  531 FKFCKQIKKKFLRGADFKLHTLP---TEANLKYEPERMTVLCSCVPILLDDQTVQYLYDDSIIPEFE  594 (654)
+Q Consensus       531 fk~ckqikkkflr~adfklhtlp---tean~~~~~~rmtv~~~cvpi~ldd~tvqylyddsiipe~~  594 (654)
+                      ..+|...||.|+....-  |.+.   |.-..+...+||-|..+--.-+|.+|.-|.|+....|||-.
+T Consensus        56 irlcqstkkdfitkhek--hpitkgftklevkaknermlvispdpvnylneqdqqhlwsttwipekg  120 (149)
+T tr|E1FGP6|E1FG   56 IRLCQSTKKDFITKHEK--HPITKGFTKLEVKAKNERMLVISPDPVNYLNEQDQQHLWSTTWIPEKG  120 (149)
+Confidence            46899999999875432  2221   22234567899999988777789999999999999999975
+
+
+No 131
+>tr|M8CJ84|M8CJ84_AEGTA Uncharacterized protein OS=Aegilops tauschii GN=F775_00416 PE=4 SV=1
+Probab=20.35  E-value=2.5e+02  Score=38.05  Aligned_cols=47  Identities=28%  Similarity=0.560  Sum_probs=35.9  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C    6 SRLAVIDGWLVDTVKRKPINFRSPEVRLLLPNDDDYKKLSQQNLVDW   52 (654)
+Q Consensus         6 sr~avidgwlvd~vkrkpinf~~peirlllpnd~dy~kl~~qnlvdw   52 (654)
+                      +.+.|-||++.-.-.....|-...|||+++|.||||.---..-|-|.
+T Consensus       433 anvsvndgyisvantknslnsnneeirivipgdddysykeddplsdl  479 (1566)
+T tr|M8CJ84|M8CJ  433 ANVSVNDGYISVANTKNSLNSNNEEIRIVIPGDDDYSYKEDDPLSDL  479 (1566)
+Confidence            45678899987666677888899999999999999975544444443
+
+
+No 132
+>tr|A0A084P711|A0A084P711_STACH Uncharacterized protein OS=Stachybotrys chartarum IBT 40293 GN=S40293_11365 PE=4 SV=1
+Probab=20.24  E-value=2.6e+02  Score=34.68  Aligned_cols=102  Identities=28%  Similarity=0.432  Sum_probs=60.1  Template_Neff=1.000
+
+Q 1Z1A:A|PDBID|C  166 EGFLLYLNERRLYRWNDNNLRSQVGLTKWAHLR-KTYNP-VSLDILYSLNSNFYFVKDDLLFQLL-------GKRVFVKF  236 (654)
+Q Consensus       166 egfllylnerr~~kwndn~lr~~igl~~wa~lr-k~ynp-~sldily~l~sn~yfvkdd~~fqll-------gkrvfvkf  236 (654)
+                      -|..--+||..+-.|..-+---|--+..|++-. ..|.. +|-  -.-|+.-.+-+-=|.||.-.       .---|||.
+T Consensus       177 vgivgginekgpktwqtldapmqqwieswarnaaehydsqvsh--tsmlkaivwhifwdnlfspscedkwaedwaefvkm  254 (453)
+T tr|A0A084P711|  177 VGIVGGINEKGPKTWQTLDAPMQQWIESWARNAAEHYDSQVSH--TSMLKAIVWHIFWDNLFSPSCEDKWAEDWAEFVKM  254 (453)
+Confidence            345556799999999877766666677787532 22321 111  00111111111123333221       12358888
+
+
+Q 1Z1A:A|PDBID|C  237 CKVMEN-GKCGKAPLWYRVKRTTTAKATHIAYAI  269 (654)
+Q Consensus       237 c~vm~n-~~~g~~p~~y~~~rtttakathiay~l  269 (654)
+                      .++++. +-..+.|+||...|.|||.|---.|.+
+T Consensus       255 trilrasgvaakkplwyqfvrnttaqawissygm  288 (453)
+T tr|A0A084P711|  255 TRILRASGVAAKKPLWYQFVRNTTAQAWISSYGM  288 (453)
+Confidence            888764 456789999999999999987655554
+
+
