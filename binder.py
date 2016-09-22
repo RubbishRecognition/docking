@@ -122,7 +122,7 @@ def run_hhblits (sequence, ident_file, align_file):
         
         ## Find similar proteins
 
-        query_string = 'hhblits -i ' + str(sequence) + ' -d ' + str(uniprot20) + ' -d ' + str(pdb100) + ' -oa3m ' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 0 ' + '-v 0' + ' -o ' + str(align_file) 
+        query_string = 'hhblits -i ' + str(sequence) + ' -d ' + str(uniprot20) + ' -d ' + str(pdb100) + ' -oa3m ' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 100 ' + '-v 0' + ' -o ' + str(align_file) 
         #print query_string
         os.system (query_string)        
 
@@ -238,6 +238,7 @@ def get_biogrid_chain_ids (infile):
                                 #pdb_ids.append(buf.split('_')[0].upper()) #restyling
                                 pdb_ids.update([buf.split('_')[0].lower() + '_' + buf.split('_')[1]])
                         else:
+                                #print buf
                                 uniprot_ids.update([buf.split('|')[2]])
         #print pdb_ids
         #print uniprot_ids
@@ -382,7 +383,7 @@ def find_biogrid_interactions (ids_A, ids_B):
         ## Find biogrid interactions using run_biogrid_finder in 16 threads
 
         interactions = set()
-        pool = Pool(16)
+        pool = Pool(cpu)
 
         pool.map(run_biogrid_finder, list(ids_A))
 
@@ -857,6 +858,62 @@ def config_parser (conf):
 
         #print full_uniprot
 
+def find_domains (infile, outfile_A, outfile_B):
+
+## Find domains from interaction output file with uniprot ID's
+
+        pdb_a = []
+        pdb_b = []
+
+        pdb = open (infile, 'r')
+        for i in pdb.readlines ():
+                pdb_a.append (i.split (' ')[0].split('_')[0])
+                pdb_b.append (i.split (' ')[1].split ('\n')[0].split('_')[0])
+
+        #print pdb_a
+        #print pdb_b
+
+        uniprot_a = pdb_a
+        uniprot_b = pdb_b
+
+        print uniprot_a
+        print uniprot_b
+
+        domain_a = dict ()
+        domain_b = dict ()
+
+        flag = 1
+
+        for i in range (len (uniprot_a)):
+                curr = get_domain_id (uniprot_a[i])
+                for rec in curr:
+                        if (domain_a.get(rec) != None):
+                                domain_a[rec] += [uniprot_a[i]]
+                        else:
+                                domain_a[rec] = [uniprot_a[i]]
+
+                curr = get_domain_id (uniprot_b[i])
+                for rec in curr:
+                        if (domain_b.get(rec) != None):
+                                domain_b[rec] += [uniprot_b[i]]
+                        else:
+                                domain_b[rec] = [uniprot_b[i]]
+
+        out_A = open(outfile_A, 'w')
+        out_B = open(outfile_B, 'w')
+        #print(domain_a)
+        #print(domain_b)
+        for i in domain_a.items():
+                out_A.write(i[0] + ' : ')        
+                for j in set(i[1]):
+                        out_A.write(j + ' ')
+                out_A.write('\n')
+        for i in domain_b.items():
+                out_B.write(i[0] + ' : ')
+                for j in set(i[1]):
+                        out_B.write(j + ' ')
+                out_B.write('\n')
+
 
 def main ():
 
@@ -874,7 +931,9 @@ def main ():
         parser.add_argument ('fout_hhr_prot_A', metavar='hhr_out', help='output file for hhalign result for sequence A')
         parser.add_argument ('fout_align_prot_B', metavar='align_out', help='output file for multiple sequence alignment for sequence B')
         parser.add_argument ('fout_hhr_prot_B', metavar='hhr_out', help='output file for hhalign result for sequence B')
-        
+        parser.add_argument ('fout_domain_A', metavar='domain_A', help='output file for protein_A domain')
+        parser.add_argument ('fout_domain_B', metavar='domain_B', help='output file for protein_B domain')
+                
 
         args = parser.parse_args ()
 
@@ -1008,47 +1067,8 @@ def main ():
         for x in complexes:
                 output.write(str(x))
         
-
-        ## TO DO : PUT EVETHING BELOW INTO THE FUNCTION
-        pdb_a = []
-        pdb_b = []
-
-        pdb = open ('s', 'r')
-        for i in pdb.readlines ():
-                pdb_a.append (i.split (' ')[0].split('_')[0])
-                pdb_b.append (i.split (' ')[1].split ('\n')[0].split('_')[0])
-
-        #print pdb_a
-        #print pdb_b
-
-        uniprot_a = list(set(pdb_a))
-        uniprot_b = list(set(pdb_b))
-
-        print uniprot_a
-        print uniprot_b
-
-        domain_a = set ()
-        domain_b = set ()
-
-        flag = 1
-
-        for i in range (len (uniprot_a)):
-                if flag:
-                        domain_a.update (get_domain_id (uniprot_a[i]))
-                        domain_b.update (get_domain_id (uniprot_b[i]))
-                        flag = 0
-                else:
-                        domain_a.intersection_update (get_domain_id (uniprot_a[i]))
-                        domain_b.intersection_update (get_domain_id (uniprot_b[i]))
-
-                #print ('#################')
-                #print (get_domain_id (uniprot_a[i]))
-                #print ('\n')
-                #print (get_domain_id (uniprot_b[i]))
-                #print ('#################')
-
-                print domain_a
-                print domain_b
+        find_domains(args.fout_string, args.fout_domain_A, args.fout_domain_B)
+                
 
 
 if __name__ == '__main__':
