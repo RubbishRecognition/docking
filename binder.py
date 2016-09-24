@@ -60,8 +60,30 @@ all_knowledge = ConfigSectionMap("PATHS")['all_knowledge']#x[7].split('|')[1].sp
 
 score = int(ConfigSectionMap("hhblits options")['score'])
 cpu = int(ConfigSectionMap("hhblits options")['cpu'])
+overlap = int (ConfigSectionMap("hhblits options")['overlap'])
 #print score + 1
 #k = input()
+
+def seq_test (seq, seq_len):
+
+        ## Right sequence - if each MSA block contains >= 60 letters
+
+        count = 0
+        flag = 0
+        for i in seq:
+                if (i == '-'):
+                        if flag:
+                                if (count < seq_len) & (count > 0):
+                                        return 0
+                        count = 0
+                else:
+                        flag = 1
+                        count += 1
+        if ((count > 0) & (count < seq_len)):
+                return 0
+        else:
+                return 1
+
 
 def get_domain_id (uniprot_id):
 
@@ -228,18 +250,18 @@ def get_biogrid_chain_ids (infile):
         for record in SeqIO.parse(handle, "fasta"):
                 buf = record.id
                 #print(len(buf))
-
-                if (flag):
-                        #pdb_ids.append (buf.split(':')[0]) #restyling
-                        pdb_ids.update ([buf.split(':')[0].lower() + '_' + buf.split(':')[1].split('|')[0]])
-                        flag = 0
-                else:
-                        if (len(buf) <= 8):
-                                #pdb_ids.append(buf.split('_')[0].upper()) #restyling
-                                pdb_ids.update([buf.split('_')[0].lower() + '_' + buf.split('_')[1]])
+                if (seq_test(record.seq, overlap) | flag):
+                        if (flag):
+                                #pdb_ids.append (buf.split(':')[0]) #restyling
+                                pdb_ids.update ([buf.split(':')[0].lower() + '_' + buf.split(':')[1].split('|')[0]])
+                                flag = 0
                         else:
-                                #print buf
-                                uniprot_ids.update([buf.split('|')[2]])
+                                if (len(buf) <= 8):
+                                        #pdb_ids.append(buf.split('_')[0].upper()) #restyling
+                                        pdb_ids.update([buf.split('_')[0].lower() + '_' + buf.split('_')[1]])
+                                else:
+                                        #print buf
+                                        uniprot_ids.update([buf.split('|')[2]])
         #print pdb_ids
         #print uniprot_ids
         #print '##'
@@ -725,6 +747,9 @@ def find_uniprot_id_sql (interactions, in_format):
                         #print pat2
                         #k = input()
 
+                #print '##'
+                #print interactions
+                #print uniprot_interactions
                 return list(uniprot_interactions)
                 '''
                 pdb_interactions = set()
@@ -1051,8 +1076,9 @@ def main ():
                 x_a = x.split(' ')[0]
                 x_b = x.split(' ')[1].split('\n')[0]
                 flag = 1
-                flag = flag * (x_a in to_keep_a)
-                flag = flag * (x_b in to_keep_b)
+                #flag = flag * (x_a in to_keep_a)
+                #flag = flag * (x_b in to_keep_b)
+                flag = ((x_a in to_keep_a) & (x_b in to_keep_b)) | ((x_a in to_keep_b) & (x_b in to_keep_a))
                 if flag:
                         output.write(str(x))
 

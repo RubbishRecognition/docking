@@ -3,111 +3,111 @@ Match_columns 177
 No_of_seqs    48 out of 361
 Neff          1.79718
 Searched_HMMs 474
-Date          Wed Sep 21 22:36:54 2016
-Command       hhblits -i ../fasta_data/1ilr.fasta.txt -d ../seq_data/uniprot20_2016_02 -d ../seq_data/pdb100 -oa3m ../tmp/domain60/msa_1ilr -cpu 10 -qid 60 -id 100 -v 0 -o ../tmp/domain60/hhr_1ilr 
+Date          Sat Sep 24 22:45:17 2016
+Command       hhblits -i ../fasta_data/1ilr.fasta.txt -d ../seq_data/uniprot20_2016_02 -d ../seq_data/pdb100 -oa3m ../tmp/domain60/msa_1ilr -cpu 9 -qid 60 -id 100 -v 0 -o ../tmp/domain60/hhr_1ilr 
 
  No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
   1 tr|S9X3D9|S9X3D9_9CETA Interle 100.0  1E-108  5E-114  685.6   0.0  177    1-177    29-210 (210)
-  2 2irt_A mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
-  3 1ilr_1 mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
+  2 1ilt_A mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
+  3 1ira_X mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
   4 1ilr_2 mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
   5 1ilt_B mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
-  6 1ilt_A mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
-  7 1ira_X mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
-  8 1irp_A mol:protein length:153  100.0 2.2E-94   1E-99  576.7   0.0  152   26-177     2-153 (153)
-  9 tr|L5KV71|L5KV71_PTEAL Interle 100.0 2.3E-80 9.8E-86  517.9   0.0  157   20-176    48-226 (226)
- 10 tr|F1MPZ4|F1MPZ4_BOVIN Unchara 100.0 8.7E-63 5.6E-68  405.1   0.0  156   15-176     3-170 (181)
- 11 tr|G3IHF8|G3IHF8_CRIGR Interle 100.0 8.1E-58 3.5E-63  368.6   0.0  113   65-177    45-157 (157)
- 12 4gai_B mol:protein length:153  100.0 3.8E-56 1.7E-61  357.9   0.0  137   37-174     7-149 (153)
+  6 1ilr_1 mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
+  7 2irt_A mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
+  8 2irt_B mol:protein length:152  100.0 1.8E-94  8E-100  576.7   0.0  152   26-177     1-152 (152)
+  9 1irp_A mol:protein length:153  100.0 2.2E-94   1E-99  576.7   0.0  152   26-177     2-153 (153)
+ 10 tr|L5KV71|L5KV71_PTEAL Interle 100.0 2.3E-80 9.8E-86  517.9   0.0  157   20-176    48-226 (226)
+ 11 tr|F1MPZ4|F1MPZ4_BOVIN Unchara 100.0 8.7E-63 5.6E-68  405.1   0.0  156   15-176     3-170 (181)
+ 12 tr|G3IHF8|G3IHF8_CRIGR Interle 100.0 8.1E-58 3.5E-63  368.6   0.0  113   65-177    45-157 (157)
  13 4gai_A mol:protein length:153  100.0 3.8E-56 1.7E-61  357.9   0.0  137   37-174     7-149 (153)
- 14 tr|M7BPB2|M7BPB2_CHEMY Interle 100.0 4.5E-40 3.2E-45  264.0   0.0  137   35-175     6-147 (148)
- 15 tr|G1QN82|G1QN82_NOMLE Unchara 100.0 3.2E-38 1.5E-43  245.6   0.0   98   34-132     3-108 (109)
- 16 tr|I3MMX8|I3MMX8_ICTTR Unchara 100.0 1.1E-33 5.9E-39  223.9   0.0   98   78-176    16-120 (121)
- 17 1md6_A mol:protein length:154   99.9 4.8E-32 2.1E-37  220.2   0.0  139   36-175     6-152 (154)
- 18 tr|S7NUD8|S7NUD8_MYOBR Interle  99.9 1.5E-31 7.4E-37  196.5   0.0   67  111-177     1-70  (70)
- 19 4p0j_A mol:protein length:150   99.9 3.5E-31 1.5E-36  214.6   0.0  138   36-175     6-148 (150)
+ 14 4gai_B mol:protein length:153  100.0 3.8E-56 1.7E-61  357.9   0.0  137   37-174     7-149 (153)
+ 15 tr|M7BPB2|M7BPB2_CHEMY Interle 100.0 4.5E-40 3.2E-45  264.0   0.0  137   35-175     6-147 (148)
+ 16 tr|G1QN82|G1QN82_NOMLE Unchara 100.0 3.2E-38 1.5E-43  245.6   0.0   98   34-132     3-108 (109)
+ 17 tr|I3MMX8|I3MMX8_ICTTR Unchara 100.0 1.1E-33 5.9E-39  223.9   0.0   98   78-176    16-120 (121)
+ 18 1md6_A mol:protein length:154   99.9 4.8E-32 2.1E-37  220.2   0.0  139   36-175     6-152 (154)
+ 19 tr|S7NUD8|S7NUD8_MYOBR Interle  99.9 1.5E-31 7.4E-37  196.5   0.0   67  111-177     1-70  (70)
  20 4p0j_B mol:protein length:150   99.9 3.5E-31 1.5E-36  214.6   0.0  138   36-175     6-148 (150)
- 21 4p0l_A mol:protein length:154   99.9 6.6E-31 2.9E-36  213.7   0.0  138   36-175     6-152 (154)
- 22 tr|Q0Q2I3|Q0Q2I3_SHEEP Interle  99.9 7.7E-31 3.3E-36  182.6   0.0   50  107-156     1-50  (50)
- 23 tr|Q9TV37|Q9TV37_HORSE IL-1ra   99.9 1.1E-29 4.9E-35  184.2   0.0   64   54-118     1-64  (65)
- 24 4gaf_A mol:protein length:153   99.9 3.6E-28 1.6E-33  197.9   0.0  137   37-174     7-149 (153)
+ 21 4p0j_A mol:protein length:150   99.9 3.5E-31 1.5E-36  214.6   0.0  138   36-175     6-148 (150)
+ 22 4p0l_A mol:protein length:154   99.9 6.6E-31 2.9E-36  213.7   0.0  138   36-175     6-152 (154)
+ 23 tr|Q0Q2I3|Q0Q2I3_SHEEP Interle  99.9 7.7E-31 3.3E-36  182.6   0.0   50  107-156     1-50  (50)
+ 24 tr|Q9TV37|Q9TV37_HORSE IL-1ra   99.9 1.1E-29 4.9E-35  184.2   0.0   64   54-118     1-64  (65)
  25 tr|A0A0A6YVU4|A0A0A6YVU4_MOUSE  99.9 4.4E-28 1.9E-33  170.1   0.0   50   20-69      2-51  (52)
- 26 tr|A0A091D910|A0A091D910_FUKDA  99.9 1.4E-27 6.2E-33  197.6   0.0  107   68-175    60-174 (176)
- 27 tr|Q9PW18|Q9PW18_CYPCA Interle  99.9 8.1E-28 6.4E-33  207.7   0.0  163   10-175    88-272 (276)
- 28 tr|G3BMU2|G3BMU2_LABRO Interle  99.9 1.1E-26 6.4E-32  173.9   0.0   72   81-153     1-79  (79)
- 29 4x39_A mol:protein length:168   99.8 1.1E-24 4.8E-30  179.8   0.0  135   33-169    13-162 (168)
- 30 4x38_A mol:protein length:168   99.8 1.2E-24 5.1E-30  179.7   0.0  135   33-169    13-162 (168)
- 31 2wry_A mol:protein length:162   99.8 1.2E-24 5.4E-30  178.8   0.0  133   34-168     8-155 (162)
- 32 4x3a_A mol:protein length:168   99.8 1.3E-24 5.4E-30  179.5   0.0  135   33-169    13-162 (168)
- 33 4x37_A mol:protein length:168   99.8 1.3E-24 5.5E-30  179.5   0.0  135   33-169    13-162 (168)
- 34 tr|A0A0Q3XWC5|A0A0Q3XWC5_ALLMI  99.8   2E-24 9.5E-30  190.0   0.0  141   19-164    26-174 (293)
- 35 5bow_A mol:protein length:151   99.8 7.3E-24 3.2E-29  173.0   0.0  134   40-175    11-149 (151)
- 36 tr|L9JQR4|L9JQR4_TUPCH Interle  99.8 9.3E-24 4.4E-29  171.3   0.0  112   37-149     9-132 (140)
- 37 tr|Q28842|Q28842_RABIT Interle  99.7   1E-21 4.3E-27  144.6   0.0   41   18-58     28-68  (68)
- 38 tr|S9WUB9|S9WUB9_9CETA Interle  99.6 1.8E-19 8.4E-25  158.5   0.0  106   70-176   138-278 (279)
- 39 tr|W0TYK5|W0TYK5_ONCMY Interle  99.6 2.5E-19 1.4E-24  152.3   0.0  138   30-172    41-194 (197)
- 40 tr|R7VPR0|R7VPR0_COLLI PH and   99.6 6.1E-19 2.7E-24  173.2   0.0  129   38-173   272-405 (1414)
- 41 tr|F6U6U0|F6U6U0_ORNAN Unchara  99.6 2.5E-18 1.1E-23  146.5   0.0  127   37-164    57-195 (209)
- 42 3o4o_A mol:protein length:158   99.5 2.4E-17   1E-22  136.5   0.0   91   82-174    64-154 (158)
- 43 4dep_D mol:protein length:158   99.5 2.4E-17   1E-22  136.5   0.0   91   82-174    64-154 (158)
- 44 4dep_A mol:protein length:158   99.5 2.4E-17   1E-22  136.5   0.0   91   82-174    64-154 (158)
- 45 tr|U3KPW9|U3KPW9_HUMAN Interle  99.5 3.2E-17 1.4E-22  116.5   0.0   45  131-175     3-50  (52)
- 46 tr|Q5MAC0|Q5MAC0_BOVIN Interle  99.5 3.7E-17   2E-22  130.3   0.0   80   81-161    18-97  (113)
- 47 tr|D5KXX5|D5KXX5_CEREL Interle  99.5 5.7E-17 2.6E-22  132.7   0.0   87   68-160    49-135 (140)
- 48 4g6m_A mol:protein length:150   99.5 8.6E-17 3.7E-22  132.5   0.0   91   82-174    58-148 (150)
- 49 6i1b_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
- 50 1iob_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
- 51 5bvp_I mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
- 52 2nvh_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
- 53 9ilb_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
- 54 4i1b_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
+ 26 4gaf_A mol:protein length:153   99.9 1.4E-27 6.2E-33  194.4   0.0  137   37-174     7-149 (153)
+ 27 tr|A0A091D910|A0A091D910_FUKDA  99.9 1.4E-27 6.2E-33  197.6   0.0  107   68-175    60-174 (176)
+ 28 tr|Q9PW18|Q9PW18_CYPCA Interle  99.9 8.1E-28 6.4E-33  207.7   0.0  163   10-175    88-272 (276)
+ 29 tr|G3BMU2|G3BMU2_LABRO Interle  99.9 1.1E-26 6.4E-32  173.9   0.0   72   81-153     1-79  (79)
+ 30 4x39_A mol:protein length:168   99.8 1.1E-24 4.8E-30  179.8   0.0  135   33-169    13-162 (168)
+ 31 4x38_A mol:protein length:168   99.8 1.2E-24 5.1E-30  179.7   0.0  135   33-169    13-162 (168)
+ 32 2wry_A mol:protein length:162   99.8 1.2E-24 5.4E-30  178.8   0.0  133   34-168     8-155 (162)
+ 33 4x3a_A mol:protein length:168   99.8 1.3E-24 5.4E-30  179.5   0.0  135   33-169    13-162 (168)
+ 34 4x37_A mol:protein length:168   99.8 1.3E-24 5.5E-30  179.5   0.0  135   33-169    13-162 (168)
+ 35 tr|A0A0Q3XWC5|A0A0Q3XWC5_ALLMI  99.8   2E-24 9.5E-30  190.0   0.0  141   19-164    26-174 (293)
+ 36 5bow_A mol:protein length:151   99.8 7.3E-24 3.2E-29  173.0   0.0  134   40-175    11-149 (151)
+ 37 tr|L9JQR4|L9JQR4_TUPCH Interle  99.8 9.3E-24 4.4E-29  171.3   0.0  112   37-149     9-132 (140)
+ 38 tr|Q28842|Q28842_RABIT Interle  99.7   1E-21 4.3E-27  144.6   0.0   41   18-58     28-68  (68)
+ 39 tr|S9WUB9|S9WUB9_9CETA Interle  99.6 1.8E-19 8.4E-25  158.5   0.0  106   70-176   138-278 (279)
+ 40 tr|W0TYK5|W0TYK5_ONCMY Interle  99.6 2.5E-19 1.4E-24  152.3   0.0  138   30-172    41-194 (197)
+ 41 tr|R7VPR0|R7VPR0_COLLI PH and   99.6 6.1E-19 2.7E-24  173.2   0.0  110   32-142    24-138 (1414)
+ 42 tr|F6U6U0|F6U6U0_ORNAN Unchara  99.6 2.5E-18 1.1E-23  146.5   0.0  127   37-164    57-195 (209)
+ 43 4dep_A mol:protein length:158   99.5 2.4E-17   1E-22  136.5   0.0   91   82-174    64-154 (158)
+ 44 3o4o_A mol:protein length:158   99.5 2.4E-17   1E-22  136.5   0.0   91   82-174    64-154 (158)
+ 45 4dep_D mol:protein length:158   99.5 2.4E-17   1E-22  136.5   0.0   91   82-174    64-154 (158)
+ 46 tr|U3KPW9|U3KPW9_HUMAN Interle  99.5 3.2E-17 1.4E-22  116.5   0.0   45  131-175     3-50  (52)
+ 47 tr|Q5MAC0|Q5MAC0_BOVIN Interle  99.5 3.7E-17   2E-22  130.3   0.0   80   81-161    18-97  (113)
+ 48 tr|D5KXX5|D5KXX5_CEREL Interle  99.5 5.7E-17 2.6E-22  132.7   0.0   87   68-160    49-135 (140)
+ 49 4g6m_A mol:protein length:150   99.5 8.6E-17 3.7E-22  132.5   0.0   91   82-174    58-148 (150)
+ 50 5i1b_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
+ 51 2i1b_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
+ 52 1iob_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
+ 53 4i1b_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
+ 54 6i1b_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
  55 7i1b_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
- 56 2i1b_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
- 57 1itb_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
- 58 2kh2_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
+ 56 5bvp_I mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
+ 57 2nvh_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
+ 58 1itb_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
  59 1i1b_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
- 60 4g6j_A mol:protein length:158   99.4 1.1E-16 4.7E-22  132.7   0.0   91   82-174    60-150 (158)
- 61 1hib_A mol:protein length:153   99.4 1.1E-16 4.9E-22  132.1   0.0   91   82-174    59-149 (153)
- 62 1s0l_A mol:protein length:153   99.4 1.5E-16 6.4E-22  131.4   0.0   91   82-174    59-149 (153)
- 63 tr|A0A0Q3XVG2|A0A0Q3XVG2_ALLMI  99.4 2.4E-16   1E-21  142.9   0.0  145   23-172   222-378 (382)
- 64 1twm_A mol:protein length:153   99.4 2.7E-16 1.2E-21  129.9   0.0   78   82-160    59-136 (153)
- 65 8i1b_A mol:protein length:152   99.4 3.3E-16 1.5E-21  129.3   0.0  128   37-165     7-141 (152)
- 66 2mib_A mol:protein length:152   99.4 3.3E-16 1.5E-21  129.3   0.0  128   37-165     7-141 (152)
- 67 1too_A mol:protein length:153   99.4 3.6E-16 1.6E-21  129.2   0.0   78   82-160    59-136 (153)
- 68 1twe_A mol:protein length:153   99.4 3.9E-16 1.7E-21  129.0   0.0   91   82-174    59-149 (153)
- 69 3nj5_A mol:protein length:162   99.4 4.1E-16 1.8E-21  129.8   0.0  132   34-167     8-154 (162)
- 70 1t4q_A mol:protein length:153   99.4 4.9E-16 2.1E-21  128.4   0.0  135   38-174     8-149 (153)
- 71 3ltq_A mol:protein length:171   99.4 6.3E-16 2.7E-21  129.5   0.0   91   82-174    77-167 (171)
- 72 1l2h_A mol:protein length:153   99.3 2.9E-15 1.3E-20  124.0   0.0  135   38-174     8-149 (153)
- 73 tr|H2A0A2|H2A0A2_CHICK Interle  99.3 3.2E-15 1.4E-20  118.0   0.0   88   12-100     3-99  (104)
- 74 1tp0_A mol:protein length:153   99.3 3.6E-15 1.5E-20  123.5   0.0  135   38-174     8-149 (153)
- 75 21bi_A mol:protein length:153   99.3 3.8E-15 1.7E-20  123.4   0.0  136   37-174     7-149 (153)
- 76 31bi_A mol:protein length:153   99.3 4.5E-15 1.9E-20  123.0   0.0  136   37-174     7-149 (153)
- 77 2irt_B mol:protein length:152   99.3 5.7E-15 2.5E-20  122.3   0.0  152   26-177     1-152 (152)
- 78 tr|Q60H46|Q60H46_MERUN Interle  99.2 2.2E-14 9.4E-20  112.7   0.0   67   81-148    33-99  (99)
- 79 tr|B0ZYQ5|B0ZYQ5_9CHON IL-1 be  99.2 2.8E-14 1.4E-19  119.5   0.0  112   38-149    39-159 (160)
- 80 3pok_A mol:protein length:167   99.2 7.2E-14 3.1E-19  117.2   0.0  136   37-174     8-163 (167)
- 81 tr|F7H3R1|F7H3R1_MACMU Unchara  99.0   2E-12 8.8E-18  108.6   0.0  102   40-144    12-118 (163)
- 82 tr|S9WUB9|S9WUB9_9CETA Interle  99.0   2E-12 9.4E-18  115.5   0.0   83   79-161    41-123 (279)
- 83 tr|Q102G0|Q102G0_SHEEP Interle  98.9 3.8E-12 1.6E-17   86.0   0.0   31    8-38      6-36  (36)
- 84 4p0k_A mol:protein length:154   98.9 5.2E-12 2.2E-17  105.5   0.0  138   36-175     6-152 (154)
- 85 tr|A0A0A6YWE1|A0A0A6YWE1_MOUSE  98.9 6.3E-12   3E-17   97.0   0.0   70   36-106     8-82  (82)
- 86 tr|G1U1C7|G1U1C7_RABIT Unchara  98.8 9.5E-12 4.1E-17  109.9   0.0  127   37-163   108-243 (255)
- 87 4ize_A mol:protein length:152   98.6 1.3E-10 5.5E-16   97.4   0.0  118   39-161     9-137 (152)
- 88 tr|R7VPR0|R7VPR0_COLLI PH and   98.6 2.4E-10   1E-15  115.1   0.0  110   32-142    24-138 (1414)
- 89 tr|B7Z175|B7Z175_CHICK Interle  98.6 2.6E-10 1.1E-15   98.8   0.0  112   39-152    84-201 (203)
- 90 tr|G5BKU9|G5BKU9_HETGA Interle  98.5   3E-10 1.5E-15   94.4   0.0   83   80-162    26-117 (137)
- 91 tr|Q4VKD1|Q4VKD1_SALTR Interle  98.5 8.6E-10 3.7E-15   89.7   0.0   91   64-154     9-105 (117)
- 92 tr|S9YCY8|S9YCY8_9CETA Unchara  98.4 1.5E-09 7.1E-15  101.3   0.0  153    5-160   205-378 (402)
- 93 tr|V8PGF3|V8PGF3_OPHHA Unchara  98.3   3E-09 1.3E-14   98.1   0.0  125   24-166   227-357 (366)
- 94 41bi_A mol:protein length:153   98.3 3.4E-09 1.5E-14   89.3   0.0   91   82-174    59-149 (153)
+ 60 9ilb_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
+ 61 2kh2_A mol:protein length:153   99.5 9.3E-17   4E-22  132.6   0.0   91   82-174    59-149 (153)
+ 62 4g6j_A mol:protein length:158   99.4 1.1E-16 4.7E-22  132.7   0.0   91   82-174    60-150 (158)
+ 63 1hib_A mol:protein length:153   99.4 1.1E-16 4.9E-22  132.1   0.0   91   82-174    59-149 (153)
+ 64 1s0l_A mol:protein length:153   99.4 1.5E-16 6.4E-22  131.4   0.0   91   82-174    59-149 (153)
+ 65 tr|A0A0Q3XVG2|A0A0Q3XVG2_ALLMI  99.4 2.4E-16   1E-21  142.9   0.0  145   23-172   222-378 (382)
+ 66 1twm_A mol:protein length:153   99.4 2.7E-16 1.2E-21  129.9   0.0   78   82-160    59-136 (153)
+ 67 2mib_A mol:protein length:152   99.4 3.3E-16 1.5E-21  129.3   0.0  128   37-165     7-141 (152)
+ 68 8i1b_A mol:protein length:152   99.4 3.3E-16 1.5E-21  129.3   0.0  128   37-165     7-141 (152)
+ 69 1too_A mol:protein length:153   99.4 3.6E-16 1.6E-21  129.2   0.0   78   82-160    59-136 (153)
+ 70 1twe_A mol:protein length:153   99.4 3.9E-16 1.7E-21  129.0   0.0   91   82-174    59-149 (153)
+ 71 1t4q_A mol:protein length:153   99.4 4.9E-16 2.1E-21  128.4   0.0  135   38-174     8-149 (153)
+ 72 3ltq_A mol:protein length:171   99.4 6.3E-16 2.7E-21  129.5   0.0   91   82-174    77-167 (171)
+ 73 41bi_A mol:protein length:153   99.4 8.9E-16 3.9E-21  127.0   0.0   91   82-174    59-149 (153)
+ 74 1l2h_A mol:protein length:153   99.3 2.9E-15 1.3E-20  124.0   0.0  135   38-174     8-149 (153)
+ 75 tr|H2A0A2|H2A0A2_CHICK Interle  99.3 3.2E-15 1.4E-20  118.0   0.0   88   12-100     3-99  (104)
+ 76 1tp0_A mol:protein length:153   99.3 3.6E-15 1.5E-20  123.5   0.0  135   38-174     8-149 (153)
+ 77 21bi_A mol:protein length:153   99.3 3.8E-15 1.7E-20  123.4   0.0  136   37-174     7-149 (153)
+ 78 31bi_A mol:protein length:153   99.3 4.5E-15 1.9E-20  123.0   0.0  136   37-174     7-149 (153)
+ 79 tr|Q60H46|Q60H46_MERUN Interle  99.2 2.2E-14 9.4E-20  112.7   0.0   67   81-148    33-99  (99)
+ 80 tr|B0ZYQ5|B0ZYQ5_9CHON IL-1 be  99.2 2.8E-14 1.4E-19  119.5   0.0  112   38-149    39-159 (160)
+ 81 3pok_A mol:protein length:167   99.2 7.2E-14 3.1E-19  117.2   0.0  136   37-174     8-163 (167)
+ 82 tr|M7AM46|M7AM46_CHEMY Interle  99.1 1.7E-13 9.7E-19  116.6   0.0  140   34-175    36-180 (181)
+ 83 tr|F7H3R1|F7H3R1_MACMU Unchara  99.0   2E-12 8.8E-18  108.6   0.0  102   40-144    12-118 (163)
+ 84 tr|S9WUB9|S9WUB9_9CETA Interle  99.0   2E-12 9.4E-18  115.5   0.0   83   79-161    41-123 (279)
+ 85 tr|Q102G0|Q102G0_SHEEP Interle  98.9 3.8E-12 1.6E-17   86.0   0.0   31    8-38      6-36  (36)
+ 86 tr|A0A0A6YWE1|A0A0A6YWE1_MOUSE  98.9 6.3E-12   3E-17   97.0   0.0   70   36-106     8-82  (82)
+ 87 tr|G1U1C7|G1U1C7_RABIT Unchara  98.8 9.5E-12 4.1E-17  109.9   0.0  127   37-163   108-243 (255)
+ 88 tr|A0A0E3GPE6|A0A0E3GPE6_SINCH  98.7 8.7E-11 4.2E-16   97.8   0.0   83   77-159    32-118 (141)
+ 89 4ize_A mol:protein length:152   98.6 1.3E-10 5.5E-16   97.4   0.0  118   39-161     9-137 (152)
+ 90 tr|B7Z175|B7Z175_CHICK Interle  98.6 2.6E-10 1.1E-15   98.8   0.0  112   39-152    84-201 (203)
+ 91 tr|G5BKU9|G5BKU9_HETGA Interle  98.5   3E-10 1.5E-15   94.4   0.0   83   80-162    26-117 (137)
+ 92 tr|Q4VKD1|Q4VKD1_SALTR Interle  98.5 8.6E-10 3.7E-15   89.7   0.0   91   64-154     9-105 (117)
+ 93 tr|S9YCY8|S9YCY8_9CETA Unchara  98.4 1.5E-09 7.1E-15  101.3   0.0  153    5-160   205-378 (402)
+ 94 tr|V8PGF3|V8PGF3_OPHHA Unchara  98.3   3E-09 1.3E-14   98.1   0.0  125   24-166   227-357 (366)
  95 tr|M7BD03|M7BD03_CHEMY Interle  98.1 2.1E-08 9.2E-14   81.7   0.0   65  110-175    47-111 (114)
  96 tr|Q6PN76|Q6PN76_PHOSU Interle  98.1 2.8E-08 1.2E-13   76.8   0.0   47   78-125    30-76  (77)
  97 tr|W0USP9|W0USP9_XIPMA Interle  98.0 3.4E-08 1.5E-13   84.2   0.0  116   37-162    29-150 (163)
- 98 5i1b_A mol:protein length:153   98.0 4.3E-08 1.9E-13   83.0   0.0   91   82-174    59-149 (153)
- 99 tr|V9LEA1|V9LEA1_CALMI Interle  97.9 7.7E-08 3.3E-13   84.3   0.0  138   21-159    37-191 (205)
-100 tr|J9PAU1|J9PAU1_CANLF Unchara  97.9 1.2E-07 5.2E-13   74.7   0.0   71   90-161     1-71  (86)
-101 tr|W5QI58|W5QI58_SHEEP Unchara  97.7 3.4E-07 1.5E-12   81.0   0.0  138   35-175    56-206 (216)
+ 98 tr|V9LEA1|V9LEA1_CALMI Interle  97.9 7.7E-08 3.3E-13   84.3   0.0  138   21-159    37-191 (205)
+ 99 tr|J9PAU1|J9PAU1_CANLF Unchara  97.9 1.2E-07 5.2E-13   74.7   0.0   71   90-161     1-71  (86)
+100 tr|W5QI58|W5QI58_SHEEP Unchara  97.7 3.4E-07 1.5E-12   81.0   0.0  138   35-175    56-206 (216)
+101 4p0k_A mol:protein length:154   97.6 1.1E-06 4.7E-12   75.1   0.0  138   36-175     6-152 (154)
 102 tr|S7NLV1|S7NLV1_MYOBR Interle  97.5 1.3E-06 5.7E-12   75.6   0.0   83   78-164    65-150 (173)
 103 tr|F6WV71|F6WV71_MACMU Unchara  97.4 2.1E-06 9.2E-12   67.1   0.0   41  121-161    12-52  (78)
 104 tr|Q99PV4|Q99PV4_RAT Interleuk  97.2 9.3E-06   4E-11   52.3   0.0   17   34-50      1-17  (24)
@@ -115,21 +115,21 @@ Command       hhblits -i ../fasta_data/1ilr.fasta.txt -d ../seq_data/uniprot20_2
 106 tr|L5LRS4|L5LRS4_MYODS Interle  96.9 4.4E-05 1.9E-10   72.6   0.0   86   78-164    65-154 (397)
 107 tr|Q3TI17|Q3TI17_MOUSE Putativ  96.7 7.5E-05 3.3E-10   66.8   0.0   79   35-113   122-207 (208)
 108 tr|G1EE07|G1EE07_CHAPF Interle  96.6 0.00011 4.9E-10   58.1   0.0   60   76-135    15-77  (79)
-109 tr|A0A0E3GPE6|A0A0E3GPE6_SINCH  96.5 0.00019 9.1E-10   61.8   0.0   83   77-159    32-118 (141)
-110 tr|K7ZN59|K7ZN59_PAROL Interle  96.4 0.00025 1.1E-09   65.3   0.0   83   78-160   163-249 (262)
-111 tr|U3JSF1|U3JSF1_FICAL Unchara  96.2 0.00052 2.3E-09   61.6   0.0   60   37-96    111-175 (201)
-112 tr|K9K563|K9K563_TETNG IL-1Ra   95.5   0.003 1.4E-08   59.3   0.0   76   78-154   172-251 (272)
-113 tr|Q4W1Q3|Q4W1Q3_MERUN Interle  95.4  0.0036 1.6E-08   51.7   0.0   65   35-99     25-96  (96)
-114 tr|B3GJZ5|B3GJZ5_ACASC Interle  95.3   0.005 2.3E-08   54.0   0.0   77   36-112    59-144 (148)
-115 tr|G3PQP7|G3PQP7_GASAC Unchara  95.2  0.0051 2.4E-08   55.1   0.0   86   78-163    75-164 (177)
-116 tr|Q712P3|Q712P3_PLEPL Interle  95.0  0.0091 3.9E-08   48.1   0.0   61  102-162     2-66  (79)
-117 tr|F1DFK5|F1DFK5_CHICK Interle  94.7   0.014 6.3E-08   39.1   0.0   21   90-110     1-21  (26)
-118 tr|D2HUQ4|D2HUQ4_AILME Putativ  92.7   0.096 4.2E-07   39.9   0.0   29   78-106    20-48  (51)
-119 tr|V9LCJ2|V9LCJ2_CALMI Interle  92.7   0.099 4.3E-07   48.1   0.0  115   33-152    49-175 (200)
-120 tr|Q1WDE2|Q1WDE2_SHEEP Interle  92.1    0.14 6.1E-07   34.2   0.0   18   78-95      7-24  (24)
-121 tr|B2KNI7|B2KNI7_SALSA Interle  91.9    0.16   7E-07   44.6   0.0   64   78-141    66-133 (133)
-122 tr|C7TNP8|C7TNP8_ONCMY Novel I  91.7    0.18 7.8E-07   40.8   0.0   41  113-153    10-51  (72)
-123 tr|F6SRN9|F6SRN9_MACMU Unchara  90.1    0.35 1.6E-06   43.9   0.0   70   38-107    12-88  (165)
+109 tr|K7ZN59|K7ZN59_PAROL Interle  96.4 0.00025 1.1E-09   65.3   0.0   83   78-160   163-249 (262)
+110 tr|U3JSF1|U3JSF1_FICAL Unchara  96.2 0.00052 2.3E-09   61.6   0.0   60   37-96    111-175 (201)
+111 tr|K9K563|K9K563_TETNG IL-1Ra   95.5   0.003 1.4E-08   59.3   0.0   76   78-154   172-251 (272)
+112 tr|Q4W1Q3|Q4W1Q3_MERUN Interle  95.4  0.0036 1.6E-08   51.7   0.0   65   35-99     25-96  (96)
+113 tr|B3GJZ5|B3GJZ5_ACASC Interle  95.3   0.005 2.3E-08   54.0   0.0   77   36-112    59-144 (148)
+114 tr|G3PQP7|G3PQP7_GASAC Unchara  95.2  0.0051 2.4E-08   55.1   0.0   86   78-163    75-164 (177)
+115 tr|Q712P3|Q712P3_PLEPL Interle  95.0  0.0091 3.9E-08   48.1   0.0   61  102-162     2-66  (79)
+116 tr|F1DFK5|F1DFK5_CHICK Interle  94.7   0.014 6.3E-08   39.1   0.0   21   90-110     1-21  (26)
+117 tr|D2HUQ4|D2HUQ4_AILME Putativ  92.7   0.096 4.2E-07   39.9   0.0   29   78-106    20-48  (51)
+118 tr|V9LCJ2|V9LCJ2_CALMI Interle  92.7   0.099 4.3E-07   48.1   0.0  115   33-152    49-175 (200)
+119 tr|Q1WDE2|Q1WDE2_SHEEP Interle  92.1    0.14 6.1E-07   34.2   0.0   18   78-95      7-24  (24)
+120 tr|B2KNI7|B2KNI7_SALSA Interle  91.9    0.16   7E-07   44.6   0.0   64   78-141    66-133 (133)
+121 tr|C7TNP8|C7TNP8_ONCMY Novel I  91.7    0.18 7.8E-07   40.8   0.0   41  113-153    10-51  (72)
+122 tr|F6SRN9|F6SRN9_MACMU Unchara  90.1    0.35 1.6E-06   43.9   0.0   70   38-107    12-88  (165)
+123 3nj5_A mol:protein length:162   89.2     0.5 2.2E-06   42.9   0.0  132   34-167     8-154 (162)
 124 tr|V9LBL6|V9LBL6_CALMI Interle  87.6     0.8 3.5E-06   42.0   0.0   64   90-155    87-151 (171)
 125 tr|A0A0E9XA23|A0A0E9XA23_ANGAN  85.4     1.4 5.9E-06   34.4   0.0   27  122-148    18-49  (52)
 126 tr|A0A0C2Z2J7|A0A0C2Z2J7_9HOMO  85.3     1.4   6E-06   35.7   0.0   32   33-64      7-38  (66)
@@ -221,8 +221,8 @@ Command       hhblits -i ../fasta_data/1ilr.fasta.txt -d ../seq_data/uniprot20_2
 212 2ila_A mol:protein length:155   21.0 2.4E+02   0.001   27.3   0.0   25  145-169    75-99  (155)
 213 tr|A0A0Q3MS06|A0A0Q3MS06_AMAAE  20.9 2.4E+02  0.0011   29.7   0.0   28   73-100   126-153 (326)
 214 2kki_A mol:protein length:151   20.7 2.5E+02  0.0011   27.1   0.0   25  145-169    71-95  (151)
-215 2l5x_A mol:protein length:151   20.7 2.5E+02  0.0011   27.1   0.0   25  145-169    71-95  (151)
-216 2l5x_D mol:protein length:151   20.7 2.5E+02  0.0011   27.1   0.0   25  145-169    71-95  (151)
+215 2l5x_D mol:protein length:151   20.7 2.5E+02  0.0011   27.1   0.0   25  145-169    71-95  (151)
+216 2l5x_A mol:protein length:151   20.7 2.5E+02  0.0011   27.1   0.0   25  145-169    71-95  (151)
 217 tr|Q0CTV3|Q0CTV3_ASPTN Endo-ch  20.1 2.6E+02  0.0011   28.3   0.0   37  126-162   150-186 (222)
 
 No 1
@@ -254,14 +254,14 @@ Confidence            9999999999999999999985
 
 
 No 2
->2irt_A mol:protein length:152 INTERLEUKIN-1 RECEPTOR ANTAGONIST
+>1ilt_A mol:protein length:152 INTERLEUKIN-1 RECEPTOR ANTAGONIST
 Probab=100.00  E-value=1.8e-94  Score=576.75  Aligned_cols=152  Identities=100%  Similarity=1.518  Sum_probs=151.3  Template_Neff=1.000
 
 Q 1ILR:1|PDBID|C   26 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL  105 (177)
 Q Consensus        26 ~p~~r~~~~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~eph~~fLGihggklcLsCVksgd~~~LqL  105 (177)
                       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 T Consensus         1 rpsgrksskmqafriwdvnqktfylrnnqlvagylqgpnvnleekidvvpiephalflgihggkmclscvksgdetrlql   80 (152)
-T 2irt_A            1 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL   80 (152)
+T 1ilt_A            1 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL   80 (152)
 Confidence            79999999999999999999999999999999999999999999999999999999999999999999999999999999
 
 
@@ -269,19 +269,19 @@ Q 1ILR:1|PDBID|C  106 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPD
 Q Consensus       106 EaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~d~  177 (177)
                       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 T Consensus        81 eavnitdlsenrkqdkrfafirsdsgpttsfesaacpgwflctameadqpvsltnmpdegvmvtkfyfqede  152 (152)
-T 2irt_A           81 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  152 (152)
+T 1ilt_A           81 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  152 (152)
 Confidence            999999999999999999999999999999999999999999999999999999999999999999999997
 
 
 No 3
->1ilr_1 mol:protein length:152 INTERLEUKIN-1 RECEPTOR ANTAGONIST PROTEIN
+>1ira_X mol:protein length:152 INTERLEUKIN-1 RECEPTOR ANTAGONIST
 Probab=100.00  E-value=1.8e-94  Score=576.75  Aligned_cols=152  Identities=100%  Similarity=1.518  Sum_probs=151.3  Template_Neff=1.000
 
 Q 1ILR:1|PDBID|C   26 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL  105 (177)
 Q Consensus        26 ~p~~r~~~~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~eph~~fLGihggklcLsCVksgd~~~LqL  105 (177)
                       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 T Consensus         1 rpsgrksskmqafriwdvnqktfylrnnqlvagylqgpnvnleekidvvpiephalflgihggkmclscvksgdetrlql   80 (152)
-T 1ilr_1            1 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL   80 (152)
+T 1ira_X            1 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL   80 (152)
 Confidence            79999999999999999999999999999999999999999999999999999999999999999999999999999999
 
 
@@ -289,7 +289,7 @@ Q 1ILR:1|PDBID|C  106 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPD
 Q Consensus       106 EaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~d~  177 (177)
                       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 T Consensus        81 eavnitdlsenrkqdkrfafirsdsgpttsfesaacpgwflctameadqpvsltnmpdegvmvtkfyfqede  152 (152)
-T 1ilr_1           81 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  152 (152)
+T 1ira_X           81 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  152 (152)
 Confidence            999999999999999999999999999999999999999999999999999999999999999999999997
 
 
@@ -334,14 +334,14 @@ Confidence            9999999999999999999999999999999999999999999999999999999999
 
 
 No 6
->1ilt_A mol:protein length:152 INTERLEUKIN-1 RECEPTOR ANTAGONIST
+>1ilr_1 mol:protein length:152 INTERLEUKIN-1 RECEPTOR ANTAGONIST PROTEIN
 Probab=100.00  E-value=1.8e-94  Score=576.75  Aligned_cols=152  Identities=100%  Similarity=1.518  Sum_probs=151.3  Template_Neff=1.000
 
 Q 1ILR:1|PDBID|C   26 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL  105 (177)
 Q Consensus        26 ~p~~r~~~~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~eph~~fLGihggklcLsCVksgd~~~LqL  105 (177)
                       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 T Consensus         1 rpsgrksskmqafriwdvnqktfylrnnqlvagylqgpnvnleekidvvpiephalflgihggkmclscvksgdetrlql   80 (152)
-T 1ilt_A            1 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL   80 (152)
+T 1ilr_1            1 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL   80 (152)
 Confidence            79999999999999999999999999999999999999999999999999999999999999999999999999999999
 
 
@@ -349,19 +349,19 @@ Q 1ILR:1|PDBID|C  106 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPD
 Q Consensus       106 EaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~d~  177 (177)
                       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 T Consensus        81 eavnitdlsenrkqdkrfafirsdsgpttsfesaacpgwflctameadqpvsltnmpdegvmvtkfyfqede  152 (152)
-T 1ilt_A           81 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  152 (152)
+T 1ilr_1           81 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  152 (152)
 Confidence            999999999999999999999999999999999999999999999999999999999999999999999997
 
 
 No 7
->1ira_X mol:protein length:152 INTERLEUKIN-1 RECEPTOR ANTAGONIST
+>2irt_A mol:protein length:152 INTERLEUKIN-1 RECEPTOR ANTAGONIST
 Probab=100.00  E-value=1.8e-94  Score=576.75  Aligned_cols=152  Identities=100%  Similarity=1.518  Sum_probs=151.3  Template_Neff=1.000
 
 Q 1ILR:1|PDBID|C   26 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL  105 (177)
 Q Consensus        26 ~p~~r~~~~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~eph~~fLGihggklcLsCVksgd~~~LqL  105 (177)
                       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 T Consensus         1 rpsgrksskmqafriwdvnqktfylrnnqlvagylqgpnvnleekidvvpiephalflgihggkmclscvksgdetrlql   80 (152)
-T 1ira_X            1 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL   80 (152)
+T 2irt_A            1 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL   80 (152)
 Confidence            79999999999999999999999999999999999999999999999999999999999999999999999999999999
 
 
@@ -369,11 +369,31 @@ Q 1ILR:1|PDBID|C  106 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPD
 Q Consensus       106 EaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~d~  177 (177)
                       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 T Consensus        81 eavnitdlsenrkqdkrfafirsdsgpttsfesaacpgwflctameadqpvsltnmpdegvmvtkfyfqede  152 (152)
-T 1ira_X           81 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  152 (152)
+T 2irt_A           81 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  152 (152)
 Confidence            999999999999999999999999999999999999999999999999999999999999999999999997
 
 
 No 8
+>2irt_B mol:protein length:152 INTERLEUKIN-1 RECEPTOR ANTAGONIST
+Probab=100.00  E-value=1.8e-94  Score=576.75  Aligned_cols=152  Identities=100%  Similarity=1.518  Sum_probs=151.3  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   26 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL  105 (177)
+Q Consensus        26 ~p~~r~~~~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~eph~~fLGihggklcLsCVksgd~~~LqL  105 (177)
+                      ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+T Consensus         1 rpsgrksskmqafriwdvnqktfylrnnqlvagylqgpnvnleekidvvpiephalflgihggkmclscvksgdetrlql   80 (152)
+T 2irt_B            1 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL   80 (152)
+Confidence            79999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1ILR:1|PDBID|C  106 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  177 (177)
+Q Consensus       106 EaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~d~  177 (177)
+                      ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+T Consensus        81 eavnitdlsenrkqdkrfafirsdsgpttsfesaacpgwflctameadqpvsltnmpdegvmvtkfyfqede  152 (152)
+T 2irt_B           81 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  152 (152)
+Confidence            999999999999999999999999999999999999999999999999999999999999999999999997
+
+
+No 9
 >1irp_A mol:protein length:153 INTERLEUKIN-1 RECEPTOR ANTAGONIST
 Probab=100.00  E-value=2.2e-94  Score=576.66  Aligned_cols=152  Identities=100%  Similarity=1.518  Sum_probs=151.4  Template_Neff=1.000
 
@@ -393,7 +413,7 @@ T 1irp_A           82 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPD
 Confidence            999999999999999999999999999999999999999999999999999999999999999999999997
 
 
-No 9
+No 10
 >tr|L5KV71|L5KV71_PTEAL Interleukin-1 receptor antagonist protein OS=Pteropus alecto GN=PAL_GLEAN10005660 PE=3 SV=1
 Probab=100.00  E-value=2.3e-80  Score=517.86  Aligned_cols=157  Identities=78%  Similarity=1.309  Sum_probs=153.9  Template_Neff=1.000
 
@@ -421,7 +441,7 @@ T tr|L5KV71|L5KV  208 LTNRPEEAVIVTKFYFQQD  226 (226)
 Confidence            9999999999999999986
 
 
-No 10
+No 11
 >tr|F1MPZ4|F1MPZ4_BOVIN Uncharacterized protein (Fragment) OS=Bos taurus PE=4 SV=2
 Probab=100.00  E-value=8.7e-63  Score=405.09  Aligned_cols=156  Identities=56%  Similarity=0.850  Sum_probs=147.9  Template_Neff=3.400
 
@@ -449,7 +469,7 @@ T tr|F1MPZ4|F1MP  158 G-GEKHTEFYFQED  170 (181)
 Confidence            8 789999999986
 
 
-No 11
+No 12
 >tr|G3IHF8|G3IHF8_CRIGR Interleukin-1 receptor antagonist protein OS=Cricetulus griseus GN=I79_023248 PE=3 SV=1
 Probab=100.00  E-value=8.1e-58  Score=368.56  Aligned_cols=113  Identities=73%  Similarity=1.235  Sum_probs=110.6  Template_Neff=1.000
 
@@ -467,26 +487,6 @@ Q Consensus       145 FLCTa~EADqPVsLTN~p~~~~~VTkFYfq~d~  177 (177)
 T Consensus       125 flctaveadrpvsltnkpeepltvtkfyfqedq  157 (157)
 T tr|G3IHF8|G3IH  125 FLCTAVEADRPVSLTNKPEEPLTVTKFYFQEDQ  157 (157)
 Confidence            999999999999999999999999999999984
-
-
-No 12
->4gai_B mol:protein length:153 EBI-005
-Probab=100.00  E-value=3.8e-56  Score=357.91  Aligned_cols=137  Identities=61%  Similarity=0.981  Sum_probs=121.8  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   37 AFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIE------PHALFLGIHGGKMCLSCVKSGDETRLQLEAVNI  110 (177)
-Q Consensus        37 afRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~e------ph~~fLGihggklcLsCVksgd~~~LqLEaVni  110 (177)
-                      ..||||||||||||||||||||||||||||||||....-+.      .-..-||.......||||-..|...||||.|.-
-T Consensus         7 ncriwdvnqktfylrnnqlvagylqgpnvnleekfsmsfvqgeesndkipvalglkeknlylscvlkddkptlqlesvdp   86 (153)
-T 4gai_B            7 NCRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKFSMSFVQGEESNDKIPVALGLKEKNLYLSCVLKDDKPTLQLESVDP   86 (153)
-Confidence            46899999999999999999999999999999997654332      123457888889999999999999999999987
-
-
-Q 1ILR:1|PDBID|C  111 TDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQ  174 (177)
-Q Consensus       111 tdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq  174 (177)
-                      .... ..|-.|||.|-.-.-...-.||||..|.|||||||||||||||||||||||||||||.|
-T Consensus        87 knyp-kkkmekrfvfnkieinnklefesaqfpnwflctameadqpvsltnmpdegvmvtkfymq  149 (153)
-T 4gai_B           87 KNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWFLCTAMEADQPVSLTNMPDEGVMVTKFYMQ  149 (153)
-Confidence            6654 46788999998888888899999999999999999999999999999999999999987
 
 
 No 13
@@ -510,6 +510,26 @@ Confidence            6654 46788999998888888899999999999999999999999999999999999
 
 
 No 14
+>4gai_B mol:protein length:153 EBI-005
+Probab=100.00  E-value=3.8e-56  Score=357.91  Aligned_cols=137  Identities=61%  Similarity=0.981  Sum_probs=121.8  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   37 AFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIE------PHALFLGIHGGKMCLSCVKSGDETRLQLEAVNI  110 (177)
+Q Consensus        37 afRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~e------ph~~fLGihggklcLsCVksgd~~~LqLEaVni  110 (177)
+                      ..||||||||||||||||||||||||||||||||....-+.      .-..-||.......||||-..|...||||.|.-
+T Consensus         7 ncriwdvnqktfylrnnqlvagylqgpnvnleekfsmsfvqgeesndkipvalglkeknlylscvlkddkptlqlesvdp   86 (153)
+T 4gai_B            7 NCRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKFSMSFVQGEESNDKIPVALGLKEKNLYLSCVLKDDKPTLQLESVDP   86 (153)
+Confidence            46899999999999999999999999999999997654332      123457888889999999999999999999987
+
+
+Q 1ILR:1|PDBID|C  111 TDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQ  174 (177)
+Q Consensus       111 tdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq  174 (177)
+                      .... ..|-.|||.|-.-.-...-.||||..|.|||||||||||||||||||||||||||||.|
+T Consensus        87 knyp-kkkmekrfvfnkieinnklefesaqfpnwflctameadqpvsltnmpdegvmvtkfymq  149 (153)
+T 4gai_B           87 KNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWFLCTAMEADQPVSLTNMPDEGVMVTKFYMQ  149 (153)
+Confidence            6654 46788999998888888899999999999999999999999999999999999999987
+
+
+No 15
 >tr|M7BPB2|M7BPB2_CHEMY Interleukin-36 receptor antagonist protein OS=Chelonia mydas GN=UY3_12858 PE=3 SV=1
 Probab=100.00  E-value=4.5e-40  Score=263.99  Aligned_cols=137  Identities=48%  Similarity=0.805  Sum_probs=123.7  Template_Neff=4.000
 
@@ -529,7 +549,7 @@ T tr|M7BPB2|M7BP   83 IMDLYNGPEEVKPFLFYHSSSGSTSTFESAAFPGWFICTSSEPGQPVFLTQERGK-SY
 Confidence            9999999999999999999999999999999999999999999999999998774 4578999863
 
 
-No 15
+No 16
 >tr|G1QN82|G1QN82_NOMLE Uncharacterized protein OS=Nomascus leucogenys GN=IL1F10 PE=3 SV=1
 Probab=100.00  E-value=3.2e-38  Score=245.61  Aligned_cols=98  Identities=39%  Similarity=0.666  Sum_probs=95.5  Template_Neff=1.499
 
@@ -549,7 +569,7 @@ T tr|G1QN82|G1QN   82 EDVNIEELYKGGEEATRFTFFQSSSGS  108 (109)
 Confidence            999999999999999999999998874
 
 
-No 16
+No 17
 >tr|I3MMX8|I3MMX8_ICTTR Uncharacterized protein OS=Ictidomys tridecemlineatus GN=IL36RN PE=3 SV=1
 Probab=99.96  E-value=1.1e-33  Score=223.85  Aligned_cols=98  Identities=51%  Similarity=0.908  Sum_probs=90.7  Template_Neff=2.241
 
@@ -569,7 +589,7 @@ T tr|I3MMX8|I3MM   95 LTNIPEDAAWDTPWDAPITDFYFQPC  120 (121)
 Confidence            999986543       2789999863
 
 
-No 17
+No 18
 >1md6_A mol:protein length:154 interleukin 1 family, member 5 (delta)
 Probab=99.95  E-value=4.8e-32  Score=220.19  Aligned_cols=139  Identities=50%  Similarity=0.811  Sum_probs=124.8  Template_Neff=1.000
 
@@ -589,7 +609,7 @@ T 1md6_A           85 MELYLGAKESKSFTFYRRDMGLTSSFESAAYPGWFLCTSPEADQPVRLTQIPEDPAWD
 Confidence            9999999999999999999999999999999999999999999999999998764   4689999986
 
 
-No 18
+No 19
 >tr|S7NUD8|S7NUD8_MYOBR Interleukin-36 receptor antagonist protein OS=Myotis brandtii GN=D623_10000236 PE=3 SV=1
 Probab=99.94  E-value=1.5e-31  Score=196.47  Aligned_cols=67  Identities=49%  Similarity=0.917  Sum_probs=64.4  Template_Neff=1.902
 
@@ -599,26 +619,6 @@ Q Consensus       111 tdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~--
 T Consensus         1 ~el~r~~~~~~~ftf~r~~~~~~~~fesaa~pgwflct~~~a~~p~~ls~~p~~a~~~~~v~~fyfq~~~   70 (70)
 T tr|S7NUD8|S7NU    1 TELYRSPKDSRGFTFFRRDTGLTSRFESAAFPGWFLCTVPEADQPLRLSQLPGDASWDHPVMDFYFQQCD   70 (70)
 Confidence            57899999999999999999999999999999999999999999999999999997   99999999873
-
-
-No 19
->4p0j_A mol:protein length:150 Interleukin-36 receptor antagonist/Interleuki
-Probab=99.94  E-value=3.5e-31  Score=214.59  Aligned_cols=138  Identities=51%  Similarity=0.785  Sum_probs=124.0  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   36 QAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIE-----PHALFLGIHGGKMCLSCVKSGDETRLQLEAVNI  110 (177)
-Q Consensus        36 qafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~e-----ph~~fLGihggklcLsCVksgd~~~LqLEaVni  110 (177)
-                      -.||.-|..-|..||.||||.||-|....|--.|.|.|||-.     -....||+.||..||||- -|.|..|.||.|||
-T Consensus         6 lcfrmkdsalkvlylhnnqllagglhagkvikgeeisvvpnrwldaslspvilgvqggsqclscg-vgqeptltlepvni   84 (150)
-T 4p0j_A            6 LCFRMKDSALKVLYLHNNQLLAGGLHAGKVIKGEEISVVPNRWLDASLSPVILGVQGGSQCLSCG-VGQEPTLTLEPVNI   84 (150)
-Confidence            458888999999999999999999999999889999999853     234689999999999995 58889999999999
-
-
-Q 1ILR:1|PDBID|C  111 TDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQE  175 (177)
-Q Consensus       111 tdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~  175 (177)
-                      -.|--..|..|.|.|.|.|-|-|.||||||.|||||||.-||||||.||.--.. ..-|.||||.
-T Consensus        85 melylgakesksftfyrrdmgltssfesaaypgwflctvpeadqpvrltqelgk-syntdfyfqq  148 (150)
-T 4p0j_A           85 MELYLGAKESKSFTFYRRDMGLTSSFESAAYPGWFLCTVPEADQPVRLTQELGK-SYNTDFYFQQ  148 (150)
-Confidence            999999999999999999999999999999999999999999999999975443 3468899985
 
 
 No 20
@@ -642,6 +642,26 @@ Confidence            999999999999999999999999999999999999999999999999975443 346
 
 
 No 21
+>4p0j_A mol:protein length:150 Interleukin-36 receptor antagonist/Interleuki
+Probab=99.94  E-value=3.5e-31  Score=214.59  Aligned_cols=138  Identities=51%  Similarity=0.785  Sum_probs=124.0  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   36 QAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIE-----PHALFLGIHGGKMCLSCVKSGDETRLQLEAVNI  110 (177)
+Q Consensus        36 qafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~e-----ph~~fLGihggklcLsCVksgd~~~LqLEaVni  110 (177)
+                      -.||.-|..-|..||.||||.||-|....|--.|.|.|||-.     -....||+.||..||||- -|.|..|.||.|||
+T Consensus         6 lcfrmkdsalkvlylhnnqllagglhagkvikgeeisvvpnrwldaslspvilgvqggsqclscg-vgqeptltlepvni   84 (150)
+T 4p0j_A            6 LCFRMKDSALKVLYLHNNQLLAGGLHAGKVIKGEEISVVPNRWLDASLSPVILGVQGGSQCLSCG-VGQEPTLTLEPVNI   84 (150)
+Confidence            458888999999999999999999999999889999999853     234689999999999995 58889999999999
+
+
+Q 1ILR:1|PDBID|C  111 TDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQE  175 (177)
+Q Consensus       111 tdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~  175 (177)
+                      -.|--..|..|.|.|.|.|-|-|.||||||.|||||||.-||||||.||.--.. ..-|.||||.
+T Consensus        85 melylgakesksftfyrrdmgltssfesaaypgwflctvpeadqpvrltqelgk-syntdfyfqq  148 (150)
+T 4p0j_A           85 MELYLGAKESKSFTFYRRDMGLTSSFESAAYPGWFLCTVPEADQPVRLTQELGK-SYNTDFYFQQ  148 (150)
+Confidence            999999999999999999999999999999999999999999999999975443 3468899985
+
+
+No 22
 >4p0l_A mol:protein length:154 Interleukin-36 receptor antagonist/Interleuki
 Probab=99.93  E-value=6.6e-31  Score=213.69  Aligned_cols=138  Identities=51%  Similarity=0.819  Sum_probs=123.9  Template_Neff=1.000
 
@@ -661,7 +681,7 @@ T 4p0l_A           85 PVNIMELYLGAKESKSFTFYRADAGLTSSFESAAYPGWFLCTVPEADQPVRLTQELGK
 Confidence            9999999999999999999999999999999999999999999999999999975443 3468899985
 
 
-No 22
+No 23
 >tr|Q0Q2I3|Q0Q2I3_SHEEP Interleukin 1 receptor antagonist (Fragment) OS=Ovis aries GN=IL1RN PE=3 SV=1
 Probab=99.93  E-value=7.7e-31  Score=182.58  Aligned_cols=50  Identities=88%  Similarity=1.448  Sum_probs=49.1  Template_Neff=1.000
 
@@ -673,7 +693,7 @@ T tr|Q0Q2I3|Q0Q2    1 AVNITDLNQNREQDKRFAFIRSDNGPTTSFESAACPGWFLCTSLEADQPV   50 (5
 Confidence            68999999999999999999999999999999999999999999999997
 
 
-No 23
+No 24
 >tr|Q9TV37|Q9TV37_HORSE IL-1ra (Fragment) OS=Equus caballus GN=IL-1ra PE=2 SV=1
 Probab=99.92  E-value=1.1e-29  Score=184.24  Aligned_cols=64  Identities=78%  Similarity=1.208  Sum_probs=61.1  Template_Neff=1.000
 
@@ -685,9 +705,21 @@ T tr|Q9TV37|Q9TV    1 QLVAGYLQESN-TLQEKIDVVPIEPDALFLGLHGRKLCLACVKSGDEIRNQLEAVNIT
 Confidence            79999999987 58999999999999999999999999999999999999999999999999864
 
 
-No 24
+No 25
+>tr|A0A0A6YVU4|A0A0A6YVU4_MOUSE Interleukin-1 receptor antagonist protein OS=Mus musculus GN=Il1rn PE=1 SV=1
+Probab=99.90  E-value=4.4e-28  Score=170.09  Aligned_cols=50  Identities=76%  Similarity=1.303  Sum_probs=47.9  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   20 HSETICRPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEE   69 (177)
+Q Consensus        20 hsEta~~p~~r~~~~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leE   69 (177)
+                      .||..|||||.+.-|||||||||.||||||||||||+||||||||+.||.
+T Consensus         2 aseaacrpsgkrpckmqafriwdtnqktfylrnnqliagylqgpnikleg   51 (52)
+T tr|A0A0A6YVU4|    2 ASEAACRPSGKRPCKMQAFRIWDTNQKTFYLRNNQLIAGYLQGPNIKLEG   51 (52)
+Confidence            48999999999999999999999999999999999999999999999874
+
+
+No 26
 >4gaf_A mol:protein length:153 EBI-005
-Probab=99.90  E-value=3.6e-28  Score=197.89  Aligned_cols=137  Identities=61%  Similarity=0.981  Sum_probs=121.8  Template_Neff=1.000
+Probab=99.89  E-value=1.4e-27  Score=194.45  Aligned_cols=137  Identities=61%  Similarity=0.981  Sum_probs=121.8  Template_Neff=1.000
 
 Q 1ILR:1|PDBID|C   37 AFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIE------PHALFLGIHGGKMCLSCVKSGDETRLQLEAVNI  110 (177)
 Q Consensus        37 afRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~e------ph~~fLGihggklcLsCVksgd~~~LqLEaVni  110 (177)
@@ -705,19 +737,7 @@ T 4gaf_A           87 KNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWFLCTAMEADQPVSLTNMPDEGVMV
 Confidence            6654 46788999998888888899999999999999999999999999999999999999987
 
 
-No 25
->tr|A0A0A6YVU4|A0A0A6YVU4_MOUSE Interleukin-1 receptor antagonist protein OS=Mus musculus GN=Il1rn PE=1 SV=1
-Probab=99.90  E-value=4.4e-28  Score=170.09  Aligned_cols=50  Identities=76%  Similarity=1.303  Sum_probs=47.9  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   20 HSETICRPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEE   69 (177)
-Q Consensus        20 hsEta~~p~~r~~~~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leE   69 (177)
-                      .||..|||||.+.-|||||||||.||||||||||||+||||||||+.||.
-T Consensus         2 aseaacrpsgkrpckmqafriwdtnqktfylrnnqliagylqgpnikleg   51 (52)
-T tr|A0A0A6YVU4|    2 ASEAACRPSGKRPCKMQAFRIWDTNQKTFYLRNNQLIAGYLQGPNIKLEG   51 (52)
-Confidence            48999999999999999999999999999999999999999999999874
-
-
-No 26
+No 27
 >tr|A0A091D910|A0A091D910_FUKDA Interleukin-36 receptor antagonist protein OS=Fukomys damarensis GN=H920_11898 PE=3 SV=1
 Probab=99.89  E-value=1.4e-27  Score=197.57  Aligned_cols=107  Identities=52%  Similarity=0.923  Sum_probs=92.8  Template_Neff=1.000
 
@@ -737,7 +757,7 @@ T tr|A0A091D910|  139 GWFLCTAPEADQPVRLSQISENSPWDTSITDFYFQQ  174 (176)
 Confidence            9999999999999999766543   34678999985
 
 
-No 27
+No 28
 >tr|Q9PW18|Q9PW18_CYPCA Interleukin-1-beta OS=Cyprinus carpio GN=IL-1 PE=3 SV=1
 Probab=99.89  E-value=8.1e-28  Score=207.71  Aligned_cols=163  Identities=34%  Similarity=0.563  Sum_probs=130.7  Template_Neff=4.600
 
@@ -765,7 +785,7 @@ T tr|Q9PW18|Q9PW  247 TSQEDNKPVEMCNQPG--QRITDFTLED  272 (276)
 Confidence            9988899999999988  6677777653
 
 
-No 28
+No 29
 >tr|G3BMU2|G3BMU2_LABRO Interleukin 1 beta (Fragment) OS=Labeo rohita GN=IL1b PE=2 SV=1
 Probab=99.87  E-value=1.1e-26  Score=173.91  Aligned_cols=72  Identities=49%  Similarity=0.847  Sum_probs=67.6  Template_Neff=2.578
 
@@ -777,7 +797,7 @@ T tr|G3BMU2|G3BM    1 VCLGISGSNLYLSCTKSGDEPLPKLLHKEVSEDVDTINLGSSS-DMKRFLFFRQDTGV
 Confidence            3799999999999999999998877   7   89999999888 999999999999999 99999999999999999874
 
 
-No 29
+No 30
 >4x39_A mol:protein length:168 IL-1 beta
 Probab=99.83  E-value=1.1e-24  Score=179.82  Aligned_cols=135  Identities=45%  Similarity=0.754  Sum_probs=107.8  Template_Neff=1.000
 
@@ -797,7 +817,7 @@ T 4x39_A           93 PTLQLEEADVMRDIDS--VELTRFIFYRLDSPAEGTTRFESAAFPGWFICTSLQPRQP
 Confidence            99999876543 2221  23468999998874  58999999999999999999999999999999754433
 
 
-No 30
+No 31
 >4x38_A mol:protein length:168 IL-1 beta
 Probab=99.83  E-value=1.2e-24  Score=179.69  Aligned_cols=135  Identities=45%  Similarity=0.754  Sum_probs=107.6  Template_Neff=1.000
 
@@ -817,7 +837,7 @@ T 4x38_A           93 PTLQLEEADVMRDIDS--VELTRFIFYRLDSPTAGTTRFESAAFPGWFICTSLQPRQP
 Confidence            99999876543 2221  23468999998874  57899999999999999999999999999999754433
 
 
-No 31
+No 32
 >2wry_A mol:protein length:162 INTERLEUKIN-1BETA
 Probab=99.83  E-value=1.2e-24  Score=178.81  Aligned_cols=133  Identities=45%  Similarity=0.756  Sum_probs=106.8  Template_Neff=1.000
 
@@ -837,7 +857,7 @@ T 2wry_A           88 TLQLEEADVMRDIDS--VELTRFIFYRLDSPTEGTTRFESAAFPGWFICTSLQPRQPV
 Confidence            9999876543 2221  23468999998874  5789999999999999999999999999999975443
 
 
-No 32
+No 33
 >4x3a_A mol:protein length:168 IL-1 beta
 Probab=99.83  E-value=1.3e-24  Score=179.53  Aligned_cols=135  Identities=45%  Similarity=0.754  Sum_probs=107.6  Template_Neff=1.000
 
@@ -857,7 +877,7 @@ T 4x3a_A           93 PTLQLEEADVMRDIDS--VELTRFIFYRLDSPTEGTTRFESAAFPGWFICTSLQPAQP
 Confidence            99999876543 2221  23468999998874  57899999999999999999999999999999754433
 
 
-No 33
+No 34
 >4x37_A mol:protein length:168 IL-1 beta
 Probab=99.83  E-value=1.3e-24  Score=179.50  Aligned_cols=135  Identities=45%  Similarity=0.754  Sum_probs=107.7  Template_Neff=1.000
 
@@ -877,7 +897,7 @@ T 4x37_A           93 PTLQLEEADVMRDIDS--VELTRFIFYRLDSPTKGTTRFESAAFPGWFICTSLQPRQP
 Confidence            99999876543 2221  23468999998874  57899999999999999999999999999999754433
 
 
-No 34
+No 35
 >tr|A0A0Q3XWC5|A0A0Q3XWC5_ALLMI Interleukin 36 receptor antagonist OS=Alligator mississippiensis GN=IL36RN PE=4 SV=1
 Probab=99.83  E-value=2e-24  Score=190.04  Aligned_cols=141  Identities=38%  Similarity=0.652  Sum_probs=120.1  Template_Neff=1.664
 
@@ -897,7 +917,7 @@ T tr|A0A0Q3XWC5|  102 CLSCGTASE-PQYQLENKHIMTISNSQSDASRFTFFNTPQGNTHHFESAAYPGWFLCT
 Confidence            999999984 6799999999999999999999999999999999999999999999999999999999986544
 
 
-No 35
+No 36
 >5bow_A mol:protein length:151 Interleukin-1 family member 10
 Probab=99.81  E-value=7.3e-24  Score=172.95  Aligned_cols=134  Identities=43%  Similarity=0.736  Sum_probs=112.8  Template_Neff=1.000
 
@@ -917,7 +937,7 @@ T 5bow_A           90 KGGEEATRFTFFQSSSGSAFRLEAAAWPGWFLCGPAEPQQPVQLTKES-EPSARTKFY
 Confidence            999999999999999999999999999999999999999999999754 455679999964
 
 
-No 36
+No 37
 >tr|L9JQR4|L9JQR4_TUPCH Interleukin-1 family member 10 OS=Tupaia chinensis GN=TREES_T100021690 PE=4 SV=1
 Probab=99.81  E-value=9.3e-24  Score=171.33  Aligned_cols=112  Identities=43%  Similarity=0.724  Sum_probs=99.0  Template_Neff=1.467
 
@@ -937,7 +957,7 @@ T tr|L9JQR4|L9JQ   88 PQDVNIEDLYKGGEQATRFTFFQSSVGSTFRLEAAAWPGWVLCGQ  132 (140)
 Confidence            778999999999999999999999999999999999999999964
 
 
-No 37
+No 38
 >tr|Q28842|Q28842_RABIT Interleukin-1 receptor antagonist intracellular form (Fragment) OS=Oryctolagus cuniculus GN=icIL-1ra PE=2 SV=1
 Probab=99.74  E-value=1e-21  Score=144.59  Aligned_cols=41  Identities=78%  Similarity=1.275  Sum_probs=39.1  Template_Neff=1.000
 
@@ -949,7 +969,7 @@ T tr|Q28842|Q288   28 PMASETACRPSGKRPCRMQAFRIWDVNQKTFYLRNNQLVAG   68 (68)
 Confidence            35699999999999999999999999999999999999997
 
 
-No 38
+No 39
 >tr|S9WUB9|S9WUB9_9CETA Interleukin-36 receptor antagonist protein OS=Camelus ferus GN=CB1_000688034 PE=3 SV=1
 Probab=99.63  E-value=1.8e-19  Score=158.55  Aligned_cols=106  Identities=49%  Similarity=0.908  Sum_probs=84.2  Template_Neff=1.456
 
@@ -969,7 +989,7 @@ T tr|S9WUB9|S9WU  217 AESKSFTFYRRDTGLTSSFESAAYPGWFLCTVLEADQPVQLTQLPKDASWDDPITDFY
 Confidence            56788999999999999999999999999999999999999999944   456899999864
 
 
-No 39
+No 40
 >tr|W0TYK5|W0TYK5_ONCMY Interleukin-1 beta 3 OS=Oncorhynchus mykiss GN=il-1 beta 3 PE=2 SV=1
 Probab=99.62  E-value=2.5e-19  Score=152.35  Aligned_cols=138  Identities=36%  Similarity=0.645  Sum_probs=113.3  Template_Neff=2.427
 
@@ -989,27 +1009,27 @@ T tr|W0TYK5|W0TY  118 DSATPTLQLEECKDQLTTIGD-QEKTKPFLFFHNTTGFSTSTFESVSYPGWFISTSLE
 Confidence            99  889999986  667777 667789999999999 89999999999999999999999999998776542 24444
 
 
-No 40
->tr|R7VPR0|R7VPR0_COLLI PH and SEC7 domain-containing protein 4 OS=Columba livia GN=A306_11753 PE=4 SV=1
-Probab=99.61  E-value=6.1e-19  Score=173.19  Aligned_cols=129  Identities=41%  Similarity=0.657  Sum_probs=108.4  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   38 FRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEP-----HALFLGIHGGKMCLSCVKSGDETRLQLEAVNITD  112 (177)
-Q Consensus        38 fRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~ep-----h~~fLGihggklcLsCVksgd~~~LqLEaVnitd  112 (177)
-                      +-+-|..||-..|..+.|||--+||.|..-||.|.|||-..     -.|.+||.|||..|||- .|.|..|.||.|.+-|
-T Consensus       272 yvvrdteqkglclhdghlvatsfqgtnaaqeepisvvpnpslerwrcplivgirggkqalscg-tgpepqlkleevglld  350 (1414)
-T tr|R7VPR0|R7VP  272 YVVRDTEQKGLCLHDGHLVATSFQGTNAAQEEPISVVPNPSLERWRCPLIVGIRGGKQALSCG-TGPEPQLKLEEVGLLD  350 (1414)
-Confidence            45678999999999999999999999999999999998532     35889999999999995 6889999999999999
-
-
-Q 1ILR:1|PDBID|C  113 LSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYF  173 (177)
-Q Consensus       113 lsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYf  173 (177)
-                      |-........+.|...-.|.|..|||||.||.||.|.-.  ....|..-||    ||.||.
-T Consensus       351 lfsrpadatpytfyktfggtthtfesaafpglflstspg--palglaappd----vtafyl  405 (1414)
-T tr|R7VPR0|R7VP  351 LFSRPADATPYTFYKTFGGTTHTFESAAFPGLFLSTSPG--PALGLAAPPD----VTAFYL  405 (1414)
-Confidence            987777777889999999999999999999999988642  2233444444    666765
-
-
 No 41
+>tr|R7VPR0|R7VPR0_COLLI PH and SEC7 domain-containing protein 4 OS=Columba livia GN=A306_11753 PE=4 SV=1
+Probab=99.61  E-value=6.1e-19  Score=173.19  Aligned_cols=110  Identities=49%  Similarity=0.803  Sum_probs=96.2  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   32 SSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVP---IEPH--ALFLGIHGGKMCLSCVKSGDETRLQLE  106 (177)
+Q Consensus        32 ~~~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~---~eph--~~fLGihggklcLsCVksgd~~~LqLE  106 (177)
+                      ..|.-.+||||||||..||||.|||||.|||.|..||||+-.||   .||.  .+.|||..|..||..-.. ....|||.
+T Consensus        24 qtkvfqyriwdvnqkslylrndqlvaghlqganaaleekvfwvpnrafeparlpiilgiqngtrclasppa-sqptlqlq  102 (1414)
+T tr|R7VPR0|R7VP   24 QTKVFQYRIWDVNQKSLYLRNDQLVAGHLQGANAALEEKVFWVPNRAFEPARLPIILGIQNGTRCLASPPA-SQPTLQLQ  102 (1414)
+Confidence            34667789999999999999999999999999999999998887   4554  358999999999976543 34569999
+
+
+Q 1ILR:1|PDBID|C  107 AVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACP  142 (177)
+Q Consensus       107 aVnitdlsknkeqdkRFtFirsdsgpttsFESAacP  142 (177)
+                      ||.|..|.........|.|.||-..---.|||||||
+T Consensus       103 avdiralprdsatsaaftffrsykdglwrfesaacp  138 (1414)
+T tr|R7VPR0|R7VP  103 AVDIRALPRDSATSAAFTFFRSYKDGLWRFESAACP  138 (1414)
+Confidence            999999998888888999999998889999999996
+
+
+No 42
 >tr|F6U6U0|F6U6U0_ORNAN Uncharacterized protein OS=Ornithorhynchus anatinus GN=IL36RN PE=3 SV=2
 Probab=99.57  E-value=2.5e-18  Score=146.53  Aligned_cols=127  Identities=41%  Similarity=0.737  Sum_probs=104.0  Template_Neff=1.000
 
@@ -1029,47 +1049,7 @@ T tr|F6U6U0|F6U6  136 LEAVDIMDLYHHGDPSNRFTFLRRRSGATSRFESAMFPGWFLCSPPGEDQPLSLSRQP
 Confidence            999999999999999999999999999999999999999999999999999999877644
 
 
-No 42
->3o4o_A mol:protein length:158 Interleukin-1 beta
-Probab=99.50  E-value=2.4e-17  Score=136.50  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.7  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
-Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
-                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
-T Consensus        64 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  142 (158)
-T 3o4o_A           64 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  142 (158)
-Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
-
-
-Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
-Q Consensus       162 p~~~~~VTkFYfq  174 (177)
-                       ..|--+|.|..|
-T Consensus       143 -kggqditdftmq  154 (158)
-T 3o4o_A          143 -KGGQDITDFTMQ  154 (158)
-Confidence             344555655443
-
-
 No 43
->4dep_D mol:protein length:158 Interleukin-1 beta
-Probab=99.50  E-value=2.4e-17  Score=136.50  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.7  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
-Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
-                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
-T Consensus        64 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  142 (158)
-T 4dep_D           64 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  142 (158)
-Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
-
-
-Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
-Q Consensus       162 p~~~~~VTkFYfq  174 (177)
-                       ..|--+|.|..|
-T Consensus       143 -kggqditdftmq  154 (158)
-T 4dep_D          143 -KGGQDITDFTMQ  154 (158)
-Confidence             344555655443
-
-
-No 44
 >4dep_A mol:protein length:158 Interleukin-1 beta
 Probab=99.50  E-value=2.4e-17  Score=136.50  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.7  Template_Neff=1.000
 
@@ -1089,7 +1069,47 @@ T 4dep_A          143 -KGGQDITDFTMQ  154 (158)
 Confidence             344555655443
 
 
+No 44
+>3o4o_A mol:protein length:158 Interleukin-1 beta
+Probab=99.50  E-value=2.4e-17  Score=136.50  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.7  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
+Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
+                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
+T Consensus        64 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  142 (158)
+T 3o4o_A           64 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  142 (158)
+Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
+
+
+Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
+Q Consensus       162 p~~~~~VTkFYfq  174 (177)
+                       ..|--+|.|..|
+T Consensus       143 -kggqditdftmq  154 (158)
+T 3o4o_A          143 -KGGQDITDFTMQ  154 (158)
+Confidence             344555655443
+
+
 No 45
+>4dep_D mol:protein length:158 Interleukin-1 beta
+Probab=99.50  E-value=2.4e-17  Score=136.50  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.7  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
+Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
+                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
+T Consensus        64 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  142 (158)
+T 4dep_D           64 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  142 (158)
+Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
+
+
+Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
+Q Consensus       162 p~~~~~VTkFYfq  174 (177)
+                       ..|--+|.|..|
+T Consensus       143 -kggqditdftmq  154 (158)
+T 4dep_D          143 -KGGQDITDFTMQ  154 (158)
+Confidence             344555655443
+
+
+No 46
 >tr|U3KPW9|U3KPW9_HUMAN Interleukin-36 receptor antagonist protein (Fragment) OS=Homo sapiens GN=IL36RN PE=4 SV=1
 Probab=99.49  E-value=3.2e-17  Score=116.51  Aligned_cols=45  Identities=67%  Similarity=1.164  Sum_probs=41.8  Template_Neff=1.000
 
@@ -1101,7 +1121,7 @@ T tr|U3KPW9|U3KP    3 GLTSSFESAAYPGWFLCTVPEADQPVRLTQLPENGGWNAPITDFYFQQ   50 (52)
 Confidence            678999999999999999999999999999999874   589999986
 
 
-No 46
+No 47
 >tr|Q5MAC0|Q5MAC0_BOVIN Interleukin 1-beta (Fragment) OS=Bos taurus PE=3 SV=1
 Probab=99.48  E-value=3.7e-17  Score=130.28  Aligned_cols=80  Identities=41%  Similarity=0.819  Sum_probs=76.5  Template_Neff=2.353
 
@@ -1121,7 +1141,7 @@ T tr|Q5MAC0|Q5MA   97 E   97 (113)
 Confidence            4
 
 
-No 47
+No 48
 >tr|D5KXX5|D5KXX5_CEREL Interleukin 1 beta (Fragment) OS=Cervus elaphus PE=2 SV=1
 Probab=99.47  E-value=5.7e-17  Score=132.70  Aligned_cols=87  Identities=36%  Similarity=0.640  Sum_probs=73.8  Template_Neff=1.343
 
@@ -1141,7 +1161,7 @@ T tr|D5KXX5|D5KX  123 TSQAENMPVFLGG  135 (140)
 Confidence            9988888887643
 
 
-No 48
+No 49
 >4g6m_A mol:protein length:150 Interleukin-1 beta
 Probab=99.46  E-value=8.6e-17  Score=132.47  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.6  Template_Neff=1.000
 
@@ -1161,15 +1181,15 @@ T 4g6m_A          137 -KGGQDITDFTMQ  148 (150)
 Confidence             334555555443
 
 
-No 49
->6i1b_A mol:protein length:153 INTERLEUKIN-1 BETA
+No 50
+>5i1b_A mol:protein length:153 INTERLEUKIN-1 BETA
 Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
 
 Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
 Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
                       -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
 T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
-T 6i1b_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
+T 5i1b_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
 Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
 
 
@@ -1177,11 +1197,31 @@ Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
 Q Consensus       162 p~~~~~VTkFYfq  174 (177)
                        ..|--+|.|..|
 T Consensus       138 -kggqditdftmq  149 (153)
-T 6i1b_A          138 -KGGQDITDFTMQ  149 (153)
+T 5i1b_A          138 -KGGQDITDFTMQ  149 (153)
 Confidence             345555655443
 
 
-No 50
+No 51
+>2i1b_A mol:protein length:153 INTERLEUKIN-1 BETA
+Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
+Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
+                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
+T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
+T 2i1b_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
+Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
+
+
+Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
+Q Consensus       162 p~~~~~VTkFYfq  174 (177)
+                       ..|--+|.|..|
+T Consensus       138 -kggqditdftmq  149 (153)
+T 2i1b_A          138 -KGGQDITDFTMQ  149 (153)
+Confidence             345555655443
+
+
+No 52
 >1iob_A mol:protein length:153 INTERLEUKIN-1 BETA
 Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
 
@@ -1201,67 +1241,7 @@ T 1iob_A          138 -KGGQDITDFTMQ  149 (153)
 Confidence             345555655443
 
 
-No 51
->5bvp_I mol:protein length:153 Interleukin-1 beta
-Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
-Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
-                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
-T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
-T 5bvp_I           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
-Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
-
-
-Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
-Q Consensus       162 p~~~~~VTkFYfq  174 (177)
-                       ..|--+|.|..|
-T Consensus       138 -kggqditdftmq  149 (153)
-T 5bvp_I          138 -KGGQDITDFTMQ  149 (153)
-Confidence             345555655443
-
-
-No 52
->2nvh_A mol:protein length:153 Interleukin-1 beta
-Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
-Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
-                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
-T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
-T 2nvh_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
-Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
-
-
-Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
-Q Consensus       162 p~~~~~VTkFYfq  174 (177)
-                       ..|--+|.|..|
-T Consensus       138 -kggqditdftmq  149 (153)
-T 2nvh_A          138 -KGGQDITDFTMQ  149 (153)
-Confidence             345555655443
-
-
 No 53
->9ilb_A mol:protein length:153 PROTEIN (HUMAN INTERLEUKIN-1 BETA)
-Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
-Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
-                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
-T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
-T 9ilb_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
-Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
-
-
-Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
-Q Consensus       162 p~~~~~VTkFYfq  174 (177)
-                       ..|--+|.|..|
-T Consensus       138 -kggqditdftmq  149 (153)
-T 9ilb_A          138 -KGGQDITDFTMQ  149 (153)
-Confidence             345555655443
-
-
-No 54
 >4i1b_A mol:protein length:153 INTERLEUKIN-1 BETA
 Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
 
@@ -1278,6 +1258,26 @@ Q Consensus       162 p~~~~~VTkFYfq  174 (177)
                        ..|--+|.|..|
 T Consensus       138 -kggqditdftmq  149 (153)
 T 4i1b_A          138 -KGGQDITDFTMQ  149 (153)
+Confidence             345555655443
+
+
+No 54
+>6i1b_A mol:protein length:153 INTERLEUKIN-1 BETA
+Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
+Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
+                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
+T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
+T 6i1b_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
+Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
+
+
+Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
+Q Consensus       162 p~~~~~VTkFYfq  174 (177)
+                       ..|--+|.|..|
+T Consensus       138 -kggqditdftmq  149 (153)
+T 6i1b_A          138 -KGGQDITDFTMQ  149 (153)
 Confidence             345555655443
 
 
@@ -1302,14 +1302,14 @@ Confidence             345555655443
 
 
 No 56
->2i1b_A mol:protein length:153 INTERLEUKIN-1 BETA
+>5bvp_I mol:protein length:153 Interleukin-1 beta
 Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
 
 Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
 Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
                       -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
 T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
-T 2i1b_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
+T 5bvp_I           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
 Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
 
 
@@ -1317,11 +1317,31 @@ Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
 Q Consensus       162 p~~~~~VTkFYfq  174 (177)
                        ..|--+|.|..|
 T Consensus       138 -kggqditdftmq  149 (153)
-T 2i1b_A          138 -KGGQDITDFTMQ  149 (153)
+T 5bvp_I          138 -KGGQDITDFTMQ  149 (153)
 Confidence             345555655443
 
 
 No 57
+>2nvh_A mol:protein length:153 Interleukin-1 beta
+Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
+Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
+                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
+T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
+T 2nvh_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
+Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
+
+
+Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
+Q Consensus       162 p~~~~~VTkFYfq  174 (177)
+                       ..|--+|.|..|
+T Consensus       138 -kggqditdftmq  149 (153)
+T 2nvh_A          138 -KGGQDITDFTMQ  149 (153)
+Confidence             345555655443
+
+
+No 58
 >1itb_A mol:protein length:153 INTERLEUKIN-1 BETA
 Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
 
@@ -1338,26 +1358,6 @@ Q Consensus       162 p~~~~~VTkFYfq  174 (177)
                        ..|--+|.|..|
 T Consensus       138 -kggqditdftmq  149 (153)
 T 1itb_A          138 -KGGQDITDFTMQ  149 (153)
-Confidence             345555655443
-
-
-No 58
->2kh2_A mol:protein length:153 Interleukin-1 beta
-Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
-Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
-                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
-T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
-T 2kh2_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
-Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
-
-
-Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
-Q Consensus       162 p~~~~~VTkFYfq  174 (177)
-                       ..|--+|.|..|
-T Consensus       138 -kggqditdftmq  149 (153)
-T 2kh2_A          138 -KGGQDITDFTMQ  149 (153)
 Confidence             345555655443
 
 
@@ -1382,6 +1382,46 @@ Confidence             345555655443
 
 
 No 60
+>9ilb_A mol:protein length:153 PROTEIN (HUMAN INTERLEUKIN-1 BETA)
+Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
+Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
+                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
+T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
+T 9ilb_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
+Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
+
+
+Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
+Q Consensus       162 p~~~~~VTkFYfq  174 (177)
+                       ..|--+|.|..|
+T Consensus       138 -kggqditdftmq  149 (153)
+T 9ilb_A          138 -KGGQDITDFTMQ  149 (153)
+Confidence             345555655443
+
+
+No 61
+>2kh2_A mol:protein length:153 Interleukin-1 beta
+Probab=99.45  E-value=9.3e-17  Score=132.58  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
+Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
+                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
+T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
+T 2kh2_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
+Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
+
+
+Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
+Q Consensus       162 p~~~~~VTkFYfq  174 (177)
+                       ..|--+|.|..|
+T Consensus       138 -kggqditdftmq  149 (153)
+T 2kh2_A          138 -KGGQDITDFTMQ  149 (153)
+Confidence             345555655443
+
+
+No 62
 >4g6j_A mol:protein length:158 Interleukin-1 beta
 Probab=99.45  E-value=1.1e-16  Score=132.70  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.7  Template_Neff=1.000
 
@@ -1401,7 +1441,7 @@ T 4g6j_A          139 -KGGQDITDFTMQ  150 (158)
 Confidence             334555555443
 
 
-No 61
+No 63
 >1hib_A mol:protein length:153 INTERLEUKIN-1 BETA
 Probab=99.45  E-value=1.1e-16  Score=132.08  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
 
@@ -1421,7 +1461,7 @@ T 1hib_A          138 -KGGQDITDFTMQ  149 (153)
 Confidence             345555655443
 
 
-No 62
+No 64
 >1s0l_A mol:protein length:153 Interleukin-1 beta
 Probab=99.44  E-value=1.5e-16  Score=131.43  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
 
@@ -1441,7 +1481,7 @@ T 1s0l_A          138 -KGGQDITDFTMQ  149 (153)
 Confidence             345555655443
 
 
-No 63
+No 65
 >tr|A0A0Q3XVG2|A0A0Q3XVG2_ALLMI Uncharacterized protein OS=Alligator mississippiensis GN=Y1Q_001459 PE=4 SV=1
 Probab=99.42  E-value=2.4e-16  Score=142.87  Aligned_cols=145  Identities=38%  Similarity=0.608  Sum_probs=107.9  Template_Neff=1.000
 
@@ -1469,7 +1509,7 @@ T tr|A0A0Q3XVG2|  377 FF  378 (382)
 Confidence            54
 
 
-No 64
+No 66
 >1twm_A mol:protein length:153 Interleukin-1 beta
 Probab=99.41  E-value=2.7e-16  Score=129.89  Aligned_cols=78  Identities=35%  Similarity=0.627  Sum_probs=67.3  Template_Neff=1.000
 
@@ -1481,27 +1521,7 @@ T 1twm_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESA
 Confidence            478888889999999999999999999876654 467889999988888888999999999999999888777777654
 
 
-No 65
->8i1b_A mol:protein length:152 INTERLEUKIN-1 BETA
-Probab=99.41  E-value=3.3e-16  Score=129.30  Aligned_cols=128  Identities=33%  Similarity=0.553  Sum_probs=95.6  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   37 AFRIWDVNQKTFYLRNN-QLVAGYLQGPNVNLEEKI--DVVPIEPH----ALFLGIHGGKMCLSCVKSGDETRLQLEAVN  109 (177)
-Q Consensus        37 afRiWdvnqktfylRnn-qLvagyLq~pn~~leEKi--dvv~~eph----~~fLGihggklcLsCVksgd~~~LqLEaVn  109 (177)
-                      -+|+-|-.||...|.+- .|-|-.|.|.|+|-.--.  ..|.-||.    ..-||..|....||||-......||||.|.
-T Consensus         7 hyrlrdeqqkslvlsdpyelkalhlngqninqqvifsmsfvqgepsndkipvalglkgknlylscvmkdgtptlqlesvd   86 (152)
-T 8i1b_A            7 HYRLRDEQQKSLVLSDPYELKALHLNGQNINQQVIFSMSFVQGEPSNDKIPVALGLKGKNLYLSCVMKDGTPTLQLESVD   86 (152)
-Confidence            35777778887777653 345556667776643211  12222222    245899999999999988888889999998
-
-
-Q 1ILR:1|PDBID|C  110 ITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEG  165 (177)
-Q Consensus       110 itdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~  165 (177)
-                      -.... ..|-.|||.|-.-.-.....||||..|.|++.|.-....||-|.|-....
-T Consensus        87 pkqyp-kkkmekrfvfnkievkskvefesaefpnwyistsqaehkpvflgnnsgqd  141 (152)
-T 8i1b_A           87 PKQYP-KKKMEKRFVFNKIEVKSKVEFESAEFPNWYISTSQAEHKPVFLGNNSGQD  141 (152)
-Confidence            66543 46788999998888788889999999999999999999999998865443
-
-
-No 66
+No 67
 >2mib_A mol:protein length:152 INTERLEUKIN-1 BETA
 Probab=99.41  E-value=3.3e-16  Score=129.30  Aligned_cols=128  Identities=33%  Similarity=0.553  Sum_probs=95.6  Template_Neff=1.000
 
@@ -1521,7 +1541,27 @@ T 2mib_A           87 PKQYP-KKKMEKRFVFNKIEVKSKVEFESAEFPNWYISTSQAEHKPVFLGNNSGQD  
 Confidence            66543 46788999998888788889999999999999999999999998865443
 
 
-No 67
+No 68
+>8i1b_A mol:protein length:152 INTERLEUKIN-1 BETA
+Probab=99.41  E-value=3.3e-16  Score=129.30  Aligned_cols=128  Identities=33%  Similarity=0.553  Sum_probs=95.6  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   37 AFRIWDVNQKTFYLRNN-QLVAGYLQGPNVNLEEKI--DVVPIEPH----ALFLGIHGGKMCLSCVKSGDETRLQLEAVN  109 (177)
+Q Consensus        37 afRiWdvnqktfylRnn-qLvagyLq~pn~~leEKi--dvv~~eph----~~fLGihggklcLsCVksgd~~~LqLEaVn  109 (177)
+                      -+|+-|-.||...|.+- .|-|-.|.|.|+|-.--.  ..|.-||.    ..-||..|....||||-......||||.|.
+T Consensus         7 hyrlrdeqqkslvlsdpyelkalhlngqninqqvifsmsfvqgepsndkipvalglkgknlylscvmkdgtptlqlesvd   86 (152)
+T 8i1b_A            7 HYRLRDEQQKSLVLSDPYELKALHLNGQNINQQVIFSMSFVQGEPSNDKIPVALGLKGKNLYLSCVMKDGTPTLQLESVD   86 (152)
+Confidence            35777778887777653 345556667776643211  12222222    245899999999999988888889999998
+
+
+Q 1ILR:1|PDBID|C  110 ITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEG  165 (177)
+Q Consensus       110 itdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~  165 (177)
+                      -.... ..|-.|||.|-.-.-.....||||..|.|++.|.-....||-|.|-....
+T Consensus        87 pkqyp-kkkmekrfvfnkievkskvefesaefpnwyistsqaehkpvflgnnsgqd  141 (152)
+T 8i1b_A           87 PKQYP-KKKMEKRFVFNKIEVKSKVEFESAEFPNWYISTSQAEHKPVFLGNNSGQD  141 (152)
+Confidence            66543 46788999998888788889999999999999999999999998865443
+
+
+No 69
 >1too_A mol:protein length:153 Interleukin-1 beta
 Probab=99.40  E-value=3.6e-16  Score=129.22  Aligned_cols=78  Identities=35%  Similarity=0.627  Sum_probs=67.3  Template_Neff=1.000
 
@@ -1533,7 +1573,7 @@ T 1too_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESA
 Confidence            478888889999999999999999999876654 467889999988888888999999999999999888777776643
 
 
-No 68
+No 70
 >1twe_A mol:protein length:153 Interleukin-1 beta
 Probab=99.40  E-value=3.9e-16  Score=129.03  Aligned_cols=91  Identities=33%  Similarity=0.592  Sum_probs=73.3  Template_Neff=1.000
 
@@ -1553,27 +1593,7 @@ T 1twe_A          138 -KGGQDITDFTMQ  149 (153)
 Confidence             345555655443
 
 
-No 69
->3nj5_A mol:protein length:162 IL-1 beta
-Probab=99.40  E-value=4.1e-16  Score=129.76  Aligned_cols=132  Identities=45%  Similarity=0.761  Sum_probs=106.2  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   34 KMQAFRIWDVNQKTFYLRN-NQLVAGYLQGPNVNLEEKIDVVPIEP-----------HALFLGIHGGKMCLSCVKSGDET  101 (177)
-Q Consensus        34 ~mqafRiWdvnqktfylRn-nqLvagyLq~pn~~leEKidvv~~ep-----------h~~fLGihggklcLsCVksgd~~  101 (177)
-                      +.|.|.|+|+|||-|.|.. .||||-.||||...-.-...+.-..|           ...-|||.|-|..+|||-||.|.
-T Consensus         8 rsqsfdifdinqkcfvlesptqlvalhlqgpsssqkvrlnialyrprgprgsagtgqmpvalgikgyklymscvmsgtep   87 (162)
-T 3nj5_A            8 RSQSFDIFDINQKCFVLESPTQLVALHLQGPSSSQKVRLNIALYRPRGPRGSAGTGQMPVALGIKGYKLYMSCVMSGTEP   87 (162)
-Confidence            4688999999999999965 69999999999866544444432222           23568999999999999999999
-
-
-Q 1ILR:1|PDBID|C  102 RLQLEAVNIT-DLSENRKQDKRFAFIRSDSG--PTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVM  167 (177)
-Q Consensus       102 ~LqLEaVnit-dlsknkeqdkRFtFirsdsg--pttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~  167 (177)
-                      .||||..++- |+..  -.-.||.|.|-||.  .||.|||||.||||+||.....|||.+||.||.--+
-T Consensus        88 tlqleeadvmrdids--veltrfifyrldsptegttrfesaafpgwfictslqprqpvgitnqpdqvni  154 (162)
-T 3nj5_A           88 TLQLEEADVMRDIDS--VELTRFIFYRLDSPTEGTTRFESAAFPGWFICTSLQPRQPVGITNQPDQVNI  154 (162)
-Confidence            9999876543 2221  23468999998874  578999999999999999999999999999997443
-
-
-No 70
+No 71
 >1t4q_A mol:protein length:153 Interleukin-1 beta
 Probab=99.39  E-value=4.9e-16  Score=128.44  Aligned_cols=135  Identities=28%  Similarity=0.473  Sum_probs=107.5  Template_Neff=1.000
 
@@ -1593,7 +1613,7 @@ T 1t4q_A           88 KNYP-KKKMEKRFVWNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGTK-GGQDI
 Confidence            9999 57789999999999999999999999999999999999999998876 67778888766
 
 
-No 71
+No 72
 >3ltq_A mol:protein length:171 Interleukin-1 beta
 Probab=99.38  E-value=6.3e-16  Score=129.48  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.7  Template_Neff=1.000
 
@@ -1613,7 +1633,27 @@ T 3ltq_A          156 -KGGQDITDFTMQ  167 (171)
 Confidence             334555655443
 
 
-No 72
+No 73
+>41bi_A mol:protein length:153 INTERLEUKIN-1 BETA
+Probab=99.37  E-value=8.9e-16  Score=126.97  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
+Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
+                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
+T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
+T 41bi_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
+Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
+
+
+Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
+Q Consensus       162 p~~~~~VTkFYfq  174 (177)
+                       ..|--+|.|..|
+T Consensus       138 -kggqditdftmq  149 (153)
+T 41bi_A          138 -KGGQDITDFTMQ  149 (153)
+Confidence             345555655443
+
+
+No 74
 >1l2h_A mol:protein length:153 Interleukin 1-beta
 Probab=99.32  E-value=2.9e-15  Score=124.01  Aligned_cols=135  Identities=28%  Similarity=0.449  Sum_probs=105.2  Template_Neff=1.000
 
@@ -1633,7 +1673,7 @@ T 1l2h_A           88 KNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNFYISTSQAENMPVFLGGTK-GGQDI
 Confidence            9999 57789999999999999999999999999999999999999998876 67778888766
 
 
-No 73
+No 75
 >tr|H2A0A2|H2A0A2_CHICK Interleukin-1 receptor antagonist (Fragment) OS=Gallus gallus GN=IL-1RN PE=4 SV=1
 Probab=99.31  E-value=3.2e-15  Score=117.98  Aligned_cols=88  Identities=43%  Similarity=0.797  Sum_probs=70.5  Template_Neff=1.000
 
@@ -1653,7 +1693,7 @@ T tr|H2A0A2|H2A0   82 MGIRNGTRCLACPAAPQP   99 (104)
 Confidence            999999999999765443
 
 
-No 74
+No 76
 >1tp0_A mol:protein length:153 Interleukin-1 beta
 Probab=99.31  E-value=3.6e-15  Score=123.52  Aligned_cols=135  Identities=27%  Similarity=0.458  Sum_probs=102.4  Template_Neff=1.000
 
@@ -1673,7 +1713,7 @@ T 1tp0_A           88 KNYP-KKKMEKRFVWNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGTK-GGQDI
 Confidence            9999 57789999999999999999999999999999999999999998776 45556655443
 
 
-No 75
+No 77
 >21bi_A mol:protein length:153 INTERLEUKIN-1 BETA
 Probab=99.31  E-value=3.8e-15  Score=123.36  Aligned_cols=136  Identities=28%  Similarity=0.451  Sum_probs=107.9  Template_Neff=1.000
 
@@ -1693,7 +1733,7 @@ T 21bi_A           87 PKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGTK-GGQD
 Confidence            99999 57789999999999999999999999999999999999999998876 67778888766
 
 
-No 76
+No 78
 >31bi_A mol:protein length:153 INTERLEUKIN-1 BETA PRECURSOR
 Probab=99.30  E-value=4.5e-15  Score=122.96  Aligned_cols=136  Identities=28%  Similarity=0.450  Sum_probs=107.9  Template_Neff=1.000
 
@@ -1713,27 +1753,7 @@ T 31bi_A           87 PKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGTK-GGQD
 Confidence            99999 57789999999999999999999999999999999999999998876 67778888766
 
 
-No 77
->2irt_B mol:protein length:152 INTERLEUKIN-1 RECEPTOR ANTAGONIST
-Probab=99.29  E-value=5.7e-15  Score=122.26  Aligned_cols=152  Identities=100%  Similarity=1.518  Sum_probs=151.3  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   26 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL  105 (177)
-Q Consensus        26 ~p~~r~~~~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~eph~~fLGihggklcLsCVksgd~~~LqL  105 (177)
-                      ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-T Consensus         1 rpsgrksskmqafriwdvnqktfylrnnqlvagylqgpnvnleekidvvpiephalflgihggkmclscvksgdetrlql   80 (152)
-T 2irt_B            1 RPSGRKSSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIEPHALFLGIHGGKMCLSCVKSGDETRLQL   80 (152)
-Confidence            79999999999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1ILR:1|PDBID|C  106 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  177 (177)
-Q Consensus       106 EaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~d~  177 (177)
-                      ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-T Consensus        81 eavnitdlsenrkqdkrfafirsdsgpttsfesaacpgwflctameadqpvsltnmpdegvmvtkfyfqede  152 (152)
-T 2irt_B           81 EAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQEDE  152 (152)
-Confidence            999999999999999999999999999999999999999999999999999999999999999999999997
-
-
-No 78
+No 79
 >tr|Q60H46|Q60H46_MERUN Interleukin-1 beta (Fragment) OS=Meriones unguiculatus GN=IL-1 bata PE=2 SV=1
 Probab=99.22  E-value=2.2e-14  Score=112.70  Aligned_cols=67  Identities=36%  Similarity=0.691  Sum_probs=57.1  Template_Neff=1.000
 
@@ -1745,7 +1765,7 @@ T tr|Q60H46|Q60H   33 VALGLKGKNLYLSCVMKDGRPTLQLESVDPKQYP-KKKMEKRFVFNKIEVKSKVEFES
 Confidence            3579999999999998888888999999866543 467889999988887888899999999999764
 
 
-No 79
+No 80
 >tr|B0ZYQ5|B0ZYQ5_9CHON IL-1 beta (Fragment) OS=Sphyrna tiburo PE=2 SV=1
 Probab=99.20  E-value=2.8e-14  Score=119.52  Aligned_cols=112  Identities=30%  Similarity=0.434  Sum_probs=81.2  Template_Neff=1.679
 
@@ -1765,7 +1785,7 @@ T tr|B0ZYQ5|B0ZY  119 LQNISSASDLLRFVFFKKVSGAGDHFELESAMHRGWFFCPP  159 (160)
 Confidence            221111 12589999998888888888  999999999985
 
 
-No 80
+No 81
 >3pok_A mol:protein length:167 Interleukin-1 beta
 Probab=99.16  E-value=7.2e-14  Score=117.24  Aligned_cols=136  Identities=30%  Similarity=0.499  Sum_probs=105.1  Template_Neff=1.000
 
@@ -1785,7 +1805,27 @@ T 3pok_A           88 DELYPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENM
 Confidence            65  47999999999999 57789999999999999999999999999999999999999998876 67778888766
 
 
-No 81
+No 82
+>tr|M7AM46|M7AM46_CHEMY Interleukin-1 receptor antagonist protein OS=Chelonia mydas GN=UY3_16653 PE=4 SV=1
+Probab=99.10  E-value=1.7e-13  Score=116.57  Aligned_cols=140  Identities=56%  Similarity=0.969  Sum_probs=129.8  Template_Neff=2.704
+
+Q 1ILR:1|PDBID|C   34 KMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPI-----EPHALFLGIHGGKMCLSCVKSGDETRLQLEAV  108 (177)
+Q Consensus        34 ~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~-----eph~~fLGihggklcLsCVksgd~~~LqLEaV  108 (177)
+                      |.--.||||.|||.+|||++|||||||||||.-++|||-.+|-     +-..+||||.||..||+||. |..-.||||.|
+T Consensus        36 k~~~yrI~D~~Qk~lylr~~QLvag~lqg~N~~~~eki~~~PnR~~~~~k~Pi~lGIq~gsrcLaC~~-~~~PtLqLedv  114 (181)
+T tr|M7AM46|M7AM   36 KVFKYRIWDMDQKSLYLRDDQLVAGHLQGPNAALEEKICWVPNRFFKRTKFPIILGIQGGSRCLACVE-GEQPTLQLEDV  114 (181)
+Confidence            3345689999999999999999999999999999999999873     23467999999999999999 99999999999
+
+
+Q 1ILR:1|PDBID|C  109 NITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQE  175 (177)
+Q Consensus       109 nitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~  175 (177)
+                      ||+|+...-.+..||.|.||.+|+++-|||||+||||||++-|+.||+.|++-||+ +-+|.||||.
+T Consensus       115 ni~~~~~~G~~~~rftFf~~~~~~~~rfEsAA~pGWflc~~~e~~QPl~lt~~~~~-a~~~~fyf~~  180 (181)
+T tr|M7AM46|M7AM  115 NITDLYKGGEEATRFTFFRSYSGGAWRFESAANPGWFLCTSAEPNQPLGLSKRPDP-AHVTDFYFQQ  180 (181)
+Confidence            99999988899999999999999999999999999999999999999999999986 5689999984
+
+
+No 83
 >tr|F7H3R1|F7H3R1_MACMU Uncharacterized protein OS=Macaca mulatta GN=IL1F10 PE=4 SV=1
 Probab=98.96  E-value=2e-12  Score=108.58  Aligned_cols=102  Identities=39%  Similarity=0.697  Sum_probs=81.0  Template_Neff=1.000
 
@@ -1805,7 +1845,7 @@ T tr|F7H3R1|F7H3   91 KGGEEATRFTFFQSSSAPPSG--SRLLPGL  118 (163)
 Confidence            999999999999999887643  3444553
 
 
-No 82
+No 84
 >tr|S9WUB9|S9WUB9_9CETA Interleukin-36 receptor antagonist protein OS=Camelus ferus GN=CB1_000688034 PE=3 SV=1
 Probab=98.95  E-value=2e-12  Score=115.47  Aligned_cols=83  Identities=39%  Similarity=0.727  Sum_probs=77.2  Template_Neff=1.456
 
@@ -1825,7 +1865,7 @@ T tr|S9WUB9|S9WU  121 TKE  123 (279)
 Confidence            853
 
 
-No 83
+No 85
 >tr|Q102G0|Q102G0_SHEEP Interleukin 1 receptor antagonist (Fragment) OS=Ovis aries GN=IL1RN PE=4 SV=1
 Probab=98.91  E-value=3.8e-12  Score=86.00  Aligned_cols=31  Identities=61%  Similarity=1.047  Sum_probs=28.9  Template_Neff=1.000
 
@@ -1837,27 +1877,7 @@ T tr|Q102G0|Q102    6 HGYLICLLLFLFHSETACHPLGKRPCEMQAF   36 (36)
 Confidence            4568999999999999999999999999997
 
 
-No 84
->4p0k_A mol:protein length:154 Interleukin-36 receptor antagonist/Interleuki
-Probab=98.89  E-value=5.2e-12  Score=105.51  Aligned_cols=138  Identities=51%  Similarity=0.810  Sum_probs=123.9  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   36 QAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIE-PH--------ALFLGIHGGKMCLSCVKSGDETRLQLE  106 (177)
-Q Consensus        36 qafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~e-ph--------~~fLGihggklcLsCVksgd~~~LqLE  106 (177)
-                      -.||.-|..-|..||.||||.||-|....|--.|.|.|||-. |.        ...||+.||..||||- -|.|..|.||
-T Consensus         6 lcfrmkdsalkvlylhnnqllagglhagkvikgeeisvvpnrwpealeqgrgspvilgvqggsqclscg-vgqeptltle   84 (154)
-T 4p0k_A            6 LCFRMKDSALKVLYLHNNQLLAGGLHAGKVIKGEEISVVPNRWPEALEQGRGSPVILGVQGGSQCLSCG-VGQEPTLTLE   84 (154)
-Confidence            458888999999999999999999999999889999999853 33        3589999999999995 5888999999
-
-
-Q 1ILR:1|PDBID|C  107 AVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQE  175 (177)
-Q Consensus       107 aVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~  175 (177)
-                      .|||-.|--..|..|.|.|.|.|-|-|.||||||.|||||||.-||||||.||.--.. ..-|.||||.
-T Consensus        85 pvnimelylgakesksftfyrrdmgltssfesaaypgwflctvpeadqpvrltqelgk-syntdfyfqq  152 (154)
-T 4p0k_A           85 PVNIMELYLGAKESKSFTFYRRDMGLTSSFESAAYPGWFLCTVPEADQPVRLTQELGK-SYNTDFYFQQ  152 (154)
-Confidence            9999999999999999999999999999999999999999999999999999975443 3468899985
-
-
-No 85
+No 86
 >tr|A0A0A6YWE1|A0A0A6YWE1_MOUSE Interleukin 1 family, member 5 (Delta), isoform CRA_b OS=Mus musculus GN=Il1f5 PE=4 SV=1
 Probab=98.87  E-value=6.3e-12  Score=96.97  Aligned_cols=70  Identities=44%  Similarity=0.666  Sum_probs=61.6  Template_Neff=1.561
 
@@ -1869,7 +1889,7 @@ T tr|A0A0A6YWE1|    8 LCFRMKDSALKVLYLHNNQLLAGGLHAEKVIKGEEISVVPNRALDASLSPVILGVQGG
 Confidence            468999999999999999999999999999999999999853     2357999999999999998 666667775
 
 
-No 86
+No 87
 >tr|G1U1C7|G1U1C7_RABIT Uncharacterized protein OS=Oryctolagus cuniculus GN=IL37 PE=3 SV=2
 Probab=98.85  E-value=9.5e-12  Score=109.88  Aligned_cols=127  Identities=33%  Similarity=0.595  Sum_probs=89.1  Template_Neff=1.000
 
@@ -1889,7 +1909,27 @@ T tr|G1U1C7|G1U1  188 KLEDLVTEKEQAQRPFVFYKADVGSRSTLESAAHTGWFLCTSCSSGEPVRLTKTVG  
 Confidence            999987666665 4599999999999999999999999999999999999987543
 
 
-No 87
+No 88
+>tr|A0A0E3GPE6|A0A0E3GPE6_SINCH Interleukin-1 beta OS=Siniperca chuatsi PE=2 SV=1
+Probab=98.66  E-value=8.7e-11  Score=97.82  Aligned_cols=83  Identities=37%  Similarity=0.646  Sum_probs=68.0  Template_Neff=1.693
+
+Q 1ILR:1|PDBID|C   77 EPHALFLGIHGGKMCLSCVKSGDETRLQLEAVN-ITDLSENRK--QDKRFAFIRSDSGPTTS-FESAACPGWFLCTAMEA  152 (177)
+Q Consensus        77 eph~~fLGihggklcLsCVksgd~~~LqLEaVn-itdlsknke--qdkRFtFirsdsgptts-FESAacPgWFLCTa~EA  152 (177)
+                      |.....|||.|-...|||-|.||+..|.||+|. -..|++-+.  .-.||.|...|+|-..| .-|++-|.|++.||...
+T Consensus        32 e~r~valgi~gt~~ylschkdg~~ptlhle~v~dk~sl~~i~~~sdmvrflfyk~d~gvnistlmsv~~pnwyista~d~  111 (141)
+T tr|A0A0E3GPE6|   32 EGRTVALGIKGTNLYLSCHKDGDKPTLHLEEVTDKNSLSSISPESDMVRFLFYKQDTGVNISTLMSVAFPNWYISTAQDD  111 (141)
+Confidence            445678999999999999999999999999986 333444332  33699999999997655 67999999999999999
+
+
+Q 1ILR:1|PDBID|C  153 DQPVSLT  159 (177)
+Q Consensus       153 DqPVsLT  159 (177)
+                      ++||..-
+T Consensus       112 n~pvemc  118 (141)
+T tr|A0A0E3GPE6|  112 NMPVEMC  118 (141)
+Confidence            9998653
+
+
+No 89
 >4ize_A mol:protein length:152 Interleukin-36 gamma
 Probab=98.64  E-value=1.3e-10  Score=97.43  Aligned_cols=118  Identities=36%  Similarity=0.618  Sum_probs=93.5  Template_Neff=1.000
 
@@ -1909,27 +1949,7 @@ T 4ize_A           85 QKIMDLYGQPEPVKPFLFYRAKTGRTSTLESVAFPDWFIASS-KRDQPIILTSE  13
 Confidence            999999999899999999999999999999999999999765 57999998864
 
 
-No 88
->tr|R7VPR0|R7VPR0_COLLI PH and SEC7 domain-containing protein 4 OS=Columba livia GN=A306_11753 PE=4 SV=1
-Probab=98.58  E-value=2.4e-10  Score=115.10  Aligned_cols=110  Identities=49%  Similarity=0.803  Sum_probs=96.2  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   32 SSKMQAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVP---IEPH--ALFLGIHGGKMCLSCVKSGDETRLQLE  106 (177)
-Q Consensus        32 ~~~mqafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~---~eph--~~fLGihggklcLsCVksgd~~~LqLE  106 (177)
-                      ..|.-.+||||||||..||||.|||||.|||.|..||||+-.||   .||.  .+.|||..|..||..-.. ....|||.
-T Consensus        24 qtkvfqyriwdvnqkslylrndqlvaghlqganaaleekvfwvpnrafeparlpiilgiqngtrclasppa-sqptlqlq  102 (1414)
-T tr|R7VPR0|R7VP   24 QTKVFQYRIWDVNQKSLYLRNDQLVAGHLQGANAALEEKVFWVPNRAFEPARLPIILGIQNGTRCLASPPA-SQPTLQLQ  102 (1414)
-Confidence            34667789999999999999999999999999999999998887   4554  358999999999976543 34569999
-
-
-Q 1ILR:1|PDBID|C  107 AVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACP  142 (177)
-Q Consensus       107 aVnitdlsknkeqdkRFtFirsdsgpttsFESAacP  142 (177)
-                      ||.|..|.........|.|.||-..---.|||||||
-T Consensus       103 avdiralprdsatsaaftffrsykdglwrfesaacp  138 (1414)
-T tr|R7VPR0|R7VP  103 AVDIRALPRDSATSAAFTFFRSYKDGLWRFESAACP  138 (1414)
-Confidence            999999998888888999999998889999999996
-
-
-No 89
+No 90
 >tr|B7Z175|B7Z175_CHICK Interleukin-1 family member 5 protein (Fragment) OS=Gallus gallus GN=IL-1FM5 PE=2 SV=1
 Probab=98.57  E-value=2.6e-10  Score=98.80  Aligned_cols=112  Identities=42%  Similarity=0.644  Sum_probs=99.8  Template_Neff=1.000
 
@@ -1949,7 +1969,7 @@ T tr|B7Z175|B7Z1  162 LFSSGDAAVPYTFYKTFGGTTQHLRGRRVPGAFLSTAPQA  201 (203)
 Confidence            9877777777888888888888888889999999998655
 
 
-No 90
+No 91
 >tr|G5BKU9|G5BKU9_HETGA Interleukin-1 family member 7 OS=Heterocephalus glaber GN=GW7_05225 PE=4 SV=1
 Probab=98.55  E-value=3e-10  Score=94.42  Aligned_cols=83  Identities=33%  Similarity=0.684  Sum_probs=64.4  Template_Neff=1.868
 
@@ -1969,7 +1989,7 @@ T tr|G5BKU9|G5BK  106 DMNEPIRMTDKF  117 (137)
 Confidence             44555555444
 
 
-No 91
+No 92
 >tr|Q4VKD1|Q4VKD1_SALTR Interleukin 1 beta (Fragment) OS=Salmo trutta fario PE=2 SV=1
 Probab=98.46  E-value=8.6e-10  Score=89.70  Aligned_cols=91  Identities=38%  Similarity=0.646  Sum_probs=70.8  Template_Neff=1.000
 
@@ -1989,7 +2009,7 @@ T tr|Q4VKD1|Q4VK   89 SAGFRNWFISTDMQQDN  105 (117)
 Confidence            99999999999998874
 
 
-No 92
+No 93
 >tr|S9YCY8|S9YCY8_9CETA Uncharacterized protein OS=Camelus ferus GN=CB1_000688032 PE=3 SV=1
 Probab=98.39  E-value=1.5e-09  Score=101.26  Aligned_cols=153  Identities=35%  Similarity=0.566  Sum_probs=113.0  Template_Neff=1.446
 
@@ -2017,7 +2037,7 @@ T tr|S9YCY8|S9YC  363 WFIAS-SEKGQPIILTS  378 (402)
 Confidence            99875 57899999885
 
 
-No 93
+No 94
 >tr|V8PGF3|V8PGF3_OPHHA Uncharacterized protein (Fragment) OS=Ophiophagus hannah GN=L345_01139 PE=4 SV=1
 Probab=98.33  E-value=3e-09  Score=98.06  Aligned_cols=125  Identities=34%  Similarity=0.592  Sum_probs=79.0  Template_Neff=1.000
 
@@ -2035,26 +2055,6 @@ Q Consensus        98 gd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqP
 T Consensus       294 ---qkvpveatiqgnl--dksqlgrflfykiengkhtrfesaecpgwfictssqndeavavtkqpggpr  357 (366)
 T tr|V8PGF3|V8PG  294 ---QKVPVEATIQGNL--DKSQLGRFLFYKIENGKHTRFESAECPGWFICTSSQNDEAVAVTKQPGGPR  357 (366)
 Confidence               1222333222222  245678999999999999999999999999999999999999998886543
-
-
-No 94
->41bi_A mol:protein length:153 INTERLEUKIN-1 BETA
-Probab=98.31  E-value=3.4e-09  Score=89.29  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
-Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
-                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
-T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
-T 41bi_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
-Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
-
-
-Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
-Q Consensus       162 p~~~~~VTkFYfq  174 (177)
-                       ..|--+|.|..|
-T Consensus       138 -kggqditdftmq  149 (153)
-T 41bi_A          138 -KGGQDITDFTMQ  149 (153)
-Confidence             345555655443
 
 
 No 95
@@ -2102,26 +2102,6 @@ Confidence            32  2234579999887754 5567889999999999999999999876544
 
 
 No 98
->5i1b_A mol:protein length:153 INTERLEUKIN-1 BETA
-Probab=98.02  E-value=4.3e-08  Score=83.02  Aligned_cols=91  Identities=34%  Similarity=0.599  Sum_probs=73.8  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C   82 FLGIHGGKMCLSCVKSGDETRLQLEAVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNM  161 (177)
-Q Consensus        82 fLGihggklcLsCVksgd~~~LqLEaVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~  161 (177)
-                      -||..-....||||-..|...||||.|.-.... ..|-.|||.|-.-.-...-.||||..|.|++.|.-...-||-|...
-T Consensus        59 alglkeknlylscvlkddkptlqlesvdpknyp-kkkmekrfvfnkieinnklefesaqfpnwyistsqaenmpvflggt  137 (153)
-T 5i1b_A           59 ALGLKEKNLYLSCVLKDDKPTLQLESVDPKNYP-KKKMEKRFVFNKIEINNKLEFESAQFPNWYISTSQAENMPVFLGGT  137 (153)
-Confidence            478888889999999999999999999876654 4678899999888888889999999999999998887778776543
-
-
-Q 1ILR:1|PDBID|C  162 PDEGVMVTKFYFQ  174 (177)
-Q Consensus       162 p~~~~~VTkFYfq  174 (177)
-                       ..|--+|.|..|
-T Consensus       138 -kggqditdftmq  149 (153)
-T 5i1b_A          138 -KGGQDITDFTMQ  149 (153)
-Confidence             345555655443
-
-
-No 99
 >tr|V9LEA1|V9LEA1_CALMI Interleukin-1beta (Fragment) OS=Callorhinchus milii PE=2 SV=1
 Probab=97.94  E-value=7.7e-08  Score=84.33  Aligned_cols=138  Identities=33%  Similarity=0.555  Sum_probs=96.2  Template_Neff=1.000
 
@@ -2141,7 +2121,7 @@ T tr|V9LEA1|V9LE  117 KNMFLSCTRPHANPELQVEEWNNNLNDISSATKQL-RFVFFKKVSDMGSTFEFESANH
 Confidence            999999999999999999864  678999888874 677764  78999999999999999999998888877654
 
 
-No 100
+No 99
 >tr|J9PAU1|J9PAU1_CANLF Uncharacterized protein OS=Canis lupus familiaris GN=IL36G PE=4 SV=1
 Probab=97.88  E-value=1.2e-07  Score=74.67  Aligned_cols=71  Identities=38%  Similarity=0.698  Sum_probs=62.2  Template_Neff=1.000
 
@@ -2153,7 +2133,7 @@ T tr|J9PAU1|J9PA    1 MCLICEDSGGQPTLLLKEEEILALYNEMAPVEPFLFYHSKNGRTSTFESVAFPGWFIA
 Confidence            899999999999998888888888777777788999999999999999999999998754 66778888754
 
 
-No 101
+No 100
 >tr|W5QI58|W5QI58_SHEEP Uncharacterized protein OS=Ovis aries GN=LOC105606425 PE=4 SV=1
 Probab=97.73  E-value=3.4e-07  Score=81.00  Aligned_cols=138  Identities=32%  Similarity=0.517  Sum_probs=101.7  Template_Neff=1.000
 
@@ -2171,6 +2151,26 @@ Q Consensus       103 LqLEaVnitdlsknkeqd-kRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLT
 T Consensus       134 lqlkkkhikelsslkakdclpftftkeqvgsyftlesaanpgyfiytsnkpgqpigmtkelgq-eknihfqfqe  206 (216)
 T tr|W5QI58|W5QI  134 LQLKKKHIKELSSLKAKDCLPFTFTKEQVGSYFTLESAANPGYFIYTSNKPGQPIGMTKELGQ-EKNIHFQFQE  206 (216)
 Confidence            999999999999777655 47999999999999999999999999999999999999876532 2334566665
+
+
+No 101
+>4p0k_A mol:protein length:154 Interleukin-36 receptor antagonist/Interleuki
+Probab=97.56  E-value=1.1e-06  Score=75.08  Aligned_cols=138  Identities=51%  Similarity=0.810  Sum_probs=123.9  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   36 QAFRIWDVNQKTFYLRNNQLVAGYLQGPNVNLEEKIDVVPIE-PH--------ALFLGIHGGKMCLSCVKSGDETRLQLE  106 (177)
+Q Consensus        36 qafRiWdvnqktfylRnnqLvagyLq~pn~~leEKidvv~~e-ph--------~~fLGihggklcLsCVksgd~~~LqLE  106 (177)
+                      -.||.-|..-|..||.||||.||-|....|--.|.|.|||-. |.        ...||+.||..||||- -|.|..|.||
+T Consensus         6 lcfrmkdsalkvlylhnnqllagglhagkvikgeeisvvpnrwpealeqgrgspvilgvqggsqclscg-vgqeptltle   84 (154)
+T 4p0k_A            6 LCFRMKDSALKVLYLHNNQLLAGGLHAGKVIKGEEISVVPNRWPEALEQGRGSPVILGVQGGSQCLSCG-VGQEPTLTLE   84 (154)
+Confidence            458888999999999999999999999999889999999853 33        3589999999999995 5888999999
+
+
+Q 1ILR:1|PDBID|C  107 AVNITDLSENRKQDKRFAFIRSDSGPTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVMVTKFYFQE  175 (177)
+Q Consensus       107 aVnitdlsknkeqdkRFtFirsdsgpttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~VTkFYfq~  175 (177)
+                      .|||-.|--..|..|.|.|.|.|-|-|.||||||.|||||||.-||||||.||.--.. ..-|.||||.
+T Consensus        85 pvnimelylgakesksftfyrrdmgltssfesaaypgwflctvpeadqpvrltqelgk-syntdfyfqq  152 (154)
+T 4p0k_A           85 PVNIMELYLGAKESKSFTFYRRDMGLTSSFESAAYPGWFLCTVPEADQPVRLTQELGK-SYNTDFYFQQ  152 (154)
+Confidence            9999999999999999999999999999999999999999999999999999975443 3468899985
 
 
 No 102
@@ -2290,26 +2290,6 @@ Confidence            456789999999999999999999999999998543 34432  23346999999999
 
 
 No 109
->tr|A0A0E3GPE6|A0A0E3GPE6_SINCH Interleukin-1 beta OS=Siniperca chuatsi PE=2 SV=1
-Probab=96.48  E-value=0.00019  Score=61.79  Aligned_cols=83  Identities=37%  Similarity=0.646  Sum_probs=68.0  Template_Neff=1.693
-
-Q 1ILR:1|PDBID|C   77 EPHALFLGIHGGKMCLSCVKSGDETRLQLEAVN-ITDLSENRK--QDKRFAFIRSDSGPTTS-FESAACPGWFLCTAMEA  152 (177)
-Q Consensus        77 eph~~fLGihggklcLsCVksgd~~~LqLEaVn-itdlsknke--qdkRFtFirsdsgptts-FESAacPgWFLCTa~EA  152 (177)
-                      |.....|||.|-...|||-|.||+..|.||+|. -..|++-+.  .-.||.|...|+|-..| .-|++-|.|++.||...
-T Consensus        32 e~r~valgi~gt~~ylschkdg~~ptlhle~v~dk~sl~~i~~~sdmvrflfyk~d~gvnistlmsv~~pnwyista~d~  111 (141)
-T tr|A0A0E3GPE6|   32 EGRTVALGIKGTNLYLSCHKDGDKPTLHLEEVTDKNSLSSISPESDMVRFLFYKQDTGVNISTLMSVAFPNWYISTAQDD  111 (141)
-Confidence            445678999999999999999999999999986 333444332  33699999999997655 67999999999999999
-
-
-Q 1ILR:1|PDBID|C  153 DQPVSLT  159 (177)
-Q Consensus       153 DqPVsLT  159 (177)
-                      ++||..-
-T Consensus       112 n~pvemc  118 (141)
-T tr|A0A0E3GPE6|  112 NMPVEMC  118 (141)
-Confidence            9998653
-
-
-No 110
 >tr|K7ZN59|K7ZN59_PAROL Interleukin 1 beta like 1 OS=Paralichthys olivaceus GN=IL-1b-L1 PE=3 SV=1
 Probab=96.44  E-value=0.00025  Score=65.31  Aligned_cols=83  Identities=30%  Similarity=0.647  Sum_probs=67.0  Template_Neff=1.000
 
@@ -2329,7 +2309,7 @@ T tr|K7ZN59|K7ZN  243 KPVEMCK  249 (262)
 Confidence            6776654
 
 
-No 111
+No 110
 >tr|U3JSF1|U3JSF1_FICAL Uncharacterized protein OS=Ficedula albicollis PE=4 SV=1
 Probab=96.21  E-value=0.00052  Score=61.55  Aligned_cols=60  Identities=43%  Similarity=0.660  Sum_probs=53.7  Template_Neff=1.000
 
@@ -2341,7 +2321,7 @@ T tr|U3JSF1|U3JS  111 QYVLRDTEQRGLCLRHGHLVATSLQGANAAQEEPISVVPNRHLERQRCPLILGIRGGS
 Confidence            3567799999999999999999999999999999999993     24579999999999999953
 
 
-No 112
+No 111
 >tr|K9K563|K9K563_TETNG IL-1Ra protein OS=Tetraodon nigroviridis PE=2 SV=1
 Probab=95.52  E-value=0.003  Score=59.25  Aligned_cols=76  Identities=29%  Similarity=0.504  Sum_probs=56.9  Template_Neff=1.540
 
@@ -2361,7 +2341,7 @@ T tr|K9K563|K9K5  251 Q  251 (272)
 Confidence            3
 
 
-No 113
+No 112
 >tr|Q4W1Q3|Q4W1Q3_MERUN Interleukin-1 beta (Fragment) OS=Meriones unguiculatus GN=il1b PE=2 SV=1
 Probab=95.45  E-value=0.0036  Score=51.73  Aligned_cols=65  Identities=32%  Similarity=0.464  Sum_probs=53.3  Template_Neff=1.312
 
@@ -2373,7 +2353,7 @@ T tr|Q4W1Q3|Q4W1   25 QLHCRLRDEQQKCLVLSDPCELKALHLNGPNINQQVVFSMSFVHGDTNSNKIPVALGI
 Confidence            4568999999999999875 46677888999888777776653      26789999999999999998875
 
 
-No 114
+No 113
 >tr|B3GJZ5|B3GJZ5_ACASC Interleukin-1 beta (Fragment) OS=Acanthopagrus schlegelii PE=2 SV=1
 Probab=95.27  E-value=0.005  Score=53.96  Aligned_cols=77  Identities=31%  Similarity=0.437  Sum_probs=57.8  Template_Neff=1.416
 
@@ -2393,7 +2373,7 @@ T tr|B3GJZ5|B3GJ  139 PVNDKS  144 (148)
 Confidence            998443
 
 
-No 115
+No 114
 >tr|G3PQP7|G3PQP7_GASAC Uncharacterized protein OS=Gasterosteus aculeatus PE=4 SV=1
 Probab=95.25  E-value=0.0051  Score=55.14  Aligned_cols=86  Identities=22%  Similarity=0.441  Sum_probs=65.8  Template_Neff=1.604
 
@@ -2413,7 +2393,7 @@ T tr|G3PQP7|G3PQ  155 DSVGMAHLEG  164 (177)
 Confidence            4566666543
 
 
-No 116
+No 115
 >tr|Q712P3|Q712P3_PLEPL Interleukin-1 beta (Fragment) OS=Pleuronectes platessa GN=IL-1 beta PE=2 SV=1
 Probab=94.98  E-value=0.0091  Score=48.13  Aligned_cols=61  Identities=31%  Similarity=0.531  Sum_probs=45.1  Template_Neff=1.000
 
@@ -2425,7 +2405,7 @@ T tr|Q712P3|Q712    2 TLQLERVEDKTMLGTITKESELLRFLFYKQDSGVNISTLMSARFPNWYISTSEHDNRP
 Confidence            5788887422 2221  122446999999999964 55789999999999999999999775443
 
 
-No 117
+No 116
 >tr|F1DFK5|F1DFK5_CHICK Interleukin-1beta (Fragment) OS=Gallus gallus GN=IL-1beta PE=2 SV=1
 Probab=94.67  E-value=0.014  Score=39.10  Aligned_cols=21  Identities=48%  Similarity=0.814  Sum_probs=19.0  Template_Neff=1.000
 
@@ -2437,7 +2417,7 @@ T tr|F1DFK5|F1DF    1 LYMSCVMSGTEPMLQLEEADV   21 (26)
 Confidence            578999999999999999875
 
 
-No 118
+No 117
 >tr|D2HUQ4|D2HUQ4_AILME Putative uncharacterized protein (Fragment) OS=Ailuropoda melanoleuca GN=PANDA_016022 PE=4 SV=1
 Probab=92.73  E-value=0.096  Score=39.95  Aligned_cols=29  Identities=34%  Similarity=0.789  Sum_probs=26.5  Template_Neff=1.000
 
@@ -2449,7 +2429,7 @@ T tr|D2HUQ4|D2HU   20 GNPVYLGIKGNHLCLFCAEIQGQPTLQLK   48 (51)
 Confidence            45799999999999999999999999985
 
 
-No 119
+No 118
 >tr|V9LCJ2|V9LCJ2_CALMI Interleukin-18-like protein OS=Callorhinchus milii PE=2 SV=1
 Probab=92.69  E-value=0.099  Score=48.12  Aligned_cols=115  Identities=26%  Similarity=0.434  Sum_probs=68.2  Template_Neff=1.000
 
@@ -2469,7 +2449,7 @@ T tr|V9LCJ2|V9LC  128 EFKEASV----PQRIDGSQKHVVFYRRTVGSKYMCYESVLRPGWFLCTEKDG  175 
 Confidence            2211111    112233457788888777764 6899999999999997554
 
 
-No 120
+No 119
 >tr|Q1WDE2|Q1WDE2_SHEEP Interleukin 1 beta (Fragment) OS=Ovis aries GN=IL1B PE=4 SV=1
 Probab=92.13  E-value=0.14  Score=34.24  Aligned_cols=18  Identities=39%  Similarity=0.656  Sum_probs=16.0  Template_Neff=1.000
 
@@ -2481,7 +2461,7 @@ T tr|Q1WDE2|Q1WD    7 KIPVALGIRDKNLYLSCV   24 (24)
 Confidence            456789999999999997
 
 
-No 121
+No 120
 >tr|B2KNI7|B2KNI7_SALSA Interleukin-1 receptor antagonist (Fragment) OS=Salmo salar GN=IL-1ra PE=2 SV=1
 Probab=91.88  E-value=0.16  Score=44.60  Aligned_cols=64  Identities=27%  Similarity=0.492  Sum_probs=48.8  Template_Neff=1.000
 
@@ -2493,7 +2473,7 @@ T tr|B2KNI7|B2KN   66 GVPVVLNFTSSNCFLKCVKDGERVSLCVEACDKHRLKSIRKDDEEIQAFVFYMKAEMS
 Confidence            3456788888888999999999999999999865554   444555567764 556666778999976
 
 
-No 122
+No 121
 >tr|C7TNP8|C7TNP8_ONCMY Novel IL-1 cytokine family member (Fragment) OS=Oncorhynchus mykiss GN=nIL-1F PE=4 SV=1
 Probab=91.70  E-value=0.18  Score=40.75  Aligned_cols=41  Identities=29%  Similarity=0.678  Sum_probs=30.1  Template_Neff=1.000
 
@@ -2505,7 +2485,7 @@ T tr|C7TNP8|C7TN   10 IRKDDEEIQAFVFYMKAEMSKQRRFESAYCQGWFIHTSNETK   51 (72)
 Confidence            34455555667664 555666778999999999999988764
 
 
-No 123
+No 122
 >tr|F6SRN9|F6SRN9_MACMU Uncharacterized protein OS=Macaca mulatta GN=IL36B PE=4 SV=1
 Probab=90.12  E-value=0.35  Score=43.92  Aligned_cols=70  Identities=29%  Similarity=0.411  Sum_probs=49.6  Template_Neff=1.164
 
@@ -2515,6 +2495,26 @@ Q Consensus        38 fRiWdvnqktfylRnnqLvagyLq~pn~~----leEKidvv~---~eph~~fLGihgg
 T Consensus        12 yairds~qmvwvlsgnsliaapls~svkpvtlhli~crdtefsdk~k~n~vylgi~gkdlc~fc~eiqgkptlqlkl   88 (165)
 T tr|F6SRN9|F6SR   12 YAIRDSRQMVWVLSGNSLIAAPLSNSVKPVTLHLITCRDTEFSDKKKGNLVYLGIRGKDLCLFCEEIQGKPTLQLKL   88 (165)
 Confidence            45668899999999999999877632111    100011111   12456899999999999999999999999863
+
+
+No 123
+>3nj5_A mol:protein length:162 IL-1 beta
+Probab=89.20  E-value=0.5  Score=42.87  Aligned_cols=132  Identities=45%  Similarity=0.761  Sum_probs=106.2  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C   34 KMQAFRIWDVNQKTFYLRN-NQLVAGYLQGPNVNLEEKIDVVPIEP-----------HALFLGIHGGKMCLSCVKSGDET  101 (177)
+Q Consensus        34 ~mqafRiWdvnqktfylRn-nqLvagyLq~pn~~leEKidvv~~ep-----------h~~fLGihggklcLsCVksgd~~  101 (177)
+                      +.|.|.|+|+|||-|.|.. .||||-.||||...-.-...+.-..|           ...-|||.|-|..+|||-||.|.
+T Consensus         8 rsqsfdifdinqkcfvlesptqlvalhlqgpsssqkvrlnialyrprgprgsagtgqmpvalgikgyklymscvmsgtep   87 (162)
+T 3nj5_A            8 RSQSFDIFDINQKCFVLESPTQLVALHLQGPSSSQKVRLNIALYRPRGPRGSAGTGQMPVALGIKGYKLYMSCVMSGTEP   87 (162)
+Confidence            4688999999999999965 69999999999866544444432222           23568999999999999999999
+
+
+Q 1ILR:1|PDBID|C  102 RLQLEAVNIT-DLSENRKQDKRFAFIRSDSG--PTTSFESAACPGWFLCTAMEADQPVSLTNMPDEGVM  167 (177)
+Q Consensus       102 ~LqLEaVnit-dlsknkeqdkRFtFirsdsg--pttsFESAacPgWFLCTa~EADqPVsLTN~p~~~~~  167 (177)
+                      .||||..++- |+..  -.-.||.|.|-||.  .||.|||||.||||+||.....|||.+||.||.--+
+T Consensus        88 tlqleeadvmrdids--veltrfifyrldsptegttrfesaafpgwfictslqprqpvgitnqpdqvni  154 (162)
+T 3nj5_A           88 TLQLEEADVMRDIDS--VELTRFIFYRLDSPTEGTTRFESAAFPGWFICTSLQPRQPVGITNQPDQVNI  154 (162)
+Confidence            9999876543 2221  23468999998874  578999999999999999999999999999997443
 
 
 No 124
@@ -3626,18 +3626,6 @@ Confidence            3568999999999999996555544
 
 
 No 215
->2l5x_A mol:protein length:151 Interleukin-1 alpha
-Probab=20.69  E-value=2.5e+02  Score=27.14  Aligned_cols=25  Identities=40%  Similarity=0.581  Sum_probs=19.8  Template_Neff=1.000
-
-Q 1ILR:1|PDBID|C  145 FLCTAMEADQPVSLTNMPDEGVMVT  169 (177)
-Q Consensus       145 FLCTa~EADqPVsLTN~p~~~~~VT  169 (177)
-                      ..-||.+.||||-|.-+|+-+-.+|
-T Consensus        71 lyvtaqdedqpvllkempeipktit   95 (151)
-T 2l5x_A           71 LYVTAQDEDQPVLLKEMPEIPKTIT   95 (151)
-Confidence            3568999999999999996555544
-
-
-No 216
 >2l5x_D mol:protein length:151 Interleukin-1 alpha
 Probab=20.69  E-value=2.5e+02  Score=27.14  Aligned_cols=25  Identities=40%  Similarity=0.581  Sum_probs=19.8  Template_Neff=1.000
 
@@ -3646,6 +3634,18 @@ Q Consensus       145 FLCTa~EADqPVsLTN~p~~~~~VT  169 (177)
                       ..-||.+.||||-|.-+|+-+-.+|
 T Consensus        71 lyvtaqdedqpvllkempeipktit   95 (151)
 T 2l5x_D           71 LYVTAQDEDQPVLLKEMPEIPKTIT   95 (151)
+Confidence            3568999999999999996555544
+
+
+No 216
+>2l5x_A mol:protein length:151 Interleukin-1 alpha
+Probab=20.69  E-value=2.5e+02  Score=27.14  Aligned_cols=25  Identities=40%  Similarity=0.581  Sum_probs=19.8  Template_Neff=1.000
+
+Q 1ILR:1|PDBID|C  145 FLCTAMEADQPVSLTNMPDEGVMVT  169 (177)
+Q Consensus       145 FLCTa~EADqPVsLTN~p~~~~~VT  169 (177)
+                      ..-||.+.||||-|.-+|+-+-.+|
+T Consensus        71 lyvtaqdedqpvllkempeipktit   95 (151)
+T 2l5x_A           71 LYVTAQDEDQPVLLKEMPEIPKTIT   95 (151)
 Confidence            3568999999999999996555544
 
 

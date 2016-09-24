@@ -3,8 +3,8 @@ Match_columns 400
 No_of_seqs    106 out of 5070
 Neff          2.15699
 Searched_HMMs 5247
-Date          Wed Sep 21 22:39:35 2016
-Command       hhblits -i ../fasta_data/1r8m.fasta.txt -d ../seq_data/uniprot20_2016_02 -d ../seq_data/pdb100 -oa3m ../tmp/domain60/msa_1r8m -cpu 10 -qid 60 -id 100 -v 0 -o ../tmp/domain60/hhr_1r8m 
+Date          Sat Sep 24 22:47:02 2016
+Command       hhblits -i ../fasta_data/1r8m.fasta.txt -d ../seq_data/uniprot20_2016_02 -d ../seq_data/pdb100 -oa3m ../tmp/domain60/msa_1r8m -cpu 9 -qid 60 -id 100 -v 0 -o ../tmp/domain60/hhr_1r8m 
 
  No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
   1 tr|A0A060WAA7|A0A060WAA7_ONCMY 100.0  9E-209  5E-214 1514.0   0.0  394    3-396    75-480 (481)
@@ -14,8 +14,8 @@ Command       hhblits -i ../fasta_data/1r8m.fasta.txt -d ../seq_data/uniprot20_2
   5 tr|A0A0M4ES49|A0A0M4ES49_DROBS 100.0  5E-190  3E-195 1424.6   0.0  355   34-391   417-771 (775)
   6 2r0d_B mol:protein length:347  100.0  9E-180  4E-185 1255.7   0.0  338   57-395    10-347 (347)
   7 2r0d_A mol:protein length:347  100.0  9E-180  4E-185 1255.7   0.0  338   57-395    10-347 (347)
-  8 2r09_B mol:protein length:347  100.0  2E-178  7E-184 1247.1   0.0  338   57-395    10-347 (347)
-  9 2r09_A mol:protein length:347  100.0  2E-178  7E-184 1247.1   0.0  338   57-395    10-347 (347)
+  8 2r09_A mol:protein length:347  100.0  2E-178  7E-184 1247.1   0.0  338   57-395    10-347 (347)
+  9 2r09_B mol:protein length:347  100.0  2E-178  7E-184 1247.1   0.0  338   57-395    10-347 (347)
  10 tr|A0A0F8D0D5|A0A0F8D0D5_LARCR 100.0  5E-177  2E-182 1274.9   0.0  385    7-392   102-486 (492)
  11 tr|J9PA23|J9PA23_CANLF Unchara 100.0  1E-168  5E-174 1208.5   0.0  318   55-373    20-337 (467)
  12 tr|S9YHJ1|S9YHJ1_9CETA Cytohes 100.0  1E-166  5E-172 1206.2   0.0  352    7-392    75-490 (536)
@@ -36,16 +36,16 @@ Command       hhblits -i ../fasta_data/1r8m.fasta.txt -d ../seq_data/uniprot20_2
  27 4z21_A mol:protein length:202  100.0  6E-108  2E-113  733.5   0.0  202   51-252     1-202 (202)
  28 tr|Q9H7Q0|Q9H7Q0_HUMAN FLJ0001 100.0  2E-107  9E-113  758.0   0.0  231    6-236    19-249 (291)
  29 1bc9_A mol:protein length:200  100.0  6E-107  2E-112  726.3   0.0  193   57-249     2-194 (200)
- 30 4jmi_A mol:protein length:200  100.0  1E-106  5E-112  724.4   0.0  197   55-251     4-200 (200)
- 31 4jmo_A mol:protein length:200  100.0  1E-106  5E-112  724.4   0.0  197   55-251     4-200 (200)
- 32 4a4p_B mol:protein length:192  100.0  4E-106  2E-111  717.7   0.0  187   61-247     6-192 (192)
- 33 4a4p_A mol:protein length:192  100.0  4E-106  2E-111  717.7   0.0  187   61-247     6-192 (192)
+ 30 4jmo_A mol:protein length:200  100.0  1E-106  5E-112  724.4   0.0  197   55-251     4-200 (200)
+ 31 4jmi_A mol:protein length:200  100.0  1E-106  5E-112  724.4   0.0  197   55-251     4-200 (200)
+ 32 4a4p_A mol:protein length:192  100.0  4E-106  2E-111  717.7   0.0  187   61-247     6-192 (192)
+ 33 4a4p_B mol:protein length:192  100.0  4E-106  2E-111  717.7   0.0  187   61-247     6-192 (192)
  34 4jxh_A mol:protein length:217  100.0  5E-106  2E-111  726.4   0.0  198   54-251    20-217 (217)
  35 4jwl_A mol:protein length:217  100.0  5E-106  2E-111  726.4   0.0  198   54-251    20-217 (217)
  36 4l5m_A mol:protein length:217  100.0  5E-106  2E-111  726.4   0.0  198   54-251    20-217 (217)
- 37 1r8q_E mol:protein length:203  100.0  5E-105  2E-110  715.0   0.0  203   50-252     1-203 (203)
+ 37 1r8q_F mol:protein length:203  100.0  5E-105  2E-110  715.0   0.0  203   50-252     1-203 (203)
  38 1r8m_E mol:protein length:203  100.0  5E-105  2E-110  715.0   0.0  203   50-252     1-203 (203)
- 39 1r8q_F mol:protein length:203  100.0  5E-105  2E-110  715.0   0.0  203   50-252     1-203 (203)
+ 39 1r8q_E mol:protein length:203  100.0  5E-105  2E-110  715.0   0.0  203   50-252     1-203 (203)
  40 1s9d_E mol:protein length:203  100.0  5E-105  2E-110  715.0   0.0  203   50-252     1-203 (203)
  41 tr|I1G170|I1G170_AMPQE Unchara 100.0  3E-104  1E-109  792.2   0.0  329   63-394   475-808 (813)
  42 1pbv_A mol:protein length:195  100.0  5E-104  2E-109  705.5   0.0  195   52-246     1-195 (195)
@@ -59,12 +59,12 @@ Command       hhblits -i ../fasta_data/1r8m.fasta.txt -d ../seq_data/uniprot20_2
  50 tr|H9F7H9|H9F7H9_MACMU Cytohes 100.0 6.5E-76 3.7E-81  512.6   0.0  138  257-395     1-138 (138)
  51 tr|B1AHH6|B1AHH6_HUMAN Cytohes 100.0 3.5E-74 1.7E-79  506.7   0.0  157    1-157     1-157 (157)
  52 1u2b_A mol:protein length:138  100.0 4.3E-73 1.9E-78  488.6   0.0  129  255-383    10-138 (138)
- 53 1fgz_A mol:protein length:127  100.0 7.5E-72 3.2E-77  476.1   0.0  127  256-383     1-127 (127)
- 54 1fgy_A mol:protein length:127  100.0 7.5E-72 3.2E-77  476.1   0.0  127  256-383     1-127 (127)
- 55 1fhx_B mol:protein length:129  100.0 1.9E-71 8.1E-77  474.6   0.0  129  258-387     1-129 (129)
- 56 1fhx_A mol:protein length:129  100.0 1.9E-71 8.1E-77  474.6   0.0  129  258-387     1-129 (129)
- 57 1fhw_A mol:protein length:129  100.0 1.9E-71 8.1E-77  474.6   0.0  129  258-387     1-129 (129)
- 58 1fhw_B mol:protein length:129  100.0 1.9E-71 8.1E-77  474.6   0.0  129  258-387     1-129 (129)
+ 53 1fgy_A mol:protein length:127  100.0 7.5E-72 3.2E-77  476.1   0.0  127  256-383     1-127 (127)
+ 54 1fgz_A mol:protein length:127  100.0 7.5E-72 3.2E-77  476.1   0.0  127  256-383     1-127 (127)
+ 55 1fhx_A mol:protein length:129  100.0 1.9E-71 8.1E-77  474.6   0.0  129  258-387     1-129 (129)
+ 56 1fhw_B mol:protein length:129  100.0 1.9E-71 8.1E-77  474.6   0.0  129  258-387     1-129 (129)
+ 57 1fhx_B mol:protein length:129  100.0 1.9E-71 8.1E-77  474.6   0.0  129  258-387     1-129 (129)
+ 58 1fhw_A mol:protein length:129  100.0 1.9E-71 8.1E-77  474.6   0.0  129  258-387     1-129 (129)
  59 sp|Q54KA7|SECG_DICDI Ankyrin r 100.0 2.1E-71 9.5E-77  566.4   0.0  358   14-389   547-908 (986)
  60 tr|H3C570|H3C570_TETNG Unchara 100.0 5.7E-70 2.7E-75  505.8   0.0  157   63-219    96-255 (255)
  61 tr|A0A0L0D475|A0A0L0D475_THETB 100.0 8.1E-69 3.5E-74  543.6   0.0  337   37-386   439-779 (959)
@@ -126,8 +126,8 @@ Command       hhblits -i ../fasta_data/1r8m.fasta.txt -d ../seq_data/uniprot20_2
 117 tr|A0A0B2QGV8|A0A0B2QGV8_GLYSO 100.0 9.1E-41   4E-46  336.2   0.0  184   79-262   121-304 (723)
 118 tr|U3JAK7|U3JAK7_DANRE Unchara 100.0 1.2E-40 5.1E-46  269.3   0.0   80   59-138     1-80  (80)
 119 tr|B0WCK7|B0WCK7_CULQU Brefeld 100.0 2.2E-40 9.8E-46  349.6   0.0  188   59-246   971-1160(2063)
-120 4oiy_A mol:protein length:191  100.0 3.8E-40 1.7E-45  297.1   0.0  172   70-241    17-189 (191)
-121 4oiy_B mol:protein length:191  100.0 3.8E-40 1.7E-45  297.1   0.0  172   70-241    17-189 (191)
+120 4oiy_B mol:protein length:191  100.0 3.8E-40 1.7E-45  297.1   0.0  172   70-241    17-189 (191)
+121 4oiy_A mol:protein length:191  100.0 3.8E-40 1.7E-45  297.1   0.0  172   70-241    17-189 (191)
 122 tr|W5KJU1|W5KJU1_ASTMX Unchara 100.0 4.4E-40 1.9E-45  267.4   0.0   66  232-298    10-75  (83)
 123 tr|E1FN96|E1FN96_LOALO Loner I 100.0 3.6E-40   2E-45  338.7   0.0  189   60-248   234-428 (661)
 124 tr|A0A0E0ED61|A0A0E0ED61_9ORYZ 100.0 5.3E-40 2.8E-45  356.1   0.0  147  104-250   417-563 (1856)
@@ -189,9 +189,9 @@ Command       hhblits -i ../fasta_data/1r8m.fasta.txt -d ../seq_data/uniprot20_2
 180 tr|A0A0P5C6L3|A0A0P5C6L3_9CRUS 100.0 4.4E-33 1.9E-38  280.3   0.0  188   61-248    98-291 (669)
 181 tr|M0XAZ0|M0XAZ0_HORVD Unchara 100.0 5.6E-33 2.6E-38  285.1   0.0  191   61-251   409-603 (781)
 182 4c0a_F mol:protein length:383  100.0 6.3E-33 2.8E-38  268.2   0.0  197   56-252    17-219 (383)
-183 4c0a_A mol:protein length:383  100.0 6.3E-33 2.8E-38  268.2   0.0  197   56-252    17-219 (383)
-184 4c0a_B mol:protein length:383  100.0 6.3E-33 2.8E-38  268.2   0.0  197   56-252    17-219 (383)
-185 4c0a_E mol:protein length:383  100.0 6.3E-33 2.8E-38  268.2   0.0  197   56-252    17-219 (383)
+183 4c0a_B mol:protein length:383  100.0 6.3E-33 2.8E-38  268.2   0.0  197   56-252    17-219 (383)
+184 4c0a_E mol:protein length:383  100.0 6.3E-33 2.8E-38  268.2   0.0  197   56-252    17-219 (383)
+185 4c0a_A mol:protein length:383  100.0 6.3E-33 2.8E-38  268.2   0.0  197   56-252    17-219 (383)
 186 tr|A0A034V7Y3|A0A034V7Y3_BACDO 100.0 6.4E-33 2.8E-38  277.4   0.0  189   61-249    40-234 (605)
 187 tr|W4JV47|W4JV47_9HOMO Unchara 100.0 6.3E-33 2.8E-38  290.1   0.0  211   66-276   757-1001(1285)
 188 tr|A0A0N5DH17|A0A0N5DH17_TRIMR 100.0 8.4E-33 3.6E-38  277.2   0.0  188   61-248   202-396 (627)
@@ -264,8 +264,8 @@ Command       hhblits -i ../fasta_data/1r8m.fasta.txt -d ../seq_data/uniprot20_2
 255 tr|A0A0C2F505|A0A0C2F505_9BILA  99.9   2E-26 8.6E-32  221.6   0.0  118   60-177   219-336 (336)
 256 tr|A0A0L0TEM3|A0A0L0TEM3_ALLMA  99.9 5.9E-26 2.5E-31  229.8   0.0  175   70-244   202-381 (659)
 257 tr|A0A0K2SYS5|A0A0K2SYS5_LEPSM  99.9   8E-26 3.5E-31  229.5   0.0  221   60-282   332-558 (687)
-258 1xsz_A mol:protein length:356   99.9 8.8E-26 3.8E-31  218.4   0.0  192   71-262    17-216 (356)
-259 1xsz_B mol:protein length:356   99.9 8.8E-26 3.8E-31  218.4   0.0  192   71-262    17-216 (356)
+258 1xsz_B mol:protein length:356   99.9 8.8E-26 3.8E-31  218.4   0.0  192   71-262    17-216 (356)
+259 1xsz_A mol:protein length:356   99.9 8.8E-26 3.8E-31  218.4   0.0  192   71-262    17-216 (356)
 260 tr|E9B543|E9B543_LEIMU Putativ  99.9 9.7E-26 5.2E-31  250.2   0.0  151   94-244  1000-1153(2432)
 261 4c7p_A mol:protein length:402   99.9 1.5E-25 6.6E-31  218.9   0.0  193   70-262    42-242 (402)
 262 tr|A0A068RLX4|A0A068RLX4_9FUNG  99.9 1.3E-25 7.7E-31  231.3   0.0  159   87-248    76-250 (568)
@@ -325,39 +325,39 @@ Command       hhblits -i ../fasta_data/1r8m.fasta.txt -d ../seq_data/uniprot20_2
 316 tr|S4PSH9|S4PSH9_9NEOP Brefeld  99.7   1E-21   5E-27  159.2   0.0   68  127-194     2-71  (71)
 317 tr|S9YCW8|S9YCW8_9CETA IQ moti  99.7 1.2E-21 5.3E-27  197.2   0.0  156   72-249    70-231 (563)
 318 tr|E5SD40|E5SD40_TRISP Putativ  99.7 1.8E-21 7.7E-27  205.3   0.0  183   69-253   680-867 (1248)
-319 tr|A0A085LRV4|A0A085LRV4_9BILA  99.7 2.2E-21 9.6E-27  209.0   0.0  183   65-247   629-813 (2114)
-320 tr|F2UAX7|F2UAX7_SALR5 Putativ  99.7 2.6E-21 1.1E-26  207.9   0.0  204   46-251   548-757 (1953)
-321 tr|A0A096P929|A0A096P929_OSTTA  99.7 2.9E-21 1.2E-26  206.2   0.0  140  106-245   599-740 (1633)
-322 tr|A0A0A1NGE1|A0A0A1NGE1_9FUNG  99.7 2.9E-21 1.2E-26  194.1   0.0  181   67-249    34-221 (541)
-323 tr|A0A0N4Z801|A0A0N4Z801_PARTI  99.7 2.4E-21 1.6E-26  205.3   0.0  221   86-308   274-533 (745)
-324 tr|A0A0B2V902|A0A0B2V902_TOXCA  99.7 4.2E-21 1.8E-26  200.9   0.0  184   64-249   749-937 (1049)
-325 tr|B7F2T8|B7F2T8_ORYSJ Os04g01  99.7 5.5E-21 2.4E-26  195.1   0.0  151   61-211   513-666 (677)
-326 tr|A0A0Q3XYD8|A0A0Q3XYD8_ALLMI  99.7 5.2E-21 2.6E-26  202.4   0.0  274   94-388   468-793 (925)
-327 tr|W7U6C9|W7U6C9_9STRA Brefeld  99.7   6E-21 2.6E-26  206.1   0.0  171   76-246  1320-1510(2254)
-328 tr|A0A0L0DG83|A0A0L0DG83_THETB  99.7 7.4E-21 3.2E-26  208.0   0.0  186   64-249  1642-1833(3503)
-329 tr|A4S8W1|A4S8W1_OSTLU Unchara  99.7 7.6E-21 3.3E-26  199.7   0.0  177   68-247   385-564 (1125)
-330 tr|A2FKK9|A2FKK9_TRIVA Sec7 do  99.7 8.7E-21 3.8E-26  184.7   0.0  240   70-319    27-272 (357)
-331 tr|A0A0R3WL57|A0A0R3WL57_HYDTA  99.7 1.4E-20 6.7E-26  198.3   0.0  306   70-376   488-853 (963)
-332 tr|A0A0R4ISB1|A0A0R4ISB1_DANRE  99.7 1.8E-20 8.1E-26  197.1   0.0  277   92-389   581-909 (1038)
-333 tr|B5VHB4|B5VHB4_YEAS6 YEL022W  99.7 2.2E-20 9.5E-26  194.3   0.0  178   69-248    19-213 (911)
-334 tr|W5LPU3|W5LPU3_ASTMX Unchara  99.7   2E-20 9.6E-26  203.5   0.0  275   94-389  1144-1470(1617)
-335 tr|F2TVQ3|F2TVQ3_SALR5 Putativ  99.7 2.9E-20 1.3E-25  184.3   0.0  106  268-373   175-295 (442)
-336 tr|V9IKF7|V9IKF7_APICE Golgi-s  99.7   3E-20 1.3E-25  196.4   0.0  185   63-249    58-250 (1247)
-337 tr|X6MTS5|X6MTS5_RETFI Unchara  99.7 3.1E-20 1.3E-25  190.1   0.0  160   54-215    33-204 (694)
-338 tr|A0A098VM11|A0A098VM11_9MICR  99.7 3.4E-20 1.5E-25  195.6   0.0  171   53-232   452-627 (1188)
-339 tr|G7DYH1|G7DYH1_MIXOS Unchara  99.7 4.2E-20 1.8E-25  200.7   0.0  193   60-254  1611-1808(2579)
-340 tr|A0A0F5CZF8|A0A0F5CZF8_PRIPA  99.7 4.3E-20 1.9E-25  189.9   0.0  177   71-249   356-537 (745)
-341 tr|U3JVG8|U3JVG8_FICAL Unchara  99.7 4.7E-20 2.1E-25  171.9   0.0  115  134-248     2-121 (222)
-342 tr|I1ZIB8|I1ZIB8_SCHMD IQ moti  99.7 5.7E-20 2.7E-25  173.3   0.0  110  139-248     2-121 (230)
-343 4d7r_A mol:protein length:400   99.7 6.8E-20   3E-25  180.3   0.0  194   69-262    38-240 (400)
-344 tr|M1EQM1|M1EQM1_MUSPF F-box p  99.7 5.9E-20 3.2E-25  173.5   0.0  166   67-238    42-212 (220)
-345 tr|Q68X01|Q68X01_RICTY Sec7-do  99.6 1.2E-19 5.1E-25  180.5   0.0  155   93-247    36-194 (454)
-346 tr|K1Q869|K1Q869_CRAGI IQ moti  99.6 1.5E-19 6.4E-25  178.8   0.0  113  136-248     9-126 (421)
-347 tr|V5I827|V5I827_ANOGL Brefeld  99.6 1.5E-19 6.8E-25  188.5   0.0   92  154-245     1-94  (837)
-348 tr|B0EHE1|B0EHE1_ENTDS Guanyl-  99.6 1.7E-19 8.3E-25  196.2   0.0  218   29-248   582-824 (1690)
-349 tr|F6UQ84|F6UQ84_HORSE Unchara  99.6   2E-19 1.1E-24  192.4   0.0  267   95-387   465-780 (930)
-350 tr|W8AIF8|W8AIF8_CERCA Cytohes  99.6 2.8E-19 1.2E-24  152.0   0.0   76    5-80     23-98  (101)
-351 tr|D8LRA5|D8LRA5_ECTSI Unchara  99.6 3.7E-19 1.6E-24  190.1   0.0  137  111-247   577-723 (1513)
+319 tr|F2UAX7|F2UAX7_SALR5 Putativ  99.7 2.6E-21 1.1E-26  207.9   0.0  204   46-251   548-757 (1953)
+320 tr|A0A096P929|A0A096P929_OSTTA  99.7 2.9E-21 1.2E-26  206.2   0.0  140  106-245   599-740 (1633)
+321 tr|A0A0A1NGE1|A0A0A1NGE1_9FUNG  99.7 2.9E-21 1.2E-26  194.1   0.0  181   67-249    34-221 (541)
+322 tr|A0A0N4Z801|A0A0N4Z801_PARTI  99.7 2.4E-21 1.6E-26  205.3   0.0  221   86-308   274-533 (745)
+323 tr|A0A0B2V902|A0A0B2V902_TOXCA  99.7 4.2E-21 1.8E-26  200.9   0.0  184   64-249   749-937 (1049)
+324 tr|B7F2T8|B7F2T8_ORYSJ Os04g01  99.7 5.5E-21 2.4E-26  195.1   0.0  151   61-211   513-666 (677)
+325 tr|A0A0Q3XYD8|A0A0Q3XYD8_ALLMI  99.7 5.2E-21 2.6E-26  202.4   0.0  274   94-388   468-793 (925)
+326 tr|W7U6C9|W7U6C9_9STRA Brefeld  99.7   6E-21 2.6E-26  206.1   0.0  171   76-246  1320-1510(2254)
+327 tr|A0A0L0DG83|A0A0L0DG83_THETB  99.7 7.4E-21 3.2E-26  208.0   0.0  186   64-249  1642-1833(3503)
+328 tr|A4S8W1|A4S8W1_OSTLU Unchara  99.7 7.6E-21 3.3E-26  199.7   0.0  177   68-247   385-564 (1125)
+329 tr|A2FKK9|A2FKK9_TRIVA Sec7 do  99.7 8.7E-21 3.8E-26  184.7   0.0  240   70-319    27-272 (357)
+330 tr|A0A0R3WL57|A0A0R3WL57_HYDTA  99.7 1.4E-20 6.7E-26  198.3   0.0  306   70-376   488-853 (963)
+331 tr|A0A0R4ISB1|A0A0R4ISB1_DANRE  99.7 1.8E-20 8.1E-26  197.1   0.0  277   92-389   581-909 (1038)
+332 tr|B5VHB4|B5VHB4_YEAS6 YEL022W  99.7 2.2E-20 9.5E-26  194.3   0.0  178   69-248    19-213 (911)
+333 tr|W5LPU3|W5LPU3_ASTMX Unchara  99.7   2E-20 9.6E-26  203.5   0.0  275   94-389  1144-1470(1617)
+334 tr|F2TVQ3|F2TVQ3_SALR5 Putativ  99.7 2.9E-20 1.3E-25  184.3   0.0  106  268-373   175-295 (442)
+335 tr|V9IKF7|V9IKF7_APICE Golgi-s  99.7   3E-20 1.3E-25  196.4   0.0  185   63-249    58-250 (1247)
+336 tr|X6MTS5|X6MTS5_RETFI Unchara  99.7 3.1E-20 1.3E-25  190.1   0.0  160   54-215    33-204 (694)
+337 tr|A0A098VM11|A0A098VM11_9MICR  99.7 3.4E-20 1.5E-25  195.6   0.0  171   53-232   452-627 (1188)
+338 tr|G7DYH1|G7DYH1_MIXOS Unchara  99.7 4.2E-20 1.8E-25  200.7   0.0  193   60-254  1611-1808(2579)
+339 tr|A0A0F5CZF8|A0A0F5CZF8_PRIPA  99.7 4.3E-20 1.9E-25  189.9   0.0  177   71-249   356-537 (745)
+340 tr|U3JVG8|U3JVG8_FICAL Unchara  99.7 4.7E-20 2.1E-25  171.9   0.0  115  134-248     2-121 (222)
+341 tr|I1ZIB8|I1ZIB8_SCHMD IQ moti  99.7 5.7E-20 2.7E-25  173.3   0.0  110  139-248     2-121 (230)
+342 4d7r_A mol:protein length:400   99.7 6.8E-20   3E-25  180.3   0.0  194   69-262    38-240 (400)
+343 tr|M1EQM1|M1EQM1_MUSPF F-box p  99.7 5.9E-20 3.2E-25  173.5   0.0  166   67-238    42-212 (220)
+344 tr|Q68X01|Q68X01_RICTY Sec7-do  99.6 1.2E-19 5.1E-25  180.5   0.0  155   93-247    36-194 (454)
+345 tr|K1Q869|K1Q869_CRAGI IQ moti  99.6 1.5E-19 6.4E-25  178.8   0.0  113  136-248     9-126 (421)
+346 tr|V5I827|V5I827_ANOGL Brefeld  99.6 1.5E-19 6.8E-25  188.5   0.0   92  154-245     1-94  (837)
+347 tr|B0EHE1|B0EHE1_ENTDS Guanyl-  99.6 1.7E-19 8.3E-25  196.2   0.0  218   29-248   582-824 (1690)
+348 tr|F6UQ84|F6UQ84_HORSE Unchara  99.6   2E-19 1.1E-24  192.4   0.0  267   95-387   465-780 (930)
+349 tr|W8AIF8|W8AIF8_CERCA Cytohes  99.6 2.8E-19 1.2E-24  152.0   0.0   76    5-80     23-98  (101)
+350 tr|D8LRA5|D8LRA5_ECTSI Unchara  99.6 3.7E-19 1.6E-24  190.1   0.0  137  111-247   577-723 (1513)
+351 tr|A0A099P630|A0A099P630_PICKU  99.6 3.9E-19 1.7E-24  191.8   0.0  178   70-249   646-837 (1958)
 352 tr|M2PY08|M2PY08_CERS8 Unchara  99.6 2.9E-19 1.8E-24  193.0   0.0  154   90-249    54-208 (969)
 353 tr|A0A095AK92|A0A095AK92_SCHHA  99.6 4.2E-19 1.8E-24  185.3   0.0  186   66-251   486-679 (930)
 354 tr|U9URM4|U9URM4_RHIID Unchara  99.6 5.3E-19 2.3E-24  183.2   0.0  125  122-250   243-367 (823)
@@ -833,50 +833,6 @@ Confidence            9999999999999998765
 
 
 No 8
->2r09_B mol:protein length:347 Cytohesin-3
-Probab=100.00  E-value=1.7e-178  Score=1247.12  Aligned_cols=338  Identities=85%  Similarity=1.419  Sum_probs=334.4  Template_Neff=1.000
-
-Q 1R8M:E|PDBID|C   57 KTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHEFT  136 (400)
-Q Consensus        57 k~~~r~kq~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHeF~  136 (400)
-                      .|-|||...||||||||||||||||||+||.|||.+||++|.|||||||||||.||||||||...|+.||.|||.||||.
-T Consensus        10 sttqrnaqiamgrkkfnmdpkkgiqfliendllqsspedvaqflykgeglnktvigdylgerddfnikvlqafvelhefa   89 (347)
-T 2r09_B           10 STTQRNAQIAMGRKKFNMDPKKGIQFLIENDLLQSSPEDVAQFLYKGEGLNKTVIGDYLGERDDFNIKVLQAFVELHEFA   89 (347)
-Confidence            46799999999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  137 DLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFVAM  216 (400)
-Q Consensus       137 dl~LVqALRQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~~erfism  216 (400)
-                      ||||||||||||||||||||||||||||||||.||||||||||||||||||||||+|||||||||-||||||..|||+.|
-T Consensus        90 dlnlvqalrqflwsfrlpgeaqkidrmmeafasryclcnpgvfqstdtcyvlsfaiimlntslhnhnvrdkptaerfitm  169 (347)
-T 2r09_B           90 DLNLVQALRQFLWSFRLPGEAQKIDRMMEAFASRYCLCNPGVFQSTDTCYVLSFAIIMLNTSLHNHNVRDKPTAERFITM  169 (347)
-Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  217 NRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGNDLTHTFFNPDREGWLLKLGGGRVKTWKRRWFILTDNCLYYFEYTT  296 (400)
-Q Consensus       217 nrgin~G~dlp~ell~~ly~sik~ePfkiPeDDGndlthTffnPdreGwllK~Gggr~ktWkRRWfILtdnClyyFeytt  296 (400)
-                      |||||||||||||+|||||.||.|||||||||||||||.||||||||||||||| |||||||||||||||||||||||||
-T Consensus       170 nrgineggdlpeellrnlyesiknepfkipeddgndltytffnpdregwllklg-grvktwkrrwfiltdnclyyfeytt  248 (347)
-T 2r09_B          170 NRGINEGGDLPEELLRNLYESIKNEPFKIPEDDGNDLTYTFFNPDREGWLLKLG-GRVKTWKRRWFILTDNCLYYFEYTT  248 (347)
-Confidence            999999999999999999999999999999999999999999999999999996 6999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  297 DKEPRGIIPLENLSIREVDDPRKPNCFELYIPNNKGQLIKACKTEADGRVVEGNHMVYRISAPTQEEKDEWIKSIQAAVS  376 (400)
-Q Consensus       297 dkePrGiIplenl~vrev~d~~kp~CfEly~~~~~~q~IKAcKtd~dGrVVEG~H~~YrisA~s~eEkdeWI~~I~asis  376 (400)
-                      ||||||||||||||||||.|||||||||||-|..|||.|||||||||||||||||.|||||||+.|||+||.|||.|.+|
-T Consensus       249 dkeprgiiplenlsirevedprkpncfelynpshkgqvikackteadgrvvegnhvvyrisapspeekeewmksikasis  328 (347)
-T 2r09_B          249 DKEPRGIIPLENLSIREVEDPRKPNCFELYNPSHKGQVIKACKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASIS  328 (347)
-Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  377 VDPFYEMLAARKKRISVKK  395 (400)
-Q Consensus       377 ~dPFYdmlaaRKkk~~~k~  395 (400)
-                      -||||.|||.||+||.-||
-T Consensus       329 rdpfydmlatrkrriankk  347 (347)
-T 2r09_B          329 RDPFYDMLATRKRRIANKK  347 (347)
-Confidence            9999999999999998765
-
-
-No 9
 >2r09_A mol:protein length:347 Cytohesin-3
 Probab=100.00  E-value=1.7e-178  Score=1247.12  Aligned_cols=338  Identities=85%  Similarity=1.419  Sum_probs=334.4  Template_Neff=1.000
 
@@ -917,6 +873,50 @@ Q Consensus       377 ~dPFYdmlaaRKkk~~~k~  395 (400)
                       -||||.|||.||+||.-||
 T Consensus       329 rdpfydmlatrkrriankk  347 (347)
 T 2r09_A          329 RDPFYDMLATRKRRIANKK  347 (347)
+Confidence            9999999999999998765
+
+
+No 9
+>2r09_B mol:protein length:347 Cytohesin-3
+Probab=100.00  E-value=1.7e-178  Score=1247.12  Aligned_cols=338  Identities=85%  Similarity=1.419  Sum_probs=334.4  Template_Neff=1.000
+
+Q 1R8M:E|PDBID|C   57 KTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHEFT  136 (400)
+Q Consensus        57 k~~~r~kq~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHeF~  136 (400)
+                      .|-|||...||||||||||||||||||+||.|||.+||++|.|||||||||||.||||||||...|+.||.|||.||||.
+T Consensus        10 sttqrnaqiamgrkkfnmdpkkgiqfliendllqsspedvaqflykgeglnktvigdylgerddfnikvlqafvelhefa   89 (347)
+T 2r09_B           10 STTQRNAQIAMGRKKFNMDPKKGIQFLIENDLLQSSPEDVAQFLYKGEGLNKTVIGDYLGERDDFNIKVLQAFVELHEFA   89 (347)
+Confidence            46799999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  137 DLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFVAM  216 (400)
+Q Consensus       137 dl~LVqALRQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~~erfism  216 (400)
+                      ||||||||||||||||||||||||||||||||.||||||||||||||||||||||+|||||||||-||||||..|||+.|
+T Consensus        90 dlnlvqalrqflwsfrlpgeaqkidrmmeafasryclcnpgvfqstdtcyvlsfaiimlntslhnhnvrdkptaerfitm  169 (347)
+T 2r09_B           90 DLNLVQALRQFLWSFRLPGEAQKIDRMMEAFASRYCLCNPGVFQSTDTCYVLSFAIIMLNTSLHNHNVRDKPTAERFITM  169 (347)
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  217 NRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGNDLTHTFFNPDREGWLLKLGGGRVKTWKRRWFILTDNCLYYFEYTT  296 (400)
+Q Consensus       217 nrgin~G~dlp~ell~~ly~sik~ePfkiPeDDGndlthTffnPdreGwllK~Gggr~ktWkRRWfILtdnClyyFeytt  296 (400)
+                      |||||||||||||+|||||.||.|||||||||||||||.||||||||||||||| |||||||||||||||||||||||||
+T Consensus       170 nrgineggdlpeellrnlyesiknepfkipeddgndltytffnpdregwllklg-grvktwkrrwfiltdnclyyfeytt  248 (347)
+T 2r09_B          170 NRGINEGGDLPEELLRNLYESIKNEPFKIPEDDGNDLTYTFFNPDREGWLLKLG-GRVKTWKRRWFILTDNCLYYFEYTT  248 (347)
+Confidence            999999999999999999999999999999999999999999999999999996 6999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  297 DKEPRGIIPLENLSIREVDDPRKPNCFELYIPNNKGQLIKACKTEADGRVVEGNHMVYRISAPTQEEKDEWIKSIQAAVS  376 (400)
+Q Consensus       297 dkePrGiIplenl~vrev~d~~kp~CfEly~~~~~~q~IKAcKtd~dGrVVEG~H~~YrisA~s~eEkdeWI~~I~asis  376 (400)
+                      ||||||||||||||||||.|||||||||||-|..|||.|||||||||||||||||.|||||||+.|||+||.|||.|.+|
+T Consensus       249 dkeprgiiplenlsirevedprkpncfelynpshkgqvikackteadgrvvegnhvvyrisapspeekeewmksikasis  328 (347)
+T 2r09_B          249 DKEPRGIIPLENLSIREVEDPRKPNCFELYNPSHKGQVIKACKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASIS  328 (347)
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  377 VDPFYEMLAARKKRISVKK  395 (400)
+Q Consensus       377 ~dPFYdmlaaRKkk~~~k~  395 (400)
+                      -||||.|||.||+||.-||
+T Consensus       329 rdpfydmlatrkrriankk  347 (347)
+T 2r09_B          329 RDPFYDMLATRKRRIANKK  347 (347)
 Confidence            9999999999999998765
 
 
@@ -1729,34 +1729,6 @@ Confidence            999999999999999999999999999999854
 
 
 No 30
->4jmi_A mol:protein length:200 Cytohesin-2
-Probab=100.00  E-value=1.1e-106  Score=724.43  Aligned_cols=197  Identities=99%  Similarity=1.497  Sum_probs=195.9  Template_Neff=1.000
-
-Q 1R8M:E|PDBID|C   55 GSKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHE  134 (400)
-Q Consensus        55 e~k~~~r~kq~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHe  134 (400)
-                      -|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-T Consensus         4 msktlqrnrkmamgrkkfnmdpkkgiqflvenellqntpeeiarflykgeglnktaigdylgereelnlavlhafvdlhe   83 (200)
-T 4jmi_A            4 MSKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHE   83 (200)
-Confidence            48999999999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  135 FTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFV  214 (400)
-Q Consensus       135 F~dl~LVqALRQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~~erfi  214 (400)
-                      |||+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-T Consensus        84 ftdlnlvqalrqflwsfrlpgeaqkidrmmeafaqryclcnpgvfqstdtcyvlsfavimlntslhnpnvrdkpglerfv  163 (200)
-T 4jmi_A           84 FTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFV  163 (200)
-Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  215 AMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGN  251 (400)
-Q Consensus       215 smnrgin~G~dlp~ell~~ly~sik~ePfkiPeDDGn  251 (400)
-                      |||||||||||||||+|||||||||||||||||||||
-T Consensus       164 amnrgineggdlpeellrnlydsirnepfkipeddgn  200 (200)
-T 4jmi_A          164 AMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGN  200 (200)
-Confidence            9999999999999999999999999999999999997
-
-
-No 31
 >4jmo_A mol:protein length:200 Cytohesin-2
 Probab=100.00  E-value=1.1e-106  Score=724.43  Aligned_cols=197  Identities=99%  Similarity=1.497  Sum_probs=195.9  Template_Neff=1.000
 
@@ -1784,35 +1756,35 @@ T 4jmo_A          164 AMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGN  200 (200)
 Confidence            9999999999999999999999999999999999997
 
 
-No 32
->4a4p_B mol:protein length:192 CYTOHESIN1
-Probab=100.00  E-value=4.1e-106  Score=717.69  Aligned_cols=187  Identities=87%  Similarity=1.402  Sum_probs=185.1  Template_Neff=1.000
+No 31
+>4jmi_A mol:protein length:200 Cytohesin-2
+Probab=100.00  E-value=1.1e-106  Score=724.43  Aligned_cols=197  Identities=99%  Similarity=1.497  Sum_probs=195.9  Template_Neff=1.000
 
-Q 1R8M:E|PDBID|C   61 RNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHEFTDLNL  140 (400)
-Q Consensus        61 r~kq~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHeF~dl~L  140 (400)
-                      .|...||||||||||||||||||+||.||.||-|+||.||||||||||||||||||||.|.|+.||||||.||||||+||
-T Consensus         6 hnkqvamgrkkfnmdpkkgiqfliendllkntcediaqflykgeglnktaigdylgerdefniqvlhafvelheftdlnl   85 (192)
-T 4a4p_B            6 HNKQVAMGRKKFNMDPKKGIQFLIENDLLKNTCEDIAQFLYKGEGLNKTAIGDYLGERDEFNIQVLHAFVELHEFTDLNL   85 (192)
-Confidence            47788999999999999999999999999999999999999999999999999999999999999999999999999999
+Q 1R8M:E|PDBID|C   55 GSKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHE  134 (400)
+Q Consensus        55 e~k~~~r~kq~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHe  134 (400)
+                      -|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+T Consensus         4 msktlqrnrkmamgrkkfnmdpkkgiqflvenellqntpeeiarflykgeglnktaigdylgereelnlavlhafvdlhe   83 (200)
+T 4jmi_A            4 MSKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHE   83 (200)
+Confidence            48999999999999999999999999999999999999999999999999999999999999999999999999999999
 
 
-Q 1R8M:E|PDBID|C  141 VQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFVAMNRGI  220 (400)
-Q Consensus       141 VqALRQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~~erfismnrgi  220 (400)
-                      ||||||||||||||||||||||||||||||||.||.|||||||||||||||+||||||||||||.|||..|||+||||||
-T Consensus        86 vqalrqflwsfrlpgeaqkidrmmeafaqrycqcnngvfqstdtcyvlsfaiimlntslhnpnvkdkptverfiamnrgi  165 (192)
-T 4a4p_B           86 VQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCQCNNGVFQSTDTCYVLSFAIIMLNTSLHNPNVKDKPTVERFIAMNRGI  165 (192)
+Q 1R8M:E|PDBID|C  135 FTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFV  214 (400)
+Q Consensus       135 F~dl~LVqALRQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~~erfi  214 (400)
+                      |||+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+T Consensus        84 ftdlnlvqalrqflwsfrlpgeaqkidrmmeafaqryclcnpgvfqstdtcyvlsfavimlntslhnpnvrdkpglerfv  163 (200)
+T 4jmi_A           84 FTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFV  163 (200)
 Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
 
 
-Q 1R8M:E|PDBID|C  221 NEGGDLPEELLRNLYDSIRNEPFKIPE  247 (400)
-Q Consensus       221 n~G~dlp~ell~~ly~sik~ePfkiPe  247 (400)
-                      |.|||||||+|||||.||.||||||||
-T Consensus       166 ndggdlpeellrnlyesiknepfkipe  192 (192)
-T 4a4p_B          166 NDGGDLPEELLRNLYESIKNEPFKIPE  192 (192)
-Confidence            999999999999999999999999996
+Q 1R8M:E|PDBID|C  215 AMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGN  251 (400)
+Q Consensus       215 smnrgin~G~dlp~ell~~ly~sik~ePfkiPeDDGn  251 (400)
+                      |||||||||||||||+|||||||||||||||||||||
+T Consensus       164 amnrgineggdlpeellrnlydsirnepfkipeddgn  200 (200)
+T 4jmi_A          164 AMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGN  200 (200)
+Confidence            9999999999999999999999999999999999997
 
 
-No 33
+No 32
 >4a4p_A mol:protein length:192 CYTOHESIN1
 Probab=100.00  E-value=4.1e-106  Score=717.69  Aligned_cols=187  Identities=87%  Similarity=1.402  Sum_probs=185.1  Template_Neff=1.000
 
@@ -1837,6 +1809,34 @@ Q Consensus       221 n~G~dlp~ell~~ly~sik~ePfkiPe  247 (400)
                       |.|||||||+|||||.||.||||||||
 T Consensus       166 ndggdlpeellrnlyesiknepfkipe  192 (192)
 T 4a4p_A          166 NDGGDLPEELLRNLYESIKNEPFKIPE  192 (192)
+Confidence            999999999999999999999999996
+
+
+No 33
+>4a4p_B mol:protein length:192 CYTOHESIN1
+Probab=100.00  E-value=4.1e-106  Score=717.69  Aligned_cols=187  Identities=87%  Similarity=1.402  Sum_probs=185.1  Template_Neff=1.000
+
+Q 1R8M:E|PDBID|C   61 RNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHEFTDLNL  140 (400)
+Q Consensus        61 r~kq~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHeF~dl~L  140 (400)
+                      .|...||||||||||||||||||+||.||.||-|+||.||||||||||||||||||||.|.|+.||||||.||||||+||
+T Consensus         6 hnkqvamgrkkfnmdpkkgiqfliendllkntcediaqflykgeglnktaigdylgerdefniqvlhafvelheftdlnl   85 (192)
+T 4a4p_B            6 HNKQVAMGRKKFNMDPKKGIQFLIENDLLKNTCEDIAQFLYKGEGLNKTAIGDYLGERDEFNIQVLHAFVELHEFTDLNL   85 (192)
+Confidence            47788999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  141 VQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFVAMNRGI  220 (400)
+Q Consensus       141 VqALRQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~~erfismnrgi  220 (400)
+                      ||||||||||||||||||||||||||||||||.||.|||||||||||||||+||||||||||||.|||..|||+||||||
+T Consensus        86 vqalrqflwsfrlpgeaqkidrmmeafaqrycqcnngvfqstdtcyvlsfaiimlntslhnpnvkdkptverfiamnrgi  165 (192)
+T 4a4p_B           86 VQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCQCNNGVFQSTDTCYVLSFAIIMLNTSLHNPNVKDKPTVERFIAMNRGI  165 (192)
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  221 NEGGDLPEELLRNLYDSIRNEPFKIPE  247 (400)
+Q Consensus       221 n~G~dlp~ell~~ly~sik~ePfkiPe  247 (400)
+                      |.|||||||+|||||.||.||||||||
+T Consensus       166 ndggdlpeellrnlyesiknepfkipe  192 (192)
+T 4a4p_B          166 NDGGDLPEELLRNLYESIKNEPFKIPE  192 (192)
 Confidence            999999999999999999999999996
 
 
@@ -1925,14 +1925,14 @@ Confidence            99999999999999999999999999999999999997
 
 
 No 37
->1r8q_E mol:protein length:203 Arno
+>1r8q_F mol:protein length:203 Arno
 Probab=100.00  E-value=4.9e-105  Score=715.02  Aligned_cols=203  Identities=98%  Similarity=1.482  Sum_probs=202.0  Template_Neff=1.000
 
 Q 1R8M:E|PDBID|C   50 LEANEGSKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAF  129 (400)
 Q Consensus        50 ~~~~ee~k~~~r~kq~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aF  129 (400)
                       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 T Consensus         1 leanegsktlqrnrkmamgrkkfnmdpkkgiqflvenellqntpeeiarflykgeglnktaigdylgereelnlavlhaf   80 (203)
-T 1r8q_E            1 LEANEGSKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAF   80 (203)
+T 1r8q_F            1 LEANEGSKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAF   80 (203)
 Confidence            68999999999999999999999999999999999999999999999999999999999999999999999999999999
 
 
@@ -1940,7 +1940,7 @@ Q 1R8M:E|PDBID|C  130 VDLHEFTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYV
 Q Consensus       130 V~lHeF~dl~LVqALRQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~  209 (400)
                       ||||||||+|||||||||||||||||||||||||||||||||||||||||||||||||||+.||||||.|||||||||-|
 T Consensus        81 vdlheftdlnlvqalrqflwsfrlpgeaqkidrmmeafaqryclcnpgvfqstdtcyvlsysvimlntdlhnpnvrdkmg  160 (203)
-T 1r8q_E           81 VDLHEFTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSYSVIMLNTDLHNPNVRDKMG  160 (203)
+T 1r8q_F           81 VDLHEFTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSYSVIMLNTDLHNPNVRDKMG  160 (203)
 Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
 
 
@@ -1948,7 +1948,7 @@ Q 1R8M:E|PDBID|C  210 LERFVAMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGND  252 (400)
 Q Consensus       210 ~erfismnrgin~G~dlp~ell~~ly~sik~ePfkiPeDDGnd  252 (400)
                       ||||||||||||||||||||+||||||||||||||||||||||
 T Consensus       161 lerfvamnrgineggdlpeellrnlydsirnepfkipeddgnd  203 (203)
-T 1r8q_E          161 LERFVAMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGND  203 (203)
+T 1r8q_F          161 LERFVAMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGND  203 (203)
 Confidence            9999999999999999999999999999999999999999997
 
 
@@ -1981,14 +1981,14 @@ Confidence            9999999999999999999999999999999999999999997
 
 
 No 39
->1r8q_F mol:protein length:203 Arno
+>1r8q_E mol:protein length:203 Arno
 Probab=100.00  E-value=4.9e-105  Score=715.02  Aligned_cols=203  Identities=98%  Similarity=1.482  Sum_probs=202.0  Template_Neff=1.000
 
 Q 1R8M:E|PDBID|C   50 LEANEGSKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAF  129 (400)
 Q Consensus        50 ~~~~ee~k~~~r~kq~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aF  129 (400)
                       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 T Consensus         1 leanegsktlqrnrkmamgrkkfnmdpkkgiqflvenellqntpeeiarflykgeglnktaigdylgereelnlavlhaf   80 (203)
-T 1r8q_F            1 LEANEGSKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAF   80 (203)
+T 1r8q_E            1 LEANEGSKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAF   80 (203)
 Confidence            68999999999999999999999999999999999999999999999999999999999999999999999999999999
 
 
@@ -1996,7 +1996,7 @@ Q 1R8M:E|PDBID|C  130 VDLHEFTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYV
 Q Consensus       130 V~lHeF~dl~LVqALRQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~  209 (400)
                       ||||||||+|||||||||||||||||||||||||||||||||||||||||||||||||||+.||||||.|||||||||-|
 T Consensus        81 vdlheftdlnlvqalrqflwsfrlpgeaqkidrmmeafaqryclcnpgvfqstdtcyvlsysvimlntdlhnpnvrdkmg  160 (203)
-T 1r8q_F           81 VDLHEFTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSYSVIMLNTDLHNPNVRDKMG  160 (203)
+T 1r8q_E           81 VDLHEFTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSYSVIMLNTDLHNPNVRDKMG  160 (203)
 Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
 
 
@@ -2004,7 +2004,7 @@ Q 1R8M:E|PDBID|C  210 LERFVAMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGND  252 (400)
 Q Consensus       210 ~erfismnrgin~G~dlp~ell~~ly~sik~ePfkiPeDDGnd  252 (400)
                       ||||||||||||||||||||+||||||||||||||||||||||
 T Consensus       161 lerfvamnrgineggdlpeellrnlydsirnepfkipeddgnd  203 (203)
-T 1r8q_F          161 LERFVAMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGND  203 (203)
+T 1r8q_E          161 LERFVAMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGND  203 (203)
 Confidence            9999999999999999999999999999999999999999997
 
 
@@ -2413,26 +2413,6 @@ Confidence            9999999999999999999999999999999999999999999999987
 
 
 No 53
->1fgz_A mol:protein length:127 GRP1
-Probab=100.00  E-value=7.5e-72  Score=476.12  Aligned_cols=127  Identities=88%  Similarity=1.528  Sum_probs=125.4  Template_Neff=1.000
-
-Q 1R8M:E|PDBID|C  256 TFFNPDREGWLLKLGGGRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVDDPRKPNCFELYIPNNKGQLI  335 (400)
-Q Consensus       256 TffnPdreGwllK~Gggr~ktWkRRWfILtdnClyyFeyttdkePrGiIplenl~vrev~d~~kp~CfEly~~~~~~q~I  335 (400)
-                      ||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||-|||||||||||-|..|||.|
-T Consensus         1 tffnpdregwllklg-grvktwkrrwfiltdnclyyfeyttdkeprgiiplenlsirevldprkpncfelynpshkgqvi   79 (127)
-T 1fgz_A            1 TFFNPDREGWLLKLG-GRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVLDPRKPNCFELYNPSHKGQVI   79 (127)
-Confidence            799999999999996 6999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  336 KACKTEADGRVVEGNHMVYRISAPTQEEKDEWIKSIQAAVSVDPFYEM  383 (400)
-Q Consensus       336 KAcKtd~dGrVVEG~H~~YrisA~s~eEkdeWI~~I~asis~dPFYdm  383 (400)
-                      ||||||||||||||||.|||||||+.|||+||.|||.|.+|-||||+|
-T Consensus        80 kackteadgrvvegnhvvyrisapspeekeewmksikasisrdpfydm  127 (127)
-T 1fgz_A           80 KACKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASISRDPFYDM  127 (127)
-Confidence            999999999999999999999999999999999999999999999987
-
-
-No 54
 >1fgy_A mol:protein length:127 GRP1
 Probab=100.00  E-value=7.5e-72  Score=476.12  Aligned_cols=127  Identities=88%  Similarity=1.528  Sum_probs=125.4  Template_Neff=1.000
 
@@ -2452,27 +2432,27 @@ T 1fgy_A           80 KACKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASISRDPFYDM  127 (127
 Confidence            999999999999999999999999999999999999999999999987
 
 
+No 54
+>1fgz_A mol:protein length:127 GRP1
+Probab=100.00  E-value=7.5e-72  Score=476.12  Aligned_cols=127  Identities=88%  Similarity=1.528  Sum_probs=125.4  Template_Neff=1.000
+
+Q 1R8M:E|PDBID|C  256 TFFNPDREGWLLKLGGGRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVDDPRKPNCFELYIPNNKGQLI  335 (400)
+Q Consensus       256 TffnPdreGwllK~Gggr~ktWkRRWfILtdnClyyFeyttdkePrGiIplenl~vrev~d~~kp~CfEly~~~~~~q~I  335 (400)
+                      ||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||-|||||||||||-|..|||.|
+T Consensus         1 tffnpdregwllklg-grvktwkrrwfiltdnclyyfeyttdkeprgiiplenlsirevldprkpncfelynpshkgqvi   79 (127)
+T 1fgz_A            1 TFFNPDREGWLLKLG-GRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVLDPRKPNCFELYNPSHKGQVI   79 (127)
+Confidence            799999999999996 6999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  336 KACKTEADGRVVEGNHMVYRISAPTQEEKDEWIKSIQAAVSVDPFYEM  383 (400)
+Q Consensus       336 KAcKtd~dGrVVEG~H~~YrisA~s~eEkdeWI~~I~asis~dPFYdm  383 (400)
+                      ||||||||||||||||.|||||||+.|||+||.|||.|.+|-||||+|
+T Consensus        80 kackteadgrvvegnhvvyrisapspeekeewmksikasisrdpfydm  127 (127)
+T 1fgz_A           80 KACKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASISRDPFYDM  127 (127)
+Confidence            999999999999999999999999999999999999999999999987
+
+
 No 55
->1fhx_B mol:protein length:129 GUANINE NUCLEOTIDE EXCHANGE FACTOR AND INTEGR
-Probab=100.00  E-value=1.9e-71  Score=474.62  Aligned_cols=129  Identities=87%  Similarity=1.513  Sum_probs=126.4  Template_Neff=1.000
-
-Q 1R8M:E|PDBID|C  258 FNPDREGWLLKLGGGRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVDDPRKPNCFELYIPNNKGQLIKA  337 (400)
-Q Consensus       258 fnPdreGwllK~Gggr~ktWkRRWfILtdnClyyFeyttdkePrGiIplenl~vrev~d~~kp~CfEly~~~~~~q~IKA  337 (400)
-                      .|||||||||||| |||||||||||||||||||||||||||||||||||||||||||.|||||||||||-|..|||.|||
-T Consensus         1 mnpdregwllklg-grvktwkrrwfiltdnclyyfeyttdkeprgiiplenlsirevedprkpncfelynpshkgqvika   79 (129)
-T 1fhx_B            1 MNPDREGWLLKLG-GRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVEDPRKPNCFELYNPSHKGQVIKA   79 (129)
-Confidence            4899999999996 699999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  338 CKTEADGRVVEGNHMVYRISAPTQEEKDEWIKSIQAAVSVDPFYEMLAAR  387 (400)
-Q Consensus       338 cKtd~dGrVVEG~H~~YrisA~s~eEkdeWI~~I~asis~dPFYdmlaaR  387 (400)
-                      ||||||||||||||.|||||||+.|||+||.|||.|.+|-||||+|||.|
-T Consensus        80 ckteadgrvvegnhvvyrisapspeekeewmksikasisrdpfydmlatr  129 (129)
-T 1fhx_B           80 CKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASISRDPFYDMLATR  129 (129)
-Confidence            99999999999999999999999999999999999999999999999875
-
-
-No 56
 >1fhx_A mol:protein length:129 GUANINE NUCLEOTIDE EXCHANGE FACTOR AND INTEGR
 Probab=100.00  E-value=1.9e-71  Score=474.62  Aligned_cols=129  Identities=87%  Similarity=1.513  Sum_probs=126.4  Template_Neff=1.000
 
@@ -2492,27 +2472,7 @@ T 1fhx_A           80 CKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASISRDPFYDMLATR  129 (1
 Confidence            99999999999999999999999999999999999999999999999875
 
 
-No 57
->1fhw_A mol:protein length:129 GUANINE NUCLEOTIDE EXCHANGE FACTOR AND INTEGR
-Probab=100.00  E-value=1.9e-71  Score=474.62  Aligned_cols=129  Identities=87%  Similarity=1.513  Sum_probs=126.4  Template_Neff=1.000
-
-Q 1R8M:E|PDBID|C  258 FNPDREGWLLKLGGGRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVDDPRKPNCFELYIPNNKGQLIKA  337 (400)
-Q Consensus       258 fnPdreGwllK~Gggr~ktWkRRWfILtdnClyyFeyttdkePrGiIplenl~vrev~d~~kp~CfEly~~~~~~q~IKA  337 (400)
-                      .|||||||||||| |||||||||||||||||||||||||||||||||||||||||||.|||||||||||-|..|||.|||
-T Consensus         1 mnpdregwllklg-grvktwkrrwfiltdnclyyfeyttdkeprgiiplenlsirevedprkpncfelynpshkgqvika   79 (129)
-T 1fhw_A            1 MNPDREGWLLKLG-GRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVEDPRKPNCFELYNPSHKGQVIKA   79 (129)
-Confidence            4899999999996 699999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  338 CKTEADGRVVEGNHMVYRISAPTQEEKDEWIKSIQAAVSVDPFYEMLAAR  387 (400)
-Q Consensus       338 cKtd~dGrVVEG~H~~YrisA~s~eEkdeWI~~I~asis~dPFYdmlaaR  387 (400)
-                      ||||||||||||||.|||||||+.|||+||.|||.|.+|-||||+|||.|
-T Consensus        80 ckteadgrvvegnhvvyrisapspeekeewmksikasisrdpfydmlatr  129 (129)
-T 1fhw_A           80 CKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASISRDPFYDMLATR  129 (129)
-Confidence            99999999999999999999999999999999999999999999999875
-
-
-No 58
+No 56
 >1fhw_B mol:protein length:129 GUANINE NUCLEOTIDE EXCHANGE FACTOR AND INTEGR
 Probab=100.00  E-value=1.9e-71  Score=474.62  Aligned_cols=129  Identities=87%  Similarity=1.513  Sum_probs=126.4  Template_Neff=1.000
 
@@ -2529,6 +2489,46 @@ Q Consensus       338 cKtd~dGrVVEG~H~~YrisA~s~eEkdeWI~~I~asis~dPFYdmlaaR  387 (4
                       ||||||||||||||.|||||||+.|||+||.|||.|.+|-||||+|||.|
 T Consensus        80 ckteadgrvvegnhvvyrisapspeekeewmksikasisrdpfydmlatr  129 (129)
 T 1fhw_B           80 CKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASISRDPFYDMLATR  129 (129)
+Confidence            99999999999999999999999999999999999999999999999875
+
+
+No 57
+>1fhx_B mol:protein length:129 GUANINE NUCLEOTIDE EXCHANGE FACTOR AND INTEGR
+Probab=100.00  E-value=1.9e-71  Score=474.62  Aligned_cols=129  Identities=87%  Similarity=1.513  Sum_probs=126.4  Template_Neff=1.000
+
+Q 1R8M:E|PDBID|C  258 FNPDREGWLLKLGGGRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVDDPRKPNCFELYIPNNKGQLIKA  337 (400)
+Q Consensus       258 fnPdreGwllK~Gggr~ktWkRRWfILtdnClyyFeyttdkePrGiIplenl~vrev~d~~kp~CfEly~~~~~~q~IKA  337 (400)
+                      .|||||||||||| |||||||||||||||||||||||||||||||||||||||||||.|||||||||||-|..|||.|||
+T Consensus         1 mnpdregwllklg-grvktwkrrwfiltdnclyyfeyttdkeprgiiplenlsirevedprkpncfelynpshkgqvika   79 (129)
+T 1fhx_B            1 MNPDREGWLLKLG-GRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVEDPRKPNCFELYNPSHKGQVIKA   79 (129)
+Confidence            4899999999996 699999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  338 CKTEADGRVVEGNHMVYRISAPTQEEKDEWIKSIQAAVSVDPFYEMLAAR  387 (400)
+Q Consensus       338 cKtd~dGrVVEG~H~~YrisA~s~eEkdeWI~~I~asis~dPFYdmlaaR  387 (400)
+                      ||||||||||||||.|||||||+.|||+||.|||.|.+|-||||+|||.|
+T Consensus        80 ckteadgrvvegnhvvyrisapspeekeewmksikasisrdpfydmlatr  129 (129)
+T 1fhx_B           80 CKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASISRDPFYDMLATR  129 (129)
+Confidence            99999999999999999999999999999999999999999999999875
+
+
+No 58
+>1fhw_A mol:protein length:129 GUANINE NUCLEOTIDE EXCHANGE FACTOR AND INTEGR
+Probab=100.00  E-value=1.9e-71  Score=474.62  Aligned_cols=129  Identities=87%  Similarity=1.513  Sum_probs=126.4  Template_Neff=1.000
+
+Q 1R8M:E|PDBID|C  258 FNPDREGWLLKLGGGRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVDDPRKPNCFELYIPNNKGQLIKA  337 (400)
+Q Consensus       258 fnPdreGwllK~Gggr~ktWkRRWfILtdnClyyFeyttdkePrGiIplenl~vrev~d~~kp~CfEly~~~~~~q~IKA  337 (400)
+                      .|||||||||||| |||||||||||||||||||||||||||||||||||||||||||.|||||||||||-|..|||.|||
+T Consensus         1 mnpdregwllklg-grvktwkrrwfiltdnclyyfeyttdkeprgiiplenlsirevedprkpncfelynpshkgqvika   79 (129)
+T 1fhw_A            1 MNPDREGWLLKLG-GRVKTWKRRWFILTDNCLYYFEYTTDKEPRGIIPLENLSIREVEDPRKPNCFELYNPSHKGQVIKA   79 (129)
+Confidence            4899999999996 699999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  338 CKTEADGRVVEGNHMVYRISAPTQEEKDEWIKSIQAAVSVDPFYEMLAAR  387 (400)
+Q Consensus       338 cKtd~dGrVVEG~H~~YrisA~s~eEkdeWI~~I~asis~dPFYdmlaaR  387 (400)
+                      ||||||||||||||.|||||||+.|||+||.|||.|.+|-||||+|||.|
+T Consensus        80 ckteadgrvvegnhvvyrisapspeekeewmksikasisrdpfydmlatr  129 (129)
+T 1fhw_A           80 CKTEADGRVVEGNHVVYRISAPSPEEKEEWMKSIKASISRDPFYDMLATR  129 (129)
 Confidence            99999999999999999999999999999999999999999999999875
 
 
@@ -4385,34 +4385,6 @@ Confidence            999999999999999999999987766653
 
 
 No 120
->4oiy_A mol:protein length:191 Protein transport protein SEC7
-Probab=100.00  E-value=3.8e-40  Score=297.12  Aligned_cols=172  Identities=49%  Similarity=0.888  Sum_probs=165.7  Template_Neff=1.000
-
-Q 1R8M:E|PDBID|C   70 KKFNMDPKKGIQFLVENELLQ-NTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHEFTDLNLVQALRQFL  148 (400)
-Q Consensus        70 KKFNMdpkKGI~yLie~~LL~-~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHeF~dl~LVqALRQFL  148 (400)
-                      .-||-.|||.|..|+....|. .+|-.||.+|...|||.-.|+||||||...-|.|++|||||-..||...+|.|||.||
-T Consensus        17 aifnnkpkkaipvlikkgflkddspisiakwlletegldmaavgdylgegddkniaimhafvdefdftgmsivdalrsfl   96 (191)
-T 4oiy_A           17 AIFNNKPKKAIPVLIKKGFLKDDSPISIAKWLLETEGLDMAAVGDYLGEGDDKNIAIMHAFVDEFDFTGMSIVDALRSFL   96 (191)
-Confidence            468999999999999888765 5789999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  149 WSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFVAMNRGINEGGDLPE  228 (400)
-Q Consensus       149 WSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~~erfismnrgin~G~dlp~  228 (400)
-                      .|||||||.|||||.|-.||.|+.--|||||...||.||||+..|||||.||...+..|-.|..|..-|.||..|.|||.
-T Consensus        97 qsfrlpgegqkidrfmlkfaerfvdqnpgvfskadtayvlsyslimlntdlhssqiknkmslqeflennegidngrdlpr  176 (191)
-T 4oiy_A           97 QSFRLPGEGQKIDRFMLKFAERFVDQNPGVFSKADTAYVLSYSLIMLNTDLHSSQIKNKMSLQEFLENNEGIDNGRDLPR  176 (191)
-Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  229 ELLRNLYDSIRNE  241 (400)
-Q Consensus       229 ell~~ly~sik~e  241 (400)
-                      +.|.-|+..|.|.
-T Consensus       177 dfleglfneiann  189 (191)
-T 4oiy_A          177 DFLEGLFNEIANN  189 (191)
-Confidence            9999999888764
-
-
-No 121
 >4oiy_B mol:protein length:191 Protein transport protein SEC7
 Probab=100.00  E-value=3.8e-40  Score=297.12  Aligned_cols=172  Identities=49%  Similarity=0.888  Sum_probs=165.7  Template_Neff=1.000
 
@@ -4437,6 +4409,34 @@ Q Consensus       229 ell~~ly~sik~e  241 (400)
                       +.|.-|+..|.|.
 T Consensus       177 dfleglfneiann  189 (191)
 T 4oiy_B          177 DFLEGLFNEIANN  189 (191)
+Confidence            9999999888764
+
+
+No 121
+>4oiy_A mol:protein length:191 Protein transport protein SEC7
+Probab=100.00  E-value=3.8e-40  Score=297.12  Aligned_cols=172  Identities=49%  Similarity=0.888  Sum_probs=165.7  Template_Neff=1.000
+
+Q 1R8M:E|PDBID|C   70 KKFNMDPKKGIQFLVENELLQ-NTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHEFTDLNLVQALRQFL  148 (400)
+Q Consensus        70 KKFNMdpkKGI~yLie~~LL~-~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHeF~dl~LVqALRQFL  148 (400)
+                      .-||-.|||.|..|+....|. .+|-.||.+|...|||.-.|+||||||...-|.|++|||||-..||...+|.|||.||
+T Consensus        17 aifnnkpkkaipvlikkgflkddspisiakwlletegldmaavgdylgegddkniaimhafvdefdftgmsivdalrsfl   96 (191)
+T 4oiy_A           17 AIFNNKPKKAIPVLIKKGFLKDDSPISIAKWLLETEGLDMAAVGDYLGEGDDKNIAIMHAFVDEFDFTGMSIVDALRSFL   96 (191)
+Confidence            468999999999999888765 5789999999999999999999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  149 WSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFVAMNRGINEGGDLPE  228 (400)
+Q Consensus       149 WSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~~erfismnrgin~G~dlp~  228 (400)
+                      .|||||||.|||||.|-.||.|+.--|||||...||.||||+..|||||.||...+..|-.|..|..-|.||..|.|||.
+T Consensus        97 qsfrlpgegqkidrfmlkfaerfvdqnpgvfskadtayvlsyslimlntdlhssqiknkmslqeflennegidngrdlpr  176 (191)
+T 4oiy_A           97 QSFRLPGEGQKIDRFMLKFAERFVDQNPGVFSKADTAYVLSYSLIMLNTDLHSSQIKNKMSLQEFLENNEGIDNGRDLPR  176 (191)
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  229 ELLRNLYDSIRNE  241 (400)
+Q Consensus       229 ell~~ly~sik~e  241 (400)
+                      +.|.-|+..|.|.
+T Consensus       177 dfleglfneiann  189 (191)
+T 4oiy_A          177 DFLEGLFNEIANN  189 (191)
 Confidence            9999999888764
 
 
@@ -6109,34 +6109,6 @@ Confidence            9999999999999999999999999999999999988876443
 
 
 No 183
->4c0a_A mol:protein length:383 IQ MOTIF AND SEC7 DOMAIN-CONTAINING PROTEIN 1
-Probab=99.95  E-value=6.3e-33  Score=268.22  Aligned_cols=197  Identities=42%  Similarity=0.823  Sum_probs=184.3  Template_Neff=1.000
-
-Q 1R8M:E|PDBID|C   56 SKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGERE-ELNLAVLHAFVDLHE  134 (400)
-Q Consensus        56 ~k~~~r~kq~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~-~fN~~VL~aFV~lHe  134 (400)
-                      |...-|.|....|-.-||-.|.||+|+|+|......||--+|.||....||....||.+||.|. ..|-.||...||--.
-T Consensus        17 sndvirkrhyriglnlfnkkpekgvqyliergfvpdtpvgvahfllqrkglsrqmigeflgnrqkqfnrdvldcvvdemd   96 (383)
-T 4c0a_A           17 SNDVIRKRHYRIGLNLFNKKPEKGVQYLIERGFVPDTPVGVAHFLLQRKGLSRQMIGEFLGNRQKQFNRDVLDCVVDEMD   96 (383)
-Confidence            4456677888899999999999999999999999999999999999999999999999999986 589999999999999
-
-
-Q 1R8M:E|PDBID|C  135 FTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGV---FQSTDTCYVLSFAVIMLNTSLHNPNVRD--KPG  209 (400)
-Q Consensus       135 F~dl~LVqALRQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNpgv---F~stdtcyvlsfaiimlntsLhnp~Vkd--kp~  209 (400)
-                      |+...|-.|||.|-...|..|.|||++|++|||.||||.|||||   |...||.++|+||+|+|||....|||..  |-.
-T Consensus        97 fstmeldealrkfqahirvqgkaqkverlieafsqrycicnpgvvrqfrnpdtifilafaiillntdmyspnvkperkmk  176 (383)
-T 4c0a_A           97 FSTMELDEALRKFQAHIRVQGKAQKVERLIEAFSQRYCICNPGVVRQFRNPDTIFILAFAIILLNTDMYSPNVKPERKMK  176 (383)
-Confidence            99999999999999999999999999999999999999999998   6789999999999999999999999964  567
-
-
-Q 1R8M:E|PDBID|C  210 LERFVAMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGND  252 (400)
-Q Consensus       210 ~erfismnrgin~G~dlp~ell~~ly~sik~ePfkiPeDDGnd  252 (400)
-                      ||.|+.--||+..|.|+|.|.|-.+|..||....|..||.-..
-T Consensus       177 ledfiknlrgvddgedipremlmgiyerirkrelktnedhvsq  219 (383)
-T 4c0a_A          177 LEDFIKNLRGVDDGEDIPREMLMGIYERIRKRELKTNEDHVSQ  219 (383)
-Confidence            9999999999999999999999999999999999988876443
-
-
-No 184
 >4c0a_B mol:protein length:383 IQ MOTIF AND SEC7 DOMAIN-CONTAINING PROTEIN 1
 Probab=99.95  E-value=6.3e-33  Score=268.22  Aligned_cols=197  Identities=42%  Similarity=0.823  Sum_probs=184.3  Template_Neff=1.000
 
@@ -6164,7 +6136,7 @@ T 4c0a_B          177 LEDFIKNLRGVDDGEDIPREMLMGIYERIRKRELKTNEDHVSQ  219 (383)
 Confidence            9999999999999999999999999999999999988876443
 
 
-No 185
+No 184
 >4c0a_E mol:protein length:383 IQ MOTIF AND SEC7 DOMAIN-CONTAINING PROTEIN 1
 Probab=99.95  E-value=6.3e-33  Score=268.22  Aligned_cols=197  Identities=42%  Similarity=0.823  Sum_probs=184.3  Template_Neff=1.000
 
@@ -6189,6 +6161,34 @@ Q Consensus       210 ~erfismnrgin~G~dlp~ell~~ly~sik~ePfkiPeDDGnd  252 (400)
                       ||.|+.--||+..|.|+|.|.|-.+|..||....|..||.-..
 T Consensus       177 ledfiknlrgvddgedipremlmgiyerirkrelktnedhvsq  219 (383)
 T 4c0a_E          177 LEDFIKNLRGVDDGEDIPREMLMGIYERIRKRELKTNEDHVSQ  219 (383)
+Confidence            9999999999999999999999999999999999988876443
+
+
+No 185
+>4c0a_A mol:protein length:383 IQ MOTIF AND SEC7 DOMAIN-CONTAINING PROTEIN 1
+Probab=99.95  E-value=6.3e-33  Score=268.22  Aligned_cols=197  Identities=42%  Similarity=0.823  Sum_probs=184.3  Template_Neff=1.000
+
+Q 1R8M:E|PDBID|C   56 SKTLQRNRKMAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGERE-ELNLAVLHAFVDLHE  134 (400)
+Q Consensus        56 ~k~~~r~kq~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~-~fN~~VL~aFV~lHe  134 (400)
+                      |...-|.|....|-.-||-.|.||+|+|+|......||--+|.||....||....||.+||.|. ..|-.||...||--.
+T Consensus        17 sndvirkrhyriglnlfnkkpekgvqyliergfvpdtpvgvahfllqrkglsrqmigeflgnrqkqfnrdvldcvvdemd   96 (383)
+T 4c0a_A           17 SNDVIRKRHYRIGLNLFNKKPEKGVQYLIERGFVPDTPVGVAHFLLQRKGLSRQMIGEFLGNRQKQFNRDVLDCVVDEMD   96 (383)
+Confidence            4456677888899999999999999999999999999999999999999999999999999986 589999999999999
+
+
+Q 1R8M:E|PDBID|C  135 FTDLNLVQALRQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNPGV---FQSTDTCYVLSFAVIMLNTSLHNPNVRD--KPG  209 (400)
+Q Consensus       135 F~dl~LVqALRQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNpgv---F~stdtcyvlsfaiimlntsLhnp~Vkd--kp~  209 (400)
+                      |+...|-.|||.|-...|..|.|||++|++|||.||||.|||||   |...||.++|+||+|+|||....|||..  |-.
+T Consensus        97 fstmeldealrkfqahirvqgkaqkverlieafsqrycicnpgvvrqfrnpdtifilafaiillntdmyspnvkperkmk  176 (383)
+T 4c0a_A           97 FSTMELDEALRKFQAHIRVQGKAQKVERLIEAFSQRYCICNPGVVRQFRNPDTIFILAFAIILLNTDMYSPNVKPERKMK  176 (383)
+Confidence            99999999999999999999999999999999999999999998   6789999999999999999999999964  567
+
+
+Q 1R8M:E|PDBID|C  210 LERFVAMNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDDGND  252 (400)
+Q Consensus       210 ~erfismnrgin~G~dlp~ell~~ly~sik~ePfkiPeDDGnd  252 (400)
+                      ||.|+.--||+..|.|+|.|.|-.+|..||....|..||.-..
+T Consensus       177 ledfiknlrgvddgedipremlmgiyerirkrelktnedhvsq  219 (383)
+T 4c0a_A          177 LEDFIKNLRGVDDGEDIPREMLMGIYERIRKRELKTNEDHVSQ  219 (383)
 Confidence            9999999999999999999999999999999999988876443
 
 
@@ -8153,34 +8153,6 @@ Confidence            99999999999999999999999999999987666544433322  223455667778
 
 
 No 258
->1xsz_A mol:protein length:356 guanine nucleotide exchange protein
-Probab=99.86  E-value=8.8e-26  Score=218.35  Aligned_cols=192  Identities=41%  Similarity=0.698  Sum_probs=164.1  Template_Neff=1.000
-
-Q 1R8M:E|PDBID|C   71 KFNMDPKKGIQFLVEN-ELLQ-NTPEEIARFLYK-GEGLNKTAIGDYLGEREELNLAVLHAFVDLHEFTDLNLVQALRQF  147 (400)
-Q Consensus        71 KFNMdpkKGI~yLie~-~LL~-~~~ediA~FLyK-gEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHeF~dl~LVqALRQF  147 (400)
-                      .||..||.||.-+-|- |-.. ..-||||.|... ...|.-.|+||||...|.-|..||.||..--.|.....|..||.|
-T Consensus        17 afnakpknginkikeiceqykispneeiaeffhqqrknldleavgdylsspeaenqqvlkaftsqmnfngqsfveglrtf   96 (356)
-T 1xsz_A           17 AFNAKPKNGINKIKEICEQYKISPNEEIAEFFHQQRKNLDLEAVGDYLSSPEAENQQVLKAFTSQMNFNGQSFVEGLRTF   96 (356)
-Confidence            4788899888665432 1122 334889998764 456888999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  148 LWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPG--LERFVAMNRGINEGGD  225 (400)
-Q Consensus       148 LWSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~--~erfismnrgin~G~d  225 (400)
-                      |-.|.||||||||||+...|.-.|..-||.|....|..|.|.|-.|||||.||||.+..|..  ..-.-.--||-|.|||
-T Consensus        97 lktfklpgeaqkidrlvqsfsgayfqqnpdvvsnadaayllafqtimlntdlhnpsipeknkmtvdglkrnlrggnnggd  176 (356)
-T 1xsz_A           97 LKTFKLPGEAQKIDRLVQSFSGAYFQQNPDVVSNADAAYLLAFQTIMLNTDLHNPSIPEKNKMTVDGLKRNLRGGNNGGD  176 (356)
-Confidence            99999999999999999999999999999999999999999999999999999999876642  1222234589999999
-
-
-Q 1R8M:E|PDBID|C  226 LPEELLRNLYDSIRNEPFKIP---EDDGNDLTHTFFNPDR  262 (400)
-Q Consensus       226 lp~ell~~ly~sik~ePfkiP---eDDGndlthTffnPdr  262 (400)
-                      .....|..||..|...||.+.   ...|-.||.|-.|.|.
-T Consensus       177 fdakfleelyseikakpfelnfvktspgyeltsttlnkds  216 (356)
-T 1xsz_A          177 FDAKFLEELYSEIKAKPFELNFVKTSPGYELTSTTLNKDS  216 (356)
-Confidence            999999999999999999864   4678888888887764
-
-
-No 259
 >1xsz_B mol:protein length:356 guanine nucleotide exchange protein
 Probab=99.86  E-value=8.8e-26  Score=218.35  Aligned_cols=192  Identities=41%  Similarity=0.698  Sum_probs=164.1  Template_Neff=1.000
 
@@ -8205,6 +8177,34 @@ Q Consensus       226 lp~ell~~ly~sik~ePfkiP---eDDGndlthTffnPdr  262 (400)
                       .....|..||..|...||.+.   ...|-.||.|-.|.|.
 T Consensus       177 fdakfleelyseikakpfelnfvktspgyeltsttlnkds  216 (356)
 T 1xsz_B          177 FDAKFLEELYSEIKAKPFELNFVKTSPGYELTSTTLNKDS  216 (356)
+Confidence            999999999999999999864   4678888888887764
+
+
+No 259
+>1xsz_A mol:protein length:356 guanine nucleotide exchange protein
+Probab=99.86  E-value=8.8e-26  Score=218.35  Aligned_cols=192  Identities=41%  Similarity=0.698  Sum_probs=164.1  Template_Neff=1.000
+
+Q 1R8M:E|PDBID|C   71 KFNMDPKKGIQFLVEN-ELLQ-NTPEEIARFLYK-GEGLNKTAIGDYLGEREELNLAVLHAFVDLHEFTDLNLVQALRQF  147 (400)
+Q Consensus        71 KFNMdpkKGI~yLie~-~LL~-~~~ediA~FLyK-gEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHeF~dl~LVqALRQF  147 (400)
+                      .||..||.||.-+-|- |-.. ..-||||.|... ...|.-.|+||||...|.-|..||.||..--.|.....|..||.|
+T Consensus        17 afnakpknginkikeiceqykispneeiaeffhqqrknldleavgdylsspeaenqqvlkaftsqmnfngqsfveglrtf   96 (356)
+T 1xsz_A           17 AFNAKPKNGINKIKEICEQYKISPNEEIAEFFHQQRKNLDLEAVGDYLSSPEAENQQVLKAFTSQMNFNGQSFVEGLRTF   96 (356)
+Confidence            4788899888665432 1122 334889998764 456888999999999999999999999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  148 LWSFRLPGEAQKIDRMMEAFAQRYCLCNPGVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPG--LERFVAMNRGINEGGD  225 (400)
+Q Consensus       148 LWSFRLPGEAQKIDRMMEaFA~RYC~cNpgvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~--~erfismnrgin~G~d  225 (400)
+                      |-.|.||||||||||+...|.-.|..-||.|....|..|.|.|-.|||||.||||.+..|..  ..-.-.--||-|.|||
+T Consensus        97 lktfklpgeaqkidrlvqsfsgayfqqnpdvvsnadaayllafqtimlntdlhnpsipeknkmtvdglkrnlrggnnggd  176 (356)
+T 1xsz_A           97 LKTFKLPGEAQKIDRLVQSFSGAYFQQNPDVVSNADAAYLLAFQTIMLNTDLHNPSIPEKNKMTVDGLKRNLRGGNNGGD  176 (356)
+Confidence            99999999999999999999999999999999999999999999999999999999876642  1222234589999999
+
+
+Q 1R8M:E|PDBID|C  226 LPEELLRNLYDSIRNEPFKIP---EDDGNDLTHTFFNPDR  262 (400)
+Q Consensus       226 lp~ell~~ly~sik~ePfkiP---eDDGndlthTffnPdr  262 (400)
+                      .....|..||..|...||.+.   ...|-.||.|-.|.|.
+T Consensus       177 fdakfleelyseikakpfelnfvktspgyeltsttlnkds  216 (356)
+T 1xsz_A          177 FDAKFLEELYSEIKAKPFELNFVKTSPGYELTSTTLNKDS  216 (356)
 Confidence            999999999999999999864   4678888888887764
 
 
@@ -9821,34 +9821,6 @@ Confidence            999999999999999999999999887644
 
 
 No 319
->tr|A0A085LRV4|A0A085LRV4_9BILA Uncharacterized protein OS=Trichuris suis GN=M513_11433 PE=4 SV=1
-Probab=99.73  E-value=2.2e-21  Score=208.97  Aligned_cols=183  Identities=47%  Similarity=0.859  Sum_probs=174.0  Template_Neff=1.000
-
-Q 1R8M:E|PDBID|C   65 MAMGRKKFNMDPKKGIQFLVENELLQNTPEEIARFLYKGEGLNKTAIGDYLGEREELNLAVLHAFVDLHEFTDLNLVQAL  144 (400)
-Q Consensus        65 ~~~GrKKFNMdpkKGI~yLie~~LL~~~~ediA~FLyKgEGLNKTaIGdyLGEr~~fN~~VL~aFV~lHeF~dl~LVqAL  144 (400)
-                      ..-|-.-||-.||.|+-||-...|...+..+||-||.+...|...|+|||||.....--.|+..+||--.|..-..|.||
-T Consensus       629 leqgielfnrkpkqglvflqkqhlvgssaadiayflhredrldraavgdylgdgdsyckevmysyvdqidfsgkdfvsal  708 (2114)
-T tr|A0A085LRV4|  629 LEQGIELFNRKPKQGLVFLQKQHLVGSSAADIAYFLHREDRLDRAAVGDYLGDGDSYCKEVMYSYVDQIDFSGKDFVSAL  708 (2114)
-Confidence            34566789999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  145 RQFLWSFRLPGEAQKIDRMMEAFAQRYCLCNP--GVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFVAMNRGINE  222 (400)
-Q Consensus       145 RQFLWSFRLPGEAQKIDRMMEaFA~RYC~cNp--gvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~~erfismnrgin~  222 (400)
-                      |-||-.||||||||||||+||.||.|||--||  |.|.|.||.|||.+.+|||.|.||.|.||.|-.-|.++.||||||.
-T Consensus       709 rcflegfrlpgeaqkidrlmekfasrycennpnlglftsadtayvlaysiimlttdlhspqvrnkmtkeqyirmnrgind  788 (2114)
-T tr|A0A085LRV4|  709 RCFLEGFRLPGEAQKIDRLMEKFASRYCENNPNLGLFTSADTAYVLAYSIIMLTTDLHSPQVRNKMTKEQYIRMNRGIND  788 (2114)
-Confidence            99999999999999999999999999999988  7899999999999999999999999999999999999999999999
-
-
-Q 1R8M:E|PDBID|C  223 GGDLPEELLRNLYDSIRNEPFKIPE  247 (400)
-Q Consensus       223 G~dlp~ell~~ly~sik~ePfkiPe  247 (400)
-                      .|||||..|..+||.|.....|...
-T Consensus       789 sgdlpeqylsdiydeiagneikmkq  813 (2114)
-T tr|A0A085LRV4|  789 SGDLPEQYLSDIYDEIAGNEIKMKQ  813 (2114)
-Confidence            9999999999999999876666543
-
-
-No 320
 >tr|F2UAX7|F2UAX7_SALR5 Putative uncharacterized protein OS=Salpingoeca rosetta (strain ATCC 50818 / BSB-021) GN=PTSG_05249 PE=4 SV=1
 Probab=99.72  E-value=2.6e-21  Score=207.88  Aligned_cols=204  Identities=38%  Similarity=0.620  Sum_probs=172.4  Template_Neff=1.000
 
@@ -9876,7 +9848,7 @@ T tr|F2UAX7|F2UA  706 HSPKVVRKMTVDDFVRNLRGANDKENFPRPFLERIFKNVSSNEIVLPEEHEG  757 
 Confidence            9999999999999999999999999999999999998887777777776543
 
 
-No 321
+No 320
 >tr|A0A096P929|A0A096P929_OSTTA SEC7-like, alpha orthogonal bundle OS=Ostreococcus tauri GN=OT_ostta17g00330 PE=4 SV=1
 Probab=99.72  E-value=2.9e-21  Score=206.19  Aligned_cols=140  Identities=41%  Similarity=0.740  Sum_probs=124.4  Template_Neff=1.000
 
@@ -9896,7 +9868,7 @@ T tr|A0A096P929|  679 YILAFAIVMLNTDAHNPLTEEAMKMSEQDFVLMVTAAEAASEVDAEKIAAIYKRVCAK
 Confidence            999999999999999997654  445567999988877777888888888887765544443
 
 
-No 322
+No 321
 >tr|A0A0A1NGE1|A0A0A1NGE1_9FUNG Uncharacterized protein OS=Rhizopus microsporus GN=RMCBS344292_12600 PE=4 SV=1
 Probab=99.72  E-value=2.9e-21  Score=194.11  Aligned_cols=181  Identities=35%  Similarity=0.715  Sum_probs=160.4  Template_Neff=1.000
 
@@ -9924,7 +9896,7 @@ T tr|A0A0A1NGE1|  192 MNDNKDFPKEYLTAMYEAIQKDEILMPDEH  221 (541)
 Confidence            999999999999999999988777666543
 
 
-No 323
+No 322
 >tr|A0A0N4Z801|A0A0N4Z801_PARTI Uncharacterized protein OS=Parastrongyloides trichosuri PE=4 SV=1
 Probab=99.72  E-value=2.4e-21  Score=205.26  Aligned_cols=221  Identities=30%  Similarity=0.525  Sum_probs=179.1  Template_Neff=3.562
 
@@ -9960,7 +9932,7 @@ T tr|A0A0N4Z801|  512 MVLYLHKDEDGFKRGRYETFNN  533 (745)
 Confidence            6677665444444444444444
 
 
-No 324
+No 323
 >tr|A0A0B2V902|A0A0B2V902_TOXCA Golgi-specific brefeldin A-resistance guanine nucleotide exchange factor 1 OS=Toxocara canis GN=GBF1 PE=3 SV=1
 Probab=99.72  E-value=4.2e-21  Score=200.93  Aligned_cols=184  Identities=40%  Similarity=0.682  Sum_probs=167.6  Template_Neff=1.000
 
@@ -9988,7 +9960,7 @@ T tr|A0A0B2V902|  907 GTNGGQDFDSDMLEQMFHAIRTEEIVMPAEQ  937 (1049)
 Confidence            9999999999999999999999998888654
 
 
-No 325
+No 324
 >tr|B7F2T8|B7F2T8_ORYSJ Os04g0117300 protein OS=Oryza sativa subsp. japonica GN=Os04g0117300 PE=2 SV=1
 Probab=99.71  E-value=5.5e-21  Score=195.06  Aligned_cols=151  Identities=43%  Similarity=0.758  Sum_probs=133.5  Template_Neff=1.000
 
@@ -10008,7 +9980,7 @@ T tr|B7F2T8|B7F2  593 ILDTALRTYLETFRLPGESQKIQRILEAFSERFYEQQTAEVFATKDAAFILCYSLIML
 Confidence            99999999999999999999999999999999654 45679999999999999999999999999987666653
 
 
-No 326
+No 325
 >tr|A0A0Q3XYD8|A0A0Q3XYD8_ALLMI Uncharacterized protein OS=Alligator mississippiensis GN=Y1Q_030771 PE=4 SV=1
 Probab=99.71  E-value=5.2e-21  Score=202.35  Aligned_cols=274  Identities=35%  Similarity=0.610  Sum_probs=209.8  Template_Neff=1.843
 
@@ -10052,7 +10024,7 @@ T tr|A0A0Q3XYD8|  767 LSWILRINLVAAIFSAPAFPAAICSMK  793 (925)
 Confidence            99998764   3445566665555444
 
 
-No 327
+No 326
 >tr|W7U6C9|W7U6C9_9STRA Brefeldin a-inhibited guanine nucleotide-exchange OS=Nannochloropsis gaditana GN=Naga_100004g62 PE=4 SV=1
 Probab=99.71  E-value=6e-21  Score=206.15  Aligned_cols=171  Identities=43%  Similarity=0.710  Sum_probs=141.7  Template_Neff=1.000
 
@@ -10080,7 +10052,7 @@ T tr|W7U6C9|W7U6 1480 NLRGVDESPDLTREYLSEIYESISHHPIEMN 1510 (2254)
 Confidence            8999999999999999999999999987653
 
 
-No 328
+No 327
 >tr|A0A0L0DG83|A0A0L0DG83_THETB DNA helicase OS=Thecamonas trahens ATCC 50062 GN=AMSG_11980 PE=3 SV=1
 Probab=99.70  E-value=7.4e-21  Score=207.96  Aligned_cols=186  Identities=38%  Similarity=0.662  Sum_probs=169.9  Template_Neff=1.000
 
@@ -10108,7 +10080,7 @@ T tr|A0A0L0DG83| 1802 AGVNNGSDFPEAFVADIYDSISSREIMLEAKD 1833 (3503)
 Confidence            99999999999999999999987665554433
 
 
-No 329
+No 328
 >tr|A4S8W1|A4S8W1_OSTLU Uncharacterized protein OS=Ostreococcus lucimarinus (strain CCE9901) GN=OSTLU_27987 PE=4 SV=1
 Probab=99.70  E-value=7.6e-21  Score=199.75  Aligned_cols=177  Identities=38%  Similarity=0.655  Sum_probs=148.5  Template_Neff=1.000
 
@@ -10136,7 +10108,7 @@ T tr|A4S8W1|A4S8  542 DLDVEAVAAIYARVTAEEIKMHA  564 (1125)
 Confidence            99999999999988887777643
 
 
-No 330
+No 329
 >tr|A2FKK9|A2FKK9_TRIVA Sec7 domain containing protein OS=Trichomonas vaginalis GN=TVAG_300780 PE=4 SV=1
 Probab=99.70  E-value=8.7e-21  Score=184.65  Aligned_cols=240  Identities=33%  Similarity=0.597  Sum_probs=188.5  Template_Neff=1.000
 
@@ -10172,7 +10144,7 @@ T tr|A2FKK9|A2FK  258 IQLTDVQITEHD-PEK  272 (357)
 Confidence            999999998865 444
 
 
-No 331
+No 330
 >tr|A0A0R3WL57|A0A0R3WL57_HYDTA Uncharacterized protein OS=Hydatigena taeniaeformis PE=4 SV=1
 Probab=99.69  E-value=1.4e-20  Score=198.26  Aligned_cols=306  Identities=30%  Similarity=0.485  Sum_probs=227.5  Template_Neff=1.475
 
@@ -10216,7 +10188,7 @@ T tr|A0A0R3WL57|  808 SSTSAKRGSSLKSNSEPSRG-TPVISFNAKTQSDKLRLLEDIQECIT  853 (963)
 Confidence                         1112222 23566778899999999999998763
 
 
-No 332
+No 331
 >tr|A0A0R4ISB1|A0A0R4ISB1_DANRE Uncharacterized protein OS=Danio rerio GN=psd3l PE=4 SV=1
 Probab=99.69  E-value=1.8e-20  Score=197.12  Aligned_cols=277  Identities=34%  Similarity=0.616  Sum_probs=211.1  Template_Neff=1.192
 
@@ -10260,7 +10232,7 @@ T tr|A0A0R4ISB1|  880 EMESWIRIINSVAAMFSAPSFPAAIGSQKK  909 (1038)
 Confidence            999998755   455666666555544443
 
 
-No 333
+No 332
 >tr|B5VHB4|B5VHB4_YEAS6 YEL022Wp-like protein (Fragment) OS=Saccharomyces cerevisiae (strain AWRI1631) GN=AWRI1631_50480 PE=4 SV=1
 Probab=99.68  E-value=2.2e-20  Score=194.27  Aligned_cols=178  Identities=37%  Similarity=0.712  Sum_probs=154.8  Template_Neff=1.000
 
@@ -10288,7 +10260,7 @@ T tr|B5VHB4|B5VH  177 DYSGNLKGCCNHKDFPFWYLDRIYCSIRDKEIVMPEE  213 (911)
 Confidence            9988888888889999999999999999988888865
 
 
-No 334
+No 333
 >tr|W5LPU3|W5LPU3_ASTMX Uncharacterized protein OS=Astyanax mexicanus GN=PSD (2 of 2) PE=4 SV=1
 Probab=99.68  E-value=2e-20  Score=203.46  Aligned_cols=275  Identities=35%  Similarity=0.614  Sum_probs=218.6  Template_Neff=1.708
 
@@ -10332,7 +10304,7 @@ T tr|W5LPU3|W5LP 1443 QSWITRINTVAAMFSAPPFPAAIGSQKR 1470 (1617)
 Confidence            99998764   67788898877665543
 
 
-No 335
+No 334
 >tr|F2TVQ3|F2TVQ3_SALR5 Putative uncharacterized protein OS=Salpingoeca rosetta (strain ATCC 50818 / BSB-021) GN=PTSG_00170 PE=4 SV=1
 Probab=99.68  E-value=2.9e-20  Score=184.30  Aligned_cols=106  Identities=41%  Similarity=0.820  Sum_probs=87.7  Template_Neff=1.000
 
@@ -10352,7 +10324,7 @@ T tr|F2TVQ3|F2TV  255 KPVRGCKTNAKGMVVAGNHQRYLFRATSPQEAADWVARING  295 (442)
 Confidence            78899999999999999999999999998999999988865
 
 
-No 336
+No 335
 >tr|V9IKF7|V9IKF7_APICE Golgi-specific brefeldin A-resistance guanine nucleotide exchange factor 1 OS=Apis cerana GN=ACCB13199 PE=2 SV=1
 Probab=99.68  E-value=3e-20  Score=196.39  Aligned_cols=185  Identities=39%  Similarity=0.693  Sum_probs=165.0  Template_Neff=1.000
 
@@ -10380,7 +10352,7 @@ T tr|V9IKF7|V9IK  216 RNLKKVNGGTDFDQGMLDEIYASIKGEEIVMPAEQ  250 (1247)
 Confidence            55567899999999999999999999998888654
 
 
-No 337
+No 336
 >tr|X6MTS5|X6MTS5_RETFI Uncharacterized protein (Fragment) OS=Reticulomyxa filosa GN=RFI_19964 PE=4 SV=1
 Probab=99.68  E-value=3.1e-20  Score=190.09  Aligned_cols=160  Identities=38%  Similarity=0.701  Sum_probs=132.0  Template_Neff=1.000
 
@@ -10408,7 +10380,7 @@ T tr|X6MTS5|X6MT  191 PNVKTRMSKEQFVK  204 (694)
 Confidence            99999999999985
 
 
-No 338
+No 337
 >tr|A0A098VM11|A0A098VM11_9MICR Sec7 domain-containing protein OS=Mitosporidium daphniae GN=DI09_98p20 PE=4 SV=1
 Probab=99.67  E-value=3.4e-20  Score=195.58  Aligned_cols=171  Identities=42%  Similarity=0.757  Sum_probs=151.3  Template_Neff=1.000
 
@@ -10436,7 +10408,7 @@ T tr|A0A098VM11|  603 MSCEDFIKNNRGNNNGDDFSPSFLE  627 (1188)
 Confidence            9999999999999999998765543
 
 
-No 339
+No 338
 >tr|G7DYH1|G7DYH1_MIXOS Uncharacterized protein OS=Mixia osmundae (strain CBS 9802 / IAM 14324 / JCM 22182 / KY 12970) GN=Mo02287 PE=4 SV=1
 Probab=99.67  E-value=4.2e-20  Score=200.75  Aligned_cols=193  Identities=36%  Similarity=0.675  Sum_probs=174.7  Template_Neff=1.000
 
@@ -10464,7 +10436,7 @@ T tr|G7DYH1|G7DY 1769 RNLRGVNDNSDFDPEYLKSIYESIRKREIVMPEEHLGQLG 1808 (2579)
 Confidence            9999999999999999999999999999999987654443
 
 
-No 340
+No 339
 >tr|A0A0F5CZF8|A0A0F5CZF8_PRIPA Uncharacterized protein (Fragment) OS=Pristionchus pacificus GN=PRIPAC_3440 PE=4 SV=1
 Probab=99.67  E-value=4.3e-20  Score=189.91  Aligned_cols=177  Identities=40%  Similarity=0.669  Sum_probs=161.0  Template_Neff=1.000
 
@@ -10492,7 +10464,7 @@ T tr|A0A0F5CZF8|  514 FDPDMLEQVYNAIKTEEIVMPAEQ  537 (745)
 Confidence            999999999999999988888654
 
 
-No 341
+No 340
 >tr|U3JVG8|U3JVG8_FICAL Uncharacterized protein OS=Ficedula albicollis GN=IQSEC2 PE=4 SV=1
 Probab=99.67  E-value=4.7e-20  Score=171.86  Aligned_cols=115  Identities=42%  Similarity=0.859  Sum_probs=104.2  Template_Neff=1.000
 
@@ -10512,7 +10484,7 @@ T tr|U3JVG8|U3JV   82 KLEDFIKNLRGVDNGEDIPREMLVGIYQRIQSRELRTNDD  121 (222)
 Confidence            7999999999999999999999999999998776654433
 
 
-No 342
+No 341
 >tr|I1ZIB8|I1ZIB8_SCHMD IQ motif and Sec7 domain-1 (Fragment) OS=Schmidtea mediterranea PE=2 SV=1
 Probab=99.66  E-value=5.7e-20  Score=173.34  Aligned_cols=110  Identities=34%  Similarity=0.571  Sum_probs=98.5  Template_Neff=1.599
 
@@ -10532,7 +10504,7 @@ T tr|I1ZIB8|I1ZI   82 KEEFIHNLRNVDDGSQDINPNILTAIYDRIKTAEMKTFSD  121 (230)
 Confidence            899999999999999 999999999999999988765443
 
 
-No 343
+No 342
 >4d7r_A mol:protein length:400 PROLINE/BETAINE TRANSPORTER, RALF
 Probab=99.66  E-value=6.8e-20  Score=180.32  Aligned_cols=194  Identities=38%  Similarity=0.643  Sum_probs=160.4  Template_Neff=1.000
 
@@ -10560,7 +10532,7 @@ T 4d7r_A          198 SKNFNDNFLKKIYDEIEAKPFKLNFVKTSPGYELTSTTLNKDS  240 (400)
 Confidence            999999999999999999999974   4678888888877764
 
 
-No 344
+No 343
 >tr|M1EQM1|M1EQM1_MUSPF F-box protein 8 (Fragment) OS=Mustela putorius furo PE=2 SV=1
 Probab=99.66  E-value=5.9e-20  Score=173.50  Aligned_cols=166  Identities=33%  Similarity=0.671  Sum_probs=145.5  Template_Neff=2.391
 
@@ -10588,7 +10560,7 @@ T tr|M1EQM1|M1EQ  198 QN--ISEDFVGHLYDNV  212 (220)
 Confidence            33  3346677777765
 
 
-No 345
+No 344
 >tr|Q68X01|Q68X01_RICTY Sec7-domain containing protein transport protein OS=Rickettsia typhi (strain ATCC VR-144 / Wilmington) GN=RT0362 PE=4 SV=1
 Probab=99.65  E-value=1.2e-19  Score=180.52  Aligned_cols=155  Identities=41%  Similarity=0.719  Sum_probs=138.2  Template_Neff=1.000
 
@@ -10608,7 +10580,7 @@ T tr|Q68X01|Q68X  116 YEQNLNIDINSKDAAYILAYQAIMLNTDLHNPSIAKSKKMTFEQLKNNLKGTNENKNF
 Confidence            8877654 5688999999999999999999998754  34456666666899999999999999999999999998743
 
 
-No 346
+No 345
 >tr|K1Q869|K1Q869_CRAGI IQ motif and SEC7 domain-containing protein 1 (Fragment) OS=Crassostrea gigas GN=CGI_10005242 PE=4 SV=1
 Probab=99.64  E-value=1.5e-19  Score=178.80  Aligned_cols=113  Identities=44%  Similarity=0.812  Sum_probs=101.0  Template_Neff=1.000
 
@@ -10628,7 +10600,7 @@ T tr|K1Q869|K1Q8   89 EDFVRNLRAIDDGQDVDRDMLIGIYNRIQTQEFRAGVD  126 (421)
 Confidence            89999999999999999999999999999888865433
 
 
-No 347
+No 346
 >tr|V5I827|V5I827_ANOGL Brefeldin A-inhibited guanine nucleotide-exchange protein 1 (Fragment) OS=Anoplophora glabripennis GN=BIG1 PE=4 SV=1
 Probab=99.64  E-value=1.5e-19  Score=188.54  Aligned_cols=92  Identities=51%  Similarity=0.972  Sum_probs=88.1  Template_Neff=1.278
 
@@ -10648,7 +10620,7 @@ T tr|V5I827|V5I8   81 SQIYDEIAGHEIKM   94 (837)
 Confidence            99999998766654
 
 
-No 348
+No 347
 >tr|B0EHE1|B0EHE1_ENTDS Guanyl-nucleotide exchange factor, putative OS=Entamoeba dispar (strain ATCC PRA-260 / SAW760) GN=EDI_024320 PE=4 SV=1
 Probab=99.64  E-value=1.7e-19  Score=196.17  Aligned_cols=218  Identities=33%  Similarity=0.605  Sum_probs=182.9  Template_Neff=1.568
 
@@ -10684,7 +10656,7 @@ T tr|B0EHE1|B0EH  820 LIPEQ  824 (1690)
 Confidence            99974
 
 
-No 349
+No 348
 >tr|F6UQ84|F6UQ84_HORSE Uncharacterized protein (Fragment) OS=Equus caballus GN=PSD4 PE=4 SV=1
 Probab=99.63  E-value=2e-19  Score=192.44  Aligned_cols=267  Identities=34%  Similarity=0.630  Sum_probs=203.4  Template_Neff=2.410
 
@@ -10728,7 +10700,7 @@ T tr|F6UQ84|F6UQ  759 ARINLAAATHSAPPFPAAVGSQ  780 (930)
 Confidence            998643   4667786655443
 
 
-No 350
+No 349
 >tr|W8AIF8|W8AIF8_CERCA Cytohesin-2 OS=Ceratitis capitata GN=CYH2 PE=2 SV=1
 Probab=99.63  E-value=2.8e-19  Score=152.02  Aligned_cols=76  Identities=50%  Similarity=0.851  Sum_probs=72.0  Template_Neff=1.000
 
@@ -10740,7 +10712,7 @@ T tr|W8AIF8|W8AI   23 DFTTPELTPEQQKLLIELRRKKQELLLEIQQIKDELGEVVSEMEALDVPEDNKHSNKE
 Confidence            3567999999999999999999999999999999999999999999999999999899999999999999999984
 
 
-No 351
+No 350
 >tr|D8LRA5|D8LRA5_ECTSI Uncharacterized protein OS=Ectocarpus siliculosus GN=Esi_0064_0055 PE=4 SV=1
 Probab=99.62  E-value=3.7e-19  Score=190.06  Aligned_cols=137  Identities=47%  Similarity=0.818  Sum_probs=120.2  Template_Neff=1.000
 
@@ -10758,6 +10730,34 @@ Q Consensus       187 vlsfaiimlntsLhnp~Vkdkp~~--erfismnr----gin~G~dlp~ell~~ly~si
 T Consensus       657 llsfsvimlntdlhnpnirpekrmscgafvrnnenyggdisgghdlpadylesvytsikeqpiatsg  723 (1513)
 T tr|D8LRA5|D8LR  657 LLSFSVIMLNTDLHNPNIRPEKRMSCGAFVRNNENYGGDISGGHDLPADYLESVYTSIKEQPIATSG  723 (1513)
 Confidence            999999999999999999875443  35776654    36778899999999999999999976543
+
+
+No 351
+>tr|A0A099P630|A0A099P630_PICKU Uncharacterized protein OS=Pichia kudriavzevii GN=JL09_g1029 PE=3 SV=1
+Probab=99.62  E-value=3.9e-19  Score=191.77  Aligned_cols=178  Identities=37%  Similarity=0.664  Sum_probs=156.7  Template_Neff=1.000
+
+Q 1R8M:E|PDBID|C   70 KKFNMDPKKGIQFLVENELLQNT--PEEIARFLYKGEG-LNKTAIGDYLGEREELNLAVLHAFVDLHEFTDLNLVQALRQ  146 (400)
+Q Consensus        70 KKFNMdpkKGI~yLie~~LL~~~--~ediA~FLyKgEG-LNKTaIGdyLGEr~~fN~~VL~aFV~lHeF~dl~LVqALRQ  146 (400)
+                      .-+|-.|.||..-|-|....|..  ..|+|.||+...| ..|..+|..|..  .-|-..|..||.|-.|..+.--..||-
+T Consensus       646 riwnekpskgfealhekgfiqdpsddkevasflftnsgrvdkrklgellak--ptnskllkefvnlldfknlrpdeslri  723 (1958)
+T tr|A0A099P630|  646 RIWNEKPSKGFEALHEKGFIQDPSDDKEVASFLFTNSGRVDKRKLGELLAK--PTNSKLLKEFVNLLDFKNLRPDESLRI  723 (1958)
+Confidence            34688899999999999999875  4589999998766 577778887764  457778999999999999999999999
+
+
+Q 1R8M:E|PDBID|C  147 FLWSFRLPGEAQKIDRMMEAFAQRYCLCNP-----------GVFQSTDTCYVLSFAVIMLNTSLHNPNVRDKPGLERFVA  215 (400)
+Q Consensus       147 FLWSFRLPGEAQKIDRMMEaFA~RYC~cNp-----------gvF~stdtcyvlsfaiimlntsLhnp~Vkdkp~~erfis  215 (400)
+                      .|.-||||||||.|+|+..-|..||.-|..           .|....|...||||.+|||||.|.||.|...-.|..+..
+T Consensus       724 llsyfrlpgeaqqierivtifseryiecqdyteeadeedtekvlpdvdsmivlsfsiimlntdlynpsvkkpmtlddyqr  803 (1958)
+T tr|A0A099P630|  724 LLSYFRLPGEAQQIERIVTIFSERYIECQDYTEEADEEDTEKVLPDVDSMIVLSFSIIMLNTDLYNPSVKKPMTLDDYQR  803 (1958)
+Confidence            999999999999999999999999999964           356667888999999999999999999998888999988
+
+
+Q 1R8M:E|PDBID|C  216 MNRGINEGGDLPEELLRNLYDSIRNEPFKIPEDD  249 (400)
+Q Consensus       216 mnrgin~G~dlp~ell~~ly~sik~ePfkiPeDD  249 (400)
+                      --||--.|.|.|.-.-..+|-||.....-.||..
+T Consensus       804 nvrgtyngtdfpswytekiyysikekeiimpeeh  837 (1958)
+T tr|A0A099P630|  804 NVRGTYNGTDFPSWYTEKIYYSIKEKEIIMPEEH  837 (1958)
+Confidence            8999999999999999999999998877777654
 
 
 No 352

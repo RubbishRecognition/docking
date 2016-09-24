@@ -3,14 +3,14 @@ Match_columns 859
 No_of_seqs    1 out of 1
 Neff          1
 Searched_HMMs 19870
-Date          Thu Sep 22 15:07:22 2016
-Command       hhblits -i ../fasta_data/2hje.fasta.txt -d ../seq_data/uniprot20_2016_02 -d ../seq_data/pdb100 -oa3m ../tmp/domain30/msa_2hje -cpu 10 -qid 30 -id 100 -v 0 -o ../tmp/domain30/hhr_2hje 
+Date          Sat Sep 24 21:51:03 2016
+Command       hhblits -i ../fasta_data/2hje.fasta.txt -d ../seq_data/uniprot20_2016_02 -d ../seq_data/pdb100 -oa3m ../tmp/domain30/msa_2hje -cpu 9 -qid 30 -id 100 -v 0 -o ../tmp/domain30/hhr_2hje 
 
  No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
   1 tr|U3CNC4|U3CNC4_9VIBR Unchara 100.0  2E-287  1E-292 2264.6   0.0  838    6-855     2-857 (858)
   2 1zhh_B mol:protein length:242  100.0  1E-129  6E-135  930.1   0.0  241   38-278     2-242 (242)
-  3 2hje_A mol:protein length:221  100.0  2E-118  8E-124  846.7   0.0  220   52-271     2-221 (221)
-  4 2hj9_C mol:protein length:221  100.0  2E-118  8E-124  846.7   0.0  220   52-271     2-221 (221)
+  3 2hj9_C mol:protein length:221  100.0  2E-118  8E-124  846.7   0.0  220   52-271     2-221 (221)
+  4 2hje_A mol:protein length:221  100.0  2E-118  8E-124  846.7   0.0  220   52-271     2-221 (221)
   5 2hj9_D mol:protein length:221  100.0  2E-118  8E-124  846.7   0.0  220   52-271     2-221 (221)
   6 tr|K5VI64|K5VI64_9VIBR His Kin 100.0  2E-109  7E-115  782.6   0.0  210  303-512     1-210 (210)
   7 tr|A6BA57|A6BA57_VIBPQ Autoind 100.0 3.5E-93 1.5E-98  685.3   0.0  259   59-317     1-259 (259)
@@ -637,34 +637,6 @@ Confidence            6
 
 
 No 3
->2hje_A mol:protein length:221 Autoinducer 2 sensor kinase/phosphatase luxQ
-Probab=100.00  E-value=1.9e-118  Score=846.74  Aligned_cols=220  Identities=100%  Similarity=1.420  Sum_probs=218.9  Template_Neff=1.000
-
-Q 2HJE:A|PDBID|C   52 TKQQTSALIHNIFDSHFAAIQIHHDSNSKSEVIRDFYTDRDTDVLNFFFLSIDQSDPSHTPEFRFLTDHKGIIWDDGNAH  131 (859)
-Q Consensus        52 tkqqtsalihnifdshfaaiqihhdsnsksevirdfytdrdtdvlnffflsidqsdpshtpefrfltdhkgiiwddgnah  131 (859)
-                      .||||||||||||||||||||||||||||||||||||||||||||||||+||||||||||||||||||||||||||||||
-T Consensus         2 skqqtsalihnifdshfaaiqihhdsnsksevirdfytdrdtdvlnffflsidqsdpshtpefrfltdhkgiiwddgnah   81 (221)
-T 2hje_A            2 SKQQTSALIHNIFDSHFAAIQIHHDSNSKSEVIRDFYTDRDTDVLNFFFLSIDQSDPSHTPEFRFLTDHKGIIWDDGNAH   81 (221)
-Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 2HJE:A|PDBID|C  132 FYGVNDLILDSLANRVSFSNNWYYINVMTSIGSRHMLVRRVPILDPSTGEVLGFSFNAVVLDNNFALMEKLKSESNVDNV  211 (859)
-Q Consensus       132 fygvndlildslanrvsfsnnwyyinvmtsigsrhmlvrrvpildpstgevlgfsfnavvldnnfalmeklksesnvdnv  211 (859)
-                      |||||||||||||||||||||||||||||||||||||||||||+||||||||||||||||+|||||||||||||||||||
-T Consensus        82 fygvndlildslanrvsfsnnwyyinvmtsigsrhmlvrrvpildpstgevlgfsfnavvldnnfalmeklksesnvdnv  161 (221)
-T 2hje_A           82 FYGVNDLILDSLANRVSFSNNWYYINVMTSIGSRHMLVRRVPILDPSTGEVLGFSFNAVVLDNNFALMEKLKSESNVDNV  161 (221)
-Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-Q 2HJE:A|PDBID|C  212 VLVANSVPLANSLIGDEPYNVADVLQRKSSDKRLDKLLVIETPIVVNAVTTELCLLTVQD  271 (859)
-Q Consensus       212 vlvansvplansligdepynvadvlqrkssdkrldkllvietpivvnavttelclltvqd  271 (859)
-                      |||||||||||||||||||||||||||||||||||||+||||||||||||||||||||||
-T Consensus       162 vlvansvplansligdepynvadvlqrkssdkrldkllvietpivvnavttelclltvqd  221 (221)
-T 2hje_A          162 VLVANSVPLANSLIGDEPYNVADVLQRKSSDKRLDKLLVIETPIVVNAVTTELCLLTVQD  221 (221)
-Confidence            999999999999999999999999999999999999999999999999999999999997
-
-
-No 4
 >2hj9_C mol:protein length:221 Autoinducer 2 sensor kinase/phosphatase luxQ
 Probab=100.00  E-value=1.9e-118  Score=846.74  Aligned_cols=220  Identities=100%  Similarity=1.420  Sum_probs=218.9  Template_Neff=1.000
 
@@ -689,6 +661,34 @@ Q Consensus       212 vlvansvplansligdepynvadvlqrkssdkrldkllvietpivvnavttelclltv
                       |||||||||||||||||||||||||||||||||||||+||||||||||||||||||||||
 T Consensus       162 vlvansvplansligdepynvadvlqrkssdkrldkllvietpivvnavttelclltvqd  221 (221)
 T 2hj9_C          162 VLVANSVPLANSLIGDEPYNVADVLQRKSSDKRLDKLLVIETPIVVNAVTTELCLLTVQD  221 (221)
+Confidence            999999999999999999999999999999999999999999999999999999999997
+
+
+No 4
+>2hje_A mol:protein length:221 Autoinducer 2 sensor kinase/phosphatase luxQ
+Probab=100.00  E-value=1.9e-118  Score=846.74  Aligned_cols=220  Identities=100%  Similarity=1.420  Sum_probs=218.9  Template_Neff=1.000
+
+Q 2HJE:A|PDBID|C   52 TKQQTSALIHNIFDSHFAAIQIHHDSNSKSEVIRDFYTDRDTDVLNFFFLSIDQSDPSHTPEFRFLTDHKGIIWDDGNAH  131 (859)
+Q Consensus        52 tkqqtsalihnifdshfaaiqihhdsnsksevirdfytdrdtdvlnffflsidqsdpshtpefrfltdhkgiiwddgnah  131 (859)
+                      .||||||||||||||||||||||||||||||||||||||||||||||||+||||||||||||||||||||||||||||||
+T Consensus         2 skqqtsalihnifdshfaaiqihhdsnsksevirdfytdrdtdvlnffflsidqsdpshtpefrfltdhkgiiwddgnah   81 (221)
+T 2hje_A            2 SKQQTSALIHNIFDSHFAAIQIHHDSNSKSEVIRDFYTDRDTDVLNFFFLSIDQSDPSHTPEFRFLTDHKGIIWDDGNAH   81 (221)
+Confidence            58999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 2HJE:A|PDBID|C  132 FYGVNDLILDSLANRVSFSNNWYYINVMTSIGSRHMLVRRVPILDPSTGEVLGFSFNAVVLDNNFALMEKLKSESNVDNV  211 (859)
+Q Consensus       132 fygvndlildslanrvsfsnnwyyinvmtsigsrhmlvrrvpildpstgevlgfsfnavvldnnfalmeklksesnvdnv  211 (859)
+                      |||||||||||||||||||||||||||||||||||||||||||+||||||||||||||||+|||||||||||||||||||
+T Consensus        82 fygvndlildslanrvsfsnnwyyinvmtsigsrhmlvrrvpildpstgevlgfsfnavvldnnfalmeklksesnvdnv  161 (221)
+T 2hje_A           82 FYGVNDLILDSLANRVSFSNNWYYINVMTSIGSRHMLVRRVPILDPSTGEVLGFSFNAVVLDNNFALMEKLKSESNVDNV  161 (221)
+Confidence            99999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 2HJE:A|PDBID|C  212 VLVANSVPLANSLIGDEPYNVADVLQRKSSDKRLDKLLVIETPIVVNAVTTELCLLTVQD  271 (859)
+Q Consensus       212 vlvansvplansligdepynvadvlqrkssdkrldkllvietpivvnavttelclltvqd  271 (859)
+                      |||||||||||||||||||||||||||||||||||||+||||||||||||||||||||||
+T Consensus       162 vlvansvplansligdepynvadvlqrkssdkrldkllvietpivvnavttelclltvqd  221 (221)
+T 2hje_A          162 VLVANSVPLANSLIGDEPYNVADVLQRKSSDKRLDKLLVIETPIVVNAVTTELCLLTVQD  221 (221)
 Confidence            999999999999999999999999999999999999999999999999999999999997
 
 
