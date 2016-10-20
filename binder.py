@@ -1306,7 +1306,7 @@ def prime_domains (prime_A, prime_B, domain_A, domain_B, domains_co, domains_con
         uni_prime_B = uniprot_pdb_chain_converter (prime_B)
 
         infile = open(domain_A, 'r').readlines()
-        outfile = open(distance_out, 'w')
+        outfile = open(distance_out, 'a')
 
         #print domain_A
         #print domain_B
