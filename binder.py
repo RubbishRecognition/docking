@@ -6,6 +6,7 @@ from Bio import SeqIO
 from multiprocessing import Pool
 from Bio import SeqIO
 import ConfigParser
+from Bio.PDB import *
 
 #pdbtosp location
 pdbtosp = '../id_mapping/pdbtosp.txt'
@@ -107,6 +108,58 @@ def run_biogrid_finder (gene):
         os.system (query_string)
 
 
+def uniprot_pdb_chain_converter (gene):
+
+        ## ID converter unsing pdb_chain_uniprot db
+
+        os.system ('python get_chain_uni_db.py ' + str(gene))
+        tmp = open('../tmp/chain_uni_out.txt', 'r')
+        #f = tmp.readlines()
+        res = []
+        #if (len(f) > 0):
+        for i in tmp:
+                res.append(i.split('\n')[0])
+        if (len(res) == 0):
+                return uniprot
+        else:
+                if (len(res) == 1):
+                        return res[0]
+                else:
+                        return res
+
+
+def get_gene_id (uniprot):
+
+        #for i in range(len(biogrid_ids_A)):
+        os.system ('python get_uniprot_gene_id.py ' + str(uniprot))
+        tmp = open('../tmp/uniprot_gene_out.txt', 'r')
+        #f = tmp.readlines()
+        res = []
+        #if (len(f) > 0):
+        for i in tmp:
+                res.append(i.split('\n')[0])
+        if (len(res) == 0):
+                return uniprot
+        else:
+                if (len(res) == 1):
+                        return res[0]
+                else:
+                        return res
+
+
+def get_uniprot_id (gene):
+        os.system ('python get_uni_id.py ' + str(gene))
+        tmp = open('../tmp/uni_id_out.txt', 'r')
+        res = []
+        for i in tmp:
+                #return i.split('\n')[0]
+                res.append(i.split('\n')[0])
+        if (len(res) == 0):
+                return gene
+        else:
+                return res[0]
+
+
 def run_string_finder (gene):
 
         ## Find string interactions using finder        
@@ -144,10 +197,12 @@ def run_hhblits (sequence, ident_file, align_file):
         
         ## Find similar proteins
 
-        query_string = 'hhblits -i ' + str(sequence) + ' -d ' + str(uniprot20) + ' -d ' + str(pdb100) + ' -oa3m ' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 100 ' + '-v 0' + ' -o ' + str(align_file) 
-        #print query_string
+        #query_string = 'hhblits -i ' + str(sequence)  + ' -d ' + str(uniprot20) + ' -d ' + str(pdb100) + ' -oa3m ' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 100 ' + '-v 0' + ' -o ' + str(align_file) 
+        #CHANGE 95 TO SCORE!!!!!!!
+        query_string = 'hhblits -i ' + str(sequence)  + ' -d ' + str(uniprot20) + ' -oa3m uni_' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 100 ' + '-v 0' + ' -o ' + 'uni_' + str(align_file)  
         os.system (query_string)        
-
+        query_string = 'hhblits -i ' + str(sequence) + ' -d ' + str(pdb100) + ' -oa3m pdb_' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 100 ' + '-v 0' + ' -o ' + 'pdb_' + str(align_file) 
+        os.system (query_string)
         ## Create alignment
 
         #query_string = 'hhblits -i ' + sequence + ' -d ' + uniprot20 + ' -d ' + pdb100 + ' -o ' + align_file + ' -cpu 5 -score -qid 70 -id 0 -v 0' 
@@ -237,6 +292,38 @@ def uniprot_to_pdb (uniprot_ids):
         return result
 
 
+def get_pdb_ids (infile):
+
+        ## Get original ID's from file
+        flag = 1
+        pdb_ids = set()
+        uniprot_ids = set()
+        prime = ''
+        ## Get pdb ids from pdb_ MSA file
+        handle = open('pdb_' + infile, 'r')
+
+        for record in SeqIO.parse(handle, "fasta"):
+                buf = record.id
+                #print(len(buf))
+                if (seq_test(record.seq, overlap) | flag):
+                        if (flag):
+                                #pdb_ids.append (buf.split(':')[0]) #restyling
+                                pdb_ids.update ([buf.split(':')[0].lower() + '_' + buf.split(':')[1].split('|')[0]])
+                                flag = 0
+                                prime = buf.split(':')[0].lower() + '_' + buf.split(':')[1].split('|')[0]
+                        else:
+                                #if (len(buf) <= 8):
+                                #print pdb_ids
+                                #print buf        
+                                #pdb_ids.append(buf.split('_')[0].upper()) #restyling
+                                pdb_ids.update([buf.split('_')[0].lower() + '_' + buf.split('_')[1]])
+                                #else:
+                                        #print buf
+                                        #uniprot_ids.update([buf.split('|')[2]])
+        return prime, pdb_ids 
+
+
+
 def get_biogrid_chain_ids (infile):
 
         ## The same as get_biogrid_ids but with another db for mapping
@@ -245,7 +332,9 @@ def get_biogrid_chain_ids (infile):
         flag = 1
         pdb_ids = set()
         uniprot_ids = set()
-        handle = open(infile, 'r')
+
+        ## Get pdb ids from pdb_ MSA file
+        handle = open('pdb_' + infile, 'r')
 
         for record in SeqIO.parse(handle, "fasta"):
                 buf = record.id
@@ -256,12 +345,33 @@ def get_biogrid_chain_ids (infile):
                                 pdb_ids.update ([buf.split(':')[0].lower() + '_' + buf.split(':')[1].split('|')[0]])
                                 flag = 0
                         else:
-                                if (len(buf) <= 8):
+                                #if (len(buf) <= 8):
                                         #pdb_ids.append(buf.split('_')[0].upper()) #restyling
-                                        pdb_ids.update([buf.split('_')[0].lower() + '_' + buf.split('_')[1]])
-                                else:
+                                pdb_ids.update([buf.split('_')[0].lower() + '_' + buf.split('_')[1]])
+                                #else:
                                         #print buf
-                                        uniprot_ids.update([buf.split('|')[2]])
+                                        #uniprot_ids.update([buf.split('|')[2]])
+        
+        flag = 1
+        ## Get uniprot ids from uni_ MSA file
+        handle = open('uni_' + infile, 'r')
+
+        for record in SeqIO.parse(handle, "fasta"):
+                buf = record.id
+                #print(len(buf))
+                if (seq_test(record.seq, overlap) | flag):
+                        if (flag):
+                                #pdb_ids.append (buf.split(':')[0]) #restyling
+                                pdb_ids.update ([buf.split(':')[0].lower() + '_' + buf.split(':')[1].split('|')[0]])
+                                flag = 0
+                        else:
+                                #if (len(buf) <= 8):
+                                        #pdb_ids.append(buf.split('_')[0].upper()) #restyling
+                                #       pdb_ids.update([buf.split('_')[0].lower() + '_' + buf.split('_')[1]])
+                                #else:
+                                        #print buf
+                                uniprot_ids.update([buf.split('|')[2]])
+
         #print pdb_ids
         #print uniprot_ids
         #print '##'
@@ -392,10 +502,12 @@ def get_string_ids (infile):
                 buf = d.setdefault(x)
                 if (buf != None):
                         string_ids.update(buf)
+                        #string_ids.update([buf])
 
                 buf = d.setdefault(x.split('_')[0])
                 if (buf != None):
                         string_ids.update(buf)
+                        #string_ids.update([buf])
 
         return string_ids
 
@@ -407,15 +519,39 @@ def find_biogrid_interactions (ids_A, ids_B):
         interactions = set()
         pool = Pool(cpu)
 
-        pool.map(run_biogrid_finder, list(ids_A))
-
-        for gene in ids_A:
+        #pool.map(run_biogrid_finder, list(ids_A))
+        #grid_ids_A = [get_gene_id(i) for i in ids_A]
+        grid_ids_1 = [get_uniprot_id(j) for j in ids_A]
+        grid_ids_A = [get_gene_id (i) for i in grid_ids_1]
+        grid_ids_1 = [get_uniprot_id(j) for j in ids_B]
+        grid_ids_B = [get_gene_id (i) for i in grid_ids_1]
+        #print grid_ids_A
+        #print grid_ids_B
+        #print 'kek'
+        #k = input()
+        print grid_ids_A
+        pool.map(run_biogrid_finder, grid_ids_A)#[get_uniprot_id (i) for i in [get_gene_id(j) for j in ids_A])
+        for gene in grid_ids_A:
                 output = open ('../tmp/' + gene.split('_')[0], 'r')
                 for entry in output:
-                        for gene_B in ids_B:
-                                if (entry.translate(None, '\n') == gene_B.split('_')[0]):
-                                        #interactions.update([str(gene.split('_')[0] + ' ' + gene_B.split('_')[0] + '\n')]) #restyling
-                                        interactions.update([str(gene + ' ' + gene_B + '\n')])
+                        for gene_B in grid_ids_B:
+                                #print gene_B
+                                if (type(gene_B) == list):
+                                        gene_B = gene_B[0]
+                                       if (entry.translate(None, '\n') == gene_B.split('_')[0]):
+                                        res_A = get_gene_id(gene)
+                                        res_B = get_gene_id(gene_B)
+                                        if (type(res_A) == str):
+                                                res_A = [res_A]
+                                        if (type(res_B) == str):
+                                                res_B = [res_B]
+                                        for i in range(len(res_A)):
+                                                res_A[i] = get_uniprot_id(res_A[i])
+                                        for i in range(len(res_B)):
+                                                       res_B[i] = get_uniprot_id(res_B[i])
+                                        for k in res_A:
+                                                for l in res_B:
+                                                        interactions.update([k + ' ' + l + '\n'])
 
         return list(interactions)
 
@@ -885,15 +1021,15 @@ def config_parser (conf):
 
 def find_domains (infile, outfile_A, outfile_B):
 
-## Find domains from interaction output file with uniprot ID's
+        ## Find domains from interaction output file with uniprot ID's
 
         pdb_a = []
         pdb_b = []
 
         pdb = open (infile, 'r')
         for i in pdb.readlines ():
-                pdb_a.append (i.split (' ')[0].split('_')[0])
-                pdb_b.append (i.split (' ')[1].split ('\n')[0].split('_')[0])
+                pdb_a.append (i.split (' ')[0])#.split('_')[0])
+                pdb_b.append (i.split (' ')[1].split ('\n')[0])#.split('_')[0])
 
         #print pdb_a
         #print pdb_b
@@ -901,8 +1037,38 @@ def find_domains (infile, outfile_A, outfile_B):
         uniprot_a = pdb_a
         uniprot_b = pdb_b
 
-        print uniprot_a
-        print uniprot_b
+        #print uniprot_a
+        #print uniprot_b
+
+        for i in range(len(uniprot_a)):
+                res = set()
+                os.system ('python get_uni_id.py ' + str(uniprot_a[i]))
+                tmp = open('../tmp/uni_id_out.txt', 'r')
+                for j in tmp.readlines():
+                        res.update([j.split('\n')[0]])                        
+                if (len(list(res)) == 1):
+                        uniprot_a[i] = list(res)[0]
+                if (len(list(res)) > 1):
+                        print 'Shit happened' + ' ' + uniprot_a[i]
+                        print res
+                if (len(list(res)) == 0):
+                        uniprot_a[i] = uniprot_a[i].split('_')[0] 
+
+        for i in range(len(uniprot_b)):
+                res = set()
+                os.system ('python get_uni_id.py ' + str(uniprot_b[i]))
+                tmp = open('../tmp/uni_id_out.txt', 'r')
+                for j in tmp.readlines():
+                        res.update([j.split('\n')[0]])
+                if (len(list(res)) == 1):
+                        uniprot_b[i] = list(res)[0]
+                if (len(list(res)) > 1): 
+                        print 'Shit happened' + uniprot_b[i]
+                if (len(list(res)) == 0):
+                        uniprot_b[i] = uniprot_b[i].split('_')[0]
+        
+        #print uniprot_a
+        #print uniprot_b
 
         domain_a = dict ()
         domain_b = dict ()
@@ -940,6 +1106,252 @@ def find_domains (infile, outfile_A, outfile_B):
                 out_B.write('\n')
 
 
+def get_domains_list (gene):
+
+        ## Get domains ids with positions
+
+        domain_id = list()
+
+        query_string = 'python get_domain_list.py ' + gene
+        os.system (query_string)
+        tmp = open('../tmp/domain_list_out.txt', 'r')
+        for i in tmp:
+                domain_id.append(i.split('\n')[0].split(' '))
+
+        return domain_id
+
+
+def find_align_pos (seq):
+
+        ## Find start and end pos
+        
+        start = 0
+        end = 0
+        flag_s = 1
+        flag_e = 1
+        for i in range(len(seq)):
+                if ((seq[i] != '-') & (flag_s)):
+                        start = i
+                        flag_s = 0
+                if ((seq[len(seq) - i - 1] != '-') & (flag_e)):
+                        end = len(seq) - i - 1
+                        flag_e = 0
+        return start, end
+
+
+
+def distance_calculator (domain_list, structure1, structure2, chain_A, chain_B):
+
+        ## Distance calculator from domains of chain_A to chain_B
+        distance_list = []
+        #print domain_list
+        #print chain_A
+        #print chain_B
+        #print '##'
+        for model in structure1:
+                for chain in model:
+                        #print chain.id
+                        if (chain.id == chain_A):
+                                #print chain.id
+                                for domain in domain_list:
+                                        #print 'kwk'
+                                        place = 0
+                                        distance = 1.0 * float(0)
+                                        num = 0
+                                        for residue in chain:
+                                                if ((place >= domain[1]) & (place <= domain[2])):
+                                                        #min_dist = 99999999
+                                                        for atom in residue:
+                                                                min_dist = 99999999
+                                                                for model2 in structure2: 
+                                                                        for chain2 in model2:
+                                                                                #print 'idi nahui'
+                                                                                if (chain2.id == chain_B):
+                                                                                        #print 'heh'
+                                                                                        for residue2 in chain2:
+                                                                                                for atom2 in residue2:
+                                                                                                        #print atom - atom2
+                                                                                                        if (abs(atom - atom2) < min_dist):
+                                                                                                                min_dist = abs(atom - atom2)                  
+                                                                distance += min_dist
+                                                                num += 1
+                                                place += 1        
+                                        distance = distance / num
+                                        distance_list.append(domain + [distance])
+        #print 'kek'
+        #print distance_list
+        #k = input()
+        return distance_list                
+
+
+def find_interacting_domains (align_A, align_B, complexes, prime_A, prime_B, pdb_ids_A, pdb_ids_B, outfile):
+
+        ## Calculate distances and so on
+        #print align_B
+        #print align_A
+        #print complexes
+        #print prime_A
+        #print pdb_ids_A        
+        uni_prime_A = uniprot_pdb_chain_converter (prime_A)
+        uni_prime_B = uniprot_pdb_chain_converter (prime_B)
+        result = []
+        domains_A = get_domains_list (uni_prime_A)
+        domains_B = get_domains_list (uni_prime_B)
+
+        complex_list = open(complexes, 'r').readlines()
+        complex_positions = list()
+        #complex_list = open('/disk1/alekseev/docking/docking/scripts/d', 'r').readlines()
+        #print '##'
+        #print open('/disk1/alekseev/docking/docking/scripts/d', 'r').readlines()
+        #print '##'
+        #print complex_list
+        #print pdb_ids_A
+        #print pdb_ids_B
+        #print complexes
+        #print '##'                python binder.py ../fasta_data/1g0y.fasta.txt ../fasta_data/1ilr.fasta.txt pdb_1g0y_1ilr uniprot_1g0y_1ilr complex_1g0y_1ilr msa_1g0y hhr_1g0y msa_1ilr hhr_1ilr domains_1g0y domains_1ilr distance_1g0y_1ilr
+        for comp in complex_list:
+                #print comp
+                chain_A = comp.split(':')[0]
+                chain_B = comp.split('_')[0] + '_' + comp.split(':')[1].split('\n')[0]
+                
+                comp_domains_A = list()
+                comp_domains_B = list()
+                #print chain_A
+                #print chain_B
+                #print '###'
+                if ((chain_A in pdb_ids_A) & (chain_B in pdb_ids_B) & (chain_A != chain_B)):
+                        #print domains_A
+                        #print domains_B
+                        #print 'kekek'                
+                        ## Find pdb struct for chain_A        
+                        handle = open('pdb_' + align_A, 'r')
+                        for record in SeqIO.parse(handle, "fasta"):
+                                #print record.id
+                                if (len(record.id) > 10):
+                                        record.id = record.id.split(':')[0].lower() + '_' + record.id.split(':')[1].split('|')[0]
+                                #print record.id
+                                if (record.id == chain_A):
+                                        start, end = find_align_pos (record.seq)        
+                                        #print [start, end]
+                                        for domain in domains_A:
+                                                #print domain[0]
+                                                #print 'haha'
+                                                if ((start <= int(domain[1])) & (end >= int(domain[2]))):
+                                                        comp_domains_A.append([domain[0], int(domain[1]) - start, int(domain[2]) - start])
+
+                        ## Find pdb struct for chain_B
+                        handle = open('pdb_' + align_B, 'r')
+                        for record in SeqIO.parse(handle, "fasta"):
+                                #print 'kk'
+                                if (len(record.id) > 10):
+                                        record.id = record.id.split(':')[0].lower() + '_' + record.id.split(':')[1].split('|')[0]
+                                #print record.id
+                                if (record.id == chain_B):
+                                        start, end = find_align_pos (record.seq)
+                                        for domain in domains_B:
+                                                if ((start <= int(domain[1])) & (end >= int(domain[2]))):
+                                                        comp_domains_B.append([domain[0], int(domain[1]) - start, int(domain[2]) - start])         
+
+                        ## Distance calculating
+                        pdbl = PDBList()
+                        pdbl.retrieve_pdb_file(comp.split('_')[0].upper(), pdir = '../tmp/')
+                        parser = PDBParser()
+                        structure1 = parser.get_structure('X', '/disk1/alekseev/docking/docking/tmp/pdb' + comp.split('_')[0] + '.ent')        
+                        structure2 = parser.get_structure('X', '/disk1/alekseev/docking/docking/tmp/pdb' + comp.split('_')[0] + '.ent')
+                        #print domains_A
+                        #print comp_domains_B
+                        #print 'first'
+                        distance_list_A = distance_calculator (comp_domains_B, structure1, structure2, chain_B.split('_')[1], chain_A.split('_')[1])
+                        #print 'second'
+                        structure1 = parser.get_structure('X', '/disk1/alekseev/docking/docking/tmp/pdb' + comp.split('_')[0] + '.ent')
+                        structure2 = parser.get_structure('X', '/disk1/alekseev/docking/docking/tmp/pdb' + comp.split('_')[0] + '.ent')
+                        distance_list_B = distance_calculator (comp_domains_A, structure1, structure2, chain_A.split('_')[1], chain_B.split('_')[1])        
+                        #print distance_list_A
+                        #print distance_list_B
+                        #print comp
+                        #print prime_B
+                        #k = input()
+                        dist_dict = dict()
+                        for i in distance_list_A:
+                                buf = dist_dict.get(i[0])
+                                if (buf == None):
+                                        dist_dict[i[0]] = i[3]
+                                else:
+                                        if (float(i[3]) < float(buf)):
+                                                dist_dict[i[0]] = i[3]
+                        for i in distance_list_B:
+                                buf = dist_dict.get(i[0])
+                                if (buf == None):
+                                        dist_dict[i[0]] = i[3]
+                                else:
+                                        if (float(i[3]) < float(buf)):
+                                                dist_dict[i[0]] = i[3]                        
+                        result.append([comp, dist_dict])
+
+                        output = open(outfile, 'a')
+                        output.write(comp + '\n')
+                        for i in distance_list_A:
+                                output.write(i[0] + ' ' + str(i[1]) + ' ' + str(i[2]) + ' ' + str(i[3]) + '\n')
+                        for i in distance_list_B:
+                                output.write(i[0] + ' ' + str(i[1]) + ' ' + str(i[2]) + ' ' + str(i[3]) + '\n')
+                        #output.write(distance_list_A) 
+                        #output.write(distance_list_B)
+                        output.write('\n\n')                        
+        return result
+
+        
+def prime_domains (prime_A, prime_B, domain_A, domain_B, domains_co, domains_contra, distance_out):
+
+        uni_prime_A = uniprot_pdb_chain_converter (prime_A)
+        uni_prime_B = uniprot_pdb_chain_converter (prime_B)
+
+        infile = open(domain_A, 'r').readlines()
+        outfile = open(distance_out, 'w')
+
+        #print domain_A
+        #print domain_B
+        #print infile
+
+        if (len(domains_contra) > len(domains_co)):
+                right = domains_contra
+        else:
+                right = domians_co
+
+        #print right
+        
+        outfile.write('Prime: ' + uni_prime_A + '\n' + '\n')
+        
+        for rec in right:
+                outfile.write(rec[0])
+                for y in infile:
+                        x = str(y)
+                        domain = x.split(':')[0]
+                            prot = x.split(':')[1].split(' ')
+
+                        dist = rec[1].get(str(domain.split(' ')[0].split('\n')[0]))
+                            if (uni_prime_A in prot):
+                                outfile.write(domain + ' - ' + str(len(prot)) + ' matches, distance = ' + str(dist) + '\n')
+                        outfile.write('\n')
+
+
+
+        infile = open(domain_B, 'r').readlines()
+        outfile = open(distance_out, 'a')
+
+        outfile.write('Prime: ' + uni_prime_B + '\n' + 'Domains:\n')
+
+        for rec in right:
+                outfile.write(rec[0])
+                for y in infile:
+                        x = str(y)
+                        domain = x.split(':')[0]
+                        prot = x.split(':')[1].split(' ')
+
+                        dist = rec[1].get(str(domain.split(' ')[0].split('\n')[0]))
+                        if (uni_prime_B in prot):
+                                outfile.write(domain + ' - ' + str(len(prot)) + ' matches, distance = ' + str(dist) + '\n')
+                        outfile.write('\n')
+
 def main ():
 
         #print "START"
@@ -958,7 +1370,7 @@ def main ():
         parser.add_argument ('fout_hhr_prot_B', metavar='hhr_out', help='output file for hhalign result for sequence B')
         parser.add_argument ('fout_domain_A', metavar='domain_A', help='output file for protein_A domain')
         parser.add_argument ('fout_domain_B', metavar='domain_B', help='output file for protein_B domain')
-                
+        parser.add_argument ('fout_distance', metavar='distance_out', help='output file for domains_distances')                
 
         args = parser.parse_args ()
 
@@ -996,7 +1408,7 @@ def main ():
         run_hhblits (args.protein_B, args.fout_align_prot_B, args.fout_hhr_prot_B)
         
         print 'START ID MAPPING'
-
+        #k = input()
         ## ID mapping
         #print '../tmp/' + args.protein_A.split('/')[2].split('.')[0] + '_identies.txt'
         #biogrid_ids_A = get_biogrid_ids ('../tmp/' + args.protein_A.split('/')[2].split('.')[0] + '_identies.txt')
@@ -1015,18 +1427,27 @@ def main ():
         #string_ids_B = get_string_ids_sql (args.fout_align_prot_B)
 
         ## Common variant 
+        prime_A, pdb_ids_A = get_pdb_ids (args.fout_align_prot_A)
         biogrid_ids_A = get_biogrid_chain_ids (args.fout_align_prot_A)
         string_ids_A = get_string_ids_sql (args.fout_align_prot_A)
 
+        prime_B, pdb_ids_B = get_pdb_ids (args.fout_align_prot_B)
         biogrid_ids_B = get_biogrid_chain_ids (args.fout_align_prot_B)
         string_ids_B = get_string_ids_sql (args.fout_align_prot_B)
+        
+        #res1 = find_interacting_domains (args.fout_align_prot_A, args.fout_align_prot_B, args.fout_complex, prime_A, prime_B, pdb_ids_A, pdb_ids_B, args.fout_distance)
+        #res2 = find_interacting_domains (args.fout_align_prot_B, args.fout_align_prot_A, args.fout_complex, prime_B, prime_A, pdb_ids_B, pdb_ids_A, args.fout_distance)
+                
+        #prime_domains (prime_A, prime_B, args.fout_domain_A, args.fout_domain_B, res1, res2, args.fout_distance)
 
         ## TO KEEP
         to_keep_a = biogrid_ids_A
         to_keep_b = biogrid_ids_B
-
+        #print res1
+        #print res2
         print "FINDING INTERACTIONS"
         #k = input()
+
         #print biogrid_ids_A
         #print biogrid_ids_B
 
@@ -1043,14 +1464,19 @@ def main ():
                 biogrid_interactions = find_biogrid_interactions (biogrid_ids_A, biogrid_ids_B)
                 string_interactions = find_string_interactions (string_ids_A, string_ids_B)
 
-        print biogrid_interactions
-        print string_interactions        
+        #print biogrid_interactions
+        #print string_interactions        
 
         ## Get pdb and uniprot ID's for interacting proteins
-
+        #print biogrid_interactions
+        #print find_pdb_id_sql (biogrid_interactions, 'B')
+        #print 'eke'
+        #k = input()
         pdb_interactions = find_pdb_id_sql (biogrid_interactions, 'B') + find_pdb_id_sql (string_interactions, 'S')
         uniprot_interactions = biogrid_interactions + find_uniprot_id_sql (string_interactions, 'S')
-
+        #print pdb_interactions
+        #if ('2btf_P 2btf_A\n' in pdb_interactions):
+        #        print 'YEAAAA!!!!'
         #print pdb_interactions
         #print uniprot_interactions
 
@@ -1071,30 +1497,58 @@ def main ():
 
         output = open (args.fout_string, 'w')
         #output.write (uniprot_interactions)
-
+        #print to_keep_a
+        #print to_keep_b
         for x in uniprot_interactions:
                 x_a = x.split(' ')[0]
                 x_b = x.split(' ')[1].split('\n')[0]
                 flag = 1
                 #flag = flag * (x_a in to_keep_a)
                 #flag = flag * (x_b in to_keep_b)
-                flag = ((x_a in to_keep_a) & (x_b in to_keep_b)) | ((x_a in to_keep_b) & (x_b in to_keep_a))
-                if flag:
-                        output.write(str(x))
+                if ((x_a in to_keep_a) & (x_b in to_keep_b)):
+                        output.write(x_a + ' ' + x_b + '\n')
+                if ((x_a in to_keep_b) & (x_b in to_keep_a)):
+                        output.write(x_b + ' ' + x_a + '\n')
+                #flag = ((x_a in to_keep_a) & (x_b in to_keep_b)) | ((x_a in to_keep_b) & (x_b in to_keep_a))
+                #if flag:
+                #        output.write(str(x))
 
         #Finding complexes
         complexes = []
+        test = list()
         for x in pdb_interactions:
-                if (x.split(' ')[0] == x.split(' ')[1].split('\n')[0]):
-                        complexes.append(x.split(' ')[0] + '\n')
+                #print x.split(' ')[0].split('_')[0] + ' ' + x.split(' ')[1].split('\n')[0].split('_')[0]
+                #s = x.split(' ')[0].split('_')[0] + ' ' + x.split(' ')[1].split('\n')[0].split('_')[0]
+                #if (s == '2btf 2btf'):
+                        #print 'HEHEHE'
+                        #print x.split(' ')[0].split('_')[0] == x.split(' ')[1].split('\n')[0].split('_')[0]
+                        #print x.split(' ')[0] + ':' + x.split(' ')[1].split('\n')[0].split('_')[1] + '\n'
+                        #if (x.split(' ')[0].split('_')[0] == x.split(' ')[1].split('\n')[0].split('_')[0]):
+                        #        print 'KAKOGO HYIA???'
+                        #print 'HEHEHE'
+                if (x.split(' ')[0].split('_')[0] == x.split(' ')[1].split('\n')[0].split('_')[0]):
+                        #print x.split(' ')[0] + ':' + x.split(' ')[1].split('\n')[0].split('_')[1] + '\n'
+                        #print 'FOKYSI'
+                        #print complexes
+                        complexes.append(x.split(' ')[0] + ':' + x.split(' ')[1].split('\n')[0].split('_')[1] + '\n')
+                        #print complexes
+                        test.append([(x.split(' ')[0] + ':' + x.split(' ')[1].split('\n')[0].split('_')[1] + '\n')])
+                        #print 'FOKYSI'
+
 
         output = open (args.fout_complex, 'w')
+        #print test
         #output.write (complexes)
-        for x in complexes:
-                output.write(str(x))
+        for x in test:
+                for y in x:
+                        output.write(str(y))
+        output.close()
         
-        find_domains(args.fout_string, args.fout_domain_A, args.fout_domain_B)
-                
+        find_domains(args.fout_string, args.fout_domain_A, args.fout_domain_B)        
+        domains_co = find_interacting_domains (args.fout_align_prot_A, args.fout_align_prot_B, args.fout_complex, prime_A, prime_B, pdb_ids_A, pdb_ids_B, args.fout_distance)        
+        domains_contra = find_interacting_domains (args.fout_align_prot_B, args.fout_align_prot_A, args.fout_complex, prime_B, prime_A, pdb_ids_B, pdb_ids_A, args.fout_distance)
+        prime_domains (prime_A, prime_B, args.fout_domain_A, args.fout_domain_B, domains_co, domains_contra, args.fout_distance)
+        
 
 
 if __name__ == '__main__':
