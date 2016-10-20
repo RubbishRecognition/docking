@@ -1296,7 +1296,7 @@ def find_interacting_domains (align_A, align_B, complexes, prime_A, prime_B, pdb
                         #        output.write(i[0] + ' ' + str(i[1]) + ' ' + str(i[2]) + ' ' + str(i[3]) + '\n')
                         #output.write(distance_list_A) 
                         #output.write(distance_list_B)
-                        output.write('\n\n')                        
+                        #output.write('\n\n')                        
         return result
 
         
@@ -1306,7 +1306,7 @@ def prime_domains (prime_A, prime_B, domain_A, domain_B, domains_co, domains_con
         uni_prime_B = uniprot_pdb_chain_converter (prime_B)
 
         infile = open(domain_A, 'r').readlines()
-        outfile = open(distance_out, 'a')
+        outfile = open(distance_out, 'w')
 
         #print domain_A
         #print domain_B
