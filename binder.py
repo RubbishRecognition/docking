@@ -1288,12 +1288,12 @@ def find_interacting_domains (align_A, align_B, complexes, prime_A, prime_B, pdb
                                                 dist_dict[i[0]] = i[3]                        
                         result.append([comp, dist_dict])
 
-                        output = open(outfile, 'a')
-                        output.write(comp + '\n')
-                        for i in distance_list_A:
-                                output.write(i[0] + ' ' + str(i[1]) + ' ' + str(i[2]) + ' ' + str(i[3]) + '\n')
-                        for i in distance_list_B:
-                                output.write(i[0] + ' ' + str(i[1]) + ' ' + str(i[2]) + ' ' + str(i[3]) + '\n')
+                        #output = open(outfile, 'a')
+                        #output.write(comp + '\n')
+                        #for i in distance_list_A:
+                        #        output.write(i[0] + ' ' + str(i[1]) + ' ' + str(i[2]) + ' ' + str(i[3]) + '\n')
+                        #for i in distance_list_B:
+                        #        output.write(i[0] + ' ' + str(i[1]) + ' ' + str(i[2]) + ' ' + str(i[3]) + '\n')
                         #output.write(distance_list_A) 
                         #output.write(distance_list_B)
                         output.write('\n\n')                        
