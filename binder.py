@@ -1315,7 +1315,7 @@ def prime_domains (prime_A, prime_B, domain_A, domain_B, domains_co, domains_con
         if (len(domains_contra) > len(domains_co)):
                 right = domains_contra
         else:
-                right = domians_co
+                right = domains_co
 
         #print right
         
