@@ -199,9 +199,9 @@ def run_hhblits (sequence, ident_file, align_file):
 
         #query_string = 'hhblits -i ' + str(sequence)  + ' -d ' + str(uniprot20) + ' -d ' + str(pdb100) + ' -oa3m ' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 100 ' + '-v 0' + ' -o ' + str(align_file) 
         #CHANGE 95 TO SCORE!!!!!!!
-        query_string = 'hhblits -i ' + '/disk1/alekseev/docking/docking/scripts/' + str(sequence)  + ' -d ' + str(uniprot20) + ' -oa3m uni_' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 100 ' + '-v 0' + ' -o ' + 'uni_' + str(align_file)  
+        query_string = 'hhblits -i ' + str(sequence)  + ' -d ' + str(uniprot20) + ' -oa3m uni_' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 100 ' + '-v 0' + ' -o ' + 'uni_' + str(align_file)  
         os.system (query_string)        
-        query_string = 'hhblits -i ' + '/disk1/alekseev/docking/docking/scripts/' + str(sequence) + ' -d ' + str(pdb100) + ' -oa3m pdb_' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 100 ' + '-v 0' + ' -o ' + 'pdb_' + str(align_file) 
+        query_string = 'hhblits -i ' + str(sequence) + ' -d ' + str(pdb100) + ' -oa3m pdb_' + str(ident_file) + ' -cpu ' + str(cpu) + ' -qid ' + str(score) + ' -id 100 ' + '-v 0' + ' -o ' + 'pdb_' + str(align_file) 
         os.system (query_string)
         ## Create alignment
         print query_string
