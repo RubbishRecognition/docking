@@ -1156,7 +1156,7 @@ def distance_calculator (domain_list, structure1, structure2, chain_A, chain_B):
                                 for domain in domain_list:
                                         #print 'kwk'
                                         place = 0
-                                        #distance = 1.0 * float(0)
+                                        distance = float(0)
                                         num = 0
                                         int_num = 0
                                         for residue in chain:

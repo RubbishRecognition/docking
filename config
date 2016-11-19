@@ -11,4 +11,4 @@ all_knowledge: ../id_mapping/all_go_knowledge_full.tsv
 [hhblits options]
 score: 70
 cpu: 5
-overlap: 60
+overlap: 1
