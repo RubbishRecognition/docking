@@ -1266,15 +1266,15 @@ def find_interacting_domains (align_A, align_B, complexes, prime_A, prime_B, pdb
                         pdbl = PDBList()
                         pdbl.retrieve_pdb_file(comp.split('_')[0].upper(), pdir = '../tmp/')
                         parser = PDBParser()
-                        structure1 = parser.get_structure('X', '/disk1/alekseev/docking/docking/tmp/pdb' + comp.split('_')[0] + '.ent')        
-                        structure2 = parser.get_structure('X', '/disk1/alekseev/docking/docking/tmp/pdb' + comp.split('_')[0] + '.ent')
+                        structure1 = parser.get_structure('X', '../tmp/pdb' + comp.split('_')[0] + '.ent')        
+                        structure2 = parser.get_structure('X', '../tmp/pdb' + comp.split('_')[0] + '.ent')
                         #print domains_A
                         #print comp_domains_B
                         #print 'first'
                         distance_list_A = distance_calculator (comp_domains_B, structure1, structure2, chain_B.split('_')[1], chain_A.split('_')[1])
                         #print 'second'
-                        structure1 = parser.get_structure('X', '/disk1/alekseev/docking/docking/tmp/pdb' + comp.split('_')[0] + '.ent')
-                        structure2 = parser.get_structure('X', '/disk1/alekseev/docking/docking/tmp/pdb' + comp.split('_')[0] + '.ent')
+                        structure1 = parser.get_structure('X', '../tmp/pdb' + comp.split('_')[0] + '.ent')
+                        structure2 = parser.get_structure('X', '../tmp/pdb' + comp.split('_')[0] + '.ent')
                         distance_list_B = distance_calculator (comp_domains_A, structure1, structure2, chain_A.split('_')[1], chain_B.split('_')[1])        
                         #print distance_list_A
                         #print distance_list_B
