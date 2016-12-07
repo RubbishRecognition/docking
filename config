@@ -7,8 +7,9 @@ uniprot20: ../seq_data/uniprot20_2016_02
 pdb100: ../seq_data/pdb100
 full_uniprot: ../id_mapping/full_uniprot_2_string.04_2015.tsv
 all_knowledge: ../id_mapping/all_go_knowledge_full.tsv
+interpro: interproscan-5.21-60.0
 
 [hhblits options]
 score: 70
-cpu: 5
+cpu: 7
 overlap: 1
