@@ -538,20 +538,20 @@ def find_biogrid_interactions (ids_A, ids_B):
                                 #print gene_B
                                 if (type(gene_B) == list):
                                         gene_B = gene_B[0]
-                                        if (entry.translate(None, '\n') == gene_B.split('_')[0]):
-                                                res_A = get_gene_id(gene)
-                                                res_B = get_gene_id(gene_B)
-                                                if (type(res_A) == str):
-                                                        res_A = [res_A]
-                                                if (type(res_B) == str):
-                                                        res_B = [res_B]
-                                                for i in range(len(res_A)):
-                                                        res_A[i] = get_uniprot_id(res_A[i])
-                                                for i in range(len(res_B)):
-                                                        res_B[i] = get_uniprot_id(res_B[i])
-                                                for k in res_A:
-                                                        for l in res_B:
-                                                                interactions.update([k + ' ' + l + '\n'])
+                                if (entry.translate(None, '\n') == gene_B.split('_')[0]):
+                                        res_A = get_gene_id(gene)
+                                        res_B = get_gene_id(gene_B)
+                                        if (type(res_A) == str):
+                                                res_A = [res_A]
+                                        if (type(res_B) == str):
+                                                res_B = [res_B]
+                                        for i in range(len(res_A)):
+                                                res_A[i] = get_uniprot_id(res_A[i])
+                                        for i in range(len(res_B)):
+                                                res_B[i] = get_uniprot_id(res_B[i])
+                                        for k in res_A:
+                                                for l in res_B:
+                                                        interactions.update([k + ' ' + l + '\n'])
 
         return list(interactions)
 
