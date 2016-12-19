@@ -1149,45 +1149,41 @@ def distance_calculator (domain_list, structure1, structure2, chain_A, chain_B):
         #print chain_B
         #print '##'
         for model in structure1:
-                for chain in model:
-                        #print chain.id
-                        if (chain.id == chain_A):
-                                #print chain.id
-                                for domain in domain_list:
-                                        #print 'kwk'
-                                        place = 0
-                                        distance = float(0)
-                                        num = 0
-                                        int_num = 0
-                                        for residue in chain:
-                                                if ((place >= domain[1]) & (place <= domain[2])):
-                                                        #min_dist = 99999999
-                                                        for atom in residue:
-                                                                min_dist = 99999999
-                                                                for model2 in structure2:
-                                                                        for chain2 in model2:
-                                                                                #print 'idi nahui'
-                                                                                if (chain2.id == chain_B):
-                                                                                        #print 'heh'
-                                                                                        for residue2 in chain2:
-                                                                                                for atom2 in residue2:
-                                                                                                        #print atom - atom2
-                                                                                                        if (abs(atom - atom2) < min_dist):
-                                                                                                                min_dist = abs(atom - atom2)
-                                                                distance += min_dist
-                                                                ## Means that atom exist in interation area
-                                                                if (min_dist < 5):
-                                                                        int_num += 1
-                                                                num += 1
-                                                place += 1
-                                                #print residue
-                                        #distance = distance / num
-                                        #print place
-                                        #print chain_A
-                                        #print "######"
-                                        #k = input()
-                                        distance = str(int_num) +  ' ' + str(num)# + ' ' + str(1.0 * (domain[2] - domain[1]) / place) + ' ' + str(place) + ' ' + str(domain[1]) + ' ' + str(domain[2])
-                                        distance_list.append(domain + [distance])
+                chain = model[chain_A]
+                #print chain.id
+                for domain in domain_list:
+                        #print 'kwk'
+                        place = 0
+                        distance = float(0)
+                        num = 0
+                        int_num = 0
+                        for residue in chain:
+                                if ((place >= domain[1]) & (place <= domain[2])):
+                                        #min_dist = 99999999
+                                        for atom in residue:
+                                                min_dist = 99999999
+                                                for model2 in structure2:
+                                                        chain2 = model2[chain_B]
+                                                        #print 'heh'
+                                                        for residue2 in chain2:
+                                                                for atom2 in residue2:
+                                                                        #print atom - atom2
+                                                                        if (abs(atom - atom2) < min_dist):
+                                                                                min_dist = abs(atom - atom2)
+                                                distance += min_dist
+                                                ## Means that atom exist in interation area
+                                                if (min_dist < 5):
+                                                        int_num += 1
+                                                num += 1
+                                place += 1
+                                #print residue
+                        #distance = distance / num
+                        #print place
+                        #print chain_A
+                        #print "######"
+                        #k = input()
+                        distance = str(int_num) +  ' ' + str(num)# + ' ' + str(1.0 * (domain[2] - domain[1]) / place) + ' ' + str(place) + ' ' + str(domain[1]) + ' ' + str(domain[2])
+                        distance_list.append(domain + [distance])
         #print 'kek'
         #print distance_list
         #k = input()
