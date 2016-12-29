@@ -131,32 +131,30 @@ def distance_calculator (domain_list, structure1, structure2, chain_A, chain_B):
 	## Distance calculator from domains of chain_A to chain_B
 	distance_list = []
 	for model in structure1:
-		for chain in model:
-			if (chain.id == chain_A):
-				for domain in domain_list:
-					place = 0
-					distance = 1.0 * float(0)
-					num = 0
-					int_num = 0
-					for residue in chain:
-						if ((place >= domain[1]) & (place <= domain[2])):
-							for atom in residue:
-								min_dist = 99999999
-								for model2 in structure2: 
-									for chain2 in model2:
-										if (chain2.id == chain_B):
-											for residue2 in chain2:
-												for atom2 in residue2:
-													if (abs(atom - atom2) < min_dist):
-														min_dist = abs(atom - atom2)  		
-								distance += min_dist
-								## Means that atom exist in interation area
-								if (min_dist < 5):
-									int_num += 1
-								num += 1
-						place += 1
-					distance = str(int_num) +  ' ' + str(num) + ' ' + str(domain[1]) + ' ' + str(domain[2])
-					distance_list.append(domain + [distance])
+                chain = model[chain_A]        
+		for domain in domain_list:
+			place = 0
+			distance = 1.0 * float(0)
+			num = 0
+			int_num = 0
+			for residue in chain:
+				if ((place >= domain[1]) & (place <= domain[2])):
+					for atom in residue:
+			         		min_dist = 99999999
+						for model2 in structure2:
+                                                        chain2 = model2[chain_B]
+							for residue2 in chain2:
+								for atom2 in residue2:
+									if (abs(atom - atom2) < min_dist):
+										min_dist = abs(atom - atom2)  		
+						distance += min_dist
+						## Means that atom exist in interation area
+						if (min_dist < 5):
+							int_num += 1
+						num += 1
+				place += 1
+			distance = str(int_num) +  ' ' + str(num) + ' ' + str(domain[1]) + ' ' + str(domain[2])
+			distance_list.append(domain + [distance])
 	return distance_list	
 
 ##	Gets distance calculater output for each complex from complex output file
