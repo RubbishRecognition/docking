@@ -1,0 +1,11 @@
+complex,domain,all_matches,matches,start_in_pdb,end_in_pdb,good_atoms,all_atoms
+2ifg_F:B,IPR020408,36,36,None,None,22,210
+2ifg_F:B,IPR002072,36,31,'66,825,5,118'
+2ifg_F:B,IPR029034,36,31,None,None,86,205
+2ifg_F:B,IPR019846,36,26,None,None,157,170
+2ifg_F:B,IPR020432,36,5,None,None,80,90
+2ifg_E:B,IPR020408,36,36,None,None,22,210
+2ifg_E:B,IPR002072,36,31,'39,820,5,118'
+2ifg_E:B,IPR029034,36,31,None,None,86,205
+2ifg_E:B,IPR019846,36,26,None,None,157,170
+2ifg_E:B,IPR020432,36,5,None,None,80,90

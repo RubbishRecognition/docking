@@ -1,0 +1,1 @@
+python result_creator.py distance_1b98_M_1wwb_X_ligand.csv distance_1b98_M_1wwb_X_receptor.csv distance_1b98_M_1wwb_X_zlab_ligand.csv distance_1b98_M_1wwb_X_zlab_receptor.csv out.csv Q16620.fasta P34130.fasta
