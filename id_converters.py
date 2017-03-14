@@ -6,7 +6,22 @@
 #from binder import *
 import os
 
-##Converts Uniprot ID like P14778 to list of it's domains [IPR000157, ...]
+##Converts Uniprot ID like P14778 to list of it's domains with it's occurrence [IPR000157, ...]
+##Using InterPro Domain Database
+
+def get_domain_id_list (uniprot_id):
+
+        domain_id = list()
+        query_string = 'python get_domain_db_pos.py ' + uniprot_id
+        os.system (query_string)
+        tmp = open('../tmp/domain_out.txt', 'r').readlines()
+        for i in tmp:
+                domain_id.append(i.split('\n'))
+
+        return list (domain_id)
+
+
+##Converts Uniprot ID like P14778 to list of it's domains with it's occurrence [IPR000157, ...]
 ##Using InterPro Domain Database
 
 def get_domain_id (uniprot_id):

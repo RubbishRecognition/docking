@@ -131,30 +131,32 @@ def distance_calculator (domain_list, structure1, structure2, chain_A, chain_B):
 	## Distance calculator from domains of chain_A to chain_B
 	distance_list = []
 	for model in structure1:
-                chain = model[chain_A]        
-		for domain in domain_list:
-			place = 0
-			distance = 1.0 * float(0)
-			num = 0
-			int_num = 0
-			for residue in chain:
-				if ((place >= domain[1]) & (place <= domain[2])):
-					for atom in residue:
-			         		min_dist = 99999999
-						for model2 in structure2:
-                                                        chain2 = model2[chain_B]
-							for residue2 in chain2:
-								for atom2 in residue2:
-									if (abs(atom - atom2) < min_dist):
-										min_dist = abs(atom - atom2)  		
-						distance += min_dist
-						## Means that atom exist in interation area
-						if (min_dist < 5):
-							int_num += 1
-						num += 1
-				place += 1
-			distance = str(int_num) +  ' ' + str(num) + ' ' + str(domain[1]) + ' ' + str(domain[2])
-			distance_list.append(domain + [distance])
+		for chain in model:
+			if (chain.id == chain_A):
+				for domain in domain_list:
+					place = 0
+					distance = 1.0 * float(0)
+					num = 0
+					int_num = 0
+					for residue in chain:
+						if ((place >= domain[1]) & (place <= domain[2])):
+							for atom in residue:
+								min_dist = 99999999
+								for model2 in structure2: 
+									for chain2 in model2:
+										if (chain2.id == chain_B):
+											for residue2 in chain2:
+												for atom2 in residue2:
+													if (abs(atom - atom2) < min_dist):
+														min_dist = abs(atom - atom2)  		
+								distance += min_dist
+								## Means that atom exist in interation area
+								if (min_dist < 5):
+									int_num += 1
+								num += 1
+						place += 1
+					distance = str(int_num) +  ' ' + str(num) + ' ' + str(domain[1]) + ' ' + str(domain[2])
+					distance_list.append(domain + [distance])
 	return distance_list	
 
 ##	Gets distance calculater output for each complex from complex output file
@@ -201,8 +203,16 @@ def find_interacting_domains (interpro, align_A, align_B, complexes, prime_A, pr
                                                         comp_domains_B.append([domain[0], int(domain[1]) - start, int(domain[2]) - start])	 
 
 			## Distance calculating
-			pdbl = PDBList()
-			pdbl.retrieve_pdb_file(comp.split('_')[0].upper(), pdir = '../tmp/')
+			
+			#Download via biopython is a way to the suffering
+			#pdbl = PDBList()
+			#pdbl.retrieve_pdb_file(comp.split('_')[0].upper(), pdir = '../tmp/')
+			
+			os.system('wget https://files.rcsb.org/download/' + comp.split('_')[0].upper() + '.pdb')
+			os.system('mv ' + comp.split('_')[0].upper() + '.pdb pdb' + comp.split('_')[0] + '.ent')
+			os.system('cp ' + 'pdb' + comp.split('_')[0] + '.ent ' + '../tmp/')
+			os.system('rm ' + 'pdb' + comp.split('_')[0] + '.ent')
+
 			parser = PDBParser()
 			structure1 = parser.get_structure('X', '../tmp/pdb' + comp.split('_')[0] + '.ent')	
 			structure2 = parser.get_structure('X', '../tmp/pdb' + comp.split('_')[0] + '.ent')
@@ -213,18 +223,22 @@ def find_interacting_domains (interpro, align_A, align_B, complexes, prime_A, pr
 			dist_dict = dict()
 			for i in distance_list_A:
 				buf = dist_dict.get(i[0])
-				if (buf == None):
+				if ((buf == None) & ((i[2] - i[1]) > 60)):
 					dist_dict[i[0]] = [i[3], i[2] - i[1]]
 				else:
-					if (float(i[3].split(' ')[0]) > float(buf[0].split(' ')[0])):
-						dist_dict[i[0]] = [i[3], i[2] - i[1]]
+					if (buf != None):
+						if (float(i[3].split(' ')[0]) > float(buf[0].split(' ')[0])):
+							if ((i[2] - i[1]) > 60):
+								dist_dict[i[0]] = [i[3], i[2] - i[1]]
 			for i in distance_list_B:
                                 buf = dist_dict.get(i[0])
-                                if (buf == None):
+                                if ((buf == None) & ((i[2] - i[1]) > 60)):
 					dist_dict[i[0]] = [i[3], i[2] - i[1]]
                                 else:
-                                        if (float(i[3].split(' ')[0]) > float(buf[0].split(' ')[0])):
-						dist_dict[i[0]] = [i[3], i[2] - i[1]]		
+					if (buf != None):
+                                        	if (float(i[3].split(' ')[0]) > float(buf[0].split(' ')[0])):
+							if ((i[2] - i[1]) > 60):
+								dist_dict[i[0]] = [i[3], i[2] - i[1]]		
 			result.append([comp, dist_dict])
 
 			output = open(outfile, 'a')
@@ -331,6 +345,9 @@ def output_binder1 (interpro, pdb_A, pdb_B, fout, domains_A, domains_B, dist_A, 
 			general_out_A.append([domain, matches, all_matches, pos[0], pos[1]])	
 	print general_out_A
 	general_out_A = np.array(general_out_A)
+	print np.argsort(general_out_A[:,1])
+	print np.argsort(general_out_A[:,1])[::-1]
+	print general_out_A[np.argsort(general_out_A[:,1])[::-1]]
 	general_out_A = general_out_A[np.argsort(general_out_A[:,1])[::-1]]
 	for i in general_out_A:
 		s = ''
@@ -342,6 +359,9 @@ def output_binder1 (interpro, pdb_A, pdb_B, fout, domains_A, domains_B, dist_A, 
 				s += ','
 		out_file_A.write(s+'\n')
 	print ('Addition complex structure information')
+	out_file_A.close()
+	out_file_A = open(fout + '_zlab_receptor.csv', 'w')
+        out_file_A.write('complex,domain,all_matches,matches,start_in_pdb,end_in_pdb,good_atoms,all_atoms\n')
         for i in dist_A:
                 out = []
                 for j in dist_A[i]:
@@ -373,7 +393,7 @@ def output_binder1 (interpro, pdb_A, pdb_B, fout, domains_A, domains_B, dist_A, 
                 seq_len = len(open(prime_A, 'r').readlines()[1])
                 for j in out:
                         print (i.split('\n')[0] + ',' + str(j[0]) + ',' + str(len(uni_set)) + ',' + str(j[1]) + ',' + str(j[2]) + ',' + str(j[3]) + ',' + str(j[4]) + ',' + str(j[5]))
-
+			out_file_A.write(i.split('\n')[0] + ',' + str(j[0]) + ',' + str(len(uni_set)) + ',' + str(j[1]) + ',' + str(j[2]) + ',' + str(j[3]) + ',' + str(j[4]) + ',' + str(j[5])+'\n')
 
 
 	out_file_B = open(fout + '_ligand.csv', 'w')
@@ -416,4 +436,39 @@ def output_binder1 (interpro, pdb_A, pdb_B, fout, domains_A, domains_B, dist_A, 
                         if (flag != len(i)):
                                 s += ','
                 out_file_B.write(s+'\n')
+	print ('Addition complex structure information')
+        out_file_B.close()
+        out_file_B = open(fout + '_zlab_ligand.csv', 'w')
+        out_file_B.write('complex,domain,all_matches,matches,start_in_pdb,end_in_pdb,good_atoms,all_atoms\n')
+        for i in dist_B:
+                out = []
+                for j in dist_B[i]:
+                        domain = j.split(' ')[0]
+                        match = j.split('-')[1].split('matches')[0].split(']')[0].split('[')[0]
+                        dist = j.split('[')#[1].split('\n')[0].split(',')
+                        if (len(dist) == 1):
+                                dist = None
+                                for k in domains_B:
+                                        if (k[0] == domain):
+                                                dist = [k[1], k[2], None]
+                        else:
+                                dist = j.split('[')[1].split('\n')[0].split(',')
+                                dist = [dist[0].split(' ')[0], dist[0].split(' ')[1], dist[0].split(' ')[2], dist[0].split(' ')[3]]#dist[1].split(' ')[1]]
 
+                        if (dist != None):
+                                if (len(dist) == 3):
+                                        out.append([domain, int(match.split(']')[0]), None, None, dist[0], dist[1]])
+                                else:
+                                        out.append([domain, int(match.split(']')[0]), dist[0], dist[1], dist[2], dist[3]])
+                out = np.array(out)
+                out = out[np.argsort(out[:,1])[::-1]]
+                uni_set = set()
+                file_B = open(domain_file_B, 'r').readlines()
+                for rec in file_B:
+                        x = rec.split(':')[1].split(' ')
+                        for j in x:
+                                uni_set.update([j])
+                seq_len = len(open(prime_B, 'r').readlines()[1])
+                for j in out:
+                        print (i.split('\n')[0] + ',' + str(j[0]) + ',' + str(len(uni_set)) + ',' + str(j[1]) + ',' + str(j[2]) + ',' + str(j[3]) + ',' + str(j[4]) + ',' + str(j[5]))
+                        out_file_B.write(i.split('\n')[0] + ',' + str(j[0]) + ',' + str(len(uni_set)) + ',' + str(j[1]) + ',' + str(j[2]) + ',' + str(j[3]) + ',' + str(j[4]) + ',' + str(j[5])+'\n')
