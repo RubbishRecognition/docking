@@ -137,6 +137,7 @@ def main ():
 	parser = argparse.ArgumentParser (description='Finding protein interactions')
 	parser.add_argument ('protein_A', metavar='prot_A',  help='file with sequence A')
 	parser.add_argument ('protein_B', metavar='prot_B',  help='file with sequence B')
+        parser.add_argument ('testing_flag', metavar='test', help='N for normal launch, T for testing')
         parser.add_argument ('fout_biogrid', metavar='pdb_out',  help='output file for pdb interactions')
         parser.add_argument ('fout_string', metavar='uniprot_out',  help='output file for uniprot interactions')
 	parser.add_argument ('fout_complex', metavar='complex_out',  help='output file for complexes')
@@ -223,10 +224,12 @@ def main ():
 	output.close()
 	
 	find_domains(args.fout_string, args.fout_domain_A, args.fout_domain_B)	
-	domains_A_co, domains_B_co, domains_co = find_interacting_domains (interpro, args.fout_align_prot_A, args.fout_align_prot_B, args.fout_complex, args.protein_A + '.formatted', args.protein_B + '.formatted', pdb_ids_A, pdb_ids_B, args.fout_distance)	
-	domains_A_contra, domains_B_contra, domains_contra = find_interacting_domains (interpro, args.fout_align_prot_B, args.fout_align_prot_A, args.fout_complex, args.protein_B + '.formatted', args.protein_A + '.formatted', pdb_ids_B, pdb_ids_A, args.fout_distance)
-	dist_A, dist_B = prime_domains (args.fout_domain_A, args.fout_domain_B, domains_co, domains_contra, args.fout_distance)
-	output_binder1 (interpro, prime_A, prime_B, args.fout_distance, domains_A_co, domains_A_contra, dist_A, dist_B, args.protein_A + '.formatted', args.protein_B + '.formatted', args.fout_domain_A, args.fout_domain_B)	
+
+        if (args.test == 'T'):
+	        domains_A_co, domains_B_co, domains_co = find_interacting_domains (interpro, args.fout_align_prot_A, args.fout_align_prot_B, args.fout_complex, args.protein_A + '.formatted', args.protein_B + '.formatted', pdb_ids_A, pdb_ids_B, args.fout_distance)	
+	        domains_A_contra, domains_B_contra, domains_contra = find_interacting_domains (interpro, args.fout_align_prot_B, args.fout_align_prot_A, args.fout_complex, args.protein_B + '.formatted', args.protein_A + '.formatted', pdb_ids_B, pdb_ids_A, args.fout_distance)
+	        dist_A, dist_B = prime_domains (args.fout_domain_A, args.fout_domain_B, domains_co, domains_contra, args.fout_distance)
+	        output_binder1 (interpro, prime_A, prime_B, args.fout_distance, domains_A_co, domains_A_contra, dist_A, dist_B, args.protein_A + '.formatted', args.protein_B + '.formatted', args.fout_domain_A, args.fout_domain_B)	
 
 if __name__ == '__main__':
         main()
