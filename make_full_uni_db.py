@@ -16,7 +16,7 @@ with open('../id_mapping/full_uniprot_2_string.04_2015.tsv') as f:
         f.readline()
         for line in f:
                 interaction = line.split('\t')
-                interaction1 = interaction[1].split('|')[1].split('_')[0]
+                interaction1 = interaction[1].split('|')[1]#.split('_')[0]
                 interaction2 = interaction[2]
 
                 interactions.append( (interaction1, interaction2) )
