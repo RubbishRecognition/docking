@@ -15,32 +15,29 @@ interactions = []
 
 counter = 0
 
-with open('../id_mapping/pdbtosp.txt') as f:
+with open('../id_mapping/_pdbtosp.txt') as f:
         f.readline()
-	#counter += 1
         for line in f:
-		counter += 1
-		if ((counter >= 25) & (counter < 103235)):
-			l = re.sub (",", " ", line)
-			l = (' '.join(l[28:].split())).split(' ')
+		l = re.sub (",", " ", line)
+	        l = (' '.join(l[28:].split())).split(' ')
 
-			int1 = []
-			int2 = []
+    		int1 = []
+    		int2 = []
 
-			n = 0
-			for curr in l:
-				if (n % 2 == 0):
-					int1.append(curr)
-				else:
-					print curr
-					if (curr != 'see'):
-						int2.append(curr.split('(')[1].split(')')[0])	
-				n += 1
+    		n = 0
+    		for curr in l:
+    			if (n % 2 == 0):
+    				int1.append(curr)
+    			else:
+    				print curr
+    				if (curr != 'see'):
+    					int2.append(curr.split('(')[1].split(')')[0])	
+    			n += 1
 
-			n = 0
-			for n in range(len(int1)):
-				if (len(int1) == len(int2)):
-					interactions.append( (int1[n], int2[n]) )
+    		n = 0
+    		for n in range(len(int1)):
+    			if (len(int1) == len(int2)):
+    				interactions.append( (int1[n], int2[n]) )
 
 c.executemany('INSERT INTO protein_actions VALUES (?, ?)', interactions)
 
